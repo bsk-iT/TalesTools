@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
+using System.Threading;
 using System.Windows.Forms;
 using System.Windows.Input;
 
@@ -157,7 +158,6 @@ namespace _4RTools.Utils
 
         private static void resetForm(Control control)
         {
-
             IEnumerable<Control> texts = GetAll(control, typeof(TextBox));
             IEnumerable<Control> checks = GetAll(control, typeof(CheckBox));
             IEnumerable<Control> combos = GetAll(control, typeof(ComboBox));
@@ -277,6 +277,46 @@ namespace _4RTools.Utils
             return t;
         }
 
+
+    }
+    public static class KeyboardHookHelper
+    {
+        public static Key PriorityKey { get; set; } = Key.None;
+        public static IntPtr GameWindowHandle { get; set; }
+        public static int PriorityDelay { get; set; }
+        private static DateTime _lastSent = DateTime.MinValue;
+        private static bool _wasPressed = false;
+        private static readonly object _lock = new object();
+
+
+        public static bool HandlePriorityKey()
+        {
+            bool isDown = PriorityKey != Key.None && Keyboard.IsKeyDown(PriorityKey);
+            lock (_lock)
+            {
+                if (isDown && !_wasPressed)
+                {
+                    _wasPressed = true;
+                    _lastSent = DateTime.Now;
+                    Keys winKey = (Keys)Enum.Parse(typeof(Keys), PriorityKey.ToString());
+                    Thread.Sleep(PriorityDelay);
+                    Interop.PostMessage(GameWindowHandle, Constants.WM_KEYDOWN_MSG_ID, winKey, 0);
+                    Thread.Sleep(1);
+                    Interop.PostMessage(GameWindowHandle, Constants.WM_KEYUP_MSG_ID, winKey, 0);
+                    return true;
+                }
+                else if (!isDown)
+                {
+                    // Reseta o estado quando a tecla é solta
+                    _wasPressed = false;
+                }
+            }
+            return isDown;
+        }
+    }
+    public static class GlobalVariablesHelper
+    {
+        public static List<String> CityList { get; set; }
 
     }
 }

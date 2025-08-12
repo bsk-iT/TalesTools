@@ -36,13 +36,34 @@ namespace _4RTools.Forms
 
         private void InitializeApplicationForm()
         {
+            Client roClient = ClientSingleton.GetClient();
+            if (roClient != null)
+            {
+                KeyboardHookHelper.PriorityKey = ProfileSingleton.GetCurrent().Custom.priorityKey;
+                KeyboardHookHelper.GameWindowHandle = roClient.process.MainWindowHandle;
+                KeyboardHookHelper.PriorityDelay = ProfileSingleton.GetCurrent().Custom.priorityDelay;  
+            }
             this.custom = ProfileSingleton.GetCurrent().Custom; 
             this.txtTransferKey.Text = custom.tiMode.ToString();
+            this.txtPriorityKey.Text = custom.priorityKey.ToString();
+            this.txtPriorityDelay.Text = this.custom.priorityDelay.ToString();
 
             this.txtTransferKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
             this.txtTransferKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
             this.txtTransferKey.TextChanged += new EventHandler(onTransferKeyChange);
+            this.txtPriorityKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
+            this.txtPriorityKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+            this.txtPriorityKey.TextChanged += new EventHandler(onPriorityKeyChange);
             this.ActiveControl = null;
+        }
+        private void txtPriorityDelay_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                ProfileSingleton.GetCurrent().Custom.priorityDelay = Convert.ToInt16(this.txtPriorityDelay.Value);
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().Custom);
+            }
+            catch { }
         }
 
         private void onTransferKeyChange(object sender, EventArgs e)
@@ -57,24 +78,16 @@ namespace _4RTools.Forms
             this.ActiveControl = null;
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void onPriorityKeyChange(object sender, EventArgs e)
         {
-
-        }
-
-        private void groupBoxAutoTransfer_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
+            Key key = (Key)Enum.Parse(typeof(Key), this.txtPriorityKey.Text.ToString());
+            try
+            {
+                this.custom.priorityKey = key;
+                ProfileSingleton.SetConfiguration(this.custom);
+            }
+            catch { }
+            this.ActiveControl = null;
         }
     }
 }

@@ -37,6 +37,7 @@ namespace _4RTools.Forms
             this.tabPageAutobuffSkill = new System.Windows.Forms.TabPage();
             this.tabPageAutobuffStuff = new System.Windows.Forms.TabPage();
             this.tabPageAutoSwitch = new System.Windows.Forms.TabPage();
+            this.tabPageAutoSwitchHeal = new System.Windows.Forms.TabPage();
             this.atkDef = new System.Windows.Forms.TabPage();
             this.tabPageMacroSongs = new System.Windows.Forms.TabPage();
             this.tabMacroSwitch = new System.Windows.Forms.TabPage();
@@ -451,10 +452,8 @@ namespace _4RTools.Forms
             this.tabControlAutopot.Controls.Add(this.tabPageAutopot);
             this.tabControlAutopot.Controls.Add(this.tabPageYggAutopot);
             this.tabControlAutopot.Controls.Add(this.tabPageSkillTimer);
-            this.tabControlAutopot.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControlAutopot.ItemSize = new System.Drawing.Size(68, 40);
-            this.tabControlAutopot.Location = new System.Drawing.Point(19, 91);
-            this.tabControlAutopot.Margin = new System.Windows.Forms.Padding(5);
+            this.tabControlAutopot.Controls.Add(this.tabPageAutoSwitchHeal);
+            this.tabControlAutopot.Location = new System.Drawing.Point(15, 83);
             this.tabControlAutopot.Name = "tabControlAutopot";
             this.tabControlAutopot.SelectedIndex = 0;
             this.tabControlAutopot.Size = new System.Drawing.Size(450, 230);
@@ -493,239 +492,15 @@ namespace _4RTools.Forms
             this.tabPageSkillTimer.TabIndex = 2;
             this.tabPageSkillTimer.Text = "Skill Timer";
             // 
-            // groupBox1
+            // tabPageAutoSwitchHeal
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.groupBox1.Controls.Add(this.txtStatusToggleKey);
-            this.groupBox1.Controls.Add(this.btnStatusToggle);
-            this.groupBox1.Controls.Add(this.lblStatusToggle);
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.groupBox1.Location = new System.Drawing.Point(493, 111);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(280, 120);
-            this.groupBox1.TabIndex = 25;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Current Status";
-            // 
-            // txtStatusToggleKey
-            // 
-            this.txtStatusToggleKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.txtStatusToggleKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtStatusToggleKey.ForeColor = System.Drawing.Color.White;
-            this.txtStatusToggleKey.Location = new System.Drawing.Point(170, 20);
-            this.txtStatusToggleKey.Margin = new System.Windows.Forms.Padding(10);
-            this.txtStatusToggleKey.Multiline = true;
-            this.txtStatusToggleKey.Name = "txtStatusToggleKey";
-            this.txtStatusToggleKey.Size = new System.Drawing.Size(90, 35);
-            this.txtStatusToggleKey.TabIndex = 23;
-            this.txtStatusToggleKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnStatusToggle
-            // 
-            this.btnStatusToggle.BackColor = System.Drawing.Color.Red;
-            this.btnStatusToggle.FlatAppearance.BorderSize = 0;
-            this.btnStatusToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatusToggle.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatusToggle.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnStatusToggle.Location = new System.Drawing.Point(20, 20);
-            this.btnStatusToggle.Margin = new System.Windows.Forms.Padding(10);
-            this.btnStatusToggle.Name = "btnStatusToggle";
-            this.btnStatusToggle.Size = new System.Drawing.Size(90, 35);
-            this.btnStatusToggle.TabIndex = 21;
-            this.btnStatusToggle.Text = "OFF";
-            this.btnStatusToggle.UseVisualStyleBackColor = false;
-            this.btnStatusToggle.Click += new System.EventHandler(this.btnToggleStatusHandler);
-            // 
-            // lblStatusToggle
-            // 
-            this.lblStatusToggle.AllowDrop = true;
-            this.lblStatusToggle.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatusToggle.Location = new System.Drawing.Point(43, 61);
-            this.lblStatusToggle.Margin = new System.Windows.Forms.Padding(5);
-            this.lblStatusToggle.MaximumSize = new System.Drawing.Size(200, 200);
-            this.lblStatusToggle.Name = "lblStatusToggle";
-            this.lblStatusToggle.Size = new System.Drawing.Size(200, 50);
-            this.lblStatusToggle.TabIndex = 22;
-            this.lblStatusToggle.Text = "Pressione uma tecla para começar!";
-            this.lblStatusToggle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblStatusToggle.Click += new System.EventHandler(this.lblStatusToggle_Click);
-            // 
-            // notifyIconTray
-            // 
-            this.notifyIconTray.Text = "TalesTools";
-            this.notifyIconTray.Visible = true;
-            this.notifyIconTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconDoubleClick);
-            // 
-            // lblStatusHealToggle
-            // 
-            this.lblStatusHealToggle.AllowDrop = true;
-            this.lblStatusHealToggle.BackColor = System.Drawing.Color.Transparent;
-            this.lblStatusHealToggle.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatusHealToggle.Location = new System.Drawing.Point(43, 61);
-            this.lblStatusHealToggle.Margin = new System.Windows.Forms.Padding(5);
-            this.lblStatusHealToggle.MaximumSize = new System.Drawing.Size(200, 200);
-            this.lblStatusHealToggle.Name = "lblStatusHealToggle";
-            this.lblStatusHealToggle.Size = new System.Drawing.Size(200, 50);
-            this.lblStatusHealToggle.TabIndex = 22;
-            this.lblStatusHealToggle.Text = "Pressione uma tecla para iniciar a cura!";
-            this.lblStatusHealToggle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblStatusHealToggle.Click += new System.EventHandler(this.lblStatusHealToggle_Click);
-            // 
-            // btnStatusHealToggle
-            // 
-            this.btnStatusHealToggle.BackColor = System.Drawing.Color.Red;
-            this.btnStatusHealToggle.FlatAppearance.BorderSize = 0;
-            this.btnStatusHealToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatusHealToggle.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatusHealToggle.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnStatusHealToggle.Location = new System.Drawing.Point(20, 20);
-            this.btnStatusHealToggle.Margin = new System.Windows.Forms.Padding(10);
-            this.btnStatusHealToggle.Name = "btnStatusHealToggle";
-            this.btnStatusHealToggle.Size = new System.Drawing.Size(90, 35);
-            this.btnStatusHealToggle.TabIndex = 21;
-            this.btnStatusHealToggle.Text = "OFF";
-            this.btnStatusHealToggle.UseVisualStyleBackColor = false;
-            this.btnStatusHealToggle.Click += new System.EventHandler(this.btnToggleStatusHealHandler);
-            // 
-            // txtStatusHealToggleKey
-            // 
-            this.txtStatusHealToggleKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.txtStatusHealToggleKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtStatusHealToggleKey.ForeColor = System.Drawing.Color.White;
-            this.txtStatusHealToggleKey.Location = new System.Drawing.Point(170, 20);
-            this.txtStatusHealToggleKey.Margin = new System.Windows.Forms.Padding(10);
-            this.txtStatusHealToggleKey.Multiline = true;
-            this.txtStatusHealToggleKey.Name = "txtStatusHealToggleKey";
-            this.txtStatusHealToggleKey.Size = new System.Drawing.Size(90, 35);
-            this.txtStatusHealToggleKey.TabIndex = 23;
-            this.txtStatusHealToggleKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.groupBox2.Controls.Add(this.lblStatusHealToggle);
-            this.groupBox2.Controls.Add(this.txtStatusHealToggleKey);
-            this.groupBox2.Controls.Add(this.btnStatusHealToggle);
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.groupBox2.Location = new System.Drawing.Point(783, 111);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(280, 120);
-            this.groupBox2.TabIndex = 26;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Heal Status";
-            // 
-            // groupBoxAutoTransfer
-            // 
-            this.groupBoxAutoTransfer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.groupBoxAutoTransfer.Controls.Add(this.panel3);
-            this.groupBoxAutoTransfer.Controls.Add(this.pictureBox1);
-            this.groupBoxAutoTransfer.Controls.Add(this.txtAutoClickKey);
-            this.groupBoxAutoTransfer.Controls.Add(this.label1CustomButton);
-            this.groupBoxAutoTransfer.Controls.Add(this.txtTransferKey);
-            this.groupBoxAutoTransfer.Controls.Add(this.pictureBox2);
-            this.groupBoxAutoTransfer.Controls.Add(this.label2CustomButton);
-            this.groupBoxAutoTransfer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.groupBoxAutoTransfer.Location = new System.Drawing.Point(493, 240);
-            this.groupBoxAutoTransfer.Margin = new System.Windows.Forms.Padding(5);
-            this.groupBoxAutoTransfer.Name = "groupBoxAutoTransfer";
-            this.groupBoxAutoTransfer.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxAutoTransfer.Size = new System.Drawing.Size(570, 80);
-            this.groupBoxAutoTransfer.TabIndex = 27;
-            this.groupBoxAutoTransfer.TabStop = false;
-            this.groupBoxAutoTransfer.Text = "Custom Buttons";
-            this.groupBoxAutoTransfer.Enter += new System.EventHandler(this.groupBoxAutoTransfer_Enter);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(20, 24);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 35);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // txtAutoClickKey
-            // 
-            this.txtAutoClickKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.txtAutoClickKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtAutoClickKey.ForeColor = System.Drawing.Color.White;
-            this.txtAutoClickKey.Location = new System.Drawing.Point(490, 24);
-            this.txtAutoClickKey.Margin = new System.Windows.Forms.Padding(5);
-            this.txtAutoClickKey.Multiline = true;
-            this.txtAutoClickKey.Name = "txtAutoClickKey";
-            this.txtAutoClickKey.Size = new System.Drawing.Size(60, 35);
-            this.txtAutoClickKey.TabIndex = 14;
-            this.txtAutoClickKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label1CustomButton
-            // 
-            this.label1CustomButton.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1CustomButton.Location = new System.Drawing.Point(76, 13);
-            this.label1CustomButton.Margin = new System.Windows.Forms.Padding(5);
-            this.label1CustomButton.Name = "label1CustomButton";
-            this.label1CustomButton.Size = new System.Drawing.Size(117, 51);
-            this.label1CustomButton.TabIndex = 13;
-            this.label1CustomButton.Text = "Transferir Item";
-            this.label1CustomButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1CustomButton.Click += new System.EventHandler(this.label1CustomButton_Click);
-            // 
-            // txtTransferKey
-            // 
-            this.txtTransferKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.txtTransferKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtTransferKey.ForeColor = System.Drawing.Color.White;
-            this.txtTransferKey.Location = new System.Drawing.Point(200, 24);
-            this.txtTransferKey.Margin = new System.Windows.Forms.Padding(5);
-            this.txtTransferKey.Multiline = true;
-            this.txtTransferKey.Name = "txtTransferKey";
-            this.txtTransferKey.Size = new System.Drawing.Size(60, 35);
-            this.txtTransferKey.TabIndex = 11;
-            this.txtTransferKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.ErrorImage")));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(310, 24);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 35);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label2CustomButton
-            // 
-            this.label2CustomButton.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2CustomButton.Location = new System.Drawing.Point(384, 15);
-            this.label2CustomButton.Margin = new System.Windows.Forms.Padding(5);
-            this.label2CustomButton.Name = "label2CustomButton";
-            this.label2CustomButton.Size = new System.Drawing.Size(74, 50);
-            this.label2CustomButton.TabIndex = 16;
-            this.label2CustomButton.Text = "Auto Click";
-            this.label2CustomButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2CustomButton.Click += new System.EventHandler(this.label2CustomButton_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Location = new System.Drawing.Point(285, 18);
-            this.panel3.Margin = new System.Windows.Forms.Padding(5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1, 50);
-            this.panel3.TabIndex = 18;
+            this.tabPageAutoSwitchHeal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
+            this.tabPageAutoSwitchHeal.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAutoSwitchHeal.Name = "tabPageAutoSwitchHeal";
+            this.tabPageAutoSwitchHeal.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAutoSwitchHeal.Size = new System.Drawing.Size(320, 154);
+            this.tabPageAutoSwitchHeal.TabIndex = 3;
+            this.tabPageAutoSwitchHeal.Text = "AutoSwitch Heal";
             // 
             // Container
             // 
@@ -797,6 +572,7 @@ namespace _4RTools.Forms
         private TabPage atkDef;
         private TabControl tabControlAutopot;
         private TabPage tabPageAutopot;
+        private TabPage tabPageAutoSwitchHeal;
         private TabPage tabPageYggAutopot;
         private LinkLabel websiteLinkLabel;
         private Panel panel1;

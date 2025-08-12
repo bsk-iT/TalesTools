@@ -42,8 +42,8 @@ namespace _4RTools.Forms
 
             clients.AddRange(LocalServerManager.GetLocalClients()); // Load Local Servers First
             LoadServers(clients);
-
-            // Container Configuration
+            GlobalVariablesHelper.CityList = LocalServerManager.GetListCities();
+            //Container Configuration
             this.IsMdiContainer = true;
             SetBackGroundColorOfMDIForm();
 
@@ -69,6 +69,7 @@ namespace _4RTools.Forms
             SetATKDEFWindow();
             SetMacroSwitchWindow();
             SetAutoSwitchWindow();
+            SetAutoSwitchHealWindow();
             SetConfigWindow();
 
             // Aplica tema e fonte ao iniciar
@@ -779,6 +780,15 @@ namespace _4RTools.Forms
             addform(this.tabPageAutopot, frm);
         }
 
+        public void SetAutoSwitchHealWindow()
+        {
+            AutoSwitchHealForm frm = new AutoSwitchHealForm(subject, false);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageAutoSwitchHeal, frm);
+        }
+
         private void SetAutoBuffStatusWindow()
         {
             AutoBuffStatusForm frm = new AutoBuffStatusForm(subject);
@@ -813,7 +823,7 @@ namespace _4RTools.Forms
         {
             CustomButtonForm form = new CustomButtonForm(subject);
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(445, 220);
+            form.Location = new Point(360, 210);
             form.MdiParent = this;
             form.Show();
         }
