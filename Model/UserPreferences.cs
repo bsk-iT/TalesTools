@@ -1,6 +1,11 @@
 ﻿using _4RTools.Utils;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Input;
 
@@ -11,6 +16,7 @@ namespace _4RTools.Model
         private string ACTION_NAME = "UserPreferences";
         public string toggleStateKey { get; set; } = Keys.End.ToString();
         public string toggleStateHealKey { get; set; } = Keys.End.ToString();
+        public string autoClickKey { get; set; } = "None";
         public List<EffectStatusIDs> autoBuffOrder { get; set; } = new List<EffectStatusIDs>();
 
         public bool stopBuffsCity { get; set; } = false;

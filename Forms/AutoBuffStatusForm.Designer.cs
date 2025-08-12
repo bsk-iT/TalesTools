@@ -55,9 +55,11 @@
             this.DebuffsGP.AutoSize = true;
             this.DebuffsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DebuffsGP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.DebuffsGP.Location = new System.Drawing.Point(12, 52);
+            this.DebuffsGP.Location = new System.Drawing.Point(65, 121);
+            this.DebuffsGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DebuffsGP.Name = "DebuffsGP";
-            this.DebuffsGP.Size = new System.Drawing.Size(522, 29);
+            this.DebuffsGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DebuffsGP.Size = new System.Drawing.Size(620, 40);
             this.DebuffsGP.TabIndex = 294;
             this.DebuffsGP.TabStop = false;
             this.DebuffsGP.Text = "Debuffs";
@@ -65,26 +67,30 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Location = new System.Drawing.Point(268, 16);
+            this.panel5.Location = new System.Drawing.Point(371, 13);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1, 30);
+            this.panel5.Size = new System.Drawing.Size(1, 100);
             this.panel5.TabIndex = 301;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(102, 20);
+            this.label1.Font = new System.Drawing.Font("JetBrains Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(114, 43);
+            this.label1.Margin = new System.Windows.Forms.Padding(10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.Size = new System.Drawing.Size(70, 22);
             this.label1.TabIndex = 297;
             this.label1.Text = "Status";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(76, 14);
+            this.pictureBox1.Location = new System.Drawing.Point(65, 38);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 296;
             this.pictureBox1.TabStop = false;
@@ -95,26 +101,32 @@
             this.txtStatusKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStatusKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtStatusKey.ForeColor = System.Drawing.Color.White;
-            this.txtStatusKey.Location = new System.Drawing.Point(139, 15);
+            this.txtStatusKey.Location = new System.Drawing.Point(198, 38);
+            this.txtStatusKey.Margin = new System.Windows.Forms.Padding(10);
+            this.txtStatusKey.Multiline = true;
             this.txtStatusKey.Name = "txtStatusKey";
-            this.txtStatusKey.Size = new System.Drawing.Size(45, 23);
+            this.txtStatusKey.Size = new System.Drawing.Size(90, 35);
             this.txtStatusKey.TabIndex = 295;
+            this.txtStatusKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(402, 21);
+            this.label2.Font = new System.Drawing.Font("JetBrains Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(505, 43);
+            this.label2.Margin = new System.Windows.Forms.Padding(10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(70, 22);
             this.label2.TabIndex = 304;
             this.label2.Text = "Status";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(376, 15);
+            this.pictureBox2.Location = new System.Drawing.Point(445, 38);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(10);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 303;
             this.pictureBox2.TabStop = false;
@@ -125,18 +137,21 @@
             this.txtNewStatusKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNewStatusKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtNewStatusKey.ForeColor = System.Drawing.Color.White;
-            this.txtNewStatusKey.Location = new System.Drawing.Point(439, 16);
+            this.txtNewStatusKey.Location = new System.Drawing.Point(595, 38);
+            this.txtNewStatusKey.Margin = new System.Windows.Forms.Padding(10);
+            this.txtNewStatusKey.Multiline = true;
             this.txtNewStatusKey.Name = "txtNewStatusKey";
-            this.txtNewStatusKey.Size = new System.Drawing.Size(45, 23);
+            this.txtNewStatusKey.Size = new System.Drawing.Size(90, 35);
             this.txtNewStatusKey.TabIndex = 302;
+            this.txtNewStatusKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // AutoBuffStatusForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(563, 248);
+            this.ClientSize = new System.Drawing.Size(900, 440);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtNewStatusKey);
@@ -145,8 +160,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtStatusKey);
             this.Controls.Add(this.DebuffsGP);
+            this.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AutoBuffStatusForm";
             this.Text = "AutoBuffStatusForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

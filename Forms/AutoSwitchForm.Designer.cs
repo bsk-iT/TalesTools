@@ -47,6 +47,10 @@ namespace _4RTools.Forms
             this.btnAddAutoSwitch = new System.Windows.Forms.Button();
             this.skillCB = new System.Windows.Forms.ComboBox();
             this.ProcSwitchGP = new System.Windows.Forms.GroupBox();
+            this.ITEMin126 = new System.Windows.Forms.TextBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.NEXTITEMin126 = new System.Windows.Forms.TextBox();
             this.ITEMin461 = new System.Windows.Forms.TextBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -65,13 +69,11 @@ namespace _4RTools.Forms
             this.NEXTITEMin2015 = new System.Windows.Forms.TextBox();
             this.numDelay = new System.Windows.Forms.NumericUpDown();
             this.numSwitchDelay = new System.Windows.Forms.NumericUpDown();
-            this.ITEMin126 = new System.Windows.Forms.TextBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.NEXTITEMin126 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.ProcSwitchGP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -82,8 +84,6 @@ namespace _4RTools.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDelay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSwitchDelay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // toolTip1
@@ -96,9 +96,10 @@ namespace _4RTools.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(330, 11);
+            this.label1.Location = new System.Drawing.Point(427, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(48, 17);
             this.label1.TabIndex = 321;
             this.label1.Tag = "";
             this.label1.Text = "Delay";
@@ -107,9 +108,10 @@ namespace _4RTools.Forms
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(447, 11);
+            this.label4.Location = new System.Drawing.Point(573, 15);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 13);
+            this.label4.Size = new System.Drawing.Size(96, 17);
             this.label4.TabIndex = 322;
             this.label4.Text = "Troca Delay";
             this.toolTip1.SetToolTip(this.label4, "Delay entre Item e Próximo Item Recomendado 1000 ms");
@@ -117,9 +119,10 @@ namespace _4RTools.Forms
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(10, 29);
+            this.pictureBox1.Location = new System.Drawing.Point(28, 36);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 296;
             this.pictureBox1.TabStop = false;
@@ -131,26 +134,30 @@ namespace _4RTools.Forms
             this.ITEMin319.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ITEMin319.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.ITEMin319.ForeColor = System.Drawing.Color.White;
-            this.ITEMin319.Location = new System.Drawing.Point(51, 30);
+            this.ITEMin319.Location = new System.Drawing.Point(68, 39);
+            this.ITEMin319.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ITEMin319.Name = "ITEMin319";
-            this.ITEMin319.Size = new System.Drawing.Size(45, 23);
+            this.ITEMin319.Size = new System.Drawing.Size(59, 26);
             this.ITEMin319.TabIndex = 295;
+            this.ITEMin319.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(60, 11);
+            this.label2.Location = new System.Drawing.Point(80, 15);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 13);
+            this.label2.Size = new System.Drawing.Size(40, 17);
             this.label2.TabIndex = 304;
             this.label2.Text = "Item";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(147, 11);
+            this.label3.Location = new System.Drawing.Point(196, 15);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.Size = new System.Drawing.Size(104, 17);
             this.label3.TabIndex = 305;
             this.label3.Text = "Próximo item";
             // 
@@ -160,15 +167,18 @@ namespace _4RTools.Forms
             this.NEXTITEMin319.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NEXTITEMin319.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.NEXTITEMin319.ForeColor = System.Drawing.Color.White;
-            this.NEXTITEMin319.Location = new System.Drawing.Point(158, 30);
+            this.NEXTITEMin319.Location = new System.Drawing.Point(217, 39);
+            this.NEXTITEMin319.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NEXTITEMin319.Name = "NEXTITEMin319";
-            this.NEXTITEMin319.Size = new System.Drawing.Size(45, 23);
+            this.NEXTITEMin319.Size = new System.Drawing.Size(59, 26);
             this.NEXTITEMin319.TabIndex = 308;
+            this.NEXTITEMin319.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(116, 36);
+            this.pictureBox4.Location = new System.Drawing.Point(162, 47);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(19, 11);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -180,9 +190,11 @@ namespace _4RTools.Forms
             this.AutoSwitchGP.AutoSize = true;
             this.AutoSwitchGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AutoSwitchGP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.AutoSwitchGP.Location = new System.Drawing.Point(12, 38);
+            this.AutoSwitchGP.Location = new System.Drawing.Point(16, 50);
+            this.AutoSwitchGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AutoSwitchGP.Name = "AutoSwitchGP";
-            this.AutoSwitchGP.Size = new System.Drawing.Size(302, 37);
+            this.AutoSwitchGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AutoSwitchGP.Size = new System.Drawing.Size(400, 60);
             this.AutoSwitchGP.TabIndex = 314;
             this.AutoSwitchGP.TabStop = false;
             this.AutoSwitchGP.Text = "Customizados";
@@ -192,9 +204,10 @@ namespace _4RTools.Forms
             this.btnAddAutoSwitch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.btnAddAutoSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddAutoSwitch.ForeColor = System.Drawing.Color.White;
-            this.btnAddAutoSwitch.Location = new System.Drawing.Point(269, 5);
+            this.btnAddAutoSwitch.Location = new System.Drawing.Point(359, 10);
+            this.btnAddAutoSwitch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddAutoSwitch.Name = "btnAddAutoSwitch";
-            this.btnAddAutoSwitch.Size = new System.Drawing.Size(45, 23);
+            this.btnAddAutoSwitch.Size = new System.Drawing.Size(60, 25);
             this.btnAddAutoSwitch.TabIndex = 316;
             this.btnAddAutoSwitch.Text = "Add";
             this.btnAddAutoSwitch.UseVisualStyleBackColor = false;
@@ -205,9 +218,10 @@ namespace _4RTools.Forms
             this.skillCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.skillCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.skillCB.ForeColor = System.Drawing.Color.White;
-            this.skillCB.Location = new System.Drawing.Point(12, 7);
+            this.skillCB.Location = new System.Drawing.Point(16, 10);
+            this.skillCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.skillCB.Name = "skillCB";
-            this.skillCB.Size = new System.Drawing.Size(251, 21);
+            this.skillCB.Size = new System.Drawing.Size(333, 25);
             this.skillCB.TabIndex = 317;
             // 
             // ProcSwitchGP
@@ -241,224 +255,14 @@ namespace _4RTools.Forms
             this.ProcSwitchGP.Controls.Add(this.NEXTITEMin319);
             this.ProcSwitchGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ProcSwitchGP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.ProcSwitchGP.Location = new System.Drawing.Point(333, 38);
+            this.ProcSwitchGP.Location = new System.Drawing.Point(430, 50);
+            this.ProcSwitchGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcSwitchGP.Name = "ProcSwitchGP";
-            this.ProcSwitchGP.Size = new System.Drawing.Size(244, 222);
+            this.ProcSwitchGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProcSwitchGP.Size = new System.Drawing.Size(325, 292);
             this.ProcSwitchGP.TabIndex = 318;
             this.ProcSwitchGP.TabStop = false;
             this.ProcSwitchGP.Text = "Exclusivos";
-            // 
-            // ITEMin461
-            // 
-            this.ITEMin461.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.ITEMin461.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ITEMin461.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ITEMin461.ForeColor = System.Drawing.Color.White;
-            this.ITEMin461.Location = new System.Drawing.Point(51, 150);
-            this.ITEMin461.Name = "ITEMin461";
-            this.ITEMin461.Size = new System.Drawing.Size(45, 23);
-            this.ITEMin461.TabIndex = 326;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(10, 149);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 327;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(116, 156);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(19, 11);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox10.TabIndex = 329;
-            this.pictureBox10.TabStop = false;
-            // 
-            // NEXTITEMin461
-            // 
-            this.NEXTITEMin461.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.NEXTITEMin461.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.NEXTITEMin461.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.NEXTITEMin461.ForeColor = System.Drawing.Color.White;
-            this.NEXTITEMin461.Location = new System.Drawing.Point(158, 150);
-            this.NEXTITEMin461.Name = "NEXTITEMin461";
-            this.NEXTITEMin461.Size = new System.Drawing.Size(45, 23);
-            this.NEXTITEMin461.TabIndex = 328;
-            // 
-            // ITEMin355
-            // 
-            this.ITEMin355.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.ITEMin355.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ITEMin355.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ITEMin355.ForeColor = System.Drawing.Color.White;
-            this.ITEMin355.Location = new System.Drawing.Point(51, 120);
-            this.ITEMin355.Name = "ITEMin355";
-            this.ITEMin355.Size = new System.Drawing.Size(45, 23);
-            this.ITEMin355.TabIndex = 322;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(10, 119);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 323;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(116, 128);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(19, 11);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox8.TabIndex = 325;
-            this.pictureBox8.TabStop = false;
-            // 
-            // NEXTITEMin355
-            // 
-            this.NEXTITEMin355.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.NEXTITEMin355.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.NEXTITEMin355.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.NEXTITEMin355.ForeColor = System.Drawing.Color.White;
-            this.NEXTITEMin355.Location = new System.Drawing.Point(158, 120);
-            this.NEXTITEMin355.Name = "NEXTITEMin355";
-            this.NEXTITEMin355.Size = new System.Drawing.Size(45, 23);
-            this.NEXTITEMin355.TabIndex = 324;
-            // 
-            // ITEMin25
-            // 
-            this.ITEMin25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.ITEMin25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ITEMin25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ITEMin25.ForeColor = System.Drawing.Color.White;
-            this.ITEMin25.Location = new System.Drawing.Point(51, 90);
-            this.ITEMin25.Name = "ITEMin25";
-            this.ITEMin25.Size = new System.Drawing.Size(45, 23);
-            this.ITEMin25.TabIndex = 318;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(10, 89);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 319;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(116, 96);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(19, 11);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox6.TabIndex = 321;
-            this.pictureBox6.TabStop = false;
-            // 
-            // NEXTITEMin25
-            // 
-            this.NEXTITEMin25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.NEXTITEMin25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.NEXTITEMin25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.NEXTITEMin25.ForeColor = System.Drawing.Color.White;
-            this.NEXTITEMin25.Location = new System.Drawing.Point(158, 90);
-            this.NEXTITEMin25.Name = "NEXTITEMin25";
-            this.NEXTITEMin25.Size = new System.Drawing.Size(45, 23);
-            this.NEXTITEMin25.TabIndex = 320;
-            // 
-            // ITEMin2015
-            // 
-            this.ITEMin2015.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.ITEMin2015.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ITEMin2015.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ITEMin2015.ForeColor = System.Drawing.Color.White;
-            this.ITEMin2015.Location = new System.Drawing.Point(51, 60);
-            this.ITEMin2015.Name = "ITEMin2015";
-            this.ITEMin2015.Size = new System.Drawing.Size(45, 23);
-            this.ITEMin2015.TabIndex = 314;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(10, 59);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 315;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(116, 66);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(19, 11);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 317;
-            this.pictureBox3.TabStop = false;
-            // 
-            // NEXTITEMin2015
-            // 
-            this.NEXTITEMin2015.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.NEXTITEMin2015.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.NEXTITEMin2015.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.NEXTITEMin2015.ForeColor = System.Drawing.Color.White;
-            this.NEXTITEMin2015.Location = new System.Drawing.Point(158, 60);
-            this.NEXTITEMin2015.Name = "NEXTITEMin2015";
-            this.NEXTITEMin2015.Size = new System.Drawing.Size(45, 23);
-            this.NEXTITEMin2015.TabIndex = 316;
-            // 
-            // numDelay
-            // 
-            this.numDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.numDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numDelay.ForeColor = System.Drawing.Color.White;
-            this.numDelay.Location = new System.Drawing.Point(369, 8);
-            this.numDelay.Maximum = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            0});
-            this.numDelay.Name = "numDelay";
-            this.numDelay.Size = new System.Drawing.Size(60, 20);
-            this.numDelay.TabIndex = 319;
-            this.numDelay.Tag = "delay";
-            this.numDelay.Value = new decimal(new int[] {
-            300,
-            0,
-            0,
-            0});
-            this.numDelay.ValueChanged += new System.EventHandler(this.txtDelay_TextChanged);
-            // 
-            // numSwitchDelay
-            // 
-            this.numSwitchDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.numSwitchDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numSwitchDelay.ForeColor = System.Drawing.Color.White;
-            this.numSwitchDelay.Location = new System.Drawing.Point(517, 8);
-            this.numSwitchDelay.Maximum = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            0});
-            this.numSwitchDelay.Name = "numSwitchDelay";
-            this.numSwitchDelay.Size = new System.Drawing.Size(60, 20);
-            this.numSwitchDelay.TabIndex = 320;
-            this.numSwitchDelay.Tag = "switchDelay";
-            this.numSwitchDelay.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numSwitchDelay.ValueChanged += new System.EventHandler(this.txtSwitchDelay_TextChanged);
             // 
             // ITEMin126
             // 
@@ -466,17 +270,20 @@ namespace _4RTools.Forms
             this.ITEMin126.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ITEMin126.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.ITEMin126.ForeColor = System.Drawing.Color.White;
-            this.ITEMin126.Location = new System.Drawing.Point(51, 180);
+            this.ITEMin126.Location = new System.Drawing.Point(68, 236);
+            this.ITEMin126.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ITEMin126.Name = "ITEMin126";
-            this.ITEMin126.Size = new System.Drawing.Size(45, 23);
+            this.ITEMin126.Size = new System.Drawing.Size(59, 26);
             this.ITEMin126.TabIndex = 330;
+            this.ITEMin126.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(10, 179);
+            this.pictureBox11.Location = new System.Drawing.Point(28, 232);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox11.Size = new System.Drawing.Size(32, 32);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 331;
             this.pictureBox11.TabStop = false;
@@ -484,7 +291,8 @@ namespace _4RTools.Forms
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(116, 186);
+            this.pictureBox12.Location = new System.Drawing.Point(162, 243);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(19, 11);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -497,18 +305,260 @@ namespace _4RTools.Forms
             this.NEXTITEMin126.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NEXTITEMin126.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.NEXTITEMin126.ForeColor = System.Drawing.Color.White;
-            this.NEXTITEMin126.Location = new System.Drawing.Point(158, 180);
+            this.NEXTITEMin126.Location = new System.Drawing.Point(217, 236);
+            this.NEXTITEMin126.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NEXTITEMin126.Name = "NEXTITEMin126";
-            this.NEXTITEMin126.Size = new System.Drawing.Size(45, 23);
+            this.NEXTITEMin126.Size = new System.Drawing.Size(59, 26);
             this.NEXTITEMin126.TabIndex = 332;
+            this.NEXTITEMin126.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // ITEMin461
+            // 
+            this.ITEMin461.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.ITEMin461.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ITEMin461.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ITEMin461.ForeColor = System.Drawing.Color.White;
+            this.ITEMin461.Location = new System.Drawing.Point(68, 197);
+            this.ITEMin461.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ITEMin461.Name = "ITEMin461";
+            this.ITEMin461.Size = new System.Drawing.Size(59, 26);
+            this.ITEMin461.TabIndex = 326;
+            this.ITEMin461.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(28, 192);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 327;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(162, 204);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(19, 11);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox10.TabIndex = 329;
+            this.pictureBox10.TabStop = false;
+            // 
+            // NEXTITEMin461
+            // 
+            this.NEXTITEMin461.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.NEXTITEMin461.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NEXTITEMin461.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.NEXTITEMin461.ForeColor = System.Drawing.Color.White;
+            this.NEXTITEMin461.Location = new System.Drawing.Point(217, 197);
+            this.NEXTITEMin461.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NEXTITEMin461.Name = "NEXTITEMin461";
+            this.NEXTITEMin461.Size = new System.Drawing.Size(59, 26);
+            this.NEXTITEMin461.TabIndex = 328;
+            this.NEXTITEMin461.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // ITEMin355
+            // 
+            this.ITEMin355.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.ITEMin355.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ITEMin355.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ITEMin355.ForeColor = System.Drawing.Color.White;
+            this.ITEMin355.Location = new System.Drawing.Point(68, 157);
+            this.ITEMin355.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ITEMin355.Name = "ITEMin355";
+            this.ITEMin355.Size = new System.Drawing.Size(59, 26);
+            this.ITEMin355.TabIndex = 322;
+            this.ITEMin355.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(28, 153);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 323;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(162, 168);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(19, 11);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox8.TabIndex = 325;
+            this.pictureBox8.TabStop = false;
+            // 
+            // NEXTITEMin355
+            // 
+            this.NEXTITEMin355.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.NEXTITEMin355.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NEXTITEMin355.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.NEXTITEMin355.ForeColor = System.Drawing.Color.White;
+            this.NEXTITEMin355.Location = new System.Drawing.Point(217, 157);
+            this.NEXTITEMin355.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NEXTITEMin355.Name = "NEXTITEMin355";
+            this.NEXTITEMin355.Size = new System.Drawing.Size(59, 26);
+            this.NEXTITEMin355.TabIndex = 324;
+            this.NEXTITEMin355.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // ITEMin25
+            // 
+            this.ITEMin25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.ITEMin25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ITEMin25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ITEMin25.ForeColor = System.Drawing.Color.White;
+            this.ITEMin25.Location = new System.Drawing.Point(68, 118);
+            this.ITEMin25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ITEMin25.Name = "ITEMin25";
+            this.ITEMin25.Size = new System.Drawing.Size(59, 26);
+            this.ITEMin25.TabIndex = 318;
+            this.ITEMin25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(28, 115);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 319;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(162, 125);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(19, 11);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox6.TabIndex = 321;
+            this.pictureBox6.TabStop = false;
+            // 
+            // NEXTITEMin25
+            // 
+            this.NEXTITEMin25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.NEXTITEMin25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NEXTITEMin25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.NEXTITEMin25.ForeColor = System.Drawing.Color.White;
+            this.NEXTITEMin25.Location = new System.Drawing.Point(217, 118);
+            this.NEXTITEMin25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NEXTITEMin25.Name = "NEXTITEMin25";
+            this.NEXTITEMin25.Size = new System.Drawing.Size(59, 26);
+            this.NEXTITEMin25.TabIndex = 320;
+            this.NEXTITEMin25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // ITEMin2015
+            // 
+            this.ITEMin2015.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.ITEMin2015.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ITEMin2015.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ITEMin2015.ForeColor = System.Drawing.Color.White;
+            this.ITEMin2015.Location = new System.Drawing.Point(68, 79);
+            this.ITEMin2015.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ITEMin2015.Name = "ITEMin2015";
+            this.ITEMin2015.Size = new System.Drawing.Size(59, 26);
+            this.ITEMin2015.TabIndex = 314;
+            this.ITEMin2015.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(28, 76);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 315;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(162, 86);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(19, 11);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 317;
+            this.pictureBox3.TabStop = false;
+            // 
+            // NEXTITEMin2015
+            // 
+            this.NEXTITEMin2015.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.NEXTITEMin2015.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NEXTITEMin2015.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.NEXTITEMin2015.ForeColor = System.Drawing.Color.White;
+            this.NEXTITEMin2015.Location = new System.Drawing.Point(217, 79);
+            this.NEXTITEMin2015.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NEXTITEMin2015.Name = "NEXTITEMin2015";
+            this.NEXTITEMin2015.Size = new System.Drawing.Size(59, 26);
+            this.NEXTITEMin2015.TabIndex = 316;
+            this.NEXTITEMin2015.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numDelay
+            // 
+            this.numDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.numDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numDelay.ForeColor = System.Drawing.Color.White;
+            this.numDelay.Location = new System.Drawing.Point(483, 12);
+            this.numDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numDelay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.numDelay.Name = "numDelay";
+            this.numDelay.Size = new System.Drawing.Size(80, 25);
+            this.numDelay.TabIndex = 319;
+            this.numDelay.Tag = "delay";
+            this.numDelay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numDelay.Value = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.numDelay.ValueChanged += new System.EventHandler(this.txtDelay_TextChanged);
+            // 
+            // numSwitchDelay
+            // 
+            this.numSwitchDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.numSwitchDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numSwitchDelay.ForeColor = System.Drawing.Color.White;
+            this.numSwitchDelay.Location = new System.Drawing.Point(675, 10);
+            this.numSwitchDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numSwitchDelay.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.numSwitchDelay.Name = "numSwitchDelay";
+            this.numSwitchDelay.Size = new System.Drawing.Size(80, 25);
+            this.numSwitchDelay.TabIndex = 320;
+            this.numSwitchDelay.Tag = "switchDelay";
+            this.numSwitchDelay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numSwitchDelay.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numSwitchDelay.ValueChanged += new System.EventHandler(this.txtSwitchDelay_TextChanged);
             // 
             // AutoSwitchForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(606, 388);
+            this.ClientSize = new System.Drawing.Size(900, 440);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numSwitchDelay);
@@ -517,14 +567,18 @@ namespace _4RTools.Forms
             this.Controls.Add(this.skillCB);
             this.Controls.Add(this.btnAddAutoSwitch);
             this.Controls.Add(this.AutoSwitchGP);
+            this.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AutoSwitchForm";
             this.Text = "AutoSwitchForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ProcSwitchGP.ResumeLayout(false);
             this.ProcSwitchGP.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -535,8 +589,6 @@ namespace _4RTools.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDelay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSwitchDelay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

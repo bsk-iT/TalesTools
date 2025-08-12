@@ -21,7 +21,8 @@ namespace _4RTools.Utils
                 if (e.KeyCode.ToString() == "Oemplus")
                 {
                     thisk = Key.OemPlus;
-                }else if(e.KeyCode.ToString() == "Oemtilde")
+                }
+                else if (e.KeyCode.ToString() == "Oemtilde")
                 {
                     thisk = Key.OemTilde;
                 }
@@ -42,6 +43,91 @@ namespace _4RTools.Utils
                         break;
                     default:
                         textBox.Text = thisk.ToString();
+                        break;
+                }
+                textBox.Parent.Focus();
+                e.Handled = true;
+            }
+            catch { }
+        }
+
+        // Método específico para o AutoClick que aceita apenas botões laterais do mouse
+        public static void OnAutoClickMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                TextBox textBox = (TextBox)sender;
+                string mouseButton = "";
+
+                switch (e.Button)
+                {
+                    case MouseButtons.XButton1:
+                        mouseButton = "BrowserBack";
+                        break;
+                    case MouseButtons.XButton2:
+                        mouseButton = "BrowserForward";
+                        break;
+                    default:
+                        // Bloqueia todos os outros botões do mouse
+                        return;
+                }
+
+                textBox.Text = mouseButton;
+                textBox.Parent.Focus();
+            }
+            catch { }
+        }
+
+        // Método original para outros controles que aceitam todos os botões do mouse
+        public static void OnMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            try
+            {
+                TextBox textBox = (TextBox)sender;
+                string mouseButton = "";
+
+                switch (e.Button)
+                {
+                    case MouseButtons.XButton1:
+                        mouseButton = "BrowserBack";
+                        break;
+                    case MouseButtons.XButton2:
+                        mouseButton = "BrowserForward";
+                        break;
+                    case MouseButtons.Middle:
+                        mouseButton = "MiddleButton";
+                        break;
+                    case MouseButtons.Right:
+                        mouseButton = "RightButton";
+                        break;
+                    case MouseButtons.Left:
+                        mouseButton = "LeftButton";
+                        break;
+                    default:
+                        return; // Ignora outros botões
+                }
+
+                textBox.Text = mouseButton;
+                textBox.Parent.Focus();
+            }
+            catch { }
+        }
+
+        // Método para bloquear entrada de teclado no AutoClick
+        public static void OnAutoClickKeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            try
+            {
+                TextBox textBox = (TextBox)sender;
+
+                switch ((Key)Enum.Parse(typeof(Key), e.KeyCode.ToString()))
+                {
+                    case Key.Escape:
+                    case Key.Back:
+                        textBox.Text = "None";
+                        break;
+                    default:
+                        // Bloqueia todas as outras teclas
                         break;
                 }
                 textBox.Parent.Focus();
@@ -149,7 +235,7 @@ namespace _4RTools.Utils
             resetForm(group);
         }
 
-       
+
     }
     public static class EnumExtensions
     {
@@ -191,6 +277,6 @@ namespace _4RTools.Utils
             return t;
         }
 
-        
+
     }
 }

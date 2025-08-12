@@ -665,7 +665,7 @@
             this.in1SpammerClick.Size = new System.Drawing.Size(107, 17);
             this.in1SpammerClick.TabIndex = 29;
             this.in1SpammerClick.Tag = "1:inSpammerClick";
-            this.in1SpammerClick.Text = "With mouse click";
+            this.in1SpammerClick.Text = "Com o clique do mouse";
             this.in1SpammerClick.UseVisualStyleBackColor = true;
             // 
             // in1SpammerKey
@@ -1076,7 +1076,7 @@
             this.in2SpammerClick.Size = new System.Drawing.Size(107, 17);
             this.in2SpammerClick.TabIndex = 29;
             this.in2SpammerClick.Tag = "2:inSpammerClick";
-            this.in2SpammerClick.Text = "With mouse click";
+            this.in2SpammerClick.Text = "Com o clique do mouse";
             this.in2SpammerClick.UseVisualStyleBackColor = true;
             // 
             // in2SpammerKey
@@ -1487,7 +1487,7 @@
             this.in3SpammerClick.Size = new System.Drawing.Size(107, 17);
             this.in3SpammerClick.TabIndex = 29;
             this.in3SpammerClick.Tag = "3:inSpammerClick";
-            this.in3SpammerClick.Text = "With mouse click";
+            this.in3SpammerClick.Text = "Com o clique do mouse";
             this.in3SpammerClick.UseVisualStyleBackColor = true;
             // 
             // in3SpammerKey
@@ -1898,7 +1898,7 @@
             this.in4SpammerClick.Size = new System.Drawing.Size(107, 17);
             this.in4SpammerClick.TabIndex = 29;
             this.in4SpammerClick.Tag = "4:inSpammerClick";
-            this.in4SpammerClick.Text = "With mouse click";
+            this.in4SpammerClick.Text = "Com o clique do mouse";
             this.in4SpammerClick.UseVisualStyleBackColor = true;
             // 
             // label16

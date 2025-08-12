@@ -179,5 +179,10 @@ namespace _4RTools.Forms
                 this.chkNoShift.Enabled = true;
             }
         }
+
+        private void cbWithClick_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
