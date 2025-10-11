@@ -82,7 +82,7 @@ namespace _4RTools.Model
                 itemtb.Tag = "ITEMin" + ((int)skill.effectStatusID);
                 itemtb.Name = "ITEMin" + ((int)skill.effectStatusID);
                 itemtb.Location = new Point(pb.Location.X + 30, pb.Location.Y + 3);
-                itemtb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+                itemtb.BackColor = System.Drawing.Color.Black;
                 itemtb.ForeColor = System.Drawing.Color.White;
                 itemtb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
                 itemtb.Text = config.itemKey != 0 ? config.itemKey.ToString() : Key.None.ToString();
@@ -103,7 +103,7 @@ namespace _4RTools.Model
                 skilltb.Tag = "SKILLin" + ((int)skill.effectStatusID);
                 skilltb.Name = "SKILLin" + ((int)skill.effectStatusID);
                 skilltb.Location = new Point(seta1pb.Location.X + 25, seta1pb.Location.Y - 3);
-                skilltb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+                skilltb.BackColor = System.Drawing.Color.Black;
                 skilltb.ForeColor = System.Drawing.Color.White;
                 skilltb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
                 skilltb.Text = config.itemKey != 0 ? config.skillKey.ToString() : Key.None.ToString();
@@ -124,7 +124,7 @@ namespace _4RTools.Model
                 nextItemtb.Tag = "NEXTITEMin" + ((int)skill.effectStatusID);
                 nextItemtb.Name = "NEXTITEMin" + ((int)skill.effectStatusID);
                 nextItemtb.Location = new Point(seta2pb.Location.X + 25, seta2pb.Location.Y - 3);
-                nextItemtb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+                nextItemtb.BackColor = System.Drawing.Color.Black;
                 nextItemtb.ForeColor = System.Drawing.Color.White;
                 nextItemtb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
                 nextItemtb.Text = config.itemKey != 0 ? config.nextItemKey.ToString() : Key.None.ToString();

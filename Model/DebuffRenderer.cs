@@ -59,7 +59,7 @@ namespace _4RTools.Model
                     textBox.Tag = ((int)skill.effectStatusID);
                     textBox.Name = "in" + ((int)skill.effectStatusID);
                     textBox.Location = new Point(pb.Location.X + 35, pb.Location.Y + 8);
-                    textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+                    textBox.BackColor = System.Drawing.Color.Black;
                     textBox.ForeColor = System.Drawing.Color.White;
                     textBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
