@@ -136,7 +136,7 @@ namespace _4RTools.Forms
                 this.btnStatusToggle.Text = "OFF";
                 this.subject.Notify(new Utils.Message(MessageCode.TURN_OFF, null));
                 this.lblStatusToggle.Text = "Press the key to start!";
-                this.lblStatusToggle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
+                this.lblStatusToggle.ForeColor = System.Drawing.Color.White;
                 new SoundPlayer(Resources._4RTools.ETCResource.Speech_Off).Play();
             }
 
@@ -147,7 +147,7 @@ namespace _4RTools.Forms
                 this.btnStatusHealToggle.Text = "OFF";
                 this.subject.Notify(new Utils.Message(MessageCode.TURN_HEAL_OFF, null));
                 this.lblStatusHealToggle.Text = "Press the key to start healing!";
-                this.lblStatusHealToggle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
+                this.lblStatusHealToggle.ForeColor = System.Drawing.Color.White;
                 new SoundPlayer(Resources._4RTools.ETCResource.Healing_Off).Play();
             }
             return true;
