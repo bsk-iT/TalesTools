@@ -239,7 +239,7 @@ namespace _4RTools.Forms
             // 
             // btnRefresh
             // 
-            this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
+            this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
@@ -388,7 +388,7 @@ namespace _4RTools.Forms
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Silver;
+            this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Location = new System.Drawing.Point(21, 81);
             this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
@@ -430,7 +430,7 @@ namespace _4RTools.Forms
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Silver;
+            this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Location = new System.Drawing.Point(465, 102);
             this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";

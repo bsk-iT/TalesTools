@@ -71,7 +71,7 @@ namespace _4RTools.Forms
             {
                 if ((ctl) is MdiClient)
                 {
-                    ctl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+                    ctl.BackColor = System.Drawing.Color.Black;
                 }
 
             }
