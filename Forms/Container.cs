@@ -381,5 +381,10 @@ namespace _4RTools.Forms
         }
 
         #endregion
+
+        private void tabPageAutopot_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

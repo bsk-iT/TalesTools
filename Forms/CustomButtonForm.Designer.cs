@@ -48,13 +48,13 @@
             // 
             // txtTransferKey
             // 
-            this.txtTransferKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtTransferKey.BackColor = System.Drawing.Color.Black;
             this.txtTransferKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTransferKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtTransferKey.ForeColor = System.Drawing.Color.White;
             this.txtTransferKey.Location = new System.Drawing.Point(79, 8);
             this.txtTransferKey.Name = "txtTransferKey";
-            this.txtTransferKey.Size = new System.Drawing.Size(45, 23);
+            this.txtTransferKey.Size = new System.Drawing.Size(45, 26);
             this.txtTransferKey.TabIndex = 11;
             // 
             // label1
@@ -77,13 +77,13 @@
             // 
             // txtPriorityKey
             // 
-            this.txtPriorityKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtPriorityKey.BackColor = System.Drawing.Color.Black;
             this.txtPriorityKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPriorityKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtPriorityKey.ForeColor = System.Drawing.Color.White;
             this.txtPriorityKey.Location = new System.Drawing.Point(232, 7);
             this.txtPriorityKey.Name = "txtPriorityKey";
-            this.txtPriorityKey.Size = new System.Drawing.Size(45, 23);
+            this.txtPriorityKey.Size = new System.Drawing.Size(45, 26);
             this.txtPriorityKey.TabIndex = 14;
             // 
             // panel5
@@ -135,7 +135,7 @@
             // 
             // txtPriorityDelay
             // 
-            this.txtPriorityDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtPriorityDelay.BackColor = System.Drawing.Color.Black;
             this.txtPriorityDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPriorityDelay.ForeColor = System.Drawing.Color.White;
             this.txtPriorityDelay.Location = new System.Drawing.Point(231, 37);
@@ -145,7 +145,7 @@
             0,
             0});
             this.txtPriorityDelay.Name = "txtPriorityDelay";
-            this.txtPriorityDelay.Size = new System.Drawing.Size(47, 20);
+            this.txtPriorityDelay.Size = new System.Drawing.Size(47, 22);
             this.txtPriorityDelay.TabIndex = 69;
             this.txtPriorityDelay.Value = new decimal(new int[] {
             50,
@@ -156,7 +156,7 @@
             // 
             // CustomButtonForm
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(295, 65);
             this.Controls.Add(this.txtPriorityDelay);
             this.Controls.Add(this.label4);
@@ -168,7 +168,7 @@
             this.Controls.Add(this.txtPriorityKey);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTransferKey);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CustomButtonForm";
             this.Padding = new System.Windows.Forms.Padding(10);

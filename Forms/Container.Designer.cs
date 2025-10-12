@@ -36,13 +36,13 @@ namespace _4RTools.Forms
             this.tabPageAutobuffSkill = new System.Windows.Forms.TabPage();
             this.tabPageAutobuffStuff = new System.Windows.Forms.TabPage();
             this.tabPageAutoSwitch = new System.Windows.Forms.TabPage();
-            this.tabPageAutoSwitchHeal = new System.Windows.Forms.TabPage();
             this.atkDef = new System.Windows.Forms.TabPage();
             this.tabPageMacroSongs = new System.Windows.Forms.TabPage();
             this.tabMacroSwitch = new System.Windows.Forms.TabPage();
             this.tabPageDebuffs = new System.Windows.Forms.TabPage();
             this.tabConfig = new System.Windows.Forms.TabPage();
             this.tabPageProfiles = new System.Windows.Forms.TabPage();
+            this.tabPageAutoSwitchHeal = new System.Windows.Forms.TabPage();
             this.lblProcessName = new System.Windows.Forms.Label();
             this.processCB = new System.Windows.Forms.ComboBox();
             this.btnRefresh = new System.Windows.Forms.Button();
@@ -84,132 +84,156 @@ namespace _4RTools.Forms
             atkDefMode.Controls.Add(this.tabPageDebuffs);
             atkDefMode.Controls.Add(this.tabConfig);
             atkDefMode.Controls.Add(this.tabPageProfiles);
-            atkDefMode.Location = new System.Drawing.Point(15, 274);
+            atkDefMode.Location = new System.Drawing.Point(20, 337);
+            atkDefMode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             atkDefMode.Name = "atkDefMode";
             atkDefMode.SelectedIndex = 0;
-            atkDefMode.Size = new System.Drawing.Size(637, 300);
+            atkDefMode.Size = new System.Drawing.Size(849, 369);
             atkDefMode.TabIndex = 6;
             // 
             // tabPageSpammer
             // 
-            this.tabPageSpammer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.tabPageSpammer.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSpammer.BackColor = System.Drawing.Color.Black;
+            this.tabPageSpammer.Location = new System.Drawing.Point(4, 25);
+            this.tabPageSpammer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageSpammer.Name = "tabPageSpammer";
-            this.tabPageSpammer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSpammer.Size = new System.Drawing.Size(629, 274);
+            this.tabPageSpammer.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageSpammer.Size = new System.Drawing.Size(841, 340);
             this.tabPageSpammer.TabIndex = 1;
             this.tabPageSpammer.Text = "Skill Spammer";
             // 
             // tabPageAutobuffSkill
             // 
-            this.tabPageAutobuffSkill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.tabPageAutobuffSkill.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAutobuffSkill.BackColor = System.Drawing.Color.Black;
+            this.tabPageAutobuffSkill.Location = new System.Drawing.Point(4, 25);
+            this.tabPageAutobuffSkill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageAutobuffSkill.Name = "tabPageAutobuffSkill";
-            this.tabPageAutobuffSkill.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutobuffSkill.Size = new System.Drawing.Size(629, 274);
+            this.tabPageAutobuffSkill.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageAutobuffSkill.Size = new System.Drawing.Size(841, 340);
             this.tabPageAutobuffSkill.TabIndex = 3;
             this.tabPageAutobuffSkill.Text = "Autobuff - Skills";
             // 
             // tabPageAutobuffStuff
             // 
-            this.tabPageAutobuffStuff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.tabPageAutobuffStuff.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAutobuffStuff.BackColor = System.Drawing.Color.Black;
+            this.tabPageAutobuffStuff.Location = new System.Drawing.Point(4, 25);
+            this.tabPageAutobuffStuff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageAutobuffStuff.Name = "tabPageAutobuffStuff";
-            this.tabPageAutobuffStuff.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(629, 274);
+            this.tabPageAutobuffStuff.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageAutobuffStuff.Size = new System.Drawing.Size(841, 340);
             this.tabPageAutobuffStuff.TabIndex = 4;
             this.tabPageAutobuffStuff.Text = "Autobuff - Stuffs";
             // 
             // tabPageAutoSwitch
             // 
-            this.tabPageAutoSwitch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.tabPageAutoSwitch.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAutoSwitch.BackColor = System.Drawing.Color.Black;
+            this.tabPageAutoSwitch.Location = new System.Drawing.Point(4, 25);
+            this.tabPageAutoSwitch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageAutoSwitch.Name = "tabPageAutoSwitch";
-            this.tabPageAutoSwitch.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutoSwitch.Size = new System.Drawing.Size(629, 274);
+            this.tabPageAutoSwitch.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageAutoSwitch.Size = new System.Drawing.Size(841, 340);
             this.tabPageAutoSwitch.TabIndex = 3;
             this.tabPageAutoSwitch.Text = "Auto Switch";
             // 
             // atkDef
             // 
-            this.atkDef.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.atkDef.Location = new System.Drawing.Point(4, 22);
+            this.atkDef.BackColor = System.Drawing.Color.Black;
+            this.atkDef.Location = new System.Drawing.Point(4, 25);
+            this.atkDef.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.atkDef.Name = "atkDef";
-            this.atkDef.Padding = new System.Windows.Forms.Padding(3);
-            this.atkDef.Size = new System.Drawing.Size(629, 274);
+            this.atkDef.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.atkDef.Size = new System.Drawing.Size(841, 340);
             this.atkDef.TabIndex = 5;
             this.atkDef.Text = "ATK x DEF";
             // 
             // tabPageMacroSongs
             // 
-            this.tabPageMacroSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.tabPageMacroSongs.Location = new System.Drawing.Point(4, 22);
+            this.tabPageMacroSongs.BackColor = System.Drawing.Color.Black;
+            this.tabPageMacroSongs.Location = new System.Drawing.Point(4, 25);
+            this.tabPageMacroSongs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageMacroSongs.Name = "tabPageMacroSongs";
-            this.tabPageMacroSongs.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMacroSongs.Size = new System.Drawing.Size(629, 274);
+            this.tabPageMacroSongs.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageMacroSongs.Size = new System.Drawing.Size(841, 340);
             this.tabPageMacroSongs.TabIndex = 6;
             this.tabPageMacroSongs.Text = "Macro Songs";
             // 
             // tabMacroSwitch
             // 
-            this.tabMacroSwitch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.tabMacroSwitch.Location = new System.Drawing.Point(4, 22);
+            this.tabMacroSwitch.BackColor = System.Drawing.Color.Black;
+            this.tabMacroSwitch.Location = new System.Drawing.Point(4, 25);
+            this.tabMacroSwitch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabMacroSwitch.Name = "tabMacroSwitch";
-            this.tabMacroSwitch.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMacroSwitch.Size = new System.Drawing.Size(629, 274);
+            this.tabMacroSwitch.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabMacroSwitch.Size = new System.Drawing.Size(841, 340);
             this.tabMacroSwitch.TabIndex = 8;
             this.tabMacroSwitch.Text = "Macro Switch";
             // 
             // tabPageDebuffs
             // 
-            this.tabPageDebuffs.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDebuffs.BackColor = System.Drawing.Color.Black;
+            this.tabPageDebuffs.Location = new System.Drawing.Point(4, 25);
+            this.tabPageDebuffs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageDebuffs.Name = "tabPageDebuffs";
-            this.tabPageDebuffs.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDebuffs.Size = new System.Drawing.Size(629, 274);
+            this.tabPageDebuffs.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageDebuffs.Size = new System.Drawing.Size(841, 340);
             this.tabPageDebuffs.TabIndex = 7;
             this.tabPageDebuffs.Text = "Debuffs";
-            this.tabPageDebuffs.UseVisualStyleBackColor = true;
             // 
             // tabConfig
             // 
-            this.tabConfig.Location = new System.Drawing.Point(4, 22);
+            this.tabConfig.BackColor = System.Drawing.Color.Black;
+            this.tabConfig.Location = new System.Drawing.Point(4, 25);
+            this.tabConfig.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabConfig.Name = "tabConfig";
-            this.tabConfig.Padding = new System.Windows.Forms.Padding(3);
-            this.tabConfig.Size = new System.Drawing.Size(629, 274);
+            this.tabConfig.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabConfig.Size = new System.Drawing.Size(841, 340);
             this.tabConfig.TabIndex = 10;
             this.tabConfig.Text = "Config";
-            this.tabConfig.UseVisualStyleBackColor = true;
             // 
             // tabPageProfiles
             // 
-            this.tabPageProfiles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.tabPageProfiles.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProfiles.BackColor = System.Drawing.Color.Black;
+            this.tabPageProfiles.Location = new System.Drawing.Point(4, 25);
+            this.tabPageProfiles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageProfiles.Name = "tabPageProfiles";
-            this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProfiles.Size = new System.Drawing.Size(629, 274);
+            this.tabPageProfiles.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageProfiles.Size = new System.Drawing.Size(841, 340);
             this.tabPageProfiles.TabIndex = 9;
             this.tabPageProfiles.Text = "Profiles";
+            // 
+            // tabPageAutoSwitchHeal
+            // 
+            this.tabPageAutoSwitchHeal.BackColor = System.Drawing.Color.Black;
+            this.tabPageAutoSwitchHeal.Location = new System.Drawing.Point(4, 25);
+            this.tabPageAutoSwitchHeal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageAutoSwitchHeal.Name = "tabPageAutoSwitchHeal";
+            this.tabPageAutoSwitchHeal.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageAutoSwitchHeal.Size = new System.Drawing.Size(429, 193);
+            this.tabPageAutoSwitchHeal.TabIndex = 3;
+            this.tabPageAutoSwitchHeal.Text = "AutoSwitch Heal";
             // 
             // lblProcessName
             // 
             this.lblProcessName.AutoSize = true;
             this.lblProcessName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblProcessName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.lblProcessName.Location = new System.Drawing.Point(13, 9);
+            this.lblProcessName.ForeColor = System.Drawing.Color.White;
+            this.lblProcessName.Location = new System.Drawing.Point(17, 11);
+            this.lblProcessName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProcessName.Name = "lblProcessName";
-            this.lblProcessName.Size = new System.Drawing.Size(109, 17);
+            this.lblProcessName.Size = new System.Drawing.Size(128, 20);
             this.lblProcessName.TabIndex = 3;
             this.lblProcessName.Text = "Ragnarok Client";
             // 
             // processCB
             // 
-            this.processCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.processCB.BackColor = System.Drawing.Color.Black;
             this.processCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.processCB.ForeColor = System.Drawing.Color.White;
             this.processCB.FormattingEnabled = true;
-            this.processCB.Location = new System.Drawing.Point(18, 29);
+            this.processCB.Location = new System.Drawing.Point(24, 36);
+            this.processCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.processCB.Name = "processCB";
-            this.processCB.Size = new System.Drawing.Size(184, 21);
+            this.processCB.Size = new System.Drawing.Size(244, 24);
             this.processCB.TabIndex = 2;
             this.processCB.SelectedIndexChanged += new System.EventHandler(this.processCB_SelectedIndexChanged);
             // 
@@ -219,9 +243,10 @@ namespace _4RTools.Forms
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
-            this.btnRefresh.Location = new System.Drawing.Point(208, 28);
+            this.btnRefresh.Location = new System.Drawing.Point(277, 34);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(19, 22);
+            this.btnRefresh.Size = new System.Drawing.Size(25, 27);
             this.btnRefresh.TabIndex = 5;
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
@@ -230,9 +255,10 @@ namespace _4RTools.Forms
             // 
             this.lblLinkDiscord.AutoSize = true;
             this.lblLinkDiscord.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(244)))));
-            this.lblLinkDiscord.Location = new System.Drawing.Point(535, 16);
+            this.lblLinkDiscord.Location = new System.Drawing.Point(713, 20);
+            this.lblLinkDiscord.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLinkDiscord.Name = "lblLinkDiscord";
-            this.lblLinkDiscord.Size = new System.Drawing.Size(100, 13);
+            this.lblLinkDiscord.Size = new System.Drawing.Size(127, 16);
             this.lblLinkDiscord.TabIndex = 8;
             this.lblLinkDiscord.TabStop = true;
             this.lblLinkDiscord.Text = "Discord Ragnatales";
@@ -242,9 +268,10 @@ namespace _4RTools.Forms
             // 
             this.lblLinkGithub.AutoSize = true;
             this.lblLinkGithub.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(244)))));
-            this.lblLinkGithub.Location = new System.Drawing.Point(46, 16);
+            this.lblLinkGithub.Location = new System.Drawing.Point(61, 20);
+            this.lblLinkGithub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLinkGithub.Name = "lblLinkGithub";
-            this.lblLinkGithub.Size = new System.Drawing.Size(74, 13);
+            this.lblLinkGithub.Size = new System.Drawing.Size(90, 16);
             this.lblLinkGithub.TabIndex = 9;
             this.lblLinkGithub.TabStop = true;
             this.lblLinkGithub.Text = "Github Project";
@@ -254,46 +281,50 @@ namespace _4RTools.Forms
             // 
             this.panelDiscImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelDiscImage.BackgroundImage")));
             this.panelDiscImage.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panelDiscImage.Location = new System.Drawing.Point(496, 6);
+            this.panelDiscImage.Location = new System.Drawing.Point(661, 7);
+            this.panelDiscImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelDiscImage.Name = "panelDiscImage";
-            this.panelDiscImage.Size = new System.Drawing.Size(32, 33);
+            this.panelDiscImage.Size = new System.Drawing.Size(43, 41);
             this.panelDiscImage.TabIndex = 10;
             // 
             // panelGithubImage
             // 
             this.panelGithubImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelGithubImage.BackgroundImage")));
             this.panelGithubImage.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panelGithubImage.Location = new System.Drawing.Point(7, 6);
+            this.panelGithubImage.Location = new System.Drawing.Point(9, 7);
+            this.panelGithubImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelGithubImage.Name = "panelGithubImage";
-            this.panelGithubImage.Size = new System.Drawing.Size(32, 33);
+            this.panelGithubImage.Size = new System.Drawing.Size(43, 41);
             this.panelGithubImage.TabIndex = 11;
             // 
             // labelProfile
             // 
             this.labelProfile.AutoSize = true;
             this.labelProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labelProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.labelProfile.Location = new System.Drawing.Point(252, 9);
+            this.labelProfile.ForeColor = System.Drawing.Color.White;
+            this.labelProfile.Location = new System.Drawing.Point(336, 11);
+            this.labelProfile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelProfile.Name = "labelProfile";
-            this.labelProfile.Size = new System.Drawing.Size(48, 17);
+            this.labelProfile.Size = new System.Drawing.Size(57, 20);
             this.labelProfile.TabIndex = 15;
             this.labelProfile.Text = "Profile";
             // 
             // profileCB
             // 
-            this.profileCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.profileCB.BackColor = System.Drawing.Color.Black;
             this.profileCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.profileCB.ForeColor = System.Drawing.Color.White;
             this.profileCB.FormattingEnabled = true;
-            this.profileCB.Location = new System.Drawing.Point(256, 29);
+            this.profileCB.Location = new System.Drawing.Point(341, 36);
+            this.profileCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.profileCB.Name = "profileCB";
-            this.profileCB.Size = new System.Drawing.Size(181, 21);
+            this.profileCB.Size = new System.Drawing.Size(240, 24);
             this.profileCB.TabIndex = 14;
             this.profileCB.SelectedIndexChanged += new System.EventHandler(this.profileCB_SelectedIndexChanged);
             // 
             // panelFooter
             // 
-            this.panelFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.panelFooter.BackColor = System.Drawing.Color.Black;
             this.panelFooter.Controls.Add(this.livepixLinkLabel);
             this.panelFooter.Controls.Add(this.panel2);
             this.panelFooter.Controls.Add(this.websiteLinkLabel);
@@ -302,18 +333,20 @@ namespace _4RTools.Forms
             this.panelFooter.Controls.Add(this.panelGithubImage);
             this.panelFooter.Controls.Add(this.lblLinkDiscord);
             this.panelFooter.Controls.Add(this.panelDiscImage);
-            this.panelFooter.Location = new System.Drawing.Point(15, 576);
+            this.panelFooter.Location = new System.Drawing.Point(20, 709);
+            this.panelFooter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(637, 43);
+            this.panelFooter.Size = new System.Drawing.Size(849, 53);
             this.panelFooter.TabIndex = 16;
             // 
             // livepixLinkLabel
             // 
             this.livepixLinkLabel.AutoSize = true;
             this.livepixLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(244)))));
-            this.livepixLinkLabel.Location = new System.Drawing.Point(206, 15);
+            this.livepixLinkLabel.Location = new System.Drawing.Point(275, 18);
+            this.livepixLinkLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.livepixLinkLabel.Name = "livepixLinkLabel";
-            this.livepixLinkLabel.Size = new System.Drawing.Size(75, 13);
+            this.livepixLinkLabel.Size = new System.Drawing.Size(92, 16);
             this.livepixLinkLabel.TabIndex = 14;
             this.livepixLinkLabel.TabStop = true;
             this.livepixLinkLabel.Text = "Livepix Hanna";
@@ -324,18 +357,20 @@ namespace _4RTools.Forms
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel2.Location = new System.Drawing.Point(169, 5);
+            this.panel2.Location = new System.Drawing.Point(225, 6);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(32, 33);
+            this.panel2.Size = new System.Drawing.Size(43, 41);
             this.panel2.TabIndex = 15;
             // 
             // websiteLinkLabel
             // 
             this.websiteLinkLabel.AutoSize = true;
             this.websiteLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(244)))));
-            this.websiteLinkLabel.Location = new System.Drawing.Point(371, 16);
+            this.websiteLinkLabel.Location = new System.Drawing.Point(495, 20);
+            this.websiteLinkLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.websiteLinkLabel.Name = "websiteLinkLabel";
-            this.websiteLinkLabel.Size = new System.Drawing.Size(82, 13);
+            this.websiteLinkLabel.Size = new System.Drawing.Size(103, 16);
             this.websiteLinkLabel.TabIndex = 12;
             this.websiteLinkLabel.TabStop = true;
             this.websiteLinkLabel.Text = "Site Ragnatales";
@@ -345,35 +380,39 @@ namespace _4RTools.Forms
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel1.Location = new System.Drawing.Point(334, 6);
+            this.panel1.Location = new System.Drawing.Point(445, 7);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(32, 33);
+            this.panel1.Size = new System.Drawing.Size(43, 41);
             this.panel1.TabIndex = 13;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Silver;
-            this.panel4.Location = new System.Drawing.Point(16, 66);
+            this.panel4.Location = new System.Drawing.Point(21, 81);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(635, 1);
+            this.panel4.Size = new System.Drawing.Size(847, 1);
             this.panel4.TabIndex = 17;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 74);
+            this.label1.Location = new System.Drawing.Point(21, 91);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 18;
             // 
             // lblCharacterName
             // 
             this.lblCharacterName.AutoSize = true;
             this.lblCharacterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblCharacterName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.lblCharacterName.Location = new System.Drawing.Point(473, 9);
+            this.lblCharacterName.ForeColor = System.Drawing.Color.White;
+            this.lblCharacterName.Location = new System.Drawing.Point(631, 11);
+            this.lblCharacterName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCharacterName.Name = "lblCharacterName";
-            this.lblCharacterName.Size = new System.Drawing.Size(115, 17);
+            this.lblCharacterName.Size = new System.Drawing.Size(137, 20);
             this.lblCharacterName.TabIndex = 19;
             this.lblCharacterName.Text = "Character Name:";
             // 
@@ -382,18 +421,20 @@ namespace _4RTools.Forms
             this.characterName.AutoSize = true;
             this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.characterName.ForeColor = System.Drawing.Color.DarkGreen;
-            this.characterName.Location = new System.Drawing.Point(473, 32);
+            this.characterName.Location = new System.Drawing.Point(631, 39);
+            this.characterName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.characterName.Name = "characterName";
-            this.characterName.Size = new System.Drawing.Size(19, 13);
+            this.characterName.Size = new System.Drawing.Size(25, 17);
             this.characterName.TabIndex = 20;
             this.characterName.Text = "- -";
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Location = new System.Drawing.Point(349, 83);
+            this.panel5.Location = new System.Drawing.Point(465, 102);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1, 180);
+            this.panel5.Size = new System.Drawing.Size(1, 222);
             this.panel5.TabIndex = 18;
             // 
             // tabControlAutopot
@@ -402,58 +443,53 @@ namespace _4RTools.Forms
             this.tabControlAutopot.Controls.Add(this.tabPageYggAutopot);
             this.tabControlAutopot.Controls.Add(this.tabPageSkillTimer);
             this.tabControlAutopot.Controls.Add(this.tabPageAutoSwitchHeal);
-            this.tabControlAutopot.Location = new System.Drawing.Point(15, 83);
+            this.tabControlAutopot.Location = new System.Drawing.Point(20, 102);
+            this.tabControlAutopot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControlAutopot.Name = "tabControlAutopot";
             this.tabControlAutopot.SelectedIndex = 0;
-            this.tabControlAutopot.Size = new System.Drawing.Size(328, 180);
+            this.tabControlAutopot.Size = new System.Drawing.Size(437, 222);
             this.tabControlAutopot.TabIndex = 25;
             // 
             // tabPageAutopot
             // 
-            this.tabPageAutopot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.tabPageAutopot.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAutopot.BackColor = System.Drawing.Color.Black;
+            this.tabPageAutopot.Location = new System.Drawing.Point(4, 25);
+            this.tabPageAutopot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageAutopot.Name = "tabPageAutopot";
-            this.tabPageAutopot.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutopot.Size = new System.Drawing.Size(320, 154);
+            this.tabPageAutopot.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageAutopot.Size = new System.Drawing.Size(429, 193);
             this.tabPageAutopot.TabIndex = 0;
             this.tabPageAutopot.Text = "Autopot";
+            this.tabPageAutopot.Click += new System.EventHandler(this.tabPageAutopot_Click);
             // 
             // tabPageYggAutopot
             // 
-            this.tabPageYggAutopot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.tabPageYggAutopot.Location = new System.Drawing.Point(4, 22);
+            this.tabPageYggAutopot.BackColor = System.Drawing.Color.Black;
+            this.tabPageYggAutopot.Location = new System.Drawing.Point(4, 25);
+            this.tabPageYggAutopot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageYggAutopot.Name = "tabPageYggAutopot";
-            this.tabPageYggAutopot.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageYggAutopot.Size = new System.Drawing.Size(320, 154);
+            this.tabPageYggAutopot.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageYggAutopot.Size = new System.Drawing.Size(429, 193);
             this.tabPageYggAutopot.TabIndex = 1;
             this.tabPageYggAutopot.Text = "Yggdrasil";
             // 
             // tabPageSkillTimer
             // 
-            this.tabPageSkillTimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.tabPageSkillTimer.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSkillTimer.BackColor = System.Drawing.Color.Black;
+            this.tabPageSkillTimer.Location = new System.Drawing.Point(4, 25);
+            this.tabPageSkillTimer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPageSkillTimer.Name = "tabPageSkillTimer";
-            this.tabPageSkillTimer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSkillTimer.Size = new System.Drawing.Size(320, 154);
+            this.tabPageSkillTimer.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageSkillTimer.Size = new System.Drawing.Size(429, 193);
             this.tabPageSkillTimer.TabIndex = 2;
             this.tabPageSkillTimer.Text = "Skill Timer";
             // 
-            // tabPageAutoSwitchHeal
-            // 
-            this.tabPageAutoSwitchHeal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.tabPageAutoSwitchHeal.Location = new System.Drawing.Point(4, 22);
-            this.tabPageAutoSwitchHeal.Name = "tabPageAutoSwitchHeal";
-            this.tabPageAutoSwitchHeal.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutoSwitchHeal.Size = new System.Drawing.Size(320, 154);
-            this.tabPageAutoSwitchHeal.TabIndex = 3;
-            this.tabPageAutoSwitchHeal.Text = "AutoSwitch Heal";
-            // 
             // Container
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(668, 624);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(891, 768);
             this.Controls.Add(atkDefMode);
             this.Controls.Add(this.tabControlAutopot);
             this.Controls.Add(this.panelFooter);
@@ -469,6 +505,7 @@ namespace _4RTools.Forms
             this.Controls.Add(this.processCB);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Container";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

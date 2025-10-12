@@ -94,22 +94,25 @@ namespace _4RTools.Forms
             // 
             // txtlessHpPercent
             // 
-            this.txtlessHpPercent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtlessHpPercent.BackColor = System.Drawing.Color.Black;
             this.txtlessHpPercent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtlessHpPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtlessHpPercent.ForeColor = System.Drawing.Color.White;
-            this.txtlessHpPercent.Location = new System.Drawing.Point(51, 12);
+            this.txtlessHpPercent.Location = new System.Drawing.Point(68, 15);
+            this.txtlessHpPercent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtlessHpPercent.Name = "txtlessHpPercent";
-            this.txtlessHpPercent.Size = new System.Drawing.Size(44, 23);
+            this.txtlessHpPercent.Size = new System.Drawing.Size(59, 26);
             this.txtlessHpPercent.TabIndex = 39;
             // 
             // labelSP
             // 
             this.labelSP.AutoSize = true;
             this.labelSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labelSP.Location = new System.Drawing.Point(97, 39);
+            this.labelSP.ForeColor = System.Drawing.Color.White;
+            this.labelSP.Location = new System.Drawing.Point(129, 48);
+            this.labelSP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSP.Name = "labelSP";
-            this.labelSP.Size = new System.Drawing.Size(20, 17);
+            this.labelSP.Size = new System.Drawing.Size(24, 20);
             this.labelSP.TabIndex = 38;
             this.labelSP.Text = "%";
             // 
@@ -117,9 +120,11 @@ namespace _4RTools.Forms
             // 
             this.labelHP.AutoSize = true;
             this.labelHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labelHP.Location = new System.Drawing.Point(97, 15);
+            this.labelHP.ForeColor = System.Drawing.Color.White;
+            this.labelHP.Location = new System.Drawing.Point(129, 18);
+            this.labelHP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelHP.Name = "labelHP";
-            this.labelHP.Size = new System.Drawing.Size(20, 17);
+            this.labelHP.Size = new System.Drawing.Size(24, 20);
             this.labelHP.TabIndex = 37;
             this.labelHP.Text = "%";
             // 
@@ -127,9 +132,11 @@ namespace _4RTools.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label2.Location = new System.Drawing.Point(211, 66);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(281, 81);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.Size = new System.Drawing.Size(44, 17);
             this.label2.TabIndex = 41;
             this.label2.Text = "Delay";
             // 
@@ -137,114 +144,129 @@ namespace _4RTools.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label1.Location = new System.Drawing.Point(293, 66);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(391, 81);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 13);
+            this.label1.Size = new System.Drawing.Size(30, 17);
             this.label1.TabIndex = 42;
             this.label1.Text = "sec";
             // 
             // txtlessHpKey
             // 
-            this.txtlessHpKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtlessHpKey.BackColor = System.Drawing.Color.Black;
             this.txtlessHpKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtlessHpKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtlessHpKey.ForeColor = System.Drawing.Color.White;
-            this.txtlessHpKey.Location = new System.Drawing.Point(115, 12);
+            this.txtlessHpKey.Location = new System.Drawing.Point(153, 15);
+            this.txtlessHpKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtlessHpKey.Name = "txtlessHpKey";
-            this.txtlessHpKey.Size = new System.Drawing.Size(50, 23);
+            this.txtlessHpKey.Size = new System.Drawing.Size(66, 26);
             this.txtlessHpKey.TabIndex = 43;
             // 
             // txtlessSpKey
             // 
-            this.txtlessSpKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtlessSpKey.BackColor = System.Drawing.Color.Black;
             this.txtlessSpKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtlessSpKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtlessSpKey.ForeColor = System.Drawing.Color.White;
-            this.txtlessSpKey.Location = new System.Drawing.Point(115, 37);
+            this.txtlessSpKey.Location = new System.Drawing.Point(153, 46);
+            this.txtlessSpKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtlessSpKey.Name = "txtlessSpKey";
-            this.txtlessSpKey.Size = new System.Drawing.Size(50, 23);
+            this.txtlessSpKey.Size = new System.Drawing.Size(66, 26);
             this.txtlessSpKey.TabIndex = 44;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 17);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(39, 21);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(22, 13);
+            this.label3.Size = new System.Drawing.Size(26, 16);
             this.label3.TabIndex = 45;
             this.label3.Text = "HP";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(30, 42);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(40, 52);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(21, 13);
+            this.label4.Size = new System.Drawing.Size(25, 16);
             this.label4.TabIndex = 46;
             this.label4.Text = "SP";
             // 
             // txtlessSpPercent
             // 
-            this.txtlessSpPercent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtlessSpPercent.BackColor = System.Drawing.Color.Black;
             this.txtlessSpPercent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtlessSpPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtlessSpPercent.ForeColor = System.Drawing.Color.White;
-            this.txtlessSpPercent.Location = new System.Drawing.Point(51, 37);
+            this.txtlessSpPercent.Location = new System.Drawing.Point(68, 46);
+            this.txtlessSpPercent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtlessSpPercent.Name = "txtlessSpPercent";
-            this.txtlessSpPercent.Size = new System.Drawing.Size(44, 23);
+            this.txtlessSpPercent.Size = new System.Drawing.Size(59, 26);
             this.txtlessSpPercent.TabIndex = 40;
             // 
             // txtmoreSpKey
             // 
-            this.txtmoreSpKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtmoreSpKey.BackColor = System.Drawing.Color.Black;
             this.txtmoreSpKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtmoreSpKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtmoreSpKey.ForeColor = System.Drawing.Color.White;
-            this.txtmoreSpKey.Location = new System.Drawing.Point(245, 36);
+            this.txtmoreSpKey.Location = new System.Drawing.Point(327, 44);
+            this.txtmoreSpKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtmoreSpKey.Name = "txtmoreSpKey";
-            this.txtmoreSpKey.Size = new System.Drawing.Size(50, 23);
+            this.txtmoreSpKey.Size = new System.Drawing.Size(66, 26);
             this.txtmoreSpKey.TabIndex = 56;
             // 
             // txtmoreHpKey
             // 
-            this.txtmoreHpKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtmoreHpKey.BackColor = System.Drawing.Color.Black;
             this.txtmoreHpKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtmoreHpKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtmoreHpKey.ForeColor = System.Drawing.Color.White;
-            this.txtmoreHpKey.Location = new System.Drawing.Point(245, 11);
+            this.txtmoreHpKey.Location = new System.Drawing.Point(327, 14);
+            this.txtmoreHpKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtmoreHpKey.Name = "txtmoreHpKey";
-            this.txtmoreHpKey.Size = new System.Drawing.Size(50, 23);
+            this.txtmoreHpKey.Size = new System.Drawing.Size(66, 26);
             this.txtmoreHpKey.TabIndex = 55;
             // 
             // txtmoreSpPercent
             // 
-            this.txtmoreSpPercent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtmoreSpPercent.BackColor = System.Drawing.Color.Black;
             this.txtmoreSpPercent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtmoreSpPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtmoreSpPercent.ForeColor = System.Drawing.Color.White;
-            this.txtmoreSpPercent.Location = new System.Drawing.Point(181, 36);
+            this.txtmoreSpPercent.Location = new System.Drawing.Point(241, 44);
+            this.txtmoreSpPercent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtmoreSpPercent.Name = "txtmoreSpPercent";
-            this.txtmoreSpPercent.Size = new System.Drawing.Size(44, 23);
+            this.txtmoreSpPercent.Size = new System.Drawing.Size(59, 26);
             this.txtmoreSpPercent.TabIndex = 54;
             // 
             // txtmoreHpPercent
             // 
-            this.txtmoreHpPercent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtmoreHpPercent.BackColor = System.Drawing.Color.Black;
             this.txtmoreHpPercent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtmoreHpPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtmoreHpPercent.ForeColor = System.Drawing.Color.White;
-            this.txtmoreHpPercent.Location = new System.Drawing.Point(181, 11);
+            this.txtmoreHpPercent.Location = new System.Drawing.Point(241, 14);
+            this.txtmoreHpPercent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtmoreHpPercent.Name = "txtmoreHpPercent";
-            this.txtmoreHpPercent.Size = new System.Drawing.Size(44, 23);
+            this.txtmoreHpPercent.Size = new System.Drawing.Size(59, 26);
             this.txtmoreHpPercent.TabIndex = 53;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.Location = new System.Drawing.Point(227, 38);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(303, 47);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(20, 17);
+            this.label5.Size = new System.Drawing.Size(24, 20);
             this.label5.TabIndex = 52;
             this.label5.Text = "%";
             // 
@@ -252,9 +274,11 @@ namespace _4RTools.Forms
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.Location = new System.Drawing.Point(227, 14);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(303, 17);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(20, 17);
+            this.label6.Size = new System.Drawing.Size(24, 20);
             this.label6.TabIndex = 51;
             this.label6.Text = "%";
             // 
@@ -262,9 +286,11 @@ namespace _4RTools.Forms
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label7.Location = new System.Drawing.Point(46, -2);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(61, -2);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 13);
+            this.label7.Size = new System.Drawing.Size(70, 17);
             this.label7.TabIndex = 57;
             this.label7.Text = "Abaixo de";
             // 
@@ -272,9 +298,11 @@ namespace _4RTools.Forms
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label8.Location = new System.Drawing.Point(178, -2);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(237, -2);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 13);
+            this.label8.Size = new System.Drawing.Size(66, 17);
             this.label8.TabIndex = 58;
             this.label8.Text = "Acima de";
             // 
@@ -282,9 +310,11 @@ namespace _4RTools.Forms
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label9.Location = new System.Drawing.Point(120, -2);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(160, -2);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(40, 13);
+            this.label9.Size = new System.Drawing.Size(52, 17);
             this.label9.TabIndex = 59;
             this.label9.Text = "Equipa";
             // 
@@ -292,40 +322,45 @@ namespace _4RTools.Forms
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label10.Location = new System.Drawing.Point(250, -2);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(333, -2);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 13);
+            this.label10.Size = new System.Drawing.Size(52, 17);
             this.label10.TabIndex = 60;
             this.label10.Text = "Equipa";
             // 
             // txtitemKey
             // 
-            this.txtitemKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtitemKey.BackColor = System.Drawing.Color.Black;
             this.txtitemKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtitemKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtitemKey.ForeColor = System.Drawing.Color.White;
-            this.txtitemKey.Location = new System.Drawing.Point(49, 101);
+            this.txtitemKey.Location = new System.Drawing.Point(65, 124);
+            this.txtitemKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtitemKey.Name = "txtitemKey";
-            this.txtitemKey.Size = new System.Drawing.Size(45, 23);
+            this.txtitemKey.Size = new System.Drawing.Size(59, 26);
             this.txtitemKey.TabIndex = 314;
             // 
             // txtskillKey
             // 
-            this.txtskillKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtskillKey.BackColor = System.Drawing.Color.Black;
             this.txtskillKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtskillKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtskillKey.ForeColor = System.Drawing.Color.White;
-            this.txtskillKey.Location = new System.Drawing.Point(138, 101);
+            this.txtskillKey.Location = new System.Drawing.Point(184, 124);
+            this.txtskillKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtskillKey.Name = "txtskillKey";
-            this.txtskillKey.Size = new System.Drawing.Size(45, 23);
+            this.txtskillKey.Size = new System.Drawing.Size(59, 26);
             this.txtskillKey.TabIndex = 316;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(8, 100);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 123);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 315;
             this.pictureBox1.TabStop = false;
@@ -334,7 +369,8 @@ namespace _4RTools.Forms
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(107, 106);
+            this.pictureBox4.Location = new System.Drawing.Point(143, 130);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(19, 11);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -345,9 +381,10 @@ namespace _4RTools.Forms
             // 
             this.picBoxSP.BackColor = System.Drawing.Color.Transparent;
             this.picBoxSP.Image = global::_4RTools.Resources._4RTools.ETCResource.SP;
-            this.picBoxSP.Location = new System.Drawing.Point(6, 36);
+            this.picBoxSP.Location = new System.Drawing.Point(8, 44);
+            this.picBoxSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picBoxSP.Name = "picBoxSP";
-            this.picBoxSP.Size = new System.Drawing.Size(25, 25);
+            this.picBoxSP.Size = new System.Drawing.Size(33, 31);
             this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picBoxSP.TabIndex = 35;
             this.picBoxSP.TabStop = false;
@@ -356,31 +393,35 @@ namespace _4RTools.Forms
             // 
             this.picBoxHP.BackColor = System.Drawing.Color.Transparent;
             this.picBoxHP.Image = global::_4RTools.Resources._4RTools.ETCResource.HP;
-            this.picBoxHP.Location = new System.Drawing.Point(6, 11);
+            this.picBoxHP.Location = new System.Drawing.Point(8, 14);
+            this.picBoxHP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picBoxHP.Name = "picBoxHP";
-            this.picBoxHP.Size = new System.Drawing.Size(25, 25);
+            this.picBoxHP.Size = new System.Drawing.Size(33, 31);
             this.picBoxHP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picBoxHP.TabIndex = 34;
             this.picBoxHP.TabStop = false;
             // 
             // txtspPercent
             // 
-            this.txtspPercent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtspPercent.BackColor = System.Drawing.Color.Black;
             this.txtspPercent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtspPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtspPercent.ForeColor = System.Drawing.Color.White;
-            this.txtspPercent.Location = new System.Drawing.Point(49, 125);
+            this.txtspPercent.Location = new System.Drawing.Point(65, 154);
+            this.txtspPercent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtspPercent.Name = "txtspPercent";
-            this.txtspPercent.Size = new System.Drawing.Size(45, 23);
+            this.txtspPercent.Size = new System.Drawing.Size(60, 26);
             this.txtspPercent.TabIndex = 318;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label11.Location = new System.Drawing.Point(46, 87);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(61, 107);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(55, 13);
+            this.label11.Size = new System.Drawing.Size(73, 17);
             this.label11.TabIndex = 319;
             this.label11.Text = "Masterball";
             // 
@@ -388,9 +429,11 @@ namespace _4RTools.Forms
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label12.Location = new System.Drawing.Point(145, 88);
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(193, 108);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(26, 13);
+            this.label12.Size = new System.Drawing.Size(33, 17);
             this.label12.TabIndex = 320;
             this.label12.Text = "Skill";
             // 
@@ -398,16 +441,19 @@ namespace _4RTools.Forms
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label13.Location = new System.Drawing.Point(241, 87);
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(321, 107);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(63, 13);
+            this.label13.Size = new System.Drawing.Size(83, 17);
             this.label13.TabIndex = 323;
             this.label13.Text = "Proximo Pet";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(204, 105);
+            this.pictureBox2.Location = new System.Drawing.Point(272, 129);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(19, 11);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -416,33 +462,37 @@ namespace _4RTools.Forms
             // 
             // txtnextItemKey
             // 
-            this.txtnextItemKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtnextItemKey.BackColor = System.Drawing.Color.Black;
             this.txtnextItemKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtnextItemKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtnextItemKey.ForeColor = System.Drawing.Color.White;
-            this.txtnextItemKey.Location = new System.Drawing.Point(249, 100);
+            this.txtnextItemKey.Location = new System.Drawing.Point(332, 123);
+            this.txtnextItemKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtnextItemKey.Name = "txtnextItemKey";
-            this.txtnextItemKey.Size = new System.Drawing.Size(45, 23);
+            this.txtnextItemKey.Size = new System.Drawing.Size(59, 26);
             this.txtnextItemKey.TabIndex = 321;
             // 
             // txtqtdSkill
             // 
-            this.txtqtdSkill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtqtdSkill.BackColor = System.Drawing.Color.Black;
             this.txtqtdSkill.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtqtdSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtqtdSkill.ForeColor = System.Drawing.Color.White;
-            this.txtqtdSkill.Location = new System.Drawing.Point(138, 125);
+            this.txtqtdSkill.Location = new System.Drawing.Point(184, 154);
+            this.txtqtdSkill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtqtdSkill.Name = "txtqtdSkill";
-            this.txtqtdSkill.Size = new System.Drawing.Size(45, 23);
+            this.txtqtdSkill.Size = new System.Drawing.Size(60, 26);
             this.txtqtdSkill.TabIndex = 324;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label14.Location = new System.Drawing.Point(92, 128);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(123, 158);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(20, 17);
+            this.label14.Size = new System.Drawing.Size(24, 20);
             this.label14.TabIndex = 325;
             this.label14.Text = "%";
             // 
@@ -450,9 +500,11 @@ namespace _4RTools.Forms
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label15.Location = new System.Drawing.Point(182, 130);
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(243, 160);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(35, 13);
+            this.label15.Size = new System.Drawing.Size(45, 17);
             this.label15.TabIndex = 326;
             this.label15.Text = "vezes";
             // 
@@ -460,9 +512,11 @@ namespace _4RTools.Forms
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label16.Location = new System.Drawing.Point(295, 130);
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(393, 160);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(20, 13);
+            this.label16.Size = new System.Drawing.Size(26, 17);
             this.label16.TabIndex = 329;
             this.label16.Text = "ms";
             // 
@@ -470,26 +524,31 @@ namespace _4RTools.Forms
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label17.Location = new System.Drawing.Point(216, 130);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(288, 160);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(34, 13);
+            this.label17.Size = new System.Drawing.Size(44, 17);
             this.label17.TabIndex = 328;
             this.label17.Text = "Delay";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(0, 85);
+            this.panel1.Location = new System.Drawing.Point(0, 105);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 1);
+            this.panel1.Size = new System.Drawing.Size(400, 1);
             this.panel1.TabIndex = 330;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(30, 131);
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(40, 161);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(21, 13);
+            this.label18.Size = new System.Drawing.Size(25, 16);
             this.label18.TabIndex = 332;
             this.label18.Text = "SP";
             // 
@@ -497,22 +556,24 @@ namespace _4RTools.Forms
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::_4RTools.Resources._4RTools.ETCResource.SP;
-            this.pictureBox3.Location = new System.Drawing.Point(7, 125);
+            this.pictureBox3.Location = new System.Drawing.Point(9, 154);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox3.Size = new System.Drawing.Size(33, 31);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 331;
             this.pictureBox3.TabStop = false;
             // 
             // txtequipDelay
             // 
-            this.txtequipDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtequipDelay.BackColor = System.Drawing.Color.Black;
             this.txtequipDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtequipDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtequipDelay.ForeColor = System.Drawing.Color.White;
-            this.txtequipDelay.Location = new System.Drawing.Point(245, 61);
+            this.txtequipDelay.Location = new System.Drawing.Point(327, 75);
+            this.txtequipDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtequipDelay.Name = "txtequipDelay";
-            this.txtequipDelay.Size = new System.Drawing.Size(50, 23);
+            this.txtequipDelay.Size = new System.Drawing.Size(67, 26);
             this.txtequipDelay.TabIndex = 333;
             this.txtequipDelay.Value = new decimal(new int[] {
             3,
@@ -522,18 +583,19 @@ namespace _4RTools.Forms
             // 
             // txtswitchDelay
             // 
-            this.txtswitchDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtswitchDelay.BackColor = System.Drawing.Color.Black;
             this.txtswitchDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtswitchDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtswitchDelay.ForeColor = System.Drawing.Color.White;
-            this.txtswitchDelay.Location = new System.Drawing.Point(249, 125);
+            this.txtswitchDelay.Location = new System.Drawing.Point(332, 154);
+            this.txtswitchDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtswitchDelay.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.txtswitchDelay.Name = "txtswitchDelay";
-            this.txtswitchDelay.Size = new System.Drawing.Size(45, 23);
+            this.txtswitchDelay.Size = new System.Drawing.Size(60, 26);
             this.txtswitchDelay.TabIndex = 334;
             this.txtswitchDelay.Value = new decimal(new int[] {
             500,
@@ -543,11 +605,11 @@ namespace _4RTools.Forms
             // 
             // AutoSwitchHealForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(313, 152);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(417, 187);
             this.Controls.Add(this.txtswitchDelay);
             this.Controls.Add(this.txtequipDelay);
             this.Controls.Add(this.txtspPercent);
@@ -592,6 +654,7 @@ namespace _4RTools.Forms
             this.Controls.Add(this.picBoxHP);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AutoSwitchHealForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "AutopotForm";

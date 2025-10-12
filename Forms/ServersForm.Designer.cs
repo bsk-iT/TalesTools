@@ -46,23 +46,25 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.btnAddServer);
             this.panel1.Controls.Add(this.datagridServers);
-            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
-            this.panel1.Location = new System.Drawing.Point(12, 6);
+            this.panel1.ForeColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(16, 7);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(541, 250);
+            this.panel1.Size = new System.Drawing.Size(721, 308);
             this.panel1.TabIndex = 1;
             // 
             // btnAddServer
             // 
-            this.btnAddServer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.btnAddServer.BackColor = System.Drawing.Color.Black;
             this.btnAddServer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddServer.ForeColor = System.Drawing.Color.White;
-            this.btnAddServer.Location = new System.Drawing.Point(3, 12);
+            this.btnAddServer.Location = new System.Drawing.Point(4, 15);
+            this.btnAddServer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddServer.Name = "btnAddServer";
-            this.btnAddServer.Size = new System.Drawing.Size(104, 23);
+            this.btnAddServer.Size = new System.Drawing.Size(139, 28);
             this.btnAddServer.TabIndex = 27;
             this.btnAddServer.Text = "Add Server";
             this.btnAddServer.UseVisualStyleBackColor = false;
@@ -71,7 +73,7 @@
             // datagridServers
             // 
             this.datagridServers.AutoGenerateColumns = false;
-            this.datagridServers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.datagridServers.BackgroundColor = System.Drawing.Color.Black;
             this.datagridServers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagridServers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagridServers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -82,10 +84,12 @@
             this.Delete});
             this.datagridServers.DataSource = this.clientDTOBindingSource;
             this.datagridServers.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.datagridServers.Location = new System.Drawing.Point(0, 50);
+            this.datagridServers.Location = new System.Drawing.Point(0, 62);
+            this.datagridServers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.datagridServers.Name = "datagridServers";
+            this.datagridServers.RowHeadersWidth = 51;
             this.datagridServers.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.datagridServers.Size = new System.Drawing.Size(541, 200);
+            this.datagridServers.Size = new System.Drawing.Size(721, 246);
             this.datagridServers.TabIndex = 0;
             this.datagridServers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridServers_CellContentClick);
             // 
@@ -94,6 +98,7 @@
             this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -101,19 +106,24 @@
             // 
             this.hpAddressDataGridViewTextBoxColumn.DataPropertyName = "hpAddress";
             this.hpAddressDataGridViewTextBoxColumn.HeaderText = "HP Address";
+            this.hpAddressDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.hpAddressDataGridViewTextBoxColumn.Name = "hpAddressDataGridViewTextBoxColumn";
             this.hpAddressDataGridViewTextBoxColumn.ReadOnly = true;
+            this.hpAddressDataGridViewTextBoxColumn.Width = 125;
             // 
             // nameAddressDataGridViewTextBoxColumn
             // 
             this.nameAddressDataGridViewTextBoxColumn.DataPropertyName = "nameAddress";
             this.nameAddressDataGridViewTextBoxColumn.HeaderText = "Name Address";
+            this.nameAddressDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nameAddressDataGridViewTextBoxColumn.Name = "nameAddressDataGridViewTextBoxColumn";
             this.nameAddressDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nameAddressDataGridViewTextBoxColumn.Width = 125;
             // 
             // Edit
             // 
             this.Edit.HeaderText = "Edit";
+            this.Edit.MinimumWidth = 6;
             this.Edit.Name = "Edit";
             this.Edit.Text = "Edit";
             this.Edit.UseColumnTextForButtonValue = true;
@@ -122,6 +132,7 @@
             // Delete
             // 
             this.Delete.HeaderText = "Delete";
+            this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
             this.Delete.Text = "Delete";
             this.Delete.UseColumnTextForButtonValue = true;
@@ -133,14 +144,15 @@
             // 
             // ServersForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(565, 268);
+            this.ClientSize = new System.Drawing.Size(753, 330);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ServersForm";
             this.Text = "ServersForm";
             this.Load += new System.EventHandler(this.ServersForm_Load);

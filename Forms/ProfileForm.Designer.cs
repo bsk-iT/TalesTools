@@ -38,24 +38,26 @@
             // 
             // txtProfileName
             // 
-            this.txtProfileName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.txtProfileName.BackColor = System.Drawing.Color.Black;
             this.txtProfileName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtProfileName.ForeColor = System.Drawing.Color.White;
-            this.txtProfileName.Location = new System.Drawing.Point(23, 29);
+            this.txtProfileName.Location = new System.Drawing.Point(31, 36);
+            this.txtProfileName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtProfileName.Multiline = true;
             this.txtProfileName.Name = "txtProfileName";
-            this.txtProfileName.Size = new System.Drawing.Size(238, 23);
+            this.txtProfileName.Size = new System.Drawing.Size(317, 28);
             this.txtProfileName.TabIndex = 0;
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.btnSave.BackColor = System.Drawing.Color.Black;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(267, 29);
+            this.btnSave.Location = new System.Drawing.Point(356, 36);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(78, 23);
+            this.btnSave.Size = new System.Drawing.Size(104, 28);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Create";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -65,20 +67,23 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 13);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(31, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.Size = new System.Drawing.Size(125, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Create a new profile";
             // 
             // btnRemoveProfile
             // 
-            this.btnRemoveProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.btnRemoveProfile.BackColor = System.Drawing.Color.Black;
             this.btnRemoveProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveProfile.ForeColor = System.Drawing.Color.White;
-            this.btnRemoveProfile.Location = new System.Drawing.Point(267, 77);
+            this.btnRemoveProfile.Location = new System.Drawing.Point(356, 95);
+            this.btnRemoveProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRemoveProfile.Name = "btnRemoveProfile";
-            this.btnRemoveProfile.Size = new System.Drawing.Size(78, 23);
+            this.btnRemoveProfile.Size = new System.Drawing.Size(104, 28);
             this.btnRemoveProfile.TabIndex = 3;
             this.btnRemoveProfile.Text = "Remove Selected Profile";
             this.btnRemoveProfile.UseVisualStyleBackColor = false;
@@ -87,31 +92,35 @@
             // lblProfilesList
             // 
             this.lblProfilesList.AutoSize = true;
-            this.lblProfilesList.Location = new System.Drawing.Point(23, 61);
+            this.lblProfilesList.ForeColor = System.Drawing.Color.White;
+            this.lblProfilesList.Location = new System.Drawing.Point(31, 75);
+            this.lblProfilesList.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProfilesList.Name = "lblProfilesList";
-            this.lblProfilesList.Size = new System.Drawing.Size(55, 13);
+            this.lblProfilesList.Size = new System.Drawing.Size(68, 16);
             this.lblProfilesList.TabIndex = 6;
             this.lblProfilesList.Text = "Profile List";
             this.lblProfilesList.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lbProfilesList
             // 
-            this.lbProfilesList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.lbProfilesList.BackColor = System.Drawing.Color.Black;
             this.lbProfilesList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbProfilesList.ForeColor = System.Drawing.Color.White;
             this.lbProfilesList.FormattingEnabled = true;
-            this.lbProfilesList.Location = new System.Drawing.Point(23, 77);
+            this.lbProfilesList.ItemHeight = 16;
+            this.lbProfilesList.Location = new System.Drawing.Point(31, 95);
+            this.lbProfilesList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbProfilesList.Name = "lbProfilesList";
             this.lbProfilesList.ScrollAlwaysVisible = true;
-            this.lbProfilesList.Size = new System.Drawing.Size(238, 132);
+            this.lbProfilesList.Size = new System.Drawing.Size(317, 162);
             this.lbProfilesList.TabIndex = 8;
             // 
             // ProfileForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(374, 232);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(499, 286);
             this.Controls.Add(this.lbProfilesList);
             this.Controls.Add(this.lblProfilesList);
             this.Controls.Add(this.btnRemoveProfile);
@@ -120,6 +129,7 @@
             this.Controls.Add(this.txtProfileName);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ProfileForm";
             this.Text = "ProfileForm";
             this.ResumeLayout(false);
