@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace _4RTools.Model
 {
@@ -15,6 +16,11 @@ namespace _4RTools.Model
         private static readonly string localCityName = "city_name.json";
         private static List<String> cityList;
 
+        private static string GetLocalServerFilePath()
+        {
+            return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, localServerName);
+        }
+
         public static void AddServer(string hpAddress, string nameAddress, string processName)
         {
             if (!isValid(hpAddress))
@@ -22,7 +28,7 @@ namespace _4RTools.Model
                 throw new ArgumentException("HP Address is Invalid. Please type a valid Hex value.");
             }
 
-            if(!isValid(nameAddress))
+            if (!isValid(nameAddress))
             {
                 throw new ArgumentException("Name Address is Invalid. Please type a valid Hex value.");
             }
@@ -32,15 +38,6 @@ namespace _4RTools.Model
             List<ClientDTO> clients = GetLocalClients();
             clients.Add(dto);
             OverwriteLocalFile(clients);
-
-            /**
-             * Cases
-             * 1. Local file don't exists
-             *  Solution: Create a empty file
-             * 2. Local file exists with wrong syntax
-             *  Solution: Remove invalid file and create new one
-             * 3. Arquivo Local existe e é válido
-             */
         }
 
         public static void RemoveClient(ClientDTO dto)
@@ -53,33 +50,47 @@ namespace _4RTools.Model
 
         private static void OverwriteLocalFile(List<ClientDTO> clients)
         {
+            string filePath = GetLocalServerFilePath();
             string output = JsonConvert.SerializeObject(clients, Formatting.Indented);
-            File.WriteAllText(localServerName, string.Empty);
-            File.WriteAllText(localServerName, output);
+            File.WriteAllText(filePath, output);
         }
 
 
         private static string LoadLocalServerFile()
         {
-             string startJson = "[\r\n  {\r\n    \"name\": \"rtales.bin\",\r\n    \"description\": \"Ragna Tales\",\r\n    \"hpAddress\": \"0x00E8E434\",\r\n    \"nameAddress\": \"0x00E90C00\",\r\n    \"mapAddress\": \"0x00E89BD4\"\r\n  }\r\n]";
-               
-            if (!File.Exists(localServerName))
+            string filePath = GetLocalServerFilePath();
+
+            // JSON padrão atualizado incluindo novos campos x_pos_offset e entity_list_offset
+            string startJson = "[\r\n  {\r\n    \"name\": \"rtales.bin\",\r\n    \"description\": \"Ragna Tales\",\r\n    \"hpAddress\": \"0x015874D0\",\r\n    \"nameAddress\": \"0x0158A120\",\r\n    \"mapAddress\": \"0x01583574\",\r\n    \"x_pos_offset\": \"0x0156FD4C\",\r\n    \"entity_list_offset\": \"0x00D9FE2C\"\r\n  }\r\n]";
+
+            try
             {
-                FileStream f = File.Create(localServerName);
-                f.Close();
-                File.WriteAllText(localServerName, startJson);
+                if (!File.Exists(filePath))
+                {
+                    File.WriteAllText(filePath, startJson);
+                    return startJson;
+                }
+
+                string json = File.ReadAllText(filePath);
+                if (string.IsNullOrEmpty(json) || json.Length < 10)
+                {
+                    File.WriteAllText(filePath, startJson);
+                    return startJson;
+                }
+                return json;
+            }
+            catch (Exception ex)
+            {
+#if DEBUG
+                Debug.WriteLine($"LoadLocalServerFile error reading '{filePath}': {ex.Message}");
+#endif
+                // fallback para padrão embutido
                 return startJson;
             }
-            string json = File.ReadAllText(localServerName);
-            if (string.IsNullOrEmpty(json) || json.Length < 10)
-            {
-                File.WriteAllText(localServerName, startJson);
-                return startJson;
-            }
-            return json;
         }
 
-        public static List<ClientDTO> GetLocalClients() {
+        public static List<ClientDTO> GetLocalClients()
+        {
             string localServers = LoadLocalServerFile();
 
             if (string.IsNullOrEmpty(localServers)) return new List<ClientDTO>();
@@ -87,58 +98,119 @@ namespace _4RTools.Model
             try
             {
                 return JsonConvert.DeserializeObject<List<ClientDTO>>(localServers);
-            }catch
+            }
+            catch (Exception ex)
             {
+#if DEBUG
+                Debug.WriteLine($"Failed to deserialize {localServerName}: {ex.Message}");
+                Debug.WriteLine("Backing up invalid file and restoring default.");
+#endif
+                // criar backup para análise
+                try
+                {
+                    string filePath = GetLocalServerFilePath();
+                    string backupPath = filePath + ".invalid." + DateTime.Now.ToString("yyyyMMddHHmmss") + ".bak";
+                    if (File.Exists(filePath))
+                        File.Copy(filePath, backupPath);
+                    // regravar padrão
+                    File.WriteAllText(filePath, LoadLocalServerFile());
+                }
+                catch (Exception inner)
+                {
+#if DEBUG
+                    Debug.WriteLine($"Error during recovery of supported_servers.json: {inner.Message}");
+#endif
+                }
                 return new List<ClientDTO>();
             }
         }
 
-        private static string LoadLocalCityNameFile()
+        // Retorna o caminho do arquivo city_name.json ao lado do executável
+        private static string GetLocalCityFilePath()
         {
-            if (!File.Exists(localCityName))
-            {
-                string startJson = "[\r\n  \"prontera\",\r\n  \"morocc\",\r\n  \"geffen\",\r\n  \"payon\",\r\n  \"alberta\",\r\n  \"izlude\",\r\n  \"aldebaran\",\r\n  \"xmas\",\r\n  \"comodo\",\r\n  \"yuno\",\r\n  \"amatsu\",\r\n  \"gonryun\",\r\n  \"umbala\",\r\n  \"niflheim\",\r\n  \"louyang\",\r\n  \"jawaii\",\r\n  \"ayothaya\",\r\n  \"einbroch\",\r\n  \"lighthalzen\",\r\n  \"einbech\",\r\n  \"hugel\",\r\n  \"rachel\",\r\n  \"veins\",\r\n  \"moscovia\",\r\n  \"brasilis\",\r\n  \"harboro1\",\r\n  \"wave_vip\",\r\n  \"moc_para01\",\r\n  \"party_room\",    \r\n  \"market_01\",\r\n  \"market_02\",\r\n  \"verus04\",\r\n  \"map_events\",\r\n  \"pay_arche\"\r\n]";
-                FileStream f = File.Create(localCityName);
-                f.Close();
-                File.WriteAllText(localCityName, startJson);
-                return startJson;
-            }
-            string json = File.ReadAllText(localCityName);
-            return json;
+            return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, localCityName);
         }
 
-        public static List<String> GetListCities()
+        // Carrega ou cria o arquivo city_name.json com um conteúdo padrão
+        private static string LoadLocalCityNameFile()
         {
-            if (cityList == null || cityList.Count == 0) { 
-                string localServers = LoadLocalCityNameFile();
+            string filePath = GetLocalCityFilePath();
+            string startJson = "[\r\n  \"prontera\",\r\n  \"morocc\",\r\n  \"geffen\",\r\n  \"payon\",\r\n  \"alberta\",\r\n  \"izlude\",\r\n  \"aldebaran\",\r\n  \"xmas\",\r\n  \"comodo\",\r\n  \"yuno\",\r\n  \"amatsu\",\r\n  \"gonryun\",\r\n  \"umbala\",\r\n  \"niflheim\",\r\n  \"louyang\",\r\n  \"jawaii\",\r\n  \"ayothaya\",\r\n  \"einbroch\",\r\n  \"lighthalzen\",\r\n  \"einbech\",\r\n  \"hugel\",\r\n  \"rachel\",\r\n  \"veins\",\r\n  \"moscovia\",\r\n  \"brasilis\",\r\n  \"harboro1\",\r\n  \"wave_vip\",\r\n  \"moc_para01\",\r\n  \"party_room\",\r\n  \"market_01\",\r\n  \"market_02\",\r\n  \"verus04\",\r\n  \"map_events\",\r\n  \"pay_arche\",\r\n  \"ecl_tdun04\",\r\n  \"purgatory\",\r\n  \"prt_monk\"\r\n]";
 
-                if (string.IsNullOrEmpty(localServers)) return new List<String>();
+      try
+            {
+                if (!File.Exists(filePath))
+                {
+                    File.WriteAllText(filePath, startJson);
+                    return startJson;
+                }
+
+                string json = File.ReadAllText(filePath);
+                if (string.IsNullOrEmpty(json) || json.Length < 10)
+                {
+                    File.WriteAllText(filePath, startJson);
+                    return startJson;
+                }
+                return json;
+            }
+            catch (Exception ex)
+            {
+#if DEBUG
+                Debug.WriteLine($"LoadLocalCityNameFile error reading '{filePath}': {ex.Message}");
+#endif
+                return startJson;
+            }
+        }
+
+        // Retorna a lista de cidades (cacheada)
+        public static List<string> GetListCities()
+        {
+            if (cityList == null || cityList.Count == 0)
+            {
+                string json = LoadLocalCityNameFile();
+                if (string.IsNullOrEmpty(json))
+                    return new List<string>();
 
                 try
                 {
-                    cityList = JsonConvert.DeserializeObject<List<String>>(localServers);
+                    cityList = JsonConvert.DeserializeObject<List<string>>(json);
                 }
-                catch
+                catch (Exception ex)
                 {
-                    return new List<String>();
+#if DEBUG
+                    Debug.WriteLine($"Failed to deserialize {localCityName}: {ex.Message}");
+#endif
+                    cityList = new List<string>();
                 }
             }
             return cityList;
         }
 
+        private static string CleanHexString(string s)
+        {
+            if (string.IsNullOrEmpty(s)) return s;
+            s = s.Trim();
+            if (s.StartsWith("0x", StringComparison.OrdinalIgnoreCase))
+                s = s.Substring(2);
+            return s;
+        }
+
         private static bool isValid(IEnumerable<char> chars)
         {
-            return IsHex(chars) && chars.Count() == 8;
+            // Normaliza entrada (pode vir com "0x")
+            string s = new string(chars.ToArray());
+            string cleaned = CleanHexString(s);
+            return IsHex(cleaned) && cleaned.Length == 8;
         }
 
         public static bool IsHex(IEnumerable<char> chars)
         {
-            bool isHex;
+            if (chars == null) return false;
             foreach (var c in chars)
             {
-                isHex = ((c >= '0' && c <= '9') ||
-                         (c >= 'a' && c <= 'f') ||
-                         (c >= 'A' && c <= 'F'));
+                bool isHex = ((c >= '0' && c <= '9') ||
+                             (c >= 'a' && c <= 'f') ||
+                             (c >= 'A' && c <= 'F'));
 
                 if (!isHex)
                     return false;

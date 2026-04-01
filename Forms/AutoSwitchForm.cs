@@ -39,6 +39,7 @@ namespace _4RTools.Forms
             setupInputs();
             _subject = subject;
 
+            this.allBuffs.Add(new Buff("Incenso Queimado", EffectStatusIDs.SPIRIT, Resources._4RTools.Icons.burnt_incense));
             this.allBuffs.AddRange(Buff.GetArcherSkills());
             this.allBuffs.AddRange(Buff.GetSwordmanSkill());
             this.allBuffs.AddRange(Buff.GetMageSkills());
@@ -122,14 +123,23 @@ namespace _4RTools.Forms
                 {
                     string type = c.Name.Split(new[] { "in" }, StringSplitOptions.None)[0];
                     EffectStatusIDs statID = (EffectStatusIDs)Int16.Parse(c.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
+
+                    var existingMapping = _autoSwitchMapping.FirstOrDefault(x => x.skillId == statID);
+
                     switch (type)
                     {
                         case item:
-                            c.Text = _autoSwitchMapping.Exists(x => x.skillId == statID) ? _autoSwitchMapping.FirstOrDefault(x => x.skillId == statID).itemKey.ToString() : Keys.None.ToString();
+                            // Se existe mapping e a chave não é None, mostra a chave, senão deixa vazio
+                            c.Text = (existingMapping != null && existingMapping.itemKey != Key.None)
+                                ? existingMapping.itemKey.ToString()
+                                : "";
                             break;
 
                         case nextItem:
-                            c.Text = _autoSwitchMapping.Exists(x => x.skillId == statID) ? _autoSwitchMapping.FirstOrDefault(x => x.skillId == statID).nextItemKey.ToString() : Keys.None.ToString();
+                            // Se existe mapping e a chave não é None, mostra a chave, senão deixa vazio
+                            c.Text = (existingMapping != null && existingMapping.nextItemKey != Key.None)
+                                ? existingMapping.nextItemKey.ToString()
+                                : "";
                             break;
                     }
                 }
@@ -148,8 +158,9 @@ namespace _4RTools.Forms
                 numeric.Value = Convert.ToInt16(ProfileSingleton.GetCurrent().AutoSwitch.switchEquipDelay);
             }
         }
+
         private void onFocus(object sender, EventArgs e)
-        { 
+        {
             TextBox txtBox = (TextBox)sender;
             OldTextKey = txtBox.Text;
         }
@@ -159,14 +170,27 @@ namespace _4RTools.Forms
             try
             {
                 TextBox txtBox = (TextBox)sender;
-                bool textChanged = this.OldTextKey != String.Empty && this.OldTextKey != txtBox.Text.ToString();
-                if ((txtBox.Text.ToString() != String.Empty) && textChanged)
+                // detectar qualquer mudança (inclui de/to vazio)
+                bool textChanged = this.OldTextKey != txtBox.Text;
+
+                if (textChanged)
                 {
-                    Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
                     string type = txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[0];
 
                     AutoSwitchConfig config = ProfileSingleton.GetCurrent().AutoSwitch.autoSwitchMapping.Find(cfg => cfg.skillId == statusID);
+
+                    Key key;
+                    // Se o texto estiver vazio, define como Key.None
+                    if (string.IsNullOrEmpty(txtBox.Text))
+                    {
+                        key = Key.None;
+                    }
+                    else
+                    {
+                        key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
+                    }
+
                     if (config != null)
                     {
                         config.skillId = statusID;
@@ -185,11 +209,9 @@ namespace _4RTools.Forms
                                 config.nextItemKey = key;
                                 break;
                         }
-                        
                     }
                     else
                     {
-
                         ProfileSingleton.GetCurrent().AutoSwitch.autoSwitchMapping.Add(new AutoSwitchConfig(statusID, key, type));
                     }
 
@@ -198,7 +220,36 @@ namespace _4RTools.Forms
                 }
                 this.ActiveControl = null;
             }
-            catch { }
+            catch
+            {
+                // Em caso de erro: garantir Key.None nas propriedades correspondentes
+                try
+                {
+                    TextBox txtBox = (TextBox)sender;
+                    EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
+                    string type = txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[0];
+
+                    AutoSwitchConfig config = ProfileSingleton.GetCurrent().AutoSwitch.autoSwitchMapping.Find(cfg => cfg.skillId == statusID);
+
+                    if (config != null)
+                    {
+                        switch (type)
+                        {
+                            case item:
+                                config.itemKey = Key.None;
+                                break;
+                            case skill:
+                                config.skillKey = Key.None;
+                                break;
+                            case nextItem:
+                                config.nextItemKey = Key.None;
+                                break;
+                        }
+                        ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AutoSwitch);
+                    }
+                }
+                catch { }
+            }
         }
 
         private void btnNewSwitch(object sender, EventArgs e)
@@ -237,5 +288,14 @@ namespace _4RTools.Forms
             catch { }
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AutoSwitchGP_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

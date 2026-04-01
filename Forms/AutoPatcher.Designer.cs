@@ -36,35 +36,36 @@
             // 
             // pbPatcher
             // 
-            this.pbPatcher.Location = new System.Drawing.Point(16, 36);
-            this.pbPatcher.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbPatcher.Location = new System.Drawing.Point(16, 38);
+            this.pbPatcher.Margin = new System.Windows.Forms.Padding(4);
             this.pbPatcher.Name = "pbPatcher";
-            this.pbPatcher.Size = new System.Drawing.Size(388, 27);
+            this.pbPatcher.Size = new System.Drawing.Size(388, 29);
             this.pbPatcher.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(143, 11);
+            this.label1.Location = new System.Drawing.Point(143, 12);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 16);
+            this.label1.Size = new System.Drawing.Size(161, 14);
             this.label1.TabIndex = 1;
             this.label1.Text = "Updating TalesTools...";
             // 
             // AutoPatcher
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(420, 68);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.ClientSize = new System.Drawing.Size(420, 72);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbPatcher);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
+            this.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AutoPatcher";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AutoPatcher";

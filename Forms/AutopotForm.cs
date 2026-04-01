@@ -24,6 +24,12 @@ namespace _4RTools.Forms
                 this.lblequipAfter.Hide();
                 this.txtHpEquipAfter.Hide();
                 this.txtHpEquipBefore.Hide();
+                this.textBox1.Text = "YGG";
+            }
+            else
+            {
+                // Garante que seja POTIONS quando não for YGG
+                this.textBox1.Text = "POTIONS";
             }
             subject.Attach(this);
             this.isYgg = isYgg;
@@ -48,16 +54,24 @@ namespace _4RTools.Forms
 
         private void InitializeApplicationForm()
         {
-            this.txtHpKey.Text = this.autopot.hpKey.ToString();
-            this.txtSPKey.Text = this.autopot.spKey.ToString();
+            // Configuração simples dos TextBox
+            this.txtHpKey.Text = this.autopot.hpKey == Key.None ? "" : this.autopot.hpKey.ToString();
+            this.txtSPKey.Text = this.autopot.spKey == Key.None ? "" : this.autopot.spKey.ToString();
+
+            // Para equipamentos (se não for YGG)
+            if (!this.isYgg)
+            {
+                this.txtHpEquipBefore.Text = this.autopot.hpEquipBefore == Key.None ? "" : this.autopot.hpEquipBefore.ToString();
+                this.txtHpEquipAfter.Text = this.autopot.hpEquipAfter == Key.None ? "" : this.autopot.hpEquipAfter.ToString();
+            }
+
             this.txtHPpct.Text = this.autopot.hpPercent.ToString();
             this.txtSPpct.Text = this.autopot.spPercent.ToString();
             this.txtAutopotDelay.Text = this.autopot.delay.ToString();
-            this.txtHpEquipBefore.Text = this.autopot.hpEquipBefore.ToString();
-            this.txtHpEquipAfter.Text = this.autopot.hpEquipAfter.ToString();
             this.chkStopWitchFC.Checked = this.autopot.stopWitchFC;
             RadioButton rdHealFirst = (RadioButton)this.Controls[ProfileSingleton.GetCurrent().Autopot.firstHeal];
-            if (rdHealFirst != null) { rdHealFirst.Checked = true; };
+            if (rdHealFirst != null) { rdHealFirst.Checked = true; }
+            ;
 
             txtHpKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
             txtHpKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
@@ -71,21 +85,40 @@ namespace _4RTools.Forms
             txtHpEquipAfter.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
             txtHpEquipAfter.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
             txtHpEquipAfter.TextChanged += new EventHandler(this.txtHpEquipAfterTextChange);
-
         }
 
         private void onHpTextChange(object sender, EventArgs e)
         {
-            Key key = (Key)Enum.Parse(typeof(Key), txtHpKey.Text.ToString());
-            this.autopot.hpKey = key;
+            TextBox textBox = (TextBox)sender;
+
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                this.autopot.hpKey = Key.None;
+            }
+            else
+            {
+                Key key = (Key)Enum.Parse(typeof(Key), textBox.Text.ToString());
+                this.autopot.hpKey = key;
+            }
+
             ProfileSingleton.SetConfiguration(this.autopot);
             this.ActiveControl = null;
         }
 
         private void onSpTextChange(object sender, EventArgs e)
         {
-            Key key = (Key)Enum.Parse(typeof(Key), txtSPKey.Text.ToString());
-            this.autopot.spKey = key;
+            TextBox textBox = (TextBox)sender;
+
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                this.autopot.spKey = Key.None;
+            }
+            else
+            {
+                Key key = (Key)Enum.Parse(typeof(Key), textBox.Text.ToString());
+                this.autopot.spKey = key;
+            }
+
             ProfileSingleton.SetConfiguration(this.autopot);
             this.ActiveControl = null;
         }
@@ -101,7 +134,6 @@ namespace _4RTools.Forms
             {
                 var exception = ex;
             }
-        
         }
 
         private void txtHPpctTextChanged(object sender, EventArgs e)
@@ -115,7 +147,6 @@ namespace _4RTools.Forms
             {
                 var exception = ex;
             }
-
         }
 
         private void chkStopWitchFC_CheckedChanged(object sender, EventArgs e)
@@ -137,6 +168,7 @@ namespace _4RTools.Forms
                 var exception = ex;
             }
         }
+
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton rb = sender as RadioButton;
@@ -149,18 +181,70 @@ namespace _4RTools.Forms
 
         private void txtHpEquipAfterTextChange(object sender, EventArgs e)
         {
-            Key key = (Key)Enum.Parse(typeof(Key), txtHpEquipAfter.Text.ToString());
-            this.autopot.hpEquipAfter = key;
-            ProfileSingleton.SetConfiguration(this.autopot);
-            this.ActiveControl = null;
+            try
+            {
+                if (string.IsNullOrEmpty(txtHpEquipAfter.Text))
+                {
+                    this.autopot.hpEquipAfter = Key.None;
+                }
+                else
+                {
+                    Key key = (Key)Enum.Parse(typeof(Key), txtHpEquipAfter.Text.ToString());
+                    this.autopot.hpEquipAfter = key;
+                }
+                ProfileSingleton.SetConfiguration(this.autopot);
+                this.ActiveControl = null;
+            }
+            catch
+            {
+                // Em caso de erro, define como Key.None
+                this.autopot.hpEquipAfter = Key.None;
+                ProfileSingleton.SetConfiguration(this.autopot);
+            }
         }
 
         private void txtHpEquipBeforeTextChange(object sender, EventArgs e)
         {
-            Key key = (Key)Enum.Parse(typeof(Key), txtHpEquipBefore.Text.ToString());
-            this.autopot.hpEquipBefore = key;
-            ProfileSingleton.SetConfiguration(this.autopot);
-            this.ActiveControl = null;
+            try
+            {
+                if (string.IsNullOrEmpty(txtHpEquipBefore.Text))
+                {
+                    this.autopot.hpEquipBefore = Key.None;
+                }
+                else
+                {
+                    Key key = (Key)Enum.Parse(typeof(Key), txtHpEquipBefore.Text.ToString());
+                    this.autopot.hpEquipBefore = key;
+                }
+                ProfileSingleton.SetConfiguration(this.autopot);
+                this.ActiveControl = null;
+            }
+            catch
+            {
+                // Em caso de erro, define como Key.None
+                this.autopot.hpEquipBefore = Key.None;
+                ProfileSingleton.SetConfiguration(this.autopot);
+            }
+        }
+
+        private void AutopotForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

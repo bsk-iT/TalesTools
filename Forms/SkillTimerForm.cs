@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using _4RTools.Utils;
 using _4RTools.Model;
 using System.Windows.Input;
+
 namespace _4RTools.Forms
 {
     public partial class SkillTimerForm : Form, IObserver
@@ -70,8 +71,9 @@ namespace _4RTools.Forms
                     Control[] c = this.Controls.Find("txtSkillTimerKey" + id, true);
                     if (c.Length > 0)
                     {
-                        TextBox keyTextBox = (TextBox)c[0];
-                        keyTextBox.Text = Spammers.skillTimer[id].key.ToString();
+                        VerticallyCenteredTextBox keyTextBox = (VerticallyCenteredTextBox)c[0];
+                        // Se a chave for Key.None, deixa vazio ao invés de mostrar "None"
+                        keyTextBox.Text = Spammers.skillTimer[id].key == Key.None ? "" : Spammers.skillTimer[id].key.ToString();
                     }
 
                     //Update Delay Macro Value
@@ -95,15 +97,13 @@ namespace _4RTools.Forms
         {
             try
             {
-
-                TextBox textBox = (TextBox)this.Controls.Find("txtSkillTimerKey" + id, true)[0];
+                VerticallyCenteredTextBox textBox = (VerticallyCenteredTextBox)this.Controls.Find("txtSkillTimerKey" + id, true)[0];
                 textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
                 textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
                 textBox.TextChanged += new EventHandler(this.onTextChange);
 
                 NumericUpDown txtAutoRefreshDelay = (NumericUpDown)this.Controls.Find("txtAutoRefreshDelay" + id, true)[0];
                 txtAutoRefreshDelay.ValueChanged += new EventHandler(this.txtAutoRefreshDelayTextChanged);
-
             }
             catch { }
         }
@@ -120,8 +120,9 @@ namespace _4RTools.Forms
                 Control[] c = this.Controls.Find("txtSkillTimerKey" + id, true);
                 if (c.Length > 0)
                 {
-                    TextBox keyTextBox = (TextBox)c[0];
-                    keyTextBox.Text = skillTimer.key.ToString();
+                    VerticallyCenteredTextBox keyTextBox = (VerticallyCenteredTextBox)c[0];
+                    // Se a chave for Key.None, deixa vazio ao invés de mostrar "None"
+                    keyTextBox.Text = skillTimer.key == Key.None ? "" : skillTimer.key.ToString();
                 }
 
                 //Update Delay Macro Value
@@ -143,8 +144,18 @@ namespace _4RTools.Forms
             try
             {
                 AutoRefreshSpammer Spammers = ProfileSingleton.GetCurrent().AutoRefreshSpammer;
-                TextBox textBox = (TextBox)sender;
-                Key key = (Key)Enum.Parse(typeof(Key), textBox.Text.ToString());
+                VerticallyCenteredTextBox textBox = (VerticallyCenteredTextBox)sender;
+
+                Key key;
+                // Se o texto estiver vazio, define como Key.None
+                if (string.IsNullOrEmpty(textBox.Text))
+                {
+                    key = Key.None;
+                }
+                else
+                {
+                    key = (Key)Enum.Parse(typeof(Key), textBox.Text.ToString());
+                }
 
                 var id = int.Parse(textBox.Name[textBox.Name.Length - 1].ToString());
 
@@ -155,17 +166,35 @@ namespace _4RTools.Forms
                 }
                 else
                 {
-                    Spammers.skillTimer.Add(id, new MacroKey(Key.None, 5));
+                    Spammers.skillTimer.Add(id, new MacroKey(key, 5));
                 }
 
                 ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AutoRefreshSpammer);
             }
             catch (Exception ex)
             {
-                var exception = ex;
+                // Em caso de erro, define como Key.None
+                try
+                {
+                    AutoRefreshSpammer Spammers = ProfileSingleton.GetCurrent().AutoRefreshSpammer;
+                    VerticallyCenteredTextBox textBox = (VerticallyCenteredTextBox)sender;
+                    var id = int.Parse(textBox.Name[textBox.Name.Length - 1].ToString());
+
+                    if (Spammers.skillTimer.ContainsKey(id))
+                    {
+                        MacroKey skillTimer = Spammers.skillTimer[id];
+                        skillTimer.key = Key.None;
+                    }
+                    else
+                    {
+                        Spammers.skillTimer.Add(id, new MacroKey(Key.None, 5));
+                    }
+
+                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AutoRefreshSpammer);
+                }
+                catch { }
             }
         }
-
 
         private void txtAutoRefreshDelayTextChanged(object sender, EventArgs e)
         {
@@ -194,6 +223,10 @@ namespace _4RTools.Forms
                 var exception = ex;
             }
         }
-        
+
+        private void SkillTimerForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

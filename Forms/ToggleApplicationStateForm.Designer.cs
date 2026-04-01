@@ -17,6 +17,14 @@
             {
                 components.Dispose();
             }
+
+            // Liberar as imagens customizadas
+            if (disposing)
+            {
+                onImage?.Dispose();
+                offImage?.Dispose();
+            }
+
             base.Dispose(disposing);
         }
 
@@ -30,76 +38,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToggleApplicationStateForm));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtStatusToggleKey = new System.Windows.Forms.TextBox();
-            this.btnStatusToggle = new System.Windows.Forms.Button();
-            this.lblStatusToggle = new System.Windows.Forms.Label();
             this.notifyIconTray = new System.Windows.Forms.NotifyIcon(this.components);
-            this.lblStatusHealToggle = new System.Windows.Forms.Label();
+            this.txtStatusHealToggleKey = new VerticallyCenteredTextBox();
             this.btnStatusHealToggle = new System.Windows.Forms.Button();
-            this.txtStatusHealToggleKey = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.txtStatusToggleKey = new VerticallyCenteredTextBox();
+            this.btnStatusToggle = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Black;
-            this.groupBox1.Controls.Add(this.txtStatusToggleKey);
-            this.groupBox1.Controls.Add(this.btnStatusToggle);
-            this.groupBox1.Controls.Add(this.lblStatusToggle);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(1, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(188, 79);
-            this.groupBox1.TabIndex = 25;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Current Status";
-            // 
-            // txtStatusToggleKey
-            // 
-            this.txtStatusToggleKey.BackColor = System.Drawing.Color.Black;
-            this.txtStatusToggleKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtStatusToggleKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtStatusToggleKey.ForeColor = System.Drawing.Color.White;
-            this.txtStatusToggleKey.Location = new System.Drawing.Point(112, 22);
-            this.txtStatusToggleKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtStatusToggleKey.Name = "txtStatusToggleKey";
-            this.txtStatusToggleKey.Size = new System.Drawing.Size(63, 26);
-            this.txtStatusToggleKey.TabIndex = 23;
-            this.txtStatusToggleKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnStatusToggle
-            // 
-            this.btnStatusToggle.BackColor = System.Drawing.Color.Red;
-            this.btnStatusToggle.FlatAppearance.BorderSize = 0;
-            this.btnStatusToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatusToggle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatusToggle.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnStatusToggle.Location = new System.Drawing.Point(11, 20);
-            this.btnStatusToggle.Margin = new System.Windows.Forms.Padding(0);
-            this.btnStatusToggle.Name = "btnStatusToggle";
-            this.btnStatusToggle.Size = new System.Drawing.Size(91, 34);
-            this.btnStatusToggle.TabIndex = 21;
-            this.btnStatusToggle.Text = "OFF";
-            this.btnStatusToggle.UseVisualStyleBackColor = false;
-            this.btnStatusToggle.Click += new System.EventHandler(this.btnToggleStatusHandler);
-            // 
-            // lblStatusToggle
-            // 
-            this.lblStatusToggle.AllowDrop = true;
-            this.lblStatusToggle.AutoSize = true;
-            this.lblStatusToggle.Location = new System.Drawing.Point(5, 55);
-            this.lblStatusToggle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblStatusToggle.MaximumSize = new System.Drawing.Size(145, 37);
-            this.lblStatusToggle.Name = "lblStatusToggle";
-            this.lblStatusToggle.Size = new System.Drawing.Size(133, 16);
-            this.lblStatusToggle.TabIndex = 22;
-            this.lblStatusToggle.Text = "Press the key to start!";
-            this.lblStatusToggle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // notifyIconTray
             // 
@@ -108,97 +54,124 @@
             this.notifyIconTray.Visible = true;
             this.notifyIconTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconDoubleClick);
             // 
-            // lblStatusHealToggle
+            // txtStatusHealToggleKey
             // 
-            this.lblStatusHealToggle.AllowDrop = true;
-            this.lblStatusHealToggle.AutoSize = true;
-            this.lblStatusHealToggle.BackColor = System.Drawing.Color.Transparent;
-            this.lblStatusHealToggle.Location = new System.Drawing.Point(3, 57);
-            this.lblStatusHealToggle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblStatusHealToggle.MaximumSize = new System.Drawing.Size(267, 37);
-            this.lblStatusHealToggle.Name = "lblStatusHealToggle";
-            this.lblStatusHealToggle.Size = new System.Drawing.Size(177, 16);
-            this.lblStatusHealToggle.TabIndex = 22;
-            this.lblStatusHealToggle.Text = "Press the key to start healing";
-            this.lblStatusHealToggle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtStatusHealToggleKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.txtStatusHealToggleKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStatusHealToggleKey.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStatusHealToggleKey.ForeColor = System.Drawing.Color.White;
+            this.txtStatusHealToggleKey.Location = new System.Drawing.Point(229, 29);
+            this.txtStatusHealToggleKey.Margin = new System.Windows.Forms.Padding(5);
+            this.txtStatusHealToggleKey.Multiline = true;
+            this.txtStatusHealToggleKey.Name = "txtStatusHealToggleKey";
+            this.txtStatusHealToggleKey.Size = new System.Drawing.Size(35, 35);
+            this.txtStatusHealToggleKey.TabIndex = 30;
+            this.txtStatusHealToggleKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtStatusHealToggleKey.TextChanged += new System.EventHandler(this.txtStatusHealToggleKey_TextChanged);
             // 
             // btnStatusHealToggle
             // 
-            this.btnStatusHealToggle.BackColor = System.Drawing.Color.Red;
+            this.btnStatusHealToggle.AutoEllipsis = true;
+            this.btnStatusHealToggle.BackColor = System.Drawing.Color.Transparent;
             this.btnStatusHealToggle.FlatAppearance.BorderSize = 0;
             this.btnStatusHealToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatusHealToggle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatusHealToggle.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnStatusHealToggle.Location = new System.Drawing.Point(11, 20);
+            this.btnStatusHealToggle.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatusHealToggle.ForeColor = System.Drawing.Color.Transparent;
+            this.btnStatusHealToggle.Location = new System.Drawing.Point(284, 22);
             this.btnStatusHealToggle.Margin = new System.Windows.Forms.Padding(0);
             this.btnStatusHealToggle.Name = "btnStatusHealToggle";
-            this.btnStatusHealToggle.Size = new System.Drawing.Size(91, 34);
-            this.btnStatusHealToggle.TabIndex = 21;
-            this.btnStatusHealToggle.Text = "OFF";
+            this.btnStatusHealToggle.Size = new System.Drawing.Size(50, 50);
+            this.btnStatusHealToggle.TabIndex = 29;
             this.btnStatusHealToggle.UseVisualStyleBackColor = false;
             this.btnStatusHealToggle.Click += new System.EventHandler(this.btnToggleStatusHealHandler);
             // 
-            // txtStatusHealToggleKey
+            // txtStatusToggleKey
             // 
-            this.txtStatusHealToggleKey.BackColor = System.Drawing.Color.Black;
-            this.txtStatusHealToggleKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtStatusHealToggleKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtStatusHealToggleKey.ForeColor = System.Drawing.Color.White;
-            this.txtStatusHealToggleKey.Location = new System.Drawing.Point(112, 22);
-            this.txtStatusHealToggleKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtStatusHealToggleKey.Name = "txtStatusHealToggleKey";
-            this.txtStatusHealToggleKey.Size = new System.Drawing.Size(63, 26);
-            this.txtStatusHealToggleKey.TabIndex = 23;
-            this.txtStatusHealToggleKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtStatusToggleKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.txtStatusToggleKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStatusToggleKey.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStatusToggleKey.ForeColor = System.Drawing.Color.White;
+            this.txtStatusToggleKey.Location = new System.Drawing.Point(60, 29);
+            this.txtStatusToggleKey.Margin = new System.Windows.Forms.Padding(5);
+            this.txtStatusToggleKey.Multiline = true;
+            this.txtStatusToggleKey.Name = "txtStatusToggleKey";
+            this.txtStatusToggleKey.Size = new System.Drawing.Size(35, 35);
+            this.txtStatusToggleKey.TabIndex = 28;
+            this.txtStatusToggleKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // groupBox2
+            // btnStatusToggle
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Black;
-            this.groupBox2.Controls.Add(this.txtStatusHealToggleKey);
-            this.groupBox2.Controls.Add(this.btnStatusHealToggle);
-            this.groupBox2.Controls.Add(this.lblStatusHealToggle);
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(200, 0);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(192, 79);
-            this.groupBox2.TabIndex = 26;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Heal Status";
+            this.btnStatusToggle.BackColor = System.Drawing.Color.Transparent;
+            this.btnStatusToggle.FlatAppearance.BorderSize = 0;
+            this.btnStatusToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatusToggle.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatusToggle.ForeColor = System.Drawing.Color.Transparent;
+            this.btnStatusToggle.Location = new System.Drawing.Point(115, 22);
+            this.btnStatusToggle.Margin = new System.Windows.Forms.Padding(0);
+            this.btnStatusToggle.Name = "btnStatusToggle";
+            this.btnStatusToggle.Size = new System.Drawing.Size(50, 50);
+            this.btnStatusToggle.TabIndex = 27;
+            this.btnStatusToggle.UseVisualStyleBackColor = false;
+            this.btnStatusToggle.Click += new System.EventHandler(this.btnToggleStatusHandler);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(197, 72);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 18);
+            this.textBox1.TabIndex = 31;
+            this.textBox1.Text = "HEAL";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("JetBrains Mono", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.White;
+            this.textBox2.Location = new System.Drawing.Point(27, 72);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 18);
+            this.textBox2.TabIndex = 32;
+            this.textBox2.Text = "STATUS";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ToggleApplicationStateForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(397, 167);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.ClientSize = new System.Drawing.Size(350, 120);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtStatusHealToggleKey);
+            this.Controls.Add(this.btnStatusHealToggle);
+            this.Controls.Add(this.txtStatusToggleKey);
+            this.Controls.Add(this.btnStatusToggle);
+            this.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ToggleApplicationStateForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "ToggleApplicationStateForm";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnStatusToggle;
-        private System.Windows.Forms.Label lblStatusToggle;
-        private System.Windows.Forms.TextBox txtStatusToggleKey;
         private System.Windows.Forms.NotifyIcon notifyIconTray;
-        private System.Windows.Forms.Label lblStatusHealToggle;
+        private VerticallyCenteredTextBox txtStatusHealToggleKey;
         private System.Windows.Forms.Button btnStatusHealToggle;
-        private System.Windows.Forms.TextBox txtStatusHealToggleKey;        
-        private System.Windows.Forms.GroupBox groupBox2;
+        private VerticallyCenteredTextBox txtStatusToggleKey;
+        private System.Windows.Forms.Button btnStatusToggle;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+
     }
 }

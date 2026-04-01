@@ -35,34 +35,35 @@
             // 
             // pbSupportedServer
             // 
-            this.pbSupportedServer.Location = new System.Drawing.Point(16, 33);
-            this.pbSupportedServer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbSupportedServer.Location = new System.Drawing.Point(16, 35);
+            this.pbSupportedServer.Margin = new System.Windows.Forms.Padding(4);
             this.pbSupportedServer.Name = "pbSupportedServer";
-            this.pbSupportedServer.Size = new System.Drawing.Size(388, 28);
+            this.pbSupportedServer.Size = new System.Drawing.Size(388, 30);
             this.pbSupportedServer.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(104, 11);
+            this.label1.Location = new System.Drawing.Point(104, 12);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 16);
+            this.label1.Size = new System.Drawing.Size(210, 14);
             this.label1.TabIndex = 1;
             this.label1.Text = "Updating Supported Servers...";
             // 
             // ClientUpdaterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(420, 68);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.ClientSize = new System.Drawing.Size(420, 72);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbSupportedServer);
+            this.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ClientUpdaterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ClientUpdater";

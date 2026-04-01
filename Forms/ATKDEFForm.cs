@@ -4,6 +4,8 @@ using System.Windows.Forms;
 using _4RTools.Utils;
 using _4RTools.Model;
 using System.Windows.Input;
+using System.Drawing;
+using System.Linq;
 
 namespace _4RTools.Forms
 {
@@ -11,11 +13,37 @@ namespace _4RTools.Forms
     {
         public static int TOTAL_ATKDEF_LANES = 8;
         public static int TOTAL_EQUIPS = 6;
+
+        // Controles para mostrar/ocultar lanes dinamicamente
+        private ComboBox comboBoxEquipCount;
+        private Label labelEquipCount;
+
+        // Layout defaults (ajustáveis)
+        private const int RIGHT_MARGIN = 24;
+        private const int SHIFT_FROM_RIGHT = 10;
+        private const int TOP_OFFSET = 15;
+        private const int CONTROL_SPACING = 8;
+
         public ATKDEFForm(Subject subject)
         {
             subject.Attach(this);
             InitializeComponent();
+
+            // Garantir que nenhum GroupBox de equipamento seja visível por padrão
+            HideAllEquipGroups();
+
+            // Registra eventos e handlers
             SetupInputs();
+
+            // Inicializa combo dinamicamente (0 = nenhum)
+            InitializeEquipCountCombo();
+
+            // Posiciona controles de seleção e ajusta no resize
+            PositionEquipControls();
+            this.Resize += (s, e) => PositionEquipControls();
+
+            // Por padrão não mostrar nenhum GroupBox
+            UpdateVisibleLanes(0);
         }
 
         public void Update(ISubject subject)
@@ -23,7 +51,15 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
+                    // Preenche os dados do perfil (controles podem estar invisíveis)
                     UpdateUi();
+
+                    // Não mostrar automaticamente: manter em 0 até o usuário escolher
+                    if (comboBoxEquipCount != null)
+                    {
+                        comboBoxEquipCount.SelectedIndex = 0; // "0" == nenhum visível
+                        UpdateVisibleLanes(0);
+                    }
                     break;
                 case MessageCode.TURN_ON:
                     ProfileSingleton.GetCurrent().AtkDefMode.Start();
@@ -31,6 +67,22 @@ namespace _4RTools.Forms
                 case MessageCode.TURN_OFF:
                     ProfileSingleton.GetCurrent().AtkDefMode.Stop();
                     break;
+            }
+        }
+
+        private void HideAllEquipGroups()
+        {
+            for (int i = 1; i <= TOTAL_ATKDEF_LANES; i++)
+            {
+                try
+                {
+                    var found = this.Controls.Find("equipGroup" + i, true);
+                    if (found.Length > 0 && found[0] is GroupBox g)
+                    {
+                        g.Visible = false;
+                    }
+                }
+                catch { }
             }
         }
 
@@ -93,8 +145,8 @@ namespace _4RTools.Forms
             catch (Exception ex)
             {
                 var exc = ex;
-            };
-
+            }
+            ;
         }
 
         private void UpdateUi()
@@ -203,6 +255,99 @@ namespace _4RTools.Forms
             }
             catch { }
 
+        }
+
+        // --- NOVAS FUNÇÕES: Combo + lógica para mostrar/hide dos equipGroup ---
+
+        private void InitializeEquipCountCombo()
+        {
+            // Label
+            labelEquipCount = new Label
+            {
+                Text = "MACROS:",
+                ForeColor = Color.White,
+                AutoSize = true,
+                Font = this.Font
+            };
+
+            // ComboBox (0 = nenhum visível)
+            comboBoxEquipCount = new ComboBox
+            {
+                DropDownStyle = ComboBoxStyle.DropDownList,
+                BackColor = Color.FromArgb(20, 20, 20),
+                ForeColor = Color.White,
+                Size = new Size(60, 24)
+            };
+            comboBoxEquipCount.SelectedIndexChanged += comboBoxEquipCount_SelectedIndexChanged;
+
+            comboBoxEquipCount.Items.Clear();
+            comboBoxEquipCount.Items.Add("0");
+            for (int i = 1; i <= TOTAL_ATKDEF_LANES; i++)
+            {
+                comboBoxEquipCount.Items.Add(i.ToString());
+            }
+
+            this.Controls.Add(labelEquipCount);
+            this.Controls.Add(comboBoxEquipCount);
+
+            // posicionamento relativo à direita
+            labelEquipCount.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            comboBoxEquipCount.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+
+            // padrão = 0 (nenhum)
+            comboBoxEquipCount.SelectedIndex = 0;
+        }
+
+        private void PositionEquipControls()
+        {
+            if (comboBoxEquipCount == null || labelEquipCount == null) return;
+
+            int spacing = CONTROL_SPACING;
+            int comboW = comboBoxEquipCount.Width;
+            int labelW = labelEquipCount.Width;
+
+            int rightEdge = this.ClientSize.Width - RIGHT_MARGIN - SHIFT_FROM_RIGHT;
+            int comboX = Math.Max(10, rightEdge - comboW);
+            int labelX = comboX - spacing - labelW;
+            int y = TOP_OFFSET;
+
+            labelEquipCount.Location = new Point(labelX, y + (comboBoxEquipCount.Height / 2) - (labelEquipCount.Height / 2));
+            comboBoxEquipCount.Location = new Point(comboX, y);
+        }
+
+        private int GetSelectedEquipCount()
+        {
+            int count = 0;
+            if (comboBoxEquipCount != null && comboBoxEquipCount.SelectedItem != null)
+            {
+                int.TryParse(comboBoxEquipCount.SelectedItem.ToString(), out count);
+            }
+            return Math.Max(0, Math.Min(TOTAL_ATKDEF_LANES, count));
+        }
+
+        private void comboBoxEquipCount_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int count = GetSelectedEquipCount();
+            UpdateVisibleLanes(count);
+        }
+
+        private void UpdateVisibleLanes(int count)
+        {
+            for (int i = 1; i <= TOTAL_ATKDEF_LANES; i++)
+            {
+                try
+                {
+                    Control[] found = this.Controls.Find("equipGroup" + i, true);
+                    if (found.Length > 0 && found[0] is GroupBox)
+                    {
+                        GroupBox group = (GroupBox)found[0];
+                        group.Visible = (i <= count && count > 0);
+                    }
+                }
+                catch { }
+            }
+
+            PositionEquipControls();
         }
     }
 }

@@ -95,10 +95,20 @@ namespace _4RTools.Model
                 }
 
                 TextBox txtBox = (TextBox)sender;
-                bool textChanged = this.OldText != String.Empty && this.OldText != txtBox.Text.ToString();
-                if ((txtBox.Text.ToString() != String.Empty) && textChanged)
+                // detectar qualquer mudança (inclui mudança para/vindo de vazio)
+                bool textChanged = this.OldText != txtBox.Text;
+                if (textChanged)
                 {
-                    Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
+                    Key key;
+                    if (string.IsNullOrEmpty(txtBox.Text))
+                    {
+                        key = Key.None;
+                    }
+                    else
+                    {
+                        key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
+                    }
+
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
 
                     if (this._typeAutoBuff == ProfileSingleton.GetCurrent().AutobuffSkill.actionName)
@@ -125,7 +135,6 @@ namespace _4RTools.Model
                         ProfileSingleton.SetConfiguration(_autoBuffStuff);
                     }
                 }
-
             }
             catch { }
         }

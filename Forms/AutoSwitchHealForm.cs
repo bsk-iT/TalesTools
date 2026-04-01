@@ -13,22 +13,38 @@ namespace _4RTools.Forms
         public AutoSwitchHealForm(Subject subject, bool isYgg)
         {
             InitializeComponent();
+            // tenta inicializar com o perfil atual (pode ser null)
+            this.autoSwitchHeal = ProfileSingleton.GetCurrent()?.AutoSwitchHeal;
             subject.Attach(this);
         }
 
         public void Update(ISubject subject)
         {
-            switch ((subject as Subject).Message.code)
+            if (subject == null) return;
+            var s = subject as Subject;
+            if (s == null || s.Message == null) return;
+
+            switch (s.Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                    this.autoSwitchHeal = ProfileSingleton.GetCurrent().AutoSwitchHeal;
+                    this.autoSwitchHeal = ProfileSingleton.GetCurrent()?.AutoSwitchHeal;
                     InitializeApplicationForm();
                     break;
                 case MessageCode.TURN_HEAL_OFF:
-                    this.autoSwitchHeal.Stop();
+                    // tentar recuperar instância antes de usar
+                    if (this.autoSwitchHeal == null) this.autoSwitchHeal = ProfileSingleton.GetCurrent()?.AutoSwitchHeal;
+                    if (this.autoSwitchHeal != null)
+                    {
+                        try { this.autoSwitchHeal.Stop(); } catch { }
+                    }
                     break;
                 case MessageCode.TURN_HEAL_ON:
-                    this.autoSwitchHeal.Start();
+                    // tentar recuperar instância antes de usar
+                    if (this.autoSwitchHeal == null) this.autoSwitchHeal = ProfileSingleton.GetCurrent()?.AutoSwitchHeal;
+                    if (this.autoSwitchHeal != null)
+                    {
+                        try { this.autoSwitchHeal.Start(); } catch { }
+                    }
                     break;
             }
         }
@@ -65,22 +81,59 @@ namespace _4RTools.Forms
 
         private void FillForm(Control c)
         {
+            // Se não houver perfil/carregamento ainda, apenas limpa os controles sem acessar propriedades do objeto
+            if (this.autoSwitchHeal == null)
+            {
+                if (c is TextBox) ((TextBox)c).Text = "";
+                else if (c is NumericUpDown) ((NumericUpDown)c).Value = 0;
+                return;
+            }
+
+            // Proteção adicional: evitar exceção caso o nome do controle seja menor que 3
+            if (c.Name == null || c.Name.Length <= 3) return;
+
             var property = typeof(AutoSwitchHeal).GetProperty(c.Name.Substring(3));
             if (property != null)
             {
-                c.Text = property.GetValue(this.autoSwitchHeal)?.ToString();
+                var value = property.GetValue(this.autoSwitchHeal);
+
+                // Se for uma propriedade Key e o valor for Key.None, deixa vazio
+                if (property.PropertyType == typeof(Key) && value != null && value.Equals(Key.None))
+                {
+                    c.Text = "";
+                }
+                else
+                {
+                    c.Text = value?.ToString();
+                }
             }
         }
-
         private void onTextChange(object sender, EventArgs e)
         {
             try
             {
+                // garante que temos a instância antes de tentar alterar valores
+                if (this.autoSwitchHeal == null) this.autoSwitchHeal = ProfileSingleton.GetCurrent()?.AutoSwitchHeal;
+                if (this.autoSwitchHeal == null) return;
+
                 TextBox txtbox = (TextBox)sender;
-                Key key = (Key)Enum.Parse(typeof(Key), txtbox.Text.ToString());
+                if (txtbox.Name == null || txtbox.Name.Length <= 3) return;
+
                 var property = typeof(AutoSwitchHeal).GetProperty(txtbox.Name.Substring(3));
                 if (property != null)
                 {
+                    Key key;
+
+                    // Se o texto estiver vazio, define como Key.None
+                    if (string.IsNullOrEmpty(txtbox.Text))
+                    {
+                        key = Key.None;
+                    }
+                    else
+                    {
+                        key = (Key)Enum.Parse(typeof(Key), txtbox.Text.ToString());
+                    }
+
                     var oldValue = property.GetValue(this.autoSwitchHeal);
                     if (!Equals(oldValue, key))
                     {
@@ -90,9 +143,25 @@ namespace _4RTools.Forms
                 }
                 this.ActiveControl = null;
             }
-            catch (Exception ex)
+            catch
             {
-                var exception = ex;
+                // Em caso de erro, tenta salvar Key.None se possível
+                try
+                {
+                    if (this.autoSwitchHeal == null) this.autoSwitchHeal = ProfileSingleton.GetCurrent()?.AutoSwitchHeal;
+                    if (this.autoSwitchHeal == null) return;
+
+                    TextBox txtbox = (TextBox)sender;
+                    if (txtbox.Name == null || txtbox.Name.Length <= 3) return;
+
+                    var property = typeof(AutoSwitchHeal).GetProperty(txtbox.Name.Substring(3));
+                    if (property != null)
+                    {
+                        property.SetValue(this.autoSwitchHeal, Key.None);
+                        ProfileSingleton.SetConfiguration(this.autoSwitchHeal);
+                    }
+                }
+                catch { }
             }
         }
 
@@ -100,8 +169,15 @@ namespace _4RTools.Forms
         {
             try
             {
+                // garante que temos a instância antes de tentar alterar valores
+                if (this.autoSwitchHeal == null) this.autoSwitchHeal = ProfileSingleton.GetCurrent()?.AutoSwitchHeal;
+                if (this.autoSwitchHeal == null) return;
+
                 NumericUpDown numericUpDown = (NumericUpDown)sender;
                 int percent = Int16.Parse(numericUpDown.Text);
+
+                if (numericUpDown.Name == null || numericUpDown.Name.Length <= 3) return;
+
                 var property = typeof(AutoSwitchHeal).GetProperty(numericUpDown.Name.Substring(3));
                 if (property != null)
                 {

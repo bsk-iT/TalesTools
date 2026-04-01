@@ -153,7 +153,7 @@ namespace _4RTools.Model
             while (roClient.IsSpBelow(spPercent))
             {
                 if (!canHeal(roClient))
-                    return;  
+                    return;
                 if (KeyboardHookHelper.HandlePriorityKey())
                     return;
                 pressKey(this.spKey);
@@ -202,15 +202,15 @@ namespace _4RTools.Model
         {
             string currentMap = roClient.ReadCurrentMap();
             bool hasAntiBot = hasBuff(roClient, EffectStatusIDs.ANTI_BOT);
-            bool hasBerserk = hasBuff(roClient, EffectStatusIDs.BERSERK);
-            bool isCompetitive = hasBuff(roClient, EffectStatusIDs.COMPETITIVA);
+            // bool hasBerserk = hasBuff(roClient, EffectStatusIDs.BERSERK); // O uso de consumíveis e habilidades agora é liberado durante o Frenesi.
+            bool isCompetitive = hasBuff(roClient, EffectStatusIDs.COMPETITIVE_INSTANCE);
             bool stopHealCity = ProfileSingleton.GetCurrent().UserPreferences.stopHealCity;
             bool isInCityList = this.listCities.Contains(currentMap);
             bool hasOpenChat = roClient.ReadOpenChat();
             bool stopOpenChat = ProfileSingleton.GetCurrent().UserPreferences.stopWithChat;
 
             bool canHeal = !hasAntiBot
-                && !hasBerserk
+                // && !hasBerserk
                 && !isCompetitive
                 && !(hasOpenChat && stopOpenChat)
                 && !(stopHealCity && isInCityList);

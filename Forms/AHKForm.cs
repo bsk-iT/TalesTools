@@ -12,10 +12,28 @@ namespace _4RTools.Forms
     public partial class AHKForm : Form, IObserver
     {
         private AHK ahk;
+        private SkillTimerForm skillTimerForm;
+
         public AHKForm(Subject subject)
         {
             subject.Attach(this);
             InitializeComponent();
+            InitializeSkillTimerForm(subject);
+        }
+
+        private void InitializeSkillTimerForm(Subject subject)
+        {
+            // Criar uma instância do SkillTimerForm
+            skillTimerForm = new SkillTimerForm(subject);
+
+            // Configurar o SkillTimerForm como um controle filho
+            skillTimerForm.TopLevel = false;
+            skillTimerForm.FormBorderStyle = FormBorderStyle.None;
+            skillTimerForm.Dock = DockStyle.Fill;
+
+            // Adicionar ao GroupBox
+            groupBoxSkillTimer.Controls.Add(skillTimerForm);
+            skillTimerForm.Show();
         }
 
         public void Update(ISubject subject)
@@ -41,9 +59,10 @@ namespace _4RTools.Forms
             SetLegendDefaultValues();
             this.ahk = ProfileSingleton.GetCurrent().AHK;
             InitializeCheckAsThreeState();
-            
+
             RadioButton rdAhkMode = (RadioButton)this.groupAhkConfig.Controls[ProfileSingleton.GetCurrent().AHK.ahkMode];
-            if (rdAhkMode != null) { rdAhkMode.Checked = true; };
+            if (rdAhkMode != null) { rdAhkMode.Checked = true; }
+            ;
             this.txtSpammerDelay.Text = ProfileSingleton.GetCurrent().AHK.AhkDelay.ToString();
             this.chkNoShift.Checked = ProfileSingleton.GetCurrent().AHK.noShift;
             this.chkMouseFlick.Checked = ProfileSingleton.GetCurrent().AHK.mouseFlick;
@@ -124,7 +143,8 @@ namespace _4RTools.Forms
                     if ((check.Name.Split(new[] { "chk" }, StringSplitOptions.None).Length == 2))
                     {
                         check.ThreeState = true;
-                    };
+                    }
+                    ;
 
                     if (check.Enabled)
                         check.CheckStateChanged += onCheckChange;
@@ -173,11 +193,27 @@ namespace _4RTools.Forms
             {
                 this.chkMouseFlick.Enabled = false;
                 this.chkNoShift.Enabled = false;
-            } else
+            }
+            else
             {
                 this.chkMouseFlick.Enabled = true;
                 this.chkNoShift.Enabled = true;
             }
+        }
+
+        private void AHKForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxKeyboard_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

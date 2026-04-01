@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using _4RTools.Forms;
 
 namespace _4RTools.Forms
 {
@@ -32,254 +33,345 @@ namespace _4RTools.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.skillsListBox = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigForm));
+            this.groupConfigRein = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.chkStopWithChat = new System.Windows.Forms.CheckBox();
-            this.chkStopHealOnCity = new System.Windows.Forms.CheckBox();
-            this.ammo2textBox = new System.Windows.Forms.TextBox();
-            this.ammo1textBox = new System.Windows.Forms.TextBox();
+            this.chkStopBuffsOnCity = new System.Windows.Forms.CheckBox();
             this.switchAmmoCheckBox = new System.Windows.Forms.CheckBox();
-            this.textReinKey = new System.Windows.Forms.TextBox();
+            this.lblAutoReinCells = new System.Windows.Forms.Label();
+            this.chkStopHealOnCity = new System.Windows.Forms.CheckBox();
+            this.numAutoReinCells = new System.Windows.Forms.NumericUpDown();
+            this.chkAutoReinEnabled = new System.Windows.Forms.CheckBox();
             this.getOffReinCheckBox = new System.Windows.Forms.CheckBox();
             this.chkStopBuffsOnRein = new System.Windows.Forms.CheckBox();
-            this.chkStopBuffsOnCity = new System.Windows.Forms.CheckBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip4 = new System.Windows.Forms.ToolTip(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.switchListBox = new System.Windows.Forms.ListBox();
+            this.toolTip5 = new System.Windows.Forms.ToolTip(this.components);
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.ammo2textBox = new _4RTools.Forms.VerticallyCenteredTextBox();
+            this.ammo1textBox = new _4RTools.Forms.VerticallyCenteredTextBox();
+            this.txtAutoReinKey = new _4RTools.Forms.VerticallyCenteredTextBox();
+            this.textReinKey = new _4RTools.Forms.VerticallyCenteredTextBox();
             this.clientDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.groupBox1.SuspendLayout();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.groupConfigRein.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAutoReinCells)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientDTOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // skillsListBox
+            // groupConfigRein
             // 
-            this.skillsListBox.AllowDrop = true;
-            this.skillsListBox.BackColor = System.Drawing.Color.Black;
-            this.skillsListBox.ForeColor = System.Drawing.Color.White;
-            this.skillsListBox.FormattingEnabled = true;
-            this.skillsListBox.ItemHeight = 16;
-            this.skillsListBox.Location = new System.Drawing.Point(17, 31);
-            this.skillsListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.skillsListBox.Name = "skillsListBox";
-            this.skillsListBox.Size = new System.Drawing.Size(168, 276);
-            this.skillsListBox.TabIndex = 1;
+            this.groupConfigRein.Controls.Add(this.textBox2);
+            this.groupConfigRein.Controls.Add(this.textBox1);
+            this.groupConfigRein.Controls.Add(this.ammo2textBox);
+            this.groupConfigRein.Controls.Add(this.pictureBox1);
+            this.groupConfigRein.Controls.Add(this.ammo1textBox);
+            this.groupConfigRein.Controls.Add(this.chkStopWithChat);
+            this.groupConfigRein.Controls.Add(this.txtAutoReinKey);
+            this.groupConfigRein.Controls.Add(this.chkStopBuffsOnCity);
+            this.groupConfigRein.Controls.Add(this.switchAmmoCheckBox);
+            this.groupConfigRein.Controls.Add(this.lblAutoReinCells);
+            this.groupConfigRein.Controls.Add(this.chkStopHealOnCity);
+            this.groupConfigRein.Controls.Add(this.numAutoReinCells);
+            this.groupConfigRein.Controls.Add(this.chkAutoReinEnabled);
+            this.groupConfigRein.Controls.Add(this.textReinKey);
+            this.groupConfigRein.Controls.Add(this.getOffReinCheckBox);
+            this.groupConfigRein.Controls.Add(this.chkStopBuffsOnRein);
+            this.groupConfigRein.ForeColor = System.Drawing.Color.White;
+            this.groupConfigRein.Location = new System.Drawing.Point(20, 10);
+            this.groupConfigRein.Margin = new System.Windows.Forms.Padding(4);
+            this.groupConfigRein.Name = "groupConfigRein";
+            this.groupConfigRein.Padding = new System.Windows.Forms.Padding(4);
+            this.groupConfigRein.Size = new System.Drawing.Size(450, 390);
+            this.groupConfigRein.TabIndex = 0;
+            this.groupConfigRein.TabStop = false;
+            this.groupConfigRein.Text = "CONFIGURAÇÕES";
             // 
-            // label2
+            // pictureBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 7);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Ordem de uso de Autobuffs";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.chkStopWithChat);
-            this.groupBox1.Controls.Add(this.chkStopHealOnCity);
-            this.groupBox1.Controls.Add(this.ammo2textBox);
-            this.groupBox1.Controls.Add(this.ammo1textBox);
-            this.groupBox1.Controls.Add(this.switchAmmoCheckBox);
-            this.groupBox1.Controls.Add(this.textReinKey);
-            this.groupBox1.Controls.Add(this.getOffReinCheckBox);
-            this.groupBox1.Controls.Add(this.chkStopBuffsOnRein);
-            this.groupBox1.Controls.Add(this.chkStopBuffsOnCity);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(412, 25);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(400, 242);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Configurações TalesTools";
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(19, 82);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 318;
+            this.pictureBox1.TabStop = false;
             // 
             // chkStopWithChat
             // 
             this.chkStopWithChat.AutoSize = true;
-            this.chkStopWithChat.Location = new System.Drawing.Point(17, 192);
-            this.chkStopWithChat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkStopWithChat.Location = new System.Drawing.Point(19, 306);
+            this.chkStopWithChat.Margin = new System.Windows.Forms.Padding(10);
             this.chkStopWithChat.Name = "chkStopWithChat";
-            this.chkStopWithChat.Size = new System.Drawing.Size(247, 20);
+            this.chkStopWithChat.Size = new System.Drawing.Size(257, 18);
             this.chkStopWithChat.TabIndex = 311;
-            this.chkStopWithChat.Text = "Pausar Tales Tools com chat aberto";
+            this.chkStopWithChat.Text = "PAUSAR TALESTOOLS COM CHAT ABERTO\r\n";
             this.chkStopWithChat.UseVisualStyleBackColor = true;
             this.chkStopWithChat.CheckedChanged += new System.EventHandler(this.chkStopWithChat_CheckedChanged);
             // 
-            // chkStopHealOnCity
+            // chkStopBuffsOnCity
             // 
-            this.chkStopHealOnCity.AutoSize = true;
-            this.chkStopHealOnCity.Location = new System.Drawing.Point(17, 63);
-            this.chkStopHealOnCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.chkStopHealOnCity.Name = "chkStopHealOnCity";
-            this.chkStopHealOnCity.Size = new System.Drawing.Size(164, 20);
-            this.chkStopHealOnCity.TabIndex = 310;
-            this.chkStopHealOnCity.Text = "Pausar cura na cidade";
-            this.chkStopHealOnCity.UseVisualStyleBackColor = true;
-            this.chkStopHealOnCity.CheckedChanged += new System.EventHandler(this.chkStopHealOnCity_CheckedChanged);
-            // 
-            // ammo2textBox
-            // 
-            this.ammo2textBox.BackColor = System.Drawing.Color.Black;
-            this.ammo2textBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ammo2textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ammo2textBox.ForeColor = System.Drawing.Color.White;
-            this.ammo2textBox.Location = new System.Drawing.Point(327, 156);
-            this.ammo2textBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ammo2textBox.Name = "ammo2textBox";
-            this.ammo2textBox.Size = new System.Drawing.Size(59, 26);
-            this.ammo2textBox.TabIndex = 309;
-            // 
-            // ammo1textBox
-            // 
-            this.ammo1textBox.BackColor = System.Drawing.Color.Black;
-            this.ammo1textBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ammo1textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ammo1textBox.ForeColor = System.Drawing.Color.White;
-            this.ammo1textBox.Location = new System.Drawing.Point(259, 156);
-            this.ammo1textBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ammo1textBox.Name = "ammo1textBox";
-            this.ammo1textBox.Size = new System.Drawing.Size(59, 26);
-            this.ammo1textBox.TabIndex = 308;
+            this.chkStopBuffsOnCity.AutoSize = true;
+            this.chkStopBuffsOnCity.Location = new System.Drawing.Point(19, 224);
+            this.chkStopBuffsOnCity.Margin = new System.Windows.Forms.Padding(10);
+            this.chkStopBuffsOnCity.Name = "chkStopBuffsOnCity";
+            this.chkStopBuffsOnCity.Size = new System.Drawing.Size(362, 18);
+            this.chkStopBuffsOnCity.TabIndex = 0;
+            this.chkStopBuffsOnCity.Text = "PAUSAR AUTOBUFF/SKILL TIMER/AUTOSWITCH NA CIDADE";
+            this.chkStopBuffsOnCity.UseVisualStyleBackColor = true;
+            this.chkStopBuffsOnCity.CheckedChanged += new System.EventHandler(this.chkStopBuffsOnCity_CheckedChanged);
             // 
             // switchAmmoCheckBox
             // 
             this.switchAmmoCheckBox.AutoSize = true;
-            this.switchAmmoCheckBox.Location = new System.Drawing.Point(17, 160);
-            this.switchAmmoCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.switchAmmoCheckBox.Location = new System.Drawing.Point(19, 347);
+            this.switchAmmoCheckBox.Margin = new System.Windows.Forms.Padding(10);
             this.switchAmmoCheckBox.Name = "switchAmmoCheckBox";
-            this.switchAmmoCheckBox.Size = new System.Drawing.Size(208, 20);
+            this.switchAmmoCheckBox.Size = new System.Drawing.Size(215, 18);
             this.switchAmmoCheckBox.TabIndex = 307;
-            this.switchAmmoCheckBox.Text = "Troca Automática de munição";
+            this.switchAmmoCheckBox.Text = "TROCA AUTOMÁTICA DE MUNIÇÃO";
             this.switchAmmoCheckBox.UseVisualStyleBackColor = true;
             this.switchAmmoCheckBox.CheckedChanged += new System.EventHandler(this.switchAmmoCheckBox_CheckedChanged);
             // 
-            // textReinKey
+            // lblAutoReinCells
             // 
-            this.textReinKey.BackColor = System.Drawing.Color.Black;
-            this.textReinKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textReinKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textReinKey.ForeColor = System.Drawing.Color.White;
-            this.textReinKey.Location = new System.Drawing.Point(259, 122);
-            this.textReinKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textReinKey.Name = "textReinKey";
-            this.textReinKey.Size = new System.Drawing.Size(59, 26);
-            this.textReinKey.TabIndex = 306;
+            this.lblAutoReinCells.AutoSize = true;
+            this.lblAutoReinCells.Location = new System.Drawing.Point(65, 93);
+            this.lblAutoReinCells.Name = "lblAutoReinCells";
+            this.lblAutoReinCells.Size = new System.Drawing.Size(63, 14);
+            this.lblAutoReinCells.TabIndex = 313;
+            this.lblAutoReinCells.Text = "CÉLULAS:";
+            this.lblAutoReinCells.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // chkStopHealOnCity
+            // 
+            this.chkStopHealOnCity.AutoSize = true;
+            this.chkStopHealOnCity.Location = new System.Drawing.Point(19, 265);
+            this.chkStopHealOnCity.Margin = new System.Windows.Forms.Padding(10);
+            this.chkStopHealOnCity.Name = "chkStopHealOnCity";
+            this.chkStopHealOnCity.Size = new System.Drawing.Size(173, 18);
+            this.chkStopHealOnCity.TabIndex = 310;
+            this.chkStopHealOnCity.Text = "PAUSAR CURA NA CIDADE";
+            this.chkStopHealOnCity.UseVisualStyleBackColor = true;
+            this.chkStopHealOnCity.CheckedChanged += new System.EventHandler(this.chkStopHealOnCity_CheckedChanged);
+            // 
+            // numAutoReinCells
+            // 
+            this.numAutoReinCells.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.numAutoReinCells.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numAutoReinCells.Font = new System.Drawing.Font("JetBrains Mono", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numAutoReinCells.ForeColor = System.Drawing.Color.White;
+            this.numAutoReinCells.Location = new System.Drawing.Point(137, 87);
+            this.numAutoReinCells.Margin = new System.Windows.Forms.Padding(4);
+            this.numAutoReinCells.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numAutoReinCells.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numAutoReinCells.Name = "numAutoReinCells";
+            this.numAutoReinCells.Size = new System.Drawing.Size(80, 27);
+            this.numAutoReinCells.TabIndex = 314;
+            this.numAutoReinCells.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numAutoReinCells.ValueChanged += new System.EventHandler(this.numAutoReinCells_ValueChanged);
+            // 
+            // chkAutoReinEnabled
+            // 
+            this.chkAutoReinEnabled.AutoSize = true;
+            this.chkAutoReinEnabled.Location = new System.Drawing.Point(19, 41);
+            this.chkAutoReinEnabled.Margin = new System.Windows.Forms.Padding(10);
+            this.chkAutoReinEnabled.Name = "chkAutoReinEnabled";
+            this.chkAutoReinEnabled.Size = new System.Drawing.Size(138, 18);
+            this.chkAutoReinEnabled.TabIndex = 312;
+            this.chkAutoReinEnabled.Text = "RÉDEA AUTOMÁTICA";
+            this.chkAutoReinEnabled.UseVisualStyleBackColor = true;
+            this.chkAutoReinEnabled.CheckedChanged += new System.EventHandler(this.chkAutoReinEnabled_CheckedChanged);
             // 
             // getOffReinCheckBox
             // 
             this.getOffReinCheckBox.AutoSize = true;
-            this.getOffReinCheckBox.Location = new System.Drawing.Point(17, 126);
-            this.getOffReinCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.getOffReinCheckBox.Location = new System.Drawing.Point(19, 183);
+            this.getOffReinCheckBox.Margin = new System.Windows.Forms.Padding(10);
             this.getOffReinCheckBox.Name = "getOffReinCheckBox";
-            this.getOffReinCheckBox.Size = new System.Drawing.Size(219, 20);
+            this.getOffReinCheckBox.Size = new System.Drawing.Size(222, 18);
             this.getOffReinCheckBox.TabIndex = 2;
-            this.getOffReinCheckBox.Text = "Desmontar da Rédea ao atacar";
+            this.getOffReinCheckBox.Text = "DESMONTAR DA RÉDEA AO ATACAR";
             this.getOffReinCheckBox.UseVisualStyleBackColor = true;
             this.getOffReinCheckBox.CheckedChanged += new System.EventHandler(this.getOffReinCheckBox_CheckedChanged);
             // 
             // chkStopBuffsOnRein
             // 
             this.chkStopBuffsOnRein.AutoSize = true;
-            this.chkStopBuffsOnRein.Location = new System.Drawing.Point(17, 94);
-            this.chkStopBuffsOnRein.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkStopBuffsOnRein.Location = new System.Drawing.Point(19, 142);
+            this.chkStopBuffsOnRein.Margin = new System.Windows.Forms.Padding(10);
             this.chkStopBuffsOnRein.Name = "chkStopBuffsOnRein";
-            this.chkStopBuffsOnRein.Size = new System.Drawing.Size(206, 20);
+            this.chkStopBuffsOnRein.Size = new System.Drawing.Size(236, 18);
             this.chkStopBuffsOnRein.TabIndex = 1;
-            this.chkStopBuffsOnRein.Text = "Pausar autobuff-skill na rédea";
+            this.chkStopBuffsOnRein.Text = "PAUSAR AUTOBUFF SKILL NA RÉDEA";
             this.chkStopBuffsOnRein.UseVisualStyleBackColor = true;
             this.chkStopBuffsOnRein.CheckedChanged += new System.EventHandler(this.chkStopBuffsOnRein_CheckedChanged);
             // 
-            // chkStopBuffsOnCity
+            // groupBox2
             // 
-            this.chkStopBuffsOnCity.AutoSize = true;
-            this.chkStopBuffsOnCity.Location = new System.Drawing.Point(17, 33);
-            this.chkStopBuffsOnCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.chkStopBuffsOnCity.Name = "chkStopBuffsOnCity";
-            this.chkStopBuffsOnCity.Size = new System.Drawing.Size(320, 20);
-            this.chkStopBuffsOnCity.TabIndex = 0;
-            this.chkStopBuffsOnCity.Text = "Pausar autobuffs/skill timer/auto switch na cidade";
-            this.chkStopBuffsOnCity.UseVisualStyleBackColor = true;
-            this.chkStopBuffsOnCity.CheckedChanged += new System.EventHandler(this.chkStopBuffsOnCity_CheckedChanged);
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(496, 10);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(450, 150);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "CUSTOM BUTTONS";
             // 
-            // label1
+            // ammo2textBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(209, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 16);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Ordem de uso de MasterBall";
+            this.ammo2textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ammo2textBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ammo2textBox.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ammo2textBox.ForeColor = System.Drawing.Color.White;
+            this.ammo2textBox.Location = new System.Drawing.Point(284, 338);
+            this.ammo2textBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ammo2textBox.Multiline = true;
+            this.ammo2textBox.Name = "ammo2textBox";
+            this.ammo2textBox.Size = new System.Drawing.Size(35, 35);
+            this.ammo2textBox.TabIndex = 309;
+            this.ammo2textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // switchListBox
+            // ammo1textBox
             // 
-            this.switchListBox.AllowDrop = true;
-            this.switchListBox.BackColor = System.Drawing.Color.Black;
-            this.switchListBox.ForeColor = System.Drawing.Color.White;
-            this.switchListBox.FormattingEnabled = true;
-            this.switchListBox.ItemHeight = 16;
-            this.switchListBox.Location = new System.Drawing.Point(215, 31);
-            this.switchListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.switchListBox.Name = "switchListBox";
-            this.switchListBox.Size = new System.Drawing.Size(168, 276);
-            this.switchListBox.TabIndex = 4;
+            this.ammo1textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ammo1textBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ammo1textBox.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ammo1textBox.ForeColor = System.Drawing.Color.White;
+            this.ammo1textBox.Location = new System.Drawing.Point(241, 338);
+            this.ammo1textBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ammo1textBox.Multiline = true;
+            this.ammo1textBox.Name = "ammo1textBox";
+            this.ammo1textBox.Size = new System.Drawing.Size(35, 35);
+            this.ammo1textBox.TabIndex = 308;
+            this.ammo1textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtAutoReinKey
+            // 
+            this.txtAutoReinKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.txtAutoReinKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAutoReinKey.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAutoReinKey.ForeColor = System.Drawing.Color.White;
+            this.txtAutoReinKey.Location = new System.Drawing.Point(238, 82);
+            this.txtAutoReinKey.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAutoReinKey.Multiline = true;
+            this.txtAutoReinKey.Name = "txtAutoReinKey";
+            this.txtAutoReinKey.Size = new System.Drawing.Size(35, 35);
+            this.txtAutoReinKey.TabIndex = 316;
+            this.txtAutoReinKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAutoReinKey.TextChanged += new System.EventHandler(this.txtAutoReinKey_TextChanged_1);
+            // 
+            // textReinKey
+            // 
+            this.textReinKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.textReinKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textReinKey.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textReinKey.ForeColor = System.Drawing.Color.White;
+            this.textReinKey.Location = new System.Drawing.Point(251, 174);
+            this.textReinKey.Margin = new System.Windows.Forms.Padding(4);
+            this.textReinKey.Multiline = true;
+            this.textReinKey.Name = "textReinKey";
+            this.textReinKey.Size = new System.Drawing.Size(35, 35);
+            this.textReinKey.TabIndex = 306;
+            this.textReinKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // clientDTOBindingSource
             // 
             this.clientDTOBindingSource.DataSource = typeof(_4RTools.Model.ClientDTO);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(276, 92);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(154, 15);
+            this.textBox1.TabIndex = 319;
+            this.textBox1.Text = "KEY DA RÉDEA NO RAG";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("JetBrains Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.White;
+            this.textBox2.Location = new System.Drawing.Point(289, 184);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(154, 15);
+            this.textBox2.TabIndex = 320;
+            this.textBox2.Text = "KEY DA RÉDEA NO RAG";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // ConfigForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(899, 315);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.switchListBox);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.skillsListBox);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(155)))), ((int)(((byte)(164)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.ClientSize = new System.Drawing.Size(972, 424);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupConfigRein);
+            this.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ConfigForm";
-            this.Text = "ConfigForm";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupConfigRein.ResumeLayout(false);
+            this.groupConfigRein.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAutoReinCells)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientDTOBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
-      
+
         #endregion
         private System.Windows.Forms.BindingSource clientDTOBindingSource;
-        private ListBox skillsListBox;
-        private Label label2;
-        private GroupBox groupBox1;
+        private GroupBox groupConfigRein;
         private CheckBox chkStopBuffsOnRein;
         private CheckBox chkStopBuffsOnCity;
         private CheckBox getOffReinCheckBox;
-        private TextBox textReinKey;
-        private TextBox ammo2textBox;
-        private TextBox ammo1textBox;
+        private VerticallyCenteredTextBox textReinKey;
+        private VerticallyCenteredTextBox ammo2textBox;
+        private VerticallyCenteredTextBox ammo1textBox;
         private CheckBox switchAmmoCheckBox;
         private CheckBox chkStopHealOnCity;
         private ToolTip toolTip1;
         private ToolTip toolTip2;
         private ToolTip toolTip3;
         private ToolTip toolTip4;
-        private Label label1;
-        private ListBox switchListBox;
+        private ToolTip toolTip5;
         private CheckBox chkStopWithChat;
+        private CheckBox chkAutoReinEnabled;
+        private NumericUpDown numAutoReinCells;
+        private VerticallyCenteredTextBox txtAutoReinKey;
+        private Label lblAutoReinCells;
+        private PictureBox pictureBox1;
+        private GroupBox groupBox2;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }

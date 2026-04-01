@@ -22,198 +22,160 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StuffAutoBuffForm));
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.FoodsGP = new System.Windows.Forms.GroupBox();
-            this.PotionsGP = new System.Windows.Forms.GroupBox();
-            this.BoxesGP = new System.Windows.Forms.GroupBox();
-            this.ElementalsGP = new System.Windows.Forms.GroupBox();
-            this.ScrollBuffsGP = new System.Windows.Forms.GroupBox();
-            this.EtcGP = new System.Windows.Forms.GroupBox();
+            this.comboBoxStuff = new System.Windows.Forms.ComboBox();
+            this.labelSelectStuff = new System.Windows.Forms.Label();
+            this.panelStuffContainer = new System.Windows.Forms.Panel();
             this.btnResetAutobuff = new System.Windows.Forms.Button();
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.numericDelay = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelControls2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.numericDelay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelControls2.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolTip1
             // 
             this.toolTip1.AutomaticDelay = 10;
-            this.toolTip1.AutoPopDelay = 5000;
+            this.toolTip1.AutoPopDelay = 10000;  // Aumentar para 10 segundos (era 5000)
             this.toolTip1.InitialDelay = 10;
             this.toolTip1.ReshowDelay = 2;
+            this.toolTip1.UseAnimation = true;
+            this.toolTip1.UseFading = true;
             // 
-            // FoodsGP
+            // comboBoxStuff
             // 
-            this.FoodsGP.AutoSize = true;
-            this.FoodsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FoodsGP.ForeColor = System.Drawing.Color.White;
-            this.FoodsGP.Location = new System.Drawing.Point(16, 150);
-            this.FoodsGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.FoodsGP.Name = "FoodsGP";
-            this.FoodsGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.FoodsGP.Size = new System.Drawing.Size(693, 37);
-            this.FoodsGP.TabIndex = 293;
-            this.FoodsGP.TabStop = false;
-            this.FoodsGP.Text = "Foods";
+            this.comboBoxStuff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.comboBoxStuff.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxStuff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxStuff.Font = new System.Drawing.Font("JetBrains Mono", 9F);
+            this.comboBoxStuff.ForeColor = System.Drawing.Color.White;
+            this.comboBoxStuff.FormattingEnabled = true;
+            this.comboBoxStuff.Location = new System.Drawing.Point(15, 25);
+            this.comboBoxStuff.Name = "comboBoxStuff";
+            this.comboBoxStuff.Size = new System.Drawing.Size(400, 24);
+            this.comboBoxStuff.TabIndex = 1;
+            this.comboBoxStuff.SelectedIndexChanged += new System.EventHandler(this.comboBoxStuff_SelectedIndexChanged);
             // 
-            // PotionsGP
+            // labelSelectStuff
             // 
-            this.PotionsGP.AutoSize = true;
-            this.PotionsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PotionsGP.ForeColor = System.Drawing.Color.White;
-            this.PotionsGP.Location = new System.Drawing.Point(16, 15);
-            this.PotionsGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.PotionsGP.Name = "PotionsGP";
-            this.PotionsGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.PotionsGP.Size = new System.Drawing.Size(693, 37);
-            this.PotionsGP.TabIndex = 294;
-            this.PotionsGP.TabStop = false;
-            this.PotionsGP.Text = "Potions";
+            this.labelSelectStuff.AutoSize = true;
+            this.labelSelectStuff.Font = new System.Drawing.Font("JetBrains Mono", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelSelectStuff.ForeColor = System.Drawing.Color.White;
+            this.labelSelectStuff.Location = new System.Drawing.Point(15, 8);
+            this.labelSelectStuff.Name = "labelSelectStuff";
+            this.labelSelectStuff.Size = new System.Drawing.Size(196, 14);
+            this.labelSelectStuff.TabIndex = 0;
+            this.labelSelectStuff.Text = "SELECIONAR ITEM / CATEGORIA";
+            this.labelSelectStuff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // BoxesGP
+            // panelStuffContainer
             // 
-            this.BoxesGP.AutoSize = true;
-            this.BoxesGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BoxesGP.ForeColor = System.Drawing.Color.White;
-            this.BoxesGP.Location = new System.Drawing.Point(16, 105);
-            this.BoxesGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.BoxesGP.Name = "BoxesGP";
-            this.BoxesGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.BoxesGP.Size = new System.Drawing.Size(693, 37);
-            this.BoxesGP.TabIndex = 295;
-            this.BoxesGP.TabStop = false;
-            this.BoxesGP.Text = "Boxes / Speed / Status";
-            // 
-            // ElementalsGP
-            // 
-            this.ElementalsGP.AutoSize = true;
-            this.ElementalsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ElementalsGP.ForeColor = System.Drawing.Color.White;
-            this.ElementalsGP.Location = new System.Drawing.Point(16, 58);
-            this.ElementalsGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ElementalsGP.Name = "ElementalsGP";
-            this.ElementalsGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ElementalsGP.Size = new System.Drawing.Size(693, 37);
-            this.ElementalsGP.TabIndex = 296;
-            this.ElementalsGP.TabStop = false;
-            this.ElementalsGP.Text = "Elementals";
-            // 
-            // ScrollBuffsGP
-            // 
-            this.ScrollBuffsGP.AutoSize = true;
-            this.ScrollBuffsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ScrollBuffsGP.ForeColor = System.Drawing.Color.White;
-            this.ScrollBuffsGP.Location = new System.Drawing.Point(16, 198);
-            this.ScrollBuffsGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ScrollBuffsGP.Name = "ScrollBuffsGP";
-            this.ScrollBuffsGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ScrollBuffsGP.Size = new System.Drawing.Size(693, 37);
-            this.ScrollBuffsGP.TabIndex = 297;
-            this.ScrollBuffsGP.TabStop = false;
-            this.ScrollBuffsGP.Text = "Scroll Buffs";
-            // 
-            // EtcGP
-            // 
-            this.EtcGP.AutoSize = true;
-            this.EtcGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EtcGP.ForeColor = System.Drawing.Color.White;
-            this.EtcGP.Location = new System.Drawing.Point(16, 246);
-            this.EtcGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.EtcGP.Name = "EtcGP";
-            this.EtcGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.EtcGP.Size = new System.Drawing.Size(693, 37);
-            this.EtcGP.TabIndex = 298;
-            this.EtcGP.TabStop = false;
-            this.EtcGP.Text = "ETC";
+            this.panelStuffContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelStuffContainer.AutoScroll = true;
+            this.panelStuffContainer.Location = new System.Drawing.Point(15, 60);
+            this.panelStuffContainer.Name = "panelStuffContainer";
+            this.panelStuffContainer.Size = new System.Drawing.Size(945, 288);
+            this.panelStuffContainer.TabIndex = 2;
             // 
             // btnResetAutobuff
             // 
-            this.btnResetAutobuff.BackColor = System.Drawing.Color.Black;
+            this.btnResetAutobuff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnResetAutobuff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResetAutobuff.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnResetAutobuff.ForeColor = System.Drawing.Color.White;
-            this.btnResetAutobuff.Location = new System.Drawing.Point(717, 78);
-            this.btnResetAutobuff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnResetAutobuff.Location = new System.Drawing.Point(130, 9);
+            this.btnResetAutobuff.Margin = new System.Windows.Forms.Padding(4);
             this.btnResetAutobuff.Name = "btnResetAutobuff";
-            this.btnResetAutobuff.Size = new System.Drawing.Size(80, 28);
+            this.btnResetAutobuff.Size = new System.Drawing.Size(80, 30);
             this.btnResetAutobuff.TabIndex = 299;
-            this.btnResetAutobuff.Text = "Reset\r\n";
+            this.btnResetAutobuff.Text = "RESET";
             this.toolTip2.SetToolTip(this.btnResetAutobuff, "Remove todos os atalhos");
             this.btnResetAutobuff.UseVisualStyleBackColor = false;
             this.btnResetAutobuff.Click += new System.EventHandler(this.btnResetAutobuff_Click);
             // 
             // numericDelay
             // 
-            this.numericDelay.BackColor = System.Drawing.Color.Black;
+            this.numericDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.numericDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericDelay.Font = new System.Drawing.Font("JetBrains Mono", 11.25F);
             this.numericDelay.ForeColor = System.Drawing.Color.White;
-            this.numericDelay.Location = new System.Drawing.Point(717, 42);
-            this.numericDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericDelay.Location = new System.Drawing.Point(42, 11);
+            this.numericDelay.Margin = new System.Windows.Forms.Padding(4);
             this.numericDelay.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.numericDelay.Name = "numericDelay";
-            this.numericDelay.Size = new System.Drawing.Size(80, 22);
+            this.numericDelay.Size = new System.Drawing.Size(80, 27);
             this.numericDelay.TabIndex = 302;
             this.numericDelay.ValueChanged += new System.EventHandler(this.numericDelay_TextChanged);
             // 
-            // label5
+            // pictureBox1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(724, 22);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 16);
-            this.label5.TabIndex = 300;
-            this.label5.Text = "Delay ms";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 303;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelControls2
+            // 
+            this.panelControls2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panelControls2.Controls.Add(this.pictureBox1);
+            this.panelControls2.Controls.Add(this.numericDelay);
+            this.panelControls2.Controls.Add(this.btnResetAutobuff);
+            this.panelControls2.Location = new System.Drawing.Point(15, 363);
+            this.panelControls2.Name = "panelControls2";
+            this.panelControls2.Size = new System.Drawing.Size(945, 50);
+            this.panelControls2.TabIndex = 3;
             // 
             // StuffAutoBuffForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(809, 305);
-            this.Controls.Add(this.numericDelay);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnResetAutobuff);
-            this.Controls.Add(this.EtcGP);
-            this.Controls.Add(this.ScrollBuffsGP);
-            this.Controls.Add(this.ElementalsGP);
-            this.Controls.Add(this.BoxesGP);
-            this.Controls.Add(this.PotionsGP);
-            this.Controls.Add(this.FoodsGP);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.ClientSize = new System.Drawing.Size(972, 424);
+            this.Controls.Add(this.panelControls2);
+            this.Controls.Add(this.panelStuffContainer);
+            this.Controls.Add(this.comboBoxStuff);
+            this.Controls.Add(this.labelSelectStuff);
+            this.Font = new System.Drawing.Font("JetBrains Mono", 7.8F);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StuffAutoBuffForm";
-            this.Text = "AutobuffSkillForm";
+            this.Text = "StuffAutoBuffForm";
             ((System.ComponentModel.ISupportInitialize)(this.numericDelay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelControls2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.GroupBox FoodsGP;
-        private System.Windows.Forms.GroupBox PotionsGP;
-        private System.Windows.Forms.GroupBox BoxesGP;
-        private System.Windows.Forms.GroupBox ElementalsGP;
-        private System.Windows.Forms.GroupBox ScrollBuffsGP;
-        private System.Windows.Forms.GroupBox EtcGP;
+        private System.Windows.Forms.ComboBox comboBoxStuff;
+        private System.Windows.Forms.Label labelSelectStuff;
+        private System.Windows.Forms.Panel panelStuffContainer;
         private System.Windows.Forms.Button btnResetAutobuff;
         private System.Windows.Forms.ToolTip toolTip2;
         private System.Windows.Forms.NumericUpDown numericDelay;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelControls2;
     }
 }

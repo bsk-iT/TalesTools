@@ -53,7 +53,7 @@ namespace _4RTools.Model
                 bool stopOpenChat = ProfileSingleton.GetCurrent().UserPreferences.stopWithChat;
 
                 bool canAutobuff = !hasAntiBot
-                    &&!(hasOpenChat && stopOpenChat)
+                    && !(hasOpenChat && stopOpenChat)
                     && !(stopBuffsCity && isInCityList);
 
                 if (canAutobuff)
@@ -76,10 +76,6 @@ namespace _4RTools.Model
                                 bmClone.Remove(EffectStatusIDs.OVERTHRUST);
                             }
                         }
-                        if (bmClone.ContainsKey(EffectStatusIDs.EDEN))
-                        {
-                            bmClone.Remove(EffectStatusIDs.EDEN);
-                        }
 
                         if (buffMapping.ContainsKey(status)) //CHECK IF STATUS EXISTS IN STATUS LIST AND DO ACTION
                         {
@@ -88,6 +84,20 @@ namespace _4RTools.Model
 
                         if (status == EffectStatusIDs.QUAGMIRE) foundQuag = true;
                         if (status == EffectStatusIDs.DECREASE_AGI) foundDecreaseAgi = true;
+                    }
+                    if (bmClone.ContainsKey(EffectStatusIDs.EDEN))
+                    {
+
+                        bmClone.Remove(EffectStatusIDs.EDEN);
+                        if (bmClone.ContainsKey(EffectStatusIDs.ASSUMPTIO))
+
+                        {
+
+                            bmClone.Remove(EffectStatusIDs.BLESSING);
+                            bmClone.Remove(EffectStatusIDs.INC_AGI);
+
+                        }
+
                     }
                     buffs.Clear();
                     if (!buffs.Contains(EffectStatusIDs.ANTI_BOT) && !(hasOpenChat && stopOpenChat))
@@ -130,6 +140,16 @@ namespace _4RTools.Model
                 buffMapping.Add(status, key);
             }
         }
+
+        // Método adicionado: remove a associação de tecla de um buff
+        public void RemoveKeyFromBuff(EffectStatusIDs status)
+        {
+            if (buffMapping.ContainsKey(status))
+            {
+                buffMapping.Remove(status);
+            }
+        }
+
         private bool hasBuff(Client c, EffectStatusIDs buff)
         {
             for (int i = 1; i < Constants.MAX_BUFF_LIST_INDEX_SIZE; i++)

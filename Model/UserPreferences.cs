@@ -26,6 +26,11 @@ namespace _4RTools.Model
 
         public bool stopSpammersBot { get; set; } = false;
 
+        // Novas propriedades para rédea automática
+        public bool autoReinEnabled { get; set; } = false;
+        public int autoReinCellCount { get; set; } = 1;
+        public Key autoReinKey { get; set; } = Key.None;
+
         public UserPreferences()
         {
         }

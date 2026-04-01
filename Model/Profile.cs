@@ -36,6 +36,7 @@ namespace _4RTools.Model
                     profile.DebuffsRecovery = JsonConvert.DeserializeObject<DebuffsRecovery>(Profile.GetByAction(rawObject, profile.DebuffsRecovery));
                     profile.AutoSwitch = JsonConvert.DeserializeObject<AutoSwitch>(Profile.GetByAction(rawObject, profile.AutoSwitch));
                     profile.AutoSwitchHeal = JsonConvert.DeserializeObject<AutoSwitchHeal>(Profile.GetByAction(rawObject, profile.AutoSwitchHeal));
+                    profile.AutoRein = JsonConvert.DeserializeObject<AutoRein>(Profile.GetByAction(rawObject, profile.AutoRein));
                 }
             }
             catch {
@@ -80,19 +81,25 @@ namespace _4RTools.Model
             catch { }
         }
 
-        public static void SetConfiguration(Action action)
-        {
-            if (profile != null)
-            {
-                string jsonData = File.ReadAllText(AppConfig.ProfileFolder + profile.Name + ".json");
-                dynamic jsonObj = JsonConvert.DeserializeObject(jsonData);
-                jsonObj[action.GetActionName()] = action.GetConfiguration();
-                string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
-                File.WriteAllText(AppConfig.ProfileFolder + profile.Name + ".json", output);
-            }
-        }
+    public static void SetConfiguration(Action action)
+    {
+      if (profile != null)
+      {
+        string jsonData = File.ReadAllText(AppConfig.ProfileFolder + profile.Name + ".json");
+        dynamic jsonObj = JsonConvert.DeserializeObject(jsonData);
 
-        public static Profile GetCurrent()
+        // Deserializar a string JSON retornada por GetConfiguration() para um objeto
+        string actionConfigJson = action.GetConfiguration();
+        dynamic actionConfigObj = JsonConvert.DeserializeObject(actionConfigJson);
+
+        jsonObj[action.GetActionName()] = actionConfigObj;
+
+        string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
+        File.WriteAllText(AppConfig.ProfileFolder + profile.Name + ".json", output);
+      }
+    }
+
+    public static Profile GetCurrent()
         {
             return profile;
         }
@@ -112,11 +119,12 @@ namespace _4RTools.Model
         public DebuffsRecovery DebuffsRecovery { get; set; }
         public Macro SongMacro { get; set;}
         public Macro MacroSwitch { get; set;}
-
         public Custom Custom { get; set; }
         public ATKDEFMode AtkDefMode { get; set; }
         public AutoSwitch AutoSwitch { get; set; }
         public AutoSwitchHeal AutoSwitchHeal { get; set; }
+
+        public AutoRein AutoRein { get; set; }
 
         public Profile(string name)
         {
@@ -137,6 +145,7 @@ namespace _4RTools.Model
             this.Custom = new Custom();
             this.AutoSwitch = new AutoSwitch();
             this.AutoSwitchHeal = new AutoSwitchHeal();
+            this.AutoRein = new AutoRein();
         }
 
         public static object GetByAction(dynamic obj, Action action)

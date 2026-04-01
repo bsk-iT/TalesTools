@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Input;
+using _4RTools.Forms;
 
 namespace _4RTools.Model
 {
@@ -43,7 +44,7 @@ namespace _4RTools.Model
                 foreach (Buff skill in bk.skills)
                 {
                     PictureBox pb = new PictureBox();
-                    TextBox textBox = new TextBox();
+                    VerticallyCenteredTextBox textBox = new VerticallyCenteredTextBox();
 
                     pb.Image = skill.icon;
                     pb.BackgroundImageLayout = ImageLayout.Center;
@@ -62,6 +63,8 @@ namespace _4RTools.Model
                     textBox.BackColor = System.Drawing.Color.Black;
                     textBox.ForeColor = System.Drawing.Color.White;
                     textBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+                    textBox.Font = new Font("JetBrains Mono", 8.25F, FontStyle.Regular);
+                    textBox.TextAlign = HorizontalAlignment.Center;
 
                     bk.container.Controls.Add(textBox);
                     bk.container.Controls.Add(pb);
@@ -83,12 +86,12 @@ namespace _4RTools.Model
             try
             {
 
-                TextBox txtBox = (TextBox)sender;
+                VerticallyCenteredTextBox txtBox = (VerticallyCenteredTextBox)sender;
                 if (txtBox.Text.ToString() != String.Empty)
                 {
                     Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
                     EffectStatusIDs statusID = (EffectStatusIDs)Int16.Parse(txtBox.Name.Split(new[] { "in" }, StringSplitOptions.None)[1]);
-                    ProfileSingleton.GetCurrent().DebuffsRecovery.AddKeyToBuff(statusID, key);               
+                    ProfileSingleton.GetCurrent().DebuffsRecovery.AddKeyToBuff(statusID, key);
                     ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().DebuffsRecovery);
                 }
             }

@@ -468,195 +468,211 @@
             // lblSwitchDelay
             // 
             this.lblSwitchDelay.AutoSize = true;
-            this.lblSwitchDelay.Location = new System.Drawing.Point(23, 113);
+            this.lblSwitchDelay.Location = new System.Drawing.Point(20, 118);
             this.lblSwitchDelay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSwitchDelay.Name = "lblSwitchDelay";
-            this.lblSwitchDelay.Size = new System.Drawing.Size(84, 16);
+            this.lblSwitchDelay.Size = new System.Drawing.Size(91, 14);
             this.lblSwitchDelay.TabIndex = 28;
-            this.lblSwitchDelay.Text = "Switch Delay";
+            this.lblSwitchDelay.Text = "SWITCH DELAY";
+            this.lblSwitchDelay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lblSwitchDelay, "Delay between each item change.");
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 74);
+            this.label3.Location = new System.Drawing.Point(20, 77);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 16);
+            this.label3.Size = new System.Drawing.Size(98, 14);
             this.label3.TabIndex = 26;
-            this.label3.Text = "Spammer Delay";
+            this.label3.Text = "SPAMMER DELAY";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label3, "Delay for Spammer Key");
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 113);
+            this.label6.Location = new System.Drawing.Point(20, 118);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 16);
+            this.label6.Size = new System.Drawing.Size(91, 14);
             this.label6.TabIndex = 28;
-            this.label6.Text = "Switch Delay";
+            this.label6.Text = "SWITCH DELAY";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label6, "Delay between each item change.");
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(19, 74);
+            this.label8.Location = new System.Drawing.Point(20, 77);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 16);
+            this.label8.Size = new System.Drawing.Size(98, 14);
             this.label8.TabIndex = 26;
-            this.label8.Text = "Spammer Delay";
+            this.label8.Text = "SPAMMER DELAY";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label8, "Delay for Spammer Key");
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(23, 113);
+            this.label11.Location = new System.Drawing.Point(20, 118);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(84, 16);
+            this.label11.Size = new System.Drawing.Size(91, 14);
             this.label11.TabIndex = 28;
-            this.label11.Text = "Switch Delay";
+            this.label11.Text = "SWITCH DELAY";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label11, "Delay between each item change.");
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(19, 74);
+            this.label13.Location = new System.Drawing.Point(20, 77);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(105, 16);
+            this.label13.Size = new System.Drawing.Size(98, 14);
             this.label13.TabIndex = 26;
-            this.label13.Text = "Spammer Delay";
+            this.label13.Text = "SPAMMER DELAY";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label13, "Delay for Spammer Key");
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(23, 113);
+            this.label16.Location = new System.Drawing.Point(20, 118);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(84, 16);
+            this.label16.Size = new System.Drawing.Size(91, 14);
             this.label16.TabIndex = 28;
-            this.label16.Text = "Switch Delay";
+            this.label16.Text = "SWITCH DELAY";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label16, "Delay between each item change.");
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(19, 74);
+            this.label18.Location = new System.Drawing.Point(20, 77);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(105, 16);
+            this.label18.Size = new System.Drawing.Size(98, 14);
             this.label18.TabIndex = 26;
-            this.label18.Text = "Spammer Delay";
+            this.label18.Text = "SPAMMER DELAY";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label18, "Delay for Spammer Key");
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(23, 113);
+            this.label21.Location = new System.Drawing.Point(20, 118);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(84, 16);
+            this.label21.Size = new System.Drawing.Size(91, 14);
             this.label21.TabIndex = 28;
-            this.label21.Text = "Switch Delay";
+            this.label21.Text = "SWITCH DELAY";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label21, "Delay between each item change.");
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(19, 74);
+            this.label23.Location = new System.Drawing.Point(20, 77);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(105, 16);
+            this.label23.Size = new System.Drawing.Size(98, 14);
             this.label23.TabIndex = 26;
-            this.label23.Text = "Spammer Delay";
+            this.label23.Text = "SPAMMER DELAY";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label23, "Delay for Spammer Key");
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(23, 113);
+            this.label26.Location = new System.Drawing.Point(20, 118);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(84, 16);
+            this.label26.Size = new System.Drawing.Size(91, 14);
             this.label26.TabIndex = 28;
-            this.label26.Text = "Switch Delay";
+            this.label26.Text = "SWITCH DELAY";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label26, "Delay between each item change.");
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(19, 74);
+            this.label28.Location = new System.Drawing.Point(20, 77);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(105, 16);
+            this.label28.Size = new System.Drawing.Size(98, 14);
             this.label28.TabIndex = 26;
-            this.label28.Text = "Spammer Delay";
+            this.label28.Text = "SPAMMER DELAY";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label28, "Delay for Spammer Key");
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(23, 113);
+            this.label31.Location = new System.Drawing.Point(20, 118);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(84, 16);
+            this.label31.Size = new System.Drawing.Size(91, 14);
             this.label31.TabIndex = 28;
-            this.label31.Text = "Switch Delay";
+            this.label31.Text = "SWITCH DELAY";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label31, "Delay between each item change.");
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(19, 74);
+            this.label33.Location = new System.Drawing.Point(20, 77);
             this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(105, 16);
+            this.label33.Size = new System.Drawing.Size(98, 14);
             this.label33.TabIndex = 26;
-            this.label33.Text = "Spammer Delay";
+            this.label33.Text = "SPAMMER DELAY";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label33, "Delay for Spammer Key");
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(23, 113);
+            this.label36.Location = new System.Drawing.Point(20, 118);
             this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(84, 16);
+            this.label36.Size = new System.Drawing.Size(91, 14);
             this.label36.TabIndex = 28;
-            this.label36.Text = "Switch Delay";
+            this.label36.Text = "SWITCH DELAY";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label36, "Delay between each item change.");
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(19, 74);
+            this.label38.Location = new System.Drawing.Point(20, 77);
             this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(105, 16);
+            this.label38.Size = new System.Drawing.Size(98, 14);
             this.label38.TabIndex = 26;
-            this.label38.Text = "Spammer Delay";
+            this.label38.Text = "SPAMMER DELAY";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label38, "Delay for Spammer Key");
             // 
             // equipGroup1
             // 
             this.equipGroup1.Controls.Add(this.panelSwitch1);
             this.equipGroup1.ForeColor = System.Drawing.Color.White;
-            this.equipGroup1.Location = new System.Drawing.Point(16, 1);
-            this.equipGroup1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.equipGroup1.Location = new System.Drawing.Point(20, 15);
+            this.equipGroup1.Margin = new System.Windows.Forms.Padding(4);
             this.equipGroup1.Name = "equipGroup1";
-            this.equipGroup1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.equipGroup1.Size = new System.Drawing.Size(689, 244);
+            this.equipGroup1.Padding = new System.Windows.Forms.Padding(4);
+            this.equipGroup1.Size = new System.Drawing.Size(750, 260);
             this.equipGroup1.TabIndex = 28;
             this.equipGroup1.TabStop = false;
             this.equipGroup1.Text = "ATK x DEF 1";
             // 
             // panelSwitch1
             // 
-            this.panelSwitch1.BackColor = System.Drawing.Color.Black;
+            this.panelSwitch1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.panelSwitch1.Controls.Add(this.pictureBox12);
             this.panelSwitch1.Controls.Add(this.pictureBox11);
             this.panelSwitch1.Controls.Add(this.in1Atk6);
@@ -686,20 +702,20 @@
             this.panelSwitch1.Controls.Add(this.pictureBox1);
             this.panelSwitch1.Controls.Add(this.groupBoxATKxDEFConfig);
             this.panelSwitch1.ForeColor = System.Drawing.Color.White;
-            this.panelSwitch1.Location = new System.Drawing.Point(15, 16);
-            this.panelSwitch1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSwitch1.Location = new System.Drawing.Point(40, 15);
+            this.panelSwitch1.Margin = new System.Windows.Forms.Padding(4);
             this.panelSwitch1.Name = "panelSwitch1";
-            this.panelSwitch1.Size = new System.Drawing.Size(660, 222);
+            this.panelSwitch1.Size = new System.Drawing.Size(660, 236);
             this.panelSwitch1.TabIndex = 28;
             // 
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
             this.pictureBox12.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.InitialImage")));
-            this.pictureBox12.Location = new System.Drawing.Point(611, 34);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox12.Location = new System.Drawing.Point(611, 36);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox12.Size = new System.Drawing.Size(33, 33);
             this.pictureBox12.TabIndex = 37;
             this.pictureBox12.TabStop = false;
             // 
@@ -707,170 +723,179 @@
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.InitialImage")));
-            this.pictureBox11.Location = new System.Drawing.Point(297, 34);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox11.Location = new System.Drawing.Point(297, 36);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox11.Size = new System.Drawing.Size(33, 33);
             this.pictureBox11.TabIndex = 36;
             this.pictureBox11.TabStop = false;
             // 
             // in1Atk6
             // 
-            this.in1Atk6.BackColor = System.Drawing.Color.Black;
+            this.in1Atk6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1Atk6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1Atk6.ForeColor = System.Drawing.Color.White;
-            this.in1Atk6.Location = new System.Drawing.Point(525, 186);
-            this.in1Atk6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1Atk6.Location = new System.Drawing.Point(525, 198);
+            this.in1Atk6.Margin = new System.Windows.Forms.Padding(4);
             this.in1Atk6.Name = "in1Atk6";
-            this.in1Atk6.Size = new System.Drawing.Size(79, 22);
+            this.in1Atk6.Size = new System.Drawing.Size(79, 21);
             this.in1Atk6.TabIndex = 35;
             this.in1Atk6.Tag = "1:Atk6";
+            this.in1Atk6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in1Def6
             // 
-            this.in1Def6.BackColor = System.Drawing.Color.Black;
+            this.in1Def6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1Def6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1Def6.ForeColor = System.Drawing.Color.White;
-            this.in1Def6.Location = new System.Drawing.Point(336, 185);
-            this.in1Def6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1Def6.Location = new System.Drawing.Point(336, 197);
+            this.in1Def6.Margin = new System.Windows.Forms.Padding(4);
             this.in1Def6.Name = "in1Def6";
-            this.in1Def6.Size = new System.Drawing.Size(79, 22);
+            this.in1Def6.Size = new System.Drawing.Size(79, 21);
             this.in1Def6.TabIndex = 34;
             this.in1Def6.Tag = "1:Def6";
+            this.in1Def6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in1Atk2
             // 
-            this.in1Atk2.BackColor = System.Drawing.Color.Black;
+            this.in1Atk2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1Atk2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1Atk2.ForeColor = System.Drawing.Color.White;
-            this.in1Atk2.Location = new System.Drawing.Point(525, 68);
-            this.in1Atk2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1Atk2.Location = new System.Drawing.Point(525, 72);
+            this.in1Atk2.Margin = new System.Windows.Forms.Padding(4);
             this.in1Atk2.Name = "in1Atk2";
-            this.in1Atk2.Size = new System.Drawing.Size(79, 22);
+            this.in1Atk2.Size = new System.Drawing.Size(79, 21);
             this.in1Atk2.TabIndex = 9;
             this.in1Atk2.Tag = "1:Atk2";
+            this.in1Atk2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblDef
             // 
             this.lblDef.AutoSize = true;
             this.lblDef.ForeColor = System.Drawing.Color.White;
-            this.lblDef.Location = new System.Drawing.Point(332, 12);
+            this.lblDef.Location = new System.Drawing.Point(332, 13);
             this.lblDef.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDef.Name = "lblDef";
-            this.lblDef.Size = new System.Drawing.Size(75, 16);
+            this.lblDef.Size = new System.Drawing.Size(77, 14);
             this.lblDef.TabIndex = 0;
-            this.lblDef.Text = "DEF Switch";
+            this.lblDef.Text = "DEF SWITCH";
+            this.lblDef.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in1Def1
             // 
-            this.in1Def1.BackColor = System.Drawing.Color.Black;
+            this.in1Def1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1Def1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1Def1.ForeColor = System.Drawing.Color.White;
-            this.in1Def1.Location = new System.Drawing.Point(336, 38);
-            this.in1Def1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1Def1.Location = new System.Drawing.Point(336, 40);
+            this.in1Def1.Margin = new System.Windows.Forms.Padding(4);
             this.in1Def1.Name = "in1Def1";
-            this.in1Def1.Size = new System.Drawing.Size(79, 22);
+            this.in1Def1.Size = new System.Drawing.Size(79, 21);
             this.in1Def1.TabIndex = 1;
             this.in1Def1.Tag = "1:Def1";
+            this.in1Def1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in1Def2
             // 
-            this.in1Def2.BackColor = System.Drawing.Color.Black;
+            this.in1Def2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1Def2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1Def2.ForeColor = System.Drawing.Color.White;
-            this.in1Def2.Location = new System.Drawing.Point(336, 66);
-            this.in1Def2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1Def2.Location = new System.Drawing.Point(336, 70);
+            this.in1Def2.Margin = new System.Windows.Forms.Padding(4);
             this.in1Def2.Name = "in1Def2";
-            this.in1Def2.Size = new System.Drawing.Size(79, 22);
+            this.in1Def2.Size = new System.Drawing.Size(79, 21);
             this.in1Def2.TabIndex = 2;
             this.in1Def2.Tag = "1:Def2";
+            this.in1Def2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in1Def3
             // 
-            this.in1Def3.BackColor = System.Drawing.Color.Black;
+            this.in1Def3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1Def3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1Def3.ForeColor = System.Drawing.Color.White;
-            this.in1Def3.Location = new System.Drawing.Point(336, 96);
-            this.in1Def3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1Def3.Location = new System.Drawing.Point(336, 102);
+            this.in1Def3.Margin = new System.Windows.Forms.Padding(4);
             this.in1Def3.Name = "in1Def3";
-            this.in1Def3.Size = new System.Drawing.Size(79, 22);
+            this.in1Def3.Size = new System.Drawing.Size(79, 21);
             this.in1Def3.TabIndex = 3;
             this.in1Def3.Tag = "1:Def3";
+            this.in1Def3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.InitialImage")));
-            this.pictureBox6.Location = new System.Drawing.Point(611, 123);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Location = new System.Drawing.Point(611, 131);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox6.Size = new System.Drawing.Size(33, 33);
             this.pictureBox6.TabIndex = 22;
             this.pictureBox6.TabStop = false;
             // 
             // in1Def4
             // 
-            this.in1Def4.BackColor = System.Drawing.Color.Black;
+            this.in1Def4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1Def4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1Def4.ForeColor = System.Drawing.Color.White;
-            this.in1Def4.Location = new System.Drawing.Point(336, 126);
-            this.in1Def4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1Def4.Location = new System.Drawing.Point(336, 134);
+            this.in1Def4.Margin = new System.Windows.Forms.Padding(4);
             this.in1Def4.Name = "in1Def4";
-            this.in1Def4.Size = new System.Drawing.Size(79, 22);
+            this.in1Def4.Size = new System.Drawing.Size(79, 21);
             this.in1Def4.TabIndex = 4;
             this.in1Def4.Tag = "1:Def4";
+            this.in1Def4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.InitialImage")));
-            this.pictureBox7.Location = new System.Drawing.Point(611, 182);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Location = new System.Drawing.Point(611, 193);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox7.Size = new System.Drawing.Size(33, 33);
             this.pictureBox7.TabIndex = 21;
             this.pictureBox7.TabStop = false;
             // 
             // in1Def5
             // 
-            this.in1Def5.BackColor = System.Drawing.Color.Black;
+            this.in1Def5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1Def5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1Def5.ForeColor = System.Drawing.Color.White;
-            this.in1Def5.Location = new System.Drawing.Point(336, 155);
-            this.in1Def5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1Def5.Location = new System.Drawing.Point(336, 165);
+            this.in1Def5.Margin = new System.Windows.Forms.Padding(4);
             this.in1Def5.Name = "in1Def5";
-            this.in1Def5.Size = new System.Drawing.Size(79, 22);
+            this.in1Def5.Size = new System.Drawing.Size(79, 21);
             this.in1Def5.TabIndex = 5;
             this.in1Def5.Tag = "1:Def5";
+            this.in1Def5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.InitialImage")));
-            this.pictureBox8.Location = new System.Drawing.Point(611, 153);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Location = new System.Drawing.Point(611, 163);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox8.Size = new System.Drawing.Size(33, 33);
             this.pictureBox8.TabIndex = 20;
             this.pictureBox8.TabStop = false;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Location = new System.Drawing.Point(475, 12);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(475, 13);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1, 197);
+            this.panel1.Size = new System.Drawing.Size(1, 209);
             this.panel1.TabIndex = 6;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.InitialImage")));
-            this.pictureBox9.Location = new System.Drawing.Point(611, 94);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Location = new System.Drawing.Point(611, 100);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox9.Size = new System.Drawing.Size(33, 33);
             this.pictureBox9.TabIndex = 19;
             this.pictureBox9.TabStop = false;
             // 
@@ -878,113 +903,118 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(521, 12);
+            this.label1.Location = new System.Drawing.Point(521, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 16);
+            this.label1.Size = new System.Drawing.Size(77, 14);
             this.label1.TabIndex = 7;
-            this.label1.Text = "ATK Switch";
+            this.label1.Text = "ATK SWITCH";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.InitialImage")));
-            this.pictureBox10.Location = new System.Drawing.Point(611, 64);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox10.Location = new System.Drawing.Point(611, 68);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox10.Size = new System.Drawing.Size(33, 33);
             this.pictureBox10.TabIndex = 18;
             this.pictureBox10.TabStop = false;
             // 
             // in1Atk1
             // 
-            this.in1Atk1.BackColor = System.Drawing.Color.Black;
+            this.in1Atk1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1Atk1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1Atk1.ForeColor = System.Drawing.Color.White;
-            this.in1Atk1.Location = new System.Drawing.Point(525, 38);
-            this.in1Atk1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1Atk1.Location = new System.Drawing.Point(525, 40);
+            this.in1Atk1.Margin = new System.Windows.Forms.Padding(4);
             this.in1Atk1.Name = "in1Atk1";
-            this.in1Atk1.Size = new System.Drawing.Size(79, 22);
+            this.in1Atk1.Size = new System.Drawing.Size(79, 21);
             this.in1Atk1.TabIndex = 8;
             this.in1Atk1.Tag = "1:Atk1";
+            this.in1Atk1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.InitialImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(297, 122);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Location = new System.Drawing.Point(297, 130);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox5.Size = new System.Drawing.Size(33, 33);
             this.pictureBox5.TabIndex = 17;
             this.pictureBox5.TabStop = false;
             // 
             // in1Atk3
             // 
-            this.in1Atk3.BackColor = System.Drawing.Color.Black;
+            this.in1Atk3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1Atk3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1Atk3.ForeColor = System.Drawing.Color.White;
-            this.in1Atk3.Location = new System.Drawing.Point(525, 97);
-            this.in1Atk3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1Atk3.Location = new System.Drawing.Point(525, 103);
+            this.in1Atk3.Margin = new System.Windows.Forms.Padding(4);
             this.in1Atk3.Name = "in1Atk3";
-            this.in1Atk3.Size = new System.Drawing.Size(79, 22);
+            this.in1Atk3.Size = new System.Drawing.Size(79, 21);
             this.in1Atk3.TabIndex = 10;
             this.in1Atk3.Tag = "1:Atk3";
+            this.in1Atk3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(297, 181);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(297, 192);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox4.Size = new System.Drawing.Size(33, 33);
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
             // 
             // in1Atk4
             // 
-            this.in1Atk4.BackColor = System.Drawing.Color.Black;
+            this.in1Atk4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1Atk4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1Atk4.ForeColor = System.Drawing.Color.White;
-            this.in1Atk4.Location = new System.Drawing.Point(525, 127);
-            this.in1Atk4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1Atk4.Location = new System.Drawing.Point(525, 135);
+            this.in1Atk4.Margin = new System.Windows.Forms.Padding(4);
             this.in1Atk4.Name = "in1Atk4";
-            this.in1Atk4.Size = new System.Drawing.Size(79, 22);
+            this.in1Atk4.Size = new System.Drawing.Size(79, 21);
             this.in1Atk4.TabIndex = 11;
             this.in1Atk4.Tag = "1:Atk4";
+            this.in1Atk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(297, 151);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(297, 160);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox3.Size = new System.Drawing.Size(33, 33);
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
             // 
             // in1Atk5
             // 
-            this.in1Atk5.BackColor = System.Drawing.Color.Black;
+            this.in1Atk5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1Atk5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1Atk5.ForeColor = System.Drawing.Color.White;
-            this.in1Atk5.Location = new System.Drawing.Point(525, 156);
-            this.in1Atk5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1Atk5.Location = new System.Drawing.Point(525, 166);
+            this.in1Atk5.Margin = new System.Windows.Forms.Padding(4);
             this.in1Atk5.Name = "in1Atk5";
-            this.in1Atk5.Size = new System.Drawing.Size(79, 22);
+            this.in1Atk5.Size = new System.Drawing.Size(79, 21);
             this.in1Atk5.TabIndex = 12;
             this.in1Atk5.Tag = "1:Atk5";
+            this.in1Atk5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(297, 92);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(297, 98);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox2.Size = new System.Drawing.Size(33, 33);
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
@@ -992,10 +1022,10 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(297, 64);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(297, 68);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(33, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(33, 32);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
@@ -1010,82 +1040,84 @@
             this.groupBoxATKxDEFConfig.Controls.Add(this.label3);
             this.groupBoxATKxDEFConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxATKxDEFConfig.ForeColor = System.Drawing.Color.White;
-            this.groupBoxATKxDEFConfig.Location = new System.Drawing.Point(17, 12);
-            this.groupBoxATKxDEFConfig.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxATKxDEFConfig.Location = new System.Drawing.Point(17, 13);
+            this.groupBoxATKxDEFConfig.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxATKxDEFConfig.Name = "groupBoxATKxDEFConfig";
-            this.groupBoxATKxDEFConfig.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxATKxDEFConfig.Size = new System.Drawing.Size(255, 186);
+            this.groupBoxATKxDEFConfig.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxATKxDEFConfig.Size = new System.Drawing.Size(255, 198);
             this.groupBoxATKxDEFConfig.TabIndex = 33;
             this.groupBoxATKxDEFConfig.TabStop = false;
-            this.groupBoxATKxDEFConfig.Text = "Configuration";
+            this.groupBoxATKxDEFConfig.Text = "CONFIGURATION";
             // 
             // in1SpammerClick
             // 
             this.in1SpammerClick.AutoSize = true;
             this.in1SpammerClick.Checked = true;
             this.in1SpammerClick.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.in1SpammerClick.Location = new System.Drawing.Point(23, 148);
-            this.in1SpammerClick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1SpammerClick.Location = new System.Drawing.Point(23, 157);
+            this.in1SpammerClick.Margin = new System.Windows.Forms.Padding(4);
             this.in1SpammerClick.Name = "in1SpammerClick";
-            this.in1SpammerClick.Size = new System.Drawing.Size(129, 20);
+            this.in1SpammerClick.Size = new System.Drawing.Size(138, 18);
             this.in1SpammerClick.TabIndex = 29;
             this.in1SpammerClick.Tag = "1:inSpammerClick";
-            this.in1SpammerClick.Text = "With mouse click";
+            this.in1SpammerClick.Text = "WITH MOUSE CLICK";
             this.in1SpammerClick.UseVisualStyleBackColor = true;
             // 
             // in1SpammerKey
             // 
-            this.in1SpammerKey.BackColor = System.Drawing.Color.Black;
+            this.in1SpammerKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1SpammerKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1SpammerKey.ForeColor = System.Drawing.Color.White;
-            this.in1SpammerKey.Location = new System.Drawing.Point(135, 30);
-            this.in1SpammerKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1SpammerKey.Location = new System.Drawing.Point(135, 32);
+            this.in1SpammerKey.Margin = new System.Windows.Forms.Padding(4);
             this.in1SpammerKey.Name = "in1SpammerKey";
-            this.in1SpammerKey.Size = new System.Drawing.Size(79, 22);
+            this.in1SpammerKey.Size = new System.Drawing.Size(79, 21);
             this.in1SpammerKey.TabIndex = 23;
             this.in1SpammerKey.Tag = "1:spammerKey";
+            this.in1SpammerKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in1SwitchDelay
             // 
-            this.in1SwitchDelay.BackColor = System.Drawing.Color.Black;
+            this.in1SwitchDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1SwitchDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1SwitchDelay.ForeColor = System.Drawing.Color.White;
-            this.in1SwitchDelay.Location = new System.Drawing.Point(135, 108);
-            this.in1SwitchDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1SwitchDelay.Location = new System.Drawing.Point(135, 115);
+            this.in1SwitchDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in1SwitchDelay.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
             this.in1SwitchDelay.Name = "in1SwitchDelay";
-            this.in1SwitchDelay.Size = new System.Drawing.Size(80, 22);
+            this.in1SwitchDelay.Size = new System.Drawing.Size(80, 21);
             this.in1SwitchDelay.TabIndex = 27;
             this.in1SwitchDelay.Tag = "1:switchDelay";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 34);
+            this.label2.Location = new System.Drawing.Point(20, 36);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 16);
+            this.label2.Size = new System.Drawing.Size(84, 14);
             this.label2.TabIndex = 24;
-            this.label2.Text = "Spammer Key";
+            this.label2.Text = "SPAMMER KEY";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in1SpammerDelay
             // 
-            this.in1SpammerDelay.BackColor = System.Drawing.Color.Black;
+            this.in1SpammerDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in1SpammerDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in1SpammerDelay.ForeColor = System.Drawing.Color.White;
-            this.in1SpammerDelay.Location = new System.Drawing.Point(135, 69);
-            this.in1SpammerDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in1SpammerDelay.Location = new System.Drawing.Point(135, 73);
+            this.in1SpammerDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in1SpammerDelay.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.in1SpammerDelay.Name = "in1SpammerDelay";
-            this.in1SpammerDelay.Size = new System.Drawing.Size(80, 22);
+            this.in1SpammerDelay.Size = new System.Drawing.Size(80, 21);
             this.in1SpammerDelay.TabIndex = 25;
             this.in1SpammerDelay.Tag = "1:spammerDelay";
             // 
@@ -1093,18 +1125,18 @@
             // 
             this.equipGroup2.Controls.Add(this.panelSwitch2);
             this.equipGroup2.ForeColor = System.Drawing.Color.White;
-            this.equipGroup2.Location = new System.Drawing.Point(16, 246);
-            this.equipGroup2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.equipGroup2.Location = new System.Drawing.Point(20, 283);
+            this.equipGroup2.Margin = new System.Windows.Forms.Padding(4);
             this.equipGroup2.Name = "equipGroup2";
-            this.equipGroup2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.equipGroup2.Size = new System.Drawing.Size(689, 244);
+            this.equipGroup2.Padding = new System.Windows.Forms.Padding(4);
+            this.equipGroup2.Size = new System.Drawing.Size(750, 260);
             this.equipGroup2.TabIndex = 29;
             this.equipGroup2.TabStop = false;
             this.equipGroup2.Text = "ATK x DEF 2";
             // 
             // panelSwitch2
             // 
-            this.panelSwitch2.BackColor = System.Drawing.Color.Black;
+            this.panelSwitch2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.panelSwitch2.Controls.Add(this.pictureBox13);
             this.panelSwitch2.Controls.Add(this.pictureBox14);
             this.panelSwitch2.Controls.Add(this.in2Atk6);
@@ -1134,20 +1166,20 @@
             this.panelSwitch2.Controls.Add(this.pictureBox24);
             this.panelSwitch2.Controls.Add(this.groupBox3);
             this.panelSwitch2.ForeColor = System.Drawing.Color.White;
-            this.panelSwitch2.Location = new System.Drawing.Point(15, 16);
-            this.panelSwitch2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSwitch2.Location = new System.Drawing.Point(40, 15);
+            this.panelSwitch2.Margin = new System.Windows.Forms.Padding(4);
             this.panelSwitch2.Name = "panelSwitch2";
-            this.panelSwitch2.Size = new System.Drawing.Size(660, 222);
+            this.panelSwitch2.Size = new System.Drawing.Size(660, 236);
             this.panelSwitch2.TabIndex = 28;
             // 
             // pictureBox13
             // 
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
             this.pictureBox13.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox13.InitialImage")));
-            this.pictureBox13.Location = new System.Drawing.Point(611, 34);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox13.Location = new System.Drawing.Point(611, 36);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox13.Size = new System.Drawing.Size(33, 33);
             this.pictureBox13.TabIndex = 37;
             this.pictureBox13.TabStop = false;
             // 
@@ -1155,170 +1187,179 @@
             // 
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
             this.pictureBox14.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox14.InitialImage")));
-            this.pictureBox14.Location = new System.Drawing.Point(297, 34);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox14.Location = new System.Drawing.Point(297, 36);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox14.Size = new System.Drawing.Size(33, 33);
             this.pictureBox14.TabIndex = 36;
             this.pictureBox14.TabStop = false;
             // 
             // in2Atk6
             // 
-            this.in2Atk6.BackColor = System.Drawing.Color.Black;
+            this.in2Atk6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2Atk6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2Atk6.ForeColor = System.Drawing.Color.White;
-            this.in2Atk6.Location = new System.Drawing.Point(525, 186);
-            this.in2Atk6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2Atk6.Location = new System.Drawing.Point(525, 198);
+            this.in2Atk6.Margin = new System.Windows.Forms.Padding(4);
             this.in2Atk6.Name = "in2Atk6";
-            this.in2Atk6.Size = new System.Drawing.Size(79, 22);
+            this.in2Atk6.Size = new System.Drawing.Size(79, 21);
             this.in2Atk6.TabIndex = 35;
             this.in2Atk6.Tag = "2:Atk6";
+            this.in2Atk6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in2Def6
             // 
-            this.in2Def6.BackColor = System.Drawing.Color.Black;
+            this.in2Def6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2Def6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2Def6.ForeColor = System.Drawing.Color.White;
-            this.in2Def6.Location = new System.Drawing.Point(336, 185);
-            this.in2Def6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2Def6.Location = new System.Drawing.Point(336, 197);
+            this.in2Def6.Margin = new System.Windows.Forms.Padding(4);
             this.in2Def6.Name = "in2Def6";
-            this.in2Def6.Size = new System.Drawing.Size(79, 22);
+            this.in2Def6.Size = new System.Drawing.Size(79, 21);
             this.in2Def6.TabIndex = 34;
             this.in2Def6.Tag = "2:Def6";
+            this.in2Def6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in2Atk2
             // 
-            this.in2Atk2.BackColor = System.Drawing.Color.Black;
+            this.in2Atk2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2Atk2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2Atk2.ForeColor = System.Drawing.Color.White;
-            this.in2Atk2.Location = new System.Drawing.Point(525, 68);
-            this.in2Atk2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2Atk2.Location = new System.Drawing.Point(525, 72);
+            this.in2Atk2.Margin = new System.Windows.Forms.Padding(4);
             this.in2Atk2.Name = "in2Atk2";
-            this.in2Atk2.Size = new System.Drawing.Size(79, 22);
+            this.in2Atk2.Size = new System.Drawing.Size(79, 21);
             this.in2Atk2.TabIndex = 9;
             this.in2Atk2.Tag = "2:Atk2";
+            this.in2Atk2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(332, 12);
+            this.label4.Location = new System.Drawing.Point(332, 13);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 16);
+            this.label4.Size = new System.Drawing.Size(77, 14);
             this.label4.TabIndex = 0;
-            this.label4.Text = "DEF Switch";
+            this.label4.Text = "DEF SWITCH";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in2Def1
             // 
-            this.in2Def1.BackColor = System.Drawing.Color.Black;
+            this.in2Def1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2Def1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2Def1.ForeColor = System.Drawing.Color.White;
-            this.in2Def1.Location = new System.Drawing.Point(336, 38);
-            this.in2Def1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2Def1.Location = new System.Drawing.Point(336, 40);
+            this.in2Def1.Margin = new System.Windows.Forms.Padding(4);
             this.in2Def1.Name = "in2Def1";
-            this.in2Def1.Size = new System.Drawing.Size(79, 22);
+            this.in2Def1.Size = new System.Drawing.Size(79, 21);
             this.in2Def1.TabIndex = 1;
             this.in2Def1.Tag = "2:Def1";
+            this.in2Def1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in2Def2
             // 
-            this.in2Def2.BackColor = System.Drawing.Color.Black;
+            this.in2Def2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2Def2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2Def2.ForeColor = System.Drawing.Color.White;
-            this.in2Def2.Location = new System.Drawing.Point(336, 66);
-            this.in2Def2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2Def2.Location = new System.Drawing.Point(336, 70);
+            this.in2Def2.Margin = new System.Windows.Forms.Padding(4);
             this.in2Def2.Name = "in2Def2";
-            this.in2Def2.Size = new System.Drawing.Size(79, 22);
+            this.in2Def2.Size = new System.Drawing.Size(79, 21);
             this.in2Def2.TabIndex = 2;
             this.in2Def2.Tag = "2:Def2";
+            this.in2Def2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in2Def3
             // 
-            this.in2Def3.BackColor = System.Drawing.Color.Black;
+            this.in2Def3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2Def3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2Def3.ForeColor = System.Drawing.Color.White;
-            this.in2Def3.Location = new System.Drawing.Point(336, 96);
-            this.in2Def3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2Def3.Location = new System.Drawing.Point(336, 102);
+            this.in2Def3.Margin = new System.Windows.Forms.Padding(4);
             this.in2Def3.Name = "in2Def3";
-            this.in2Def3.Size = new System.Drawing.Size(79, 22);
+            this.in2Def3.Size = new System.Drawing.Size(79, 21);
             this.in2Def3.TabIndex = 3;
             this.in2Def3.Tag = "2:Def3";
+            this.in2Def3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox15
             // 
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
             this.pictureBox15.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox15.InitialImage")));
-            this.pictureBox15.Location = new System.Drawing.Point(611, 123);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox15.Location = new System.Drawing.Point(611, 131);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox15.Size = new System.Drawing.Size(33, 33);
             this.pictureBox15.TabIndex = 22;
             this.pictureBox15.TabStop = false;
             // 
             // in2Def4
             // 
-            this.in2Def4.BackColor = System.Drawing.Color.Black;
+            this.in2Def4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2Def4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2Def4.ForeColor = System.Drawing.Color.White;
-            this.in2Def4.Location = new System.Drawing.Point(336, 126);
-            this.in2Def4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2Def4.Location = new System.Drawing.Point(336, 134);
+            this.in2Def4.Margin = new System.Windows.Forms.Padding(4);
             this.in2Def4.Name = "in2Def4";
-            this.in2Def4.Size = new System.Drawing.Size(79, 22);
+            this.in2Def4.Size = new System.Drawing.Size(79, 21);
             this.in2Def4.TabIndex = 4;
             this.in2Def4.Tag = "2:Def4";
+            this.in2Def4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox16
             // 
             this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
             this.pictureBox16.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox16.InitialImage")));
-            this.pictureBox16.Location = new System.Drawing.Point(611, 182);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox16.Location = new System.Drawing.Point(611, 193);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox16.Size = new System.Drawing.Size(33, 33);
             this.pictureBox16.TabIndex = 21;
             this.pictureBox16.TabStop = false;
             // 
             // in2Def5
             // 
-            this.in2Def5.BackColor = System.Drawing.Color.Black;
+            this.in2Def5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2Def5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2Def5.ForeColor = System.Drawing.Color.White;
-            this.in2Def5.Location = new System.Drawing.Point(336, 155);
-            this.in2Def5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2Def5.Location = new System.Drawing.Point(336, 165);
+            this.in2Def5.Margin = new System.Windows.Forms.Padding(4);
             this.in2Def5.Name = "in2Def5";
-            this.in2Def5.Size = new System.Drawing.Size(79, 22);
+            this.in2Def5.Size = new System.Drawing.Size(79, 21);
             this.in2Def5.TabIndex = 5;
             this.in2Def5.Tag = "2:Def5";
+            this.in2Def5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox17
             // 
             this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
             this.pictureBox17.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox17.InitialImage")));
-            this.pictureBox17.Location = new System.Drawing.Point(611, 153);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox17.Location = new System.Drawing.Point(611, 163);
+            this.pictureBox17.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox17.Size = new System.Drawing.Size(33, 33);
             this.pictureBox17.TabIndex = 20;
             this.pictureBox17.TabStop = false;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Location = new System.Drawing.Point(475, 12);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Location = new System.Drawing.Point(475, 13);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1, 197);
+            this.panel3.Size = new System.Drawing.Size(1, 209);
             this.panel3.TabIndex = 6;
             // 
             // pictureBox18
             // 
             this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
             this.pictureBox18.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox18.InitialImage")));
-            this.pictureBox18.Location = new System.Drawing.Point(611, 94);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox18.Location = new System.Drawing.Point(611, 100);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox18.Size = new System.Drawing.Size(33, 33);
             this.pictureBox18.TabIndex = 19;
             this.pictureBox18.TabStop = false;
             // 
@@ -1326,113 +1367,118 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(521, 12);
+            this.label5.Location = new System.Drawing.Point(521, 13);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 16);
+            this.label5.Size = new System.Drawing.Size(77, 14);
             this.label5.TabIndex = 7;
-            this.label5.Text = "ATK Switch";
+            this.label5.Text = "ATK SWITCH";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox19
             // 
             this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
             this.pictureBox19.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox19.InitialImage")));
-            this.pictureBox19.Location = new System.Drawing.Point(611, 64);
-            this.pictureBox19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox19.Location = new System.Drawing.Point(611, 68);
+            this.pictureBox19.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox19.Size = new System.Drawing.Size(33, 33);
             this.pictureBox19.TabIndex = 18;
             this.pictureBox19.TabStop = false;
             // 
             // in2Atk1
             // 
-            this.in2Atk1.BackColor = System.Drawing.Color.Black;
+            this.in2Atk1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2Atk1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2Atk1.ForeColor = System.Drawing.Color.White;
-            this.in2Atk1.Location = new System.Drawing.Point(525, 38);
-            this.in2Atk1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2Atk1.Location = new System.Drawing.Point(525, 40);
+            this.in2Atk1.Margin = new System.Windows.Forms.Padding(4);
             this.in2Atk1.Name = "in2Atk1";
-            this.in2Atk1.Size = new System.Drawing.Size(79, 22);
+            this.in2Atk1.Size = new System.Drawing.Size(79, 21);
             this.in2Atk1.TabIndex = 8;
             this.in2Atk1.Tag = "2:Atk1";
+            this.in2Atk1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox20
             // 
             this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
             this.pictureBox20.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox20.InitialImage")));
-            this.pictureBox20.Location = new System.Drawing.Point(297, 122);
-            this.pictureBox20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox20.Location = new System.Drawing.Point(297, 130);
+            this.pictureBox20.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox20.Size = new System.Drawing.Size(33, 33);
             this.pictureBox20.TabIndex = 17;
             this.pictureBox20.TabStop = false;
             // 
             // in2Atk3
             // 
-            this.in2Atk3.BackColor = System.Drawing.Color.Black;
+            this.in2Atk3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2Atk3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2Atk3.ForeColor = System.Drawing.Color.White;
-            this.in2Atk3.Location = new System.Drawing.Point(525, 97);
-            this.in2Atk3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2Atk3.Location = new System.Drawing.Point(525, 103);
+            this.in2Atk3.Margin = new System.Windows.Forms.Padding(4);
             this.in2Atk3.Name = "in2Atk3";
-            this.in2Atk3.Size = new System.Drawing.Size(79, 22);
+            this.in2Atk3.Size = new System.Drawing.Size(79, 21);
             this.in2Atk3.TabIndex = 10;
             this.in2Atk3.Tag = "2:Atk3";
+            this.in2Atk3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox21
             // 
             this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
             this.pictureBox21.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox21.InitialImage")));
-            this.pictureBox21.Location = new System.Drawing.Point(297, 181);
-            this.pictureBox21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox21.Location = new System.Drawing.Point(297, 192);
+            this.pictureBox21.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox21.Size = new System.Drawing.Size(33, 33);
             this.pictureBox21.TabIndex = 16;
             this.pictureBox21.TabStop = false;
             // 
             // in2Atk4
             // 
-            this.in2Atk4.BackColor = System.Drawing.Color.Black;
+            this.in2Atk4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2Atk4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2Atk4.ForeColor = System.Drawing.Color.White;
-            this.in2Atk4.Location = new System.Drawing.Point(525, 127);
-            this.in2Atk4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2Atk4.Location = new System.Drawing.Point(525, 135);
+            this.in2Atk4.Margin = new System.Windows.Forms.Padding(4);
             this.in2Atk4.Name = "in2Atk4";
-            this.in2Atk4.Size = new System.Drawing.Size(79, 22);
+            this.in2Atk4.Size = new System.Drawing.Size(79, 21);
             this.in2Atk4.TabIndex = 11;
             this.in2Atk4.Tag = "2:Atk4";
+            this.in2Atk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox22
             // 
             this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
             this.pictureBox22.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox22.InitialImage")));
-            this.pictureBox22.Location = new System.Drawing.Point(297, 151);
-            this.pictureBox22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox22.Location = new System.Drawing.Point(297, 160);
+            this.pictureBox22.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox22.Size = new System.Drawing.Size(33, 33);
             this.pictureBox22.TabIndex = 15;
             this.pictureBox22.TabStop = false;
             // 
             // in2Atk5
             // 
-            this.in2Atk5.BackColor = System.Drawing.Color.Black;
+            this.in2Atk5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2Atk5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2Atk5.ForeColor = System.Drawing.Color.White;
-            this.in2Atk5.Location = new System.Drawing.Point(525, 156);
-            this.in2Atk5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2Atk5.Location = new System.Drawing.Point(525, 166);
+            this.in2Atk5.Margin = new System.Windows.Forms.Padding(4);
             this.in2Atk5.Name = "in2Atk5";
-            this.in2Atk5.Size = new System.Drawing.Size(79, 22);
+            this.in2Atk5.Size = new System.Drawing.Size(79, 21);
             this.in2Atk5.TabIndex = 12;
             this.in2Atk5.Tag = "2:Atk5";
+            this.in2Atk5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox23
             // 
             this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
             this.pictureBox23.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox23.InitialImage")));
-            this.pictureBox23.Location = new System.Drawing.Point(297, 92);
-            this.pictureBox23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox23.Location = new System.Drawing.Point(297, 98);
+            this.pictureBox23.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox23.Size = new System.Drawing.Size(33, 33);
             this.pictureBox23.TabIndex = 14;
             this.pictureBox23.TabStop = false;
             // 
@@ -1440,10 +1486,10 @@
             // 
             this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
             this.pictureBox24.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox24.InitialImage")));
-            this.pictureBox24.Location = new System.Drawing.Point(297, 64);
-            this.pictureBox24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox24.Location = new System.Drawing.Point(297, 68);
+            this.pictureBox24.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(33, 30);
+            this.pictureBox24.Size = new System.Drawing.Size(33, 32);
             this.pictureBox24.TabIndex = 13;
             this.pictureBox24.TabStop = false;
             // 
@@ -1458,82 +1504,84 @@
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(17, 12);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Location = new System.Drawing.Point(17, 13);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox3.Size = new System.Drawing.Size(255, 186);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(255, 198);
             this.groupBox3.TabIndex = 33;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Configuration";
+            this.groupBox3.Text = "CONFIGURATION";
             // 
             // in2SpammerClick
             // 
             this.in2SpammerClick.AutoSize = true;
             this.in2SpammerClick.Checked = true;
             this.in2SpammerClick.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.in2SpammerClick.Location = new System.Drawing.Point(23, 148);
-            this.in2SpammerClick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2SpammerClick.Location = new System.Drawing.Point(23, 157);
+            this.in2SpammerClick.Margin = new System.Windows.Forms.Padding(4);
             this.in2SpammerClick.Name = "in2SpammerClick";
-            this.in2SpammerClick.Size = new System.Drawing.Size(129, 20);
+            this.in2SpammerClick.Size = new System.Drawing.Size(138, 18);
             this.in2SpammerClick.TabIndex = 29;
             this.in2SpammerClick.Tag = "2:inSpammerClick";
-            this.in2SpammerClick.Text = "With mouse click";
+            this.in2SpammerClick.Text = "WITH MOUSE CLICK";
             this.in2SpammerClick.UseVisualStyleBackColor = true;
             // 
             // in2SpammerKey
             // 
-            this.in2SpammerKey.BackColor = System.Drawing.Color.Black;
+            this.in2SpammerKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2SpammerKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2SpammerKey.ForeColor = System.Drawing.Color.White;
-            this.in2SpammerKey.Location = new System.Drawing.Point(135, 30);
-            this.in2SpammerKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2SpammerKey.Location = new System.Drawing.Point(135, 32);
+            this.in2SpammerKey.Margin = new System.Windows.Forms.Padding(4);
             this.in2SpammerKey.Name = "in2SpammerKey";
-            this.in2SpammerKey.Size = new System.Drawing.Size(79, 22);
+            this.in2SpammerKey.Size = new System.Drawing.Size(79, 21);
             this.in2SpammerKey.TabIndex = 23;
             this.in2SpammerKey.Tag = "2:spammerKey";
+            this.in2SpammerKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in2SwitchDelay
             // 
-            this.in2SwitchDelay.BackColor = System.Drawing.Color.Black;
+            this.in2SwitchDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2SwitchDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2SwitchDelay.ForeColor = System.Drawing.Color.White;
-            this.in2SwitchDelay.Location = new System.Drawing.Point(135, 108);
-            this.in2SwitchDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2SwitchDelay.Location = new System.Drawing.Point(135, 115);
+            this.in2SwitchDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in2SwitchDelay.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
             this.in2SwitchDelay.Name = "in2SwitchDelay";
-            this.in2SwitchDelay.Size = new System.Drawing.Size(80, 22);
+            this.in2SwitchDelay.Size = new System.Drawing.Size(80, 21);
             this.in2SwitchDelay.TabIndex = 27;
             this.in2SwitchDelay.Tag = "2:switchDelay";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 34);
+            this.label7.Location = new System.Drawing.Point(20, 36);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 16);
+            this.label7.Size = new System.Drawing.Size(84, 14);
             this.label7.TabIndex = 24;
-            this.label7.Text = "Spammer Key";
+            this.label7.Text = "SPAMMER KEY";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in2SpammerDelay
             // 
-            this.in2SpammerDelay.BackColor = System.Drawing.Color.Black;
+            this.in2SpammerDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in2SpammerDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in2SpammerDelay.ForeColor = System.Drawing.Color.White;
-            this.in2SpammerDelay.Location = new System.Drawing.Point(135, 69);
-            this.in2SpammerDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in2SpammerDelay.Location = new System.Drawing.Point(135, 73);
+            this.in2SpammerDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in2SpammerDelay.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.in2SpammerDelay.Name = "in2SpammerDelay";
-            this.in2SpammerDelay.Size = new System.Drawing.Size(80, 22);
+            this.in2SpammerDelay.Size = new System.Drawing.Size(80, 21);
             this.in2SpammerDelay.TabIndex = 25;
             this.in2SpammerDelay.Tag = "2:spammerDelay";
             // 
@@ -1541,18 +1589,18 @@
             // 
             this.equipGroup3.Controls.Add(this.panelSwitch3);
             this.equipGroup3.ForeColor = System.Drawing.Color.White;
-            this.equipGroup3.Location = new System.Drawing.Point(16, 491);
-            this.equipGroup3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.equipGroup3.Location = new System.Drawing.Point(20, 551);
+            this.equipGroup3.Margin = new System.Windows.Forms.Padding(4);
             this.equipGroup3.Name = "equipGroup3";
-            this.equipGroup3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.equipGroup3.Size = new System.Drawing.Size(689, 244);
+            this.equipGroup3.Padding = new System.Windows.Forms.Padding(4);
+            this.equipGroup3.Size = new System.Drawing.Size(750, 260);
             this.equipGroup3.TabIndex = 30;
             this.equipGroup3.TabStop = false;
             this.equipGroup3.Text = "ATK x DEF 3";
             // 
             // panelSwitch3
             // 
-            this.panelSwitch3.BackColor = System.Drawing.Color.Black;
+            this.panelSwitch3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.panelSwitch3.Controls.Add(this.pictureBox25);
             this.panelSwitch3.Controls.Add(this.pictureBox26);
             this.panelSwitch3.Controls.Add(this.in3Atk6);
@@ -1582,20 +1630,20 @@
             this.panelSwitch3.Controls.Add(this.pictureBox36);
             this.panelSwitch3.Controls.Add(this.groupBox5);
             this.panelSwitch3.ForeColor = System.Drawing.Color.White;
-            this.panelSwitch3.Location = new System.Drawing.Point(15, 16);
-            this.panelSwitch3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSwitch3.Location = new System.Drawing.Point(40, 15);
+            this.panelSwitch3.Margin = new System.Windows.Forms.Padding(4);
             this.panelSwitch3.Name = "panelSwitch3";
-            this.panelSwitch3.Size = new System.Drawing.Size(660, 222);
+            this.panelSwitch3.Size = new System.Drawing.Size(660, 236);
             this.panelSwitch3.TabIndex = 28;
             // 
             // pictureBox25
             // 
             this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
             this.pictureBox25.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox25.InitialImage")));
-            this.pictureBox25.Location = new System.Drawing.Point(611, 34);
-            this.pictureBox25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox25.Location = new System.Drawing.Point(611, 36);
+            this.pictureBox25.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox25.Size = new System.Drawing.Size(33, 33);
             this.pictureBox25.TabIndex = 37;
             this.pictureBox25.TabStop = false;
             // 
@@ -1603,170 +1651,179 @@
             // 
             this.pictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox26.Image")));
             this.pictureBox26.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox26.InitialImage")));
-            this.pictureBox26.Location = new System.Drawing.Point(297, 34);
-            this.pictureBox26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox26.Location = new System.Drawing.Point(297, 36);
+            this.pictureBox26.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox26.Size = new System.Drawing.Size(33, 33);
             this.pictureBox26.TabIndex = 36;
             this.pictureBox26.TabStop = false;
             // 
             // in3Atk6
             // 
-            this.in3Atk6.BackColor = System.Drawing.Color.Black;
+            this.in3Atk6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3Atk6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3Atk6.ForeColor = System.Drawing.Color.White;
-            this.in3Atk6.Location = new System.Drawing.Point(525, 186);
-            this.in3Atk6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3Atk6.Location = new System.Drawing.Point(525, 198);
+            this.in3Atk6.Margin = new System.Windows.Forms.Padding(4);
             this.in3Atk6.Name = "in3Atk6";
-            this.in3Atk6.Size = new System.Drawing.Size(79, 22);
+            this.in3Atk6.Size = new System.Drawing.Size(79, 21);
             this.in3Atk6.TabIndex = 35;
             this.in3Atk6.Tag = "3:Atk6";
+            this.in3Atk6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in3Def6
             // 
-            this.in3Def6.BackColor = System.Drawing.Color.Black;
+            this.in3Def6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3Def6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3Def6.ForeColor = System.Drawing.Color.White;
-            this.in3Def6.Location = new System.Drawing.Point(336, 185);
-            this.in3Def6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3Def6.Location = new System.Drawing.Point(336, 197);
+            this.in3Def6.Margin = new System.Windows.Forms.Padding(4);
             this.in3Def6.Name = "in3Def6";
-            this.in3Def6.Size = new System.Drawing.Size(79, 22);
+            this.in3Def6.Size = new System.Drawing.Size(79, 21);
             this.in3Def6.TabIndex = 34;
             this.in3Def6.Tag = "3:Def6";
+            this.in3Def6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in3Atk2
             // 
-            this.in3Atk2.BackColor = System.Drawing.Color.Black;
+            this.in3Atk2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3Atk2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3Atk2.ForeColor = System.Drawing.Color.White;
-            this.in3Atk2.Location = new System.Drawing.Point(525, 68);
-            this.in3Atk2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3Atk2.Location = new System.Drawing.Point(525, 72);
+            this.in3Atk2.Margin = new System.Windows.Forms.Padding(4);
             this.in3Atk2.Name = "in3Atk2";
-            this.in3Atk2.Size = new System.Drawing.Size(79, 22);
+            this.in3Atk2.Size = new System.Drawing.Size(79, 21);
             this.in3Atk2.TabIndex = 9;
             this.in3Atk2.Tag = "3:Atk2";
+            this.in3Atk2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(332, 12);
+            this.label9.Location = new System.Drawing.Point(332, 13);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 16);
+            this.label9.Size = new System.Drawing.Size(77, 14);
             this.label9.TabIndex = 0;
-            this.label9.Text = "DEF Switch";
+            this.label9.Text = "DEF SWITCH";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in3Def1
             // 
-            this.in3Def1.BackColor = System.Drawing.Color.Black;
+            this.in3Def1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3Def1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3Def1.ForeColor = System.Drawing.Color.White;
-            this.in3Def1.Location = new System.Drawing.Point(336, 38);
-            this.in3Def1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3Def1.Location = new System.Drawing.Point(336, 40);
+            this.in3Def1.Margin = new System.Windows.Forms.Padding(4);
             this.in3Def1.Name = "in3Def1";
-            this.in3Def1.Size = new System.Drawing.Size(79, 22);
+            this.in3Def1.Size = new System.Drawing.Size(79, 21);
             this.in3Def1.TabIndex = 1;
             this.in3Def1.Tag = "3:Def1";
+            this.in3Def1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in3Def2
             // 
-            this.in3Def2.BackColor = System.Drawing.Color.Black;
+            this.in3Def2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3Def2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3Def2.ForeColor = System.Drawing.Color.White;
-            this.in3Def2.Location = new System.Drawing.Point(336, 66);
-            this.in3Def2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3Def2.Location = new System.Drawing.Point(336, 70);
+            this.in3Def2.Margin = new System.Windows.Forms.Padding(4);
             this.in3Def2.Name = "in3Def2";
-            this.in3Def2.Size = new System.Drawing.Size(79, 22);
+            this.in3Def2.Size = new System.Drawing.Size(79, 21);
             this.in3Def2.TabIndex = 2;
             this.in3Def2.Tag = "3:Def2";
+            this.in3Def2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in3Def3
             // 
-            this.in3Def3.BackColor = System.Drawing.Color.Black;
+            this.in3Def3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3Def3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3Def3.ForeColor = System.Drawing.Color.White;
-            this.in3Def3.Location = new System.Drawing.Point(336, 96);
-            this.in3Def3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3Def3.Location = new System.Drawing.Point(336, 102);
+            this.in3Def3.Margin = new System.Windows.Forms.Padding(4);
             this.in3Def3.Name = "in3Def3";
-            this.in3Def3.Size = new System.Drawing.Size(79, 22);
+            this.in3Def3.Size = new System.Drawing.Size(79, 21);
             this.in3Def3.TabIndex = 3;
             this.in3Def3.Tag = "3:Def3";
+            this.in3Def3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox27
             // 
             this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
             this.pictureBox27.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox27.InitialImage")));
-            this.pictureBox27.Location = new System.Drawing.Point(611, 123);
-            this.pictureBox27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox27.Location = new System.Drawing.Point(611, 131);
+            this.pictureBox27.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox27.Size = new System.Drawing.Size(33, 33);
             this.pictureBox27.TabIndex = 22;
             this.pictureBox27.TabStop = false;
             // 
             // in3Def4
             // 
-            this.in3Def4.BackColor = System.Drawing.Color.Black;
+            this.in3Def4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3Def4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3Def4.ForeColor = System.Drawing.Color.White;
-            this.in3Def4.Location = new System.Drawing.Point(336, 126);
-            this.in3Def4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3Def4.Location = new System.Drawing.Point(336, 134);
+            this.in3Def4.Margin = new System.Windows.Forms.Padding(4);
             this.in3Def4.Name = "in3Def4";
-            this.in3Def4.Size = new System.Drawing.Size(79, 22);
+            this.in3Def4.Size = new System.Drawing.Size(79, 21);
             this.in3Def4.TabIndex = 4;
             this.in3Def4.Tag = "3:Def4";
+            this.in3Def4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox28
             // 
             this.pictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox28.Image")));
             this.pictureBox28.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox28.InitialImage")));
-            this.pictureBox28.Location = new System.Drawing.Point(611, 182);
-            this.pictureBox28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox28.Location = new System.Drawing.Point(611, 193);
+            this.pictureBox28.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox28.Size = new System.Drawing.Size(33, 33);
             this.pictureBox28.TabIndex = 21;
             this.pictureBox28.TabStop = false;
             // 
             // in3Def5
             // 
-            this.in3Def5.BackColor = System.Drawing.Color.Black;
+            this.in3Def5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3Def5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3Def5.ForeColor = System.Drawing.Color.White;
-            this.in3Def5.Location = new System.Drawing.Point(336, 155);
-            this.in3Def5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3Def5.Location = new System.Drawing.Point(336, 165);
+            this.in3Def5.Margin = new System.Windows.Forms.Padding(4);
             this.in3Def5.Name = "in3Def5";
-            this.in3Def5.Size = new System.Drawing.Size(79, 22);
+            this.in3Def5.Size = new System.Drawing.Size(79, 21);
             this.in3Def5.TabIndex = 5;
             this.in3Def5.Tag = "3:Def5";
+            this.in3Def5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox29
             // 
             this.pictureBox29.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox29.Image")));
             this.pictureBox29.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox29.InitialImage")));
-            this.pictureBox29.Location = new System.Drawing.Point(611, 153);
-            this.pictureBox29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox29.Location = new System.Drawing.Point(611, 163);
+            this.pictureBox29.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox29.Size = new System.Drawing.Size(33, 33);
             this.pictureBox29.TabIndex = 20;
             this.pictureBox29.TabStop = false;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Location = new System.Drawing.Point(475, 12);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Location = new System.Drawing.Point(475, 13);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1, 197);
+            this.panel5.Size = new System.Drawing.Size(1, 209);
             this.panel5.TabIndex = 6;
             // 
             // pictureBox30
             // 
             this.pictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox30.Image")));
             this.pictureBox30.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox30.InitialImage")));
-            this.pictureBox30.Location = new System.Drawing.Point(611, 94);
-            this.pictureBox30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox30.Location = new System.Drawing.Point(611, 100);
+            this.pictureBox30.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox30.Size = new System.Drawing.Size(33, 33);
             this.pictureBox30.TabIndex = 19;
             this.pictureBox30.TabStop = false;
             // 
@@ -1774,113 +1831,118 @@
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(521, 12);
+            this.label10.Location = new System.Drawing.Point(521, 13);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 16);
+            this.label10.Size = new System.Drawing.Size(77, 14);
             this.label10.TabIndex = 7;
-            this.label10.Text = "ATK Switch";
+            this.label10.Text = "ATK SWITCH";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox31
             // 
             this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
             this.pictureBox31.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox31.InitialImage")));
-            this.pictureBox31.Location = new System.Drawing.Point(611, 64);
-            this.pictureBox31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox31.Location = new System.Drawing.Point(611, 68);
+            this.pictureBox31.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox31.Size = new System.Drawing.Size(33, 33);
             this.pictureBox31.TabIndex = 18;
             this.pictureBox31.TabStop = false;
             // 
             // in3Atk1
             // 
-            this.in3Atk1.BackColor = System.Drawing.Color.Black;
+            this.in3Atk1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3Atk1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3Atk1.ForeColor = System.Drawing.Color.White;
-            this.in3Atk1.Location = new System.Drawing.Point(525, 38);
-            this.in3Atk1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3Atk1.Location = new System.Drawing.Point(525, 40);
+            this.in3Atk1.Margin = new System.Windows.Forms.Padding(4);
             this.in3Atk1.Name = "in3Atk1";
-            this.in3Atk1.Size = new System.Drawing.Size(79, 22);
+            this.in3Atk1.Size = new System.Drawing.Size(79, 21);
             this.in3Atk1.TabIndex = 8;
             this.in3Atk1.Tag = "3:Atk1";
+            this.in3Atk1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox32
             // 
             this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
             this.pictureBox32.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox32.InitialImage")));
-            this.pictureBox32.Location = new System.Drawing.Point(297, 122);
-            this.pictureBox32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox32.Location = new System.Drawing.Point(297, 130);
+            this.pictureBox32.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox32.Size = new System.Drawing.Size(33, 33);
             this.pictureBox32.TabIndex = 17;
             this.pictureBox32.TabStop = false;
             // 
             // in3Atk3
             // 
-            this.in3Atk3.BackColor = System.Drawing.Color.Black;
+            this.in3Atk3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3Atk3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3Atk3.ForeColor = System.Drawing.Color.White;
-            this.in3Atk3.Location = new System.Drawing.Point(525, 97);
-            this.in3Atk3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3Atk3.Location = new System.Drawing.Point(525, 103);
+            this.in3Atk3.Margin = new System.Windows.Forms.Padding(4);
             this.in3Atk3.Name = "in3Atk3";
-            this.in3Atk3.Size = new System.Drawing.Size(79, 22);
+            this.in3Atk3.Size = new System.Drawing.Size(79, 21);
             this.in3Atk3.TabIndex = 10;
             this.in3Atk3.Tag = "3:Atk3";
+            this.in3Atk3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox33
             // 
             this.pictureBox33.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox33.Image")));
             this.pictureBox33.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox33.InitialImage")));
-            this.pictureBox33.Location = new System.Drawing.Point(297, 181);
-            this.pictureBox33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox33.Location = new System.Drawing.Point(297, 192);
+            this.pictureBox33.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox33.Size = new System.Drawing.Size(33, 33);
             this.pictureBox33.TabIndex = 16;
             this.pictureBox33.TabStop = false;
             // 
             // in3Atk4
             // 
-            this.in3Atk4.BackColor = System.Drawing.Color.Black;
+            this.in3Atk4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3Atk4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3Atk4.ForeColor = System.Drawing.Color.White;
-            this.in3Atk4.Location = new System.Drawing.Point(525, 127);
-            this.in3Atk4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3Atk4.Location = new System.Drawing.Point(525, 135);
+            this.in3Atk4.Margin = new System.Windows.Forms.Padding(4);
             this.in3Atk4.Name = "in3Atk4";
-            this.in3Atk4.Size = new System.Drawing.Size(79, 22);
+            this.in3Atk4.Size = new System.Drawing.Size(79, 21);
             this.in3Atk4.TabIndex = 11;
             this.in3Atk4.Tag = "3:Atk4";
+            this.in3Atk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox34
             // 
             this.pictureBox34.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox34.Image")));
             this.pictureBox34.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox34.InitialImage")));
-            this.pictureBox34.Location = new System.Drawing.Point(297, 151);
-            this.pictureBox34.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox34.Location = new System.Drawing.Point(297, 160);
+            this.pictureBox34.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox34.Size = new System.Drawing.Size(33, 33);
             this.pictureBox34.TabIndex = 15;
             this.pictureBox34.TabStop = false;
             // 
             // in3Atk5
             // 
-            this.in3Atk5.BackColor = System.Drawing.Color.Black;
+            this.in3Atk5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3Atk5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3Atk5.ForeColor = System.Drawing.Color.White;
-            this.in3Atk5.Location = new System.Drawing.Point(525, 156);
-            this.in3Atk5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3Atk5.Location = new System.Drawing.Point(525, 166);
+            this.in3Atk5.Margin = new System.Windows.Forms.Padding(4);
             this.in3Atk5.Name = "in3Atk5";
-            this.in3Atk5.Size = new System.Drawing.Size(79, 22);
+            this.in3Atk5.Size = new System.Drawing.Size(79, 21);
             this.in3Atk5.TabIndex = 12;
             this.in3Atk5.Tag = "3:Atk5";
+            this.in3Atk5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox35
             // 
             this.pictureBox35.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox35.Image")));
             this.pictureBox35.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox35.InitialImage")));
-            this.pictureBox35.Location = new System.Drawing.Point(297, 92);
-            this.pictureBox35.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox35.Location = new System.Drawing.Point(297, 98);
+            this.pictureBox35.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox35.Size = new System.Drawing.Size(33, 33);
             this.pictureBox35.TabIndex = 14;
             this.pictureBox35.TabStop = false;
             // 
@@ -1888,10 +1950,10 @@
             // 
             this.pictureBox36.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox36.Image")));
             this.pictureBox36.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox36.InitialImage")));
-            this.pictureBox36.Location = new System.Drawing.Point(297, 64);
-            this.pictureBox36.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox36.Location = new System.Drawing.Point(297, 68);
+            this.pictureBox36.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(33, 30);
+            this.pictureBox36.Size = new System.Drawing.Size(33, 32);
             this.pictureBox36.TabIndex = 13;
             this.pictureBox36.TabStop = false;
             // 
@@ -1906,82 +1968,84 @@
             this.groupBox5.Controls.Add(this.label13);
             this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(17, 12);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Location = new System.Drawing.Point(17, 13);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox5.Size = new System.Drawing.Size(255, 186);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox5.Size = new System.Drawing.Size(255, 198);
             this.groupBox5.TabIndex = 33;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Configuration";
+            this.groupBox5.Text = "CONFIGURATION";
             // 
             // in3SpammerClick
             // 
             this.in3SpammerClick.AutoSize = true;
             this.in3SpammerClick.Checked = true;
             this.in3SpammerClick.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.in3SpammerClick.Location = new System.Drawing.Point(23, 148);
-            this.in3SpammerClick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3SpammerClick.Location = new System.Drawing.Point(23, 157);
+            this.in3SpammerClick.Margin = new System.Windows.Forms.Padding(4);
             this.in3SpammerClick.Name = "in3SpammerClick";
-            this.in3SpammerClick.Size = new System.Drawing.Size(129, 20);
+            this.in3SpammerClick.Size = new System.Drawing.Size(138, 18);
             this.in3SpammerClick.TabIndex = 29;
             this.in3SpammerClick.Tag = "3:inSpammerClick";
-            this.in3SpammerClick.Text = "With mouse click";
+            this.in3SpammerClick.Text = "WITH MOUSE CLICK";
             this.in3SpammerClick.UseVisualStyleBackColor = true;
             // 
             // in3SpammerKey
             // 
-            this.in3SpammerKey.BackColor = System.Drawing.Color.Black;
+            this.in3SpammerKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3SpammerKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3SpammerKey.ForeColor = System.Drawing.Color.White;
-            this.in3SpammerKey.Location = new System.Drawing.Point(135, 30);
-            this.in3SpammerKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3SpammerKey.Location = new System.Drawing.Point(135, 32);
+            this.in3SpammerKey.Margin = new System.Windows.Forms.Padding(4);
             this.in3SpammerKey.Name = "in3SpammerKey";
-            this.in3SpammerKey.Size = new System.Drawing.Size(79, 22);
+            this.in3SpammerKey.Size = new System.Drawing.Size(79, 21);
             this.in3SpammerKey.TabIndex = 23;
             this.in3SpammerKey.Tag = "3:spammerKey";
+            this.in3SpammerKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in3SwitchDelay
             // 
-            this.in3SwitchDelay.BackColor = System.Drawing.Color.Black;
+            this.in3SwitchDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3SwitchDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3SwitchDelay.ForeColor = System.Drawing.Color.White;
-            this.in3SwitchDelay.Location = new System.Drawing.Point(135, 108);
-            this.in3SwitchDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3SwitchDelay.Location = new System.Drawing.Point(135, 115);
+            this.in3SwitchDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in3SwitchDelay.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
             this.in3SwitchDelay.Name = "in3SwitchDelay";
-            this.in3SwitchDelay.Size = new System.Drawing.Size(80, 22);
+            this.in3SwitchDelay.Size = new System.Drawing.Size(80, 21);
             this.in3SwitchDelay.TabIndex = 27;
             this.in3SwitchDelay.Tag = "3:switchDelay";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(19, 34);
+            this.label12.Location = new System.Drawing.Point(20, 36);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(92, 16);
+            this.label12.Size = new System.Drawing.Size(84, 14);
             this.label12.TabIndex = 24;
-            this.label12.Text = "Spammer Key";
+            this.label12.Text = "SPAMMER KEY";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in3SpammerDelay
             // 
-            this.in3SpammerDelay.BackColor = System.Drawing.Color.Black;
+            this.in3SpammerDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in3SpammerDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in3SpammerDelay.ForeColor = System.Drawing.Color.White;
-            this.in3SpammerDelay.Location = new System.Drawing.Point(135, 69);
-            this.in3SpammerDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in3SpammerDelay.Location = new System.Drawing.Point(135, 73);
+            this.in3SpammerDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in3SpammerDelay.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.in3SpammerDelay.Name = "in3SpammerDelay";
-            this.in3SpammerDelay.Size = new System.Drawing.Size(80, 22);
+            this.in3SpammerDelay.Size = new System.Drawing.Size(80, 21);
             this.in3SpammerDelay.TabIndex = 25;
             this.in3SpammerDelay.Tag = "3:spammerDelay";
             // 
@@ -1989,18 +2053,18 @@
             // 
             this.equipGroup4.Controls.Add(this.panel2);
             this.equipGroup4.ForeColor = System.Drawing.Color.White;
-            this.equipGroup4.Location = new System.Drawing.Point(16, 736);
-            this.equipGroup4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.equipGroup4.Location = new System.Drawing.Point(20, 819);
+            this.equipGroup4.Margin = new System.Windows.Forms.Padding(4);
             this.equipGroup4.Name = "equipGroup4";
-            this.equipGroup4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.equipGroup4.Size = new System.Drawing.Size(689, 244);
+            this.equipGroup4.Padding = new System.Windows.Forms.Padding(4);
+            this.equipGroup4.Size = new System.Drawing.Size(750, 260);
             this.equipGroup4.TabIndex = 31;
             this.equipGroup4.TabStop = false;
             this.equipGroup4.Text = "ATK x DEF 4";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.panel2.Controls.Add(this.pictureBox37);
             this.panel2.Controls.Add(this.pictureBox38);
             this.panel2.Controls.Add(this.in4Atk6);
@@ -2030,20 +2094,20 @@
             this.panel2.Controls.Add(this.pictureBox48);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(15, 16);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(40, 15);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(660, 222);
+            this.panel2.Size = new System.Drawing.Size(660, 236);
             this.panel2.TabIndex = 28;
             // 
             // pictureBox37
             // 
             this.pictureBox37.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox37.Image")));
             this.pictureBox37.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox37.InitialImage")));
-            this.pictureBox37.Location = new System.Drawing.Point(611, 34);
-            this.pictureBox37.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox37.Location = new System.Drawing.Point(611, 36);
+            this.pictureBox37.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox37.Size = new System.Drawing.Size(33, 33);
             this.pictureBox37.TabIndex = 37;
             this.pictureBox37.TabStop = false;
             // 
@@ -2051,170 +2115,179 @@
             // 
             this.pictureBox38.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox38.Image")));
             this.pictureBox38.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox38.InitialImage")));
-            this.pictureBox38.Location = new System.Drawing.Point(297, 34);
-            this.pictureBox38.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox38.Location = new System.Drawing.Point(297, 36);
+            this.pictureBox38.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox38.Size = new System.Drawing.Size(33, 33);
             this.pictureBox38.TabIndex = 36;
             this.pictureBox38.TabStop = false;
             // 
             // in4Atk6
             // 
-            this.in4Atk6.BackColor = System.Drawing.Color.Black;
+            this.in4Atk6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4Atk6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4Atk6.ForeColor = System.Drawing.Color.White;
-            this.in4Atk6.Location = new System.Drawing.Point(525, 186);
-            this.in4Atk6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4Atk6.Location = new System.Drawing.Point(525, 198);
+            this.in4Atk6.Margin = new System.Windows.Forms.Padding(4);
             this.in4Atk6.Name = "in4Atk6";
-            this.in4Atk6.Size = new System.Drawing.Size(79, 22);
+            this.in4Atk6.Size = new System.Drawing.Size(79, 21);
             this.in4Atk6.TabIndex = 35;
             this.in4Atk6.Tag = "4:Atk6";
+            this.in4Atk6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in4Def6
             // 
-            this.in4Def6.BackColor = System.Drawing.Color.Black;
+            this.in4Def6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4Def6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4Def6.ForeColor = System.Drawing.Color.White;
-            this.in4Def6.Location = new System.Drawing.Point(336, 185);
-            this.in4Def6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4Def6.Location = new System.Drawing.Point(336, 197);
+            this.in4Def6.Margin = new System.Windows.Forms.Padding(4);
             this.in4Def6.Name = "in4Def6";
-            this.in4Def6.Size = new System.Drawing.Size(79, 22);
+            this.in4Def6.Size = new System.Drawing.Size(79, 21);
             this.in4Def6.TabIndex = 34;
             this.in4Def6.Tag = "4:Def6";
+            this.in4Def6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in4Atk2
             // 
-            this.in4Atk2.BackColor = System.Drawing.Color.Black;
+            this.in4Atk2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4Atk2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4Atk2.ForeColor = System.Drawing.Color.White;
-            this.in4Atk2.Location = new System.Drawing.Point(525, 68);
-            this.in4Atk2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4Atk2.Location = new System.Drawing.Point(525, 72);
+            this.in4Atk2.Margin = new System.Windows.Forms.Padding(4);
             this.in4Atk2.Name = "in4Atk2";
-            this.in4Atk2.Size = new System.Drawing.Size(79, 22);
+            this.in4Atk2.Size = new System.Drawing.Size(79, 21);
             this.in4Atk2.TabIndex = 9;
             this.in4Atk2.Tag = "4:Atk2";
+            this.in4Atk2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(332, 12);
+            this.label14.Location = new System.Drawing.Point(332, 13);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(75, 16);
+            this.label14.Size = new System.Drawing.Size(77, 14);
             this.label14.TabIndex = 0;
-            this.label14.Text = "DEF Switch";
+            this.label14.Text = "DEF SWITCH";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in4Def1
             // 
-            this.in4Def1.BackColor = System.Drawing.Color.Black;
+            this.in4Def1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4Def1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4Def1.ForeColor = System.Drawing.Color.White;
-            this.in4Def1.Location = new System.Drawing.Point(336, 38);
-            this.in4Def1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4Def1.Location = new System.Drawing.Point(336, 40);
+            this.in4Def1.Margin = new System.Windows.Forms.Padding(4);
             this.in4Def1.Name = "in4Def1";
-            this.in4Def1.Size = new System.Drawing.Size(79, 22);
+            this.in4Def1.Size = new System.Drawing.Size(79, 21);
             this.in4Def1.TabIndex = 1;
             this.in4Def1.Tag = "4:Def1";
+            this.in4Def1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in4Def2
             // 
-            this.in4Def2.BackColor = System.Drawing.Color.Black;
+            this.in4Def2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4Def2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4Def2.ForeColor = System.Drawing.Color.White;
-            this.in4Def2.Location = new System.Drawing.Point(336, 66);
-            this.in4Def2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4Def2.Location = new System.Drawing.Point(336, 70);
+            this.in4Def2.Margin = new System.Windows.Forms.Padding(4);
             this.in4Def2.Name = "in4Def2";
-            this.in4Def2.Size = new System.Drawing.Size(79, 22);
+            this.in4Def2.Size = new System.Drawing.Size(79, 21);
             this.in4Def2.TabIndex = 2;
             this.in4Def2.Tag = "4:Def2";
+            this.in4Def2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in4Def3
             // 
-            this.in4Def3.BackColor = System.Drawing.Color.Black;
+            this.in4Def3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4Def3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4Def3.ForeColor = System.Drawing.Color.White;
-            this.in4Def3.Location = new System.Drawing.Point(336, 96);
-            this.in4Def3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4Def3.Location = new System.Drawing.Point(336, 102);
+            this.in4Def3.Margin = new System.Windows.Forms.Padding(4);
             this.in4Def3.Name = "in4Def3";
-            this.in4Def3.Size = new System.Drawing.Size(79, 22);
+            this.in4Def3.Size = new System.Drawing.Size(79, 21);
             this.in4Def3.TabIndex = 3;
             this.in4Def3.Tag = "4:Def3";
+            this.in4Def3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox39
             // 
             this.pictureBox39.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox39.Image")));
             this.pictureBox39.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox39.InitialImage")));
-            this.pictureBox39.Location = new System.Drawing.Point(611, 123);
-            this.pictureBox39.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox39.Location = new System.Drawing.Point(611, 131);
+            this.pictureBox39.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox39.Size = new System.Drawing.Size(33, 33);
             this.pictureBox39.TabIndex = 22;
             this.pictureBox39.TabStop = false;
             // 
             // in4Def4
             // 
-            this.in4Def4.BackColor = System.Drawing.Color.Black;
+            this.in4Def4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4Def4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4Def4.ForeColor = System.Drawing.Color.White;
-            this.in4Def4.Location = new System.Drawing.Point(336, 126);
-            this.in4Def4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4Def4.Location = new System.Drawing.Point(336, 134);
+            this.in4Def4.Margin = new System.Windows.Forms.Padding(4);
             this.in4Def4.Name = "in4Def4";
-            this.in4Def4.Size = new System.Drawing.Size(79, 22);
+            this.in4Def4.Size = new System.Drawing.Size(79, 21);
             this.in4Def4.TabIndex = 4;
             this.in4Def4.Tag = "4:Def4";
+            this.in4Def4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox40
             // 
             this.pictureBox40.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox40.Image")));
             this.pictureBox40.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox40.InitialImage")));
-            this.pictureBox40.Location = new System.Drawing.Point(611, 182);
-            this.pictureBox40.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox40.Location = new System.Drawing.Point(611, 193);
+            this.pictureBox40.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox40.Size = new System.Drawing.Size(33, 33);
             this.pictureBox40.TabIndex = 21;
             this.pictureBox40.TabStop = false;
             // 
             // in4Def5
             // 
-            this.in4Def5.BackColor = System.Drawing.Color.Black;
+            this.in4Def5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4Def5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4Def5.ForeColor = System.Drawing.Color.White;
-            this.in4Def5.Location = new System.Drawing.Point(336, 155);
-            this.in4Def5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4Def5.Location = new System.Drawing.Point(336, 165);
+            this.in4Def5.Margin = new System.Windows.Forms.Padding(4);
             this.in4Def5.Name = "in4Def5";
-            this.in4Def5.Size = new System.Drawing.Size(79, 22);
+            this.in4Def5.Size = new System.Drawing.Size(79, 21);
             this.in4Def5.TabIndex = 5;
             this.in4Def5.Tag = "4:Def5";
+            this.in4Def5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox41
             // 
             this.pictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox41.Image")));
             this.pictureBox41.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox41.InitialImage")));
-            this.pictureBox41.Location = new System.Drawing.Point(611, 153);
-            this.pictureBox41.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox41.Location = new System.Drawing.Point(611, 163);
+            this.pictureBox41.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox41.Size = new System.Drawing.Size(33, 33);
             this.pictureBox41.TabIndex = 20;
             this.pictureBox41.TabStop = false;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Silver;
-            this.panel4.Location = new System.Drawing.Point(475, 12);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Location = new System.Drawing.Point(475, 13);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1, 197);
+            this.panel4.Size = new System.Drawing.Size(1, 209);
             this.panel4.TabIndex = 6;
             // 
             // pictureBox42
             // 
             this.pictureBox42.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox42.Image")));
             this.pictureBox42.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox42.InitialImage")));
-            this.pictureBox42.Location = new System.Drawing.Point(611, 94);
-            this.pictureBox42.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox42.Location = new System.Drawing.Point(611, 100);
+            this.pictureBox42.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox42.Size = new System.Drawing.Size(33, 33);
             this.pictureBox42.TabIndex = 19;
             this.pictureBox42.TabStop = false;
             // 
@@ -2222,113 +2295,118 @@
             // 
             this.label15.AutoSize = true;
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(521, 12);
+            this.label15.Location = new System.Drawing.Point(521, 13);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(74, 16);
+            this.label15.Size = new System.Drawing.Size(77, 14);
             this.label15.TabIndex = 7;
-            this.label15.Text = "ATK Switch";
+            this.label15.Text = "ATK SWITCH";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox43
             // 
             this.pictureBox43.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox43.Image")));
             this.pictureBox43.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox43.InitialImage")));
-            this.pictureBox43.Location = new System.Drawing.Point(611, 64);
-            this.pictureBox43.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox43.Location = new System.Drawing.Point(611, 68);
+            this.pictureBox43.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox43.Size = new System.Drawing.Size(33, 33);
             this.pictureBox43.TabIndex = 18;
             this.pictureBox43.TabStop = false;
             // 
             // in4Atk1
             // 
-            this.in4Atk1.BackColor = System.Drawing.Color.Black;
+            this.in4Atk1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4Atk1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4Atk1.ForeColor = System.Drawing.Color.White;
-            this.in4Atk1.Location = new System.Drawing.Point(525, 38);
-            this.in4Atk1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4Atk1.Location = new System.Drawing.Point(525, 40);
+            this.in4Atk1.Margin = new System.Windows.Forms.Padding(4);
             this.in4Atk1.Name = "in4Atk1";
-            this.in4Atk1.Size = new System.Drawing.Size(79, 22);
+            this.in4Atk1.Size = new System.Drawing.Size(79, 21);
             this.in4Atk1.TabIndex = 8;
             this.in4Atk1.Tag = "4:Atk1";
+            this.in4Atk1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox44
             // 
             this.pictureBox44.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox44.Image")));
             this.pictureBox44.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox44.InitialImage")));
-            this.pictureBox44.Location = new System.Drawing.Point(297, 122);
-            this.pictureBox44.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox44.Location = new System.Drawing.Point(297, 130);
+            this.pictureBox44.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox44.Size = new System.Drawing.Size(33, 33);
             this.pictureBox44.TabIndex = 17;
             this.pictureBox44.TabStop = false;
             // 
             // in4Atk3
             // 
-            this.in4Atk3.BackColor = System.Drawing.Color.Black;
+            this.in4Atk3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4Atk3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4Atk3.ForeColor = System.Drawing.Color.White;
-            this.in4Atk3.Location = new System.Drawing.Point(525, 97);
-            this.in4Atk3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4Atk3.Location = new System.Drawing.Point(525, 103);
+            this.in4Atk3.Margin = new System.Windows.Forms.Padding(4);
             this.in4Atk3.Name = "in4Atk3";
-            this.in4Atk3.Size = new System.Drawing.Size(79, 22);
+            this.in4Atk3.Size = new System.Drawing.Size(79, 21);
             this.in4Atk3.TabIndex = 10;
             this.in4Atk3.Tag = "4:Atk3";
+            this.in4Atk3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox45
             // 
             this.pictureBox45.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox45.Image")));
             this.pictureBox45.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox45.InitialImage")));
-            this.pictureBox45.Location = new System.Drawing.Point(297, 181);
-            this.pictureBox45.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox45.Location = new System.Drawing.Point(297, 192);
+            this.pictureBox45.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox45.Name = "pictureBox45";
-            this.pictureBox45.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox45.Size = new System.Drawing.Size(33, 33);
             this.pictureBox45.TabIndex = 16;
             this.pictureBox45.TabStop = false;
             // 
             // in4Atk4
             // 
-            this.in4Atk4.BackColor = System.Drawing.Color.Black;
+            this.in4Atk4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4Atk4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4Atk4.ForeColor = System.Drawing.Color.White;
-            this.in4Atk4.Location = new System.Drawing.Point(525, 127);
-            this.in4Atk4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4Atk4.Location = new System.Drawing.Point(525, 135);
+            this.in4Atk4.Margin = new System.Windows.Forms.Padding(4);
             this.in4Atk4.Name = "in4Atk4";
-            this.in4Atk4.Size = new System.Drawing.Size(79, 22);
+            this.in4Atk4.Size = new System.Drawing.Size(79, 21);
             this.in4Atk4.TabIndex = 11;
             this.in4Atk4.Tag = "4:Atk4";
+            this.in4Atk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox46
             // 
             this.pictureBox46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox46.Image")));
             this.pictureBox46.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox46.InitialImage")));
-            this.pictureBox46.Location = new System.Drawing.Point(297, 151);
-            this.pictureBox46.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox46.Location = new System.Drawing.Point(297, 160);
+            this.pictureBox46.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox46.Size = new System.Drawing.Size(33, 33);
             this.pictureBox46.TabIndex = 15;
             this.pictureBox46.TabStop = false;
             // 
             // in4Atk5
             // 
-            this.in4Atk5.BackColor = System.Drawing.Color.Black;
+            this.in4Atk5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4Atk5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4Atk5.ForeColor = System.Drawing.Color.White;
-            this.in4Atk5.Location = new System.Drawing.Point(525, 156);
-            this.in4Atk5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4Atk5.Location = new System.Drawing.Point(525, 166);
+            this.in4Atk5.Margin = new System.Windows.Forms.Padding(4);
             this.in4Atk5.Name = "in4Atk5";
-            this.in4Atk5.Size = new System.Drawing.Size(79, 22);
+            this.in4Atk5.Size = new System.Drawing.Size(79, 21);
             this.in4Atk5.TabIndex = 12;
             this.in4Atk5.Tag = "4:Atk5";
+            this.in4Atk5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox47
             // 
             this.pictureBox47.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox47.Image")));
             this.pictureBox47.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox47.InitialImage")));
-            this.pictureBox47.Location = new System.Drawing.Point(297, 92);
-            this.pictureBox47.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox47.Location = new System.Drawing.Point(297, 98);
+            this.pictureBox47.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox47.Size = new System.Drawing.Size(33, 33);
             this.pictureBox47.TabIndex = 14;
             this.pictureBox47.TabStop = false;
             // 
@@ -2336,10 +2414,10 @@
             // 
             this.pictureBox48.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox48.Image")));
             this.pictureBox48.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox48.InitialImage")));
-            this.pictureBox48.Location = new System.Drawing.Point(297, 64);
-            this.pictureBox48.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox48.Location = new System.Drawing.Point(297, 68);
+            this.pictureBox48.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(33, 30);
+            this.pictureBox48.Size = new System.Drawing.Size(33, 32);
             this.pictureBox48.TabIndex = 13;
             this.pictureBox48.TabStop = false;
             // 
@@ -2354,82 +2432,84 @@
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(17, 12);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(17, 13);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(255, 186);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(255, 198);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Configuration";
+            this.groupBox2.Text = "CONFIGURATION";
             // 
             // in4SpammerClick
             // 
             this.in4SpammerClick.AutoSize = true;
             this.in4SpammerClick.Checked = true;
             this.in4SpammerClick.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.in4SpammerClick.Location = new System.Drawing.Point(23, 148);
-            this.in4SpammerClick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4SpammerClick.Location = new System.Drawing.Point(23, 157);
+            this.in4SpammerClick.Margin = new System.Windows.Forms.Padding(4);
             this.in4SpammerClick.Name = "in4SpammerClick";
-            this.in4SpammerClick.Size = new System.Drawing.Size(129, 20);
+            this.in4SpammerClick.Size = new System.Drawing.Size(138, 18);
             this.in4SpammerClick.TabIndex = 29;
             this.in4SpammerClick.Tag = "4:inSpammerClick";
-            this.in4SpammerClick.Text = "With mouse click";
+            this.in4SpammerClick.Text = "WITH MOUSE CLICK";
             this.in4SpammerClick.UseVisualStyleBackColor = true;
             // 
             // in4SpammerKey
             // 
-            this.in4SpammerKey.BackColor = System.Drawing.Color.Black;
+            this.in4SpammerKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4SpammerKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4SpammerKey.ForeColor = System.Drawing.Color.White;
-            this.in4SpammerKey.Location = new System.Drawing.Point(135, 30);
-            this.in4SpammerKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4SpammerKey.Location = new System.Drawing.Point(135, 32);
+            this.in4SpammerKey.Margin = new System.Windows.Forms.Padding(4);
             this.in4SpammerKey.Name = "in4SpammerKey";
-            this.in4SpammerKey.Size = new System.Drawing.Size(79, 22);
+            this.in4SpammerKey.Size = new System.Drawing.Size(79, 21);
             this.in4SpammerKey.TabIndex = 23;
             this.in4SpammerKey.Tag = "4:spammerKey";
+            this.in4SpammerKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in4SwitchDelay
             // 
-            this.in4SwitchDelay.BackColor = System.Drawing.Color.Black;
+            this.in4SwitchDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4SwitchDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4SwitchDelay.ForeColor = System.Drawing.Color.White;
-            this.in4SwitchDelay.Location = new System.Drawing.Point(135, 108);
-            this.in4SwitchDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4SwitchDelay.Location = new System.Drawing.Point(135, 115);
+            this.in4SwitchDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in4SwitchDelay.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
             this.in4SwitchDelay.Name = "in4SwitchDelay";
-            this.in4SwitchDelay.Size = new System.Drawing.Size(80, 22);
+            this.in4SwitchDelay.Size = new System.Drawing.Size(80, 21);
             this.in4SwitchDelay.TabIndex = 27;
             this.in4SwitchDelay.Tag = "4:switchDelay";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(19, 34);
+            this.label17.Location = new System.Drawing.Point(20, 36);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(92, 16);
+            this.label17.Size = new System.Drawing.Size(84, 14);
             this.label17.TabIndex = 24;
-            this.label17.Text = "Spammer Key";
+            this.label17.Text = "SPAMMER KEY";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in4SpammerDelay
             // 
-            this.in4SpammerDelay.BackColor = System.Drawing.Color.Black;
+            this.in4SpammerDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in4SpammerDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in4SpammerDelay.ForeColor = System.Drawing.Color.White;
-            this.in4SpammerDelay.Location = new System.Drawing.Point(135, 69);
-            this.in4SpammerDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in4SpammerDelay.Location = new System.Drawing.Point(135, 73);
+            this.in4SpammerDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in4SpammerDelay.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.in4SpammerDelay.Name = "in4SpammerDelay";
-            this.in4SpammerDelay.Size = new System.Drawing.Size(80, 22);
+            this.in4SpammerDelay.Size = new System.Drawing.Size(80, 21);
             this.in4SpammerDelay.TabIndex = 25;
             this.in4SpammerDelay.Tag = "4:spammerDelay";
             // 
@@ -2437,18 +2517,18 @@
             // 
             this.equipGroup8.Controls.Add(this.panelSwitch8);
             this.equipGroup8.ForeColor = System.Drawing.Color.White;
-            this.equipGroup8.Location = new System.Drawing.Point(16, 1718);
-            this.equipGroup8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.equipGroup8.Location = new System.Drawing.Point(20, 1891);
+            this.equipGroup8.Margin = new System.Windows.Forms.Padding(4);
             this.equipGroup8.Name = "equipGroup8";
-            this.equipGroup8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.equipGroup8.Size = new System.Drawing.Size(689, 244);
+            this.equipGroup8.Padding = new System.Windows.Forms.Padding(4);
+            this.equipGroup8.Size = new System.Drawing.Size(750, 260);
             this.equipGroup8.TabIndex = 35;
             this.equipGroup8.TabStop = false;
             this.equipGroup8.Text = "ATK x DEF 8";
             // 
             // panelSwitch8
             // 
-            this.panelSwitch8.BackColor = System.Drawing.Color.Black;
+            this.panelSwitch8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.panelSwitch8.Controls.Add(this.pictureBox49);
             this.panelSwitch8.Controls.Add(this.pictureBox50);
             this.panelSwitch8.Controls.Add(this.in8Atk6);
@@ -2478,20 +2558,20 @@
             this.panelSwitch8.Controls.Add(this.pictureBox60);
             this.panelSwitch8.Controls.Add(this.groupBox4);
             this.panelSwitch8.ForeColor = System.Drawing.Color.White;
-            this.panelSwitch8.Location = new System.Drawing.Point(15, 16);
-            this.panelSwitch8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSwitch8.Location = new System.Drawing.Point(40, 15);
+            this.panelSwitch8.Margin = new System.Windows.Forms.Padding(4);
             this.panelSwitch8.Name = "panelSwitch8";
-            this.panelSwitch8.Size = new System.Drawing.Size(660, 222);
+            this.panelSwitch8.Size = new System.Drawing.Size(660, 236);
             this.panelSwitch8.TabIndex = 28;
             // 
             // pictureBox49
             // 
             this.pictureBox49.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox49.Image")));
             this.pictureBox49.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox49.InitialImage")));
-            this.pictureBox49.Location = new System.Drawing.Point(611, 34);
-            this.pictureBox49.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox49.Location = new System.Drawing.Point(611, 36);
+            this.pictureBox49.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox49.Size = new System.Drawing.Size(33, 33);
             this.pictureBox49.TabIndex = 37;
             this.pictureBox49.TabStop = false;
             // 
@@ -2499,170 +2579,179 @@
             // 
             this.pictureBox50.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox50.Image")));
             this.pictureBox50.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox50.InitialImage")));
-            this.pictureBox50.Location = new System.Drawing.Point(297, 34);
-            this.pictureBox50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox50.Location = new System.Drawing.Point(297, 36);
+            this.pictureBox50.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox50.Size = new System.Drawing.Size(33, 33);
             this.pictureBox50.TabIndex = 36;
             this.pictureBox50.TabStop = false;
             // 
             // in8Atk6
             // 
-            this.in8Atk6.BackColor = System.Drawing.Color.Black;
+            this.in8Atk6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8Atk6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8Atk6.ForeColor = System.Drawing.Color.White;
-            this.in8Atk6.Location = new System.Drawing.Point(525, 186);
-            this.in8Atk6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8Atk6.Location = new System.Drawing.Point(525, 198);
+            this.in8Atk6.Margin = new System.Windows.Forms.Padding(4);
             this.in8Atk6.Name = "in8Atk6";
-            this.in8Atk6.Size = new System.Drawing.Size(79, 22);
+            this.in8Atk6.Size = new System.Drawing.Size(79, 21);
             this.in8Atk6.TabIndex = 35;
             this.in8Atk6.Tag = "8:Atk6";
+            this.in8Atk6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in8Def6
             // 
-            this.in8Def6.BackColor = System.Drawing.Color.Black;
+            this.in8Def6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8Def6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8Def6.ForeColor = System.Drawing.Color.White;
-            this.in8Def6.Location = new System.Drawing.Point(336, 185);
-            this.in8Def6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8Def6.Location = new System.Drawing.Point(336, 197);
+            this.in8Def6.Margin = new System.Windows.Forms.Padding(4);
             this.in8Def6.Name = "in8Def6";
-            this.in8Def6.Size = new System.Drawing.Size(79, 22);
+            this.in8Def6.Size = new System.Drawing.Size(79, 21);
             this.in8Def6.TabIndex = 34;
             this.in8Def6.Tag = "8:Def6";
+            this.in8Def6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in8Atk2
             // 
-            this.in8Atk2.BackColor = System.Drawing.Color.Black;
+            this.in8Atk2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8Atk2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8Atk2.ForeColor = System.Drawing.Color.White;
-            this.in8Atk2.Location = new System.Drawing.Point(525, 68);
-            this.in8Atk2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8Atk2.Location = new System.Drawing.Point(525, 72);
+            this.in8Atk2.Margin = new System.Windows.Forms.Padding(4);
             this.in8Atk2.Name = "in8Atk2";
-            this.in8Atk2.Size = new System.Drawing.Size(79, 22);
+            this.in8Atk2.Size = new System.Drawing.Size(79, 21);
             this.in8Atk2.TabIndex = 9;
             this.in8Atk2.Tag = "8:Atk2";
+            this.in8Atk2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(332, 12);
+            this.label19.Location = new System.Drawing.Point(332, 13);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(75, 16);
+            this.label19.Size = new System.Drawing.Size(77, 14);
             this.label19.TabIndex = 0;
-            this.label19.Text = "DEF Switch";
+            this.label19.Text = "DEF SWITCH";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in8Def1
             // 
-            this.in8Def1.BackColor = System.Drawing.Color.Black;
+            this.in8Def1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8Def1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8Def1.ForeColor = System.Drawing.Color.White;
-            this.in8Def1.Location = new System.Drawing.Point(336, 38);
-            this.in8Def1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8Def1.Location = new System.Drawing.Point(336, 40);
+            this.in8Def1.Margin = new System.Windows.Forms.Padding(4);
             this.in8Def1.Name = "in8Def1";
-            this.in8Def1.Size = new System.Drawing.Size(79, 22);
+            this.in8Def1.Size = new System.Drawing.Size(79, 21);
             this.in8Def1.TabIndex = 1;
             this.in8Def1.Tag = "8:Def1";
+            this.in8Def1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in8Def2
             // 
-            this.in8Def2.BackColor = System.Drawing.Color.Black;
+            this.in8Def2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8Def2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8Def2.ForeColor = System.Drawing.Color.White;
-            this.in8Def2.Location = new System.Drawing.Point(336, 66);
-            this.in8Def2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8Def2.Location = new System.Drawing.Point(336, 70);
+            this.in8Def2.Margin = new System.Windows.Forms.Padding(4);
             this.in8Def2.Name = "in8Def2";
-            this.in8Def2.Size = new System.Drawing.Size(79, 22);
+            this.in8Def2.Size = new System.Drawing.Size(79, 21);
             this.in8Def2.TabIndex = 2;
             this.in8Def2.Tag = "8:Def2";
+            this.in8Def2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in8Def3
             // 
-            this.in8Def3.BackColor = System.Drawing.Color.Black;
+            this.in8Def3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8Def3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8Def3.ForeColor = System.Drawing.Color.White;
-            this.in8Def3.Location = new System.Drawing.Point(336, 96);
-            this.in8Def3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8Def3.Location = new System.Drawing.Point(336, 102);
+            this.in8Def3.Margin = new System.Windows.Forms.Padding(4);
             this.in8Def3.Name = "in8Def3";
-            this.in8Def3.Size = new System.Drawing.Size(79, 22);
+            this.in8Def3.Size = new System.Drawing.Size(79, 21);
             this.in8Def3.TabIndex = 3;
             this.in8Def3.Tag = "8:Def3";
+            this.in8Def3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox51
             // 
             this.pictureBox51.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox51.Image")));
             this.pictureBox51.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox51.InitialImage")));
-            this.pictureBox51.Location = new System.Drawing.Point(611, 123);
-            this.pictureBox51.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox51.Location = new System.Drawing.Point(611, 131);
+            this.pictureBox51.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox51.Name = "pictureBox51";
-            this.pictureBox51.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox51.Size = new System.Drawing.Size(33, 33);
             this.pictureBox51.TabIndex = 22;
             this.pictureBox51.TabStop = false;
             // 
             // in8Def4
             // 
-            this.in8Def4.BackColor = System.Drawing.Color.Black;
+            this.in8Def4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8Def4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8Def4.ForeColor = System.Drawing.Color.White;
-            this.in8Def4.Location = new System.Drawing.Point(336, 126);
-            this.in8Def4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8Def4.Location = new System.Drawing.Point(336, 134);
+            this.in8Def4.Margin = new System.Windows.Forms.Padding(4);
             this.in8Def4.Name = "in8Def4";
-            this.in8Def4.Size = new System.Drawing.Size(79, 22);
+            this.in8Def4.Size = new System.Drawing.Size(79, 21);
             this.in8Def4.TabIndex = 4;
             this.in8Def4.Tag = "8:Def4";
+            this.in8Def4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox52
             // 
             this.pictureBox52.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox52.Image")));
             this.pictureBox52.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox52.InitialImage")));
-            this.pictureBox52.Location = new System.Drawing.Point(611, 182);
-            this.pictureBox52.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox52.Location = new System.Drawing.Point(611, 193);
+            this.pictureBox52.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox52.Name = "pictureBox52";
-            this.pictureBox52.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox52.Size = new System.Drawing.Size(33, 33);
             this.pictureBox52.TabIndex = 21;
             this.pictureBox52.TabStop = false;
             // 
             // in8Def5
             // 
-            this.in8Def5.BackColor = System.Drawing.Color.Black;
+            this.in8Def5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8Def5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8Def5.ForeColor = System.Drawing.Color.White;
-            this.in8Def5.Location = new System.Drawing.Point(336, 155);
-            this.in8Def5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8Def5.Location = new System.Drawing.Point(336, 165);
+            this.in8Def5.Margin = new System.Windows.Forms.Padding(4);
             this.in8Def5.Name = "in8Def5";
-            this.in8Def5.Size = new System.Drawing.Size(79, 22);
+            this.in8Def5.Size = new System.Drawing.Size(79, 21);
             this.in8Def5.TabIndex = 5;
             this.in8Def5.Tag = "8:Def5";
+            this.in8Def5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox53
             // 
             this.pictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox53.Image")));
             this.pictureBox53.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox53.InitialImage")));
-            this.pictureBox53.Location = new System.Drawing.Point(611, 153);
-            this.pictureBox53.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox53.Location = new System.Drawing.Point(611, 163);
+            this.pictureBox53.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox53.Size = new System.Drawing.Size(33, 33);
             this.pictureBox53.TabIndex = 20;
             this.pictureBox53.TabStop = false;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Silver;
-            this.panel7.Location = new System.Drawing.Point(475, 12);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Location = new System.Drawing.Point(475, 13);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1, 197);
+            this.panel7.Size = new System.Drawing.Size(1, 209);
             this.panel7.TabIndex = 6;
             // 
             // pictureBox54
             // 
             this.pictureBox54.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox54.Image")));
             this.pictureBox54.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox54.InitialImage")));
-            this.pictureBox54.Location = new System.Drawing.Point(611, 94);
-            this.pictureBox54.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox54.Location = new System.Drawing.Point(611, 100);
+            this.pictureBox54.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox54.Size = new System.Drawing.Size(33, 33);
             this.pictureBox54.TabIndex = 19;
             this.pictureBox54.TabStop = false;
             // 
@@ -2670,113 +2759,118 @@
             // 
             this.label20.AutoSize = true;
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(521, 12);
+            this.label20.Location = new System.Drawing.Point(521, 13);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(74, 16);
+            this.label20.Size = new System.Drawing.Size(77, 14);
             this.label20.TabIndex = 7;
-            this.label20.Text = "ATK Switch";
+            this.label20.Text = "ATK SWITCH";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox55
             // 
             this.pictureBox55.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox55.Image")));
             this.pictureBox55.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox55.InitialImage")));
-            this.pictureBox55.Location = new System.Drawing.Point(611, 64);
-            this.pictureBox55.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox55.Location = new System.Drawing.Point(611, 68);
+            this.pictureBox55.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox55.Name = "pictureBox55";
-            this.pictureBox55.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox55.Size = new System.Drawing.Size(33, 33);
             this.pictureBox55.TabIndex = 18;
             this.pictureBox55.TabStop = false;
             // 
             // in8Atk1
             // 
-            this.in8Atk1.BackColor = System.Drawing.Color.Black;
+            this.in8Atk1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8Atk1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8Atk1.ForeColor = System.Drawing.Color.White;
-            this.in8Atk1.Location = new System.Drawing.Point(525, 38);
-            this.in8Atk1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8Atk1.Location = new System.Drawing.Point(525, 40);
+            this.in8Atk1.Margin = new System.Windows.Forms.Padding(4);
             this.in8Atk1.Name = "in8Atk1";
-            this.in8Atk1.Size = new System.Drawing.Size(79, 22);
+            this.in8Atk1.Size = new System.Drawing.Size(79, 21);
             this.in8Atk1.TabIndex = 8;
             this.in8Atk1.Tag = "8:Atk1";
+            this.in8Atk1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox56
             // 
             this.pictureBox56.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox56.Image")));
             this.pictureBox56.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox56.InitialImage")));
-            this.pictureBox56.Location = new System.Drawing.Point(297, 122);
-            this.pictureBox56.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox56.Location = new System.Drawing.Point(297, 130);
+            this.pictureBox56.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox56.Name = "pictureBox56";
-            this.pictureBox56.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox56.Size = new System.Drawing.Size(33, 33);
             this.pictureBox56.TabIndex = 17;
             this.pictureBox56.TabStop = false;
             // 
             // in8Atk3
             // 
-            this.in8Atk3.BackColor = System.Drawing.Color.Black;
+            this.in8Atk3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8Atk3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8Atk3.ForeColor = System.Drawing.Color.White;
-            this.in8Atk3.Location = new System.Drawing.Point(525, 97);
-            this.in8Atk3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8Atk3.Location = new System.Drawing.Point(525, 103);
+            this.in8Atk3.Margin = new System.Windows.Forms.Padding(4);
             this.in8Atk3.Name = "in8Atk3";
-            this.in8Atk3.Size = new System.Drawing.Size(79, 22);
+            this.in8Atk3.Size = new System.Drawing.Size(79, 21);
             this.in8Atk3.TabIndex = 10;
             this.in8Atk3.Tag = "8:Atk3";
+            this.in8Atk3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox57
             // 
             this.pictureBox57.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox57.Image")));
             this.pictureBox57.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox57.InitialImage")));
-            this.pictureBox57.Location = new System.Drawing.Point(297, 181);
-            this.pictureBox57.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox57.Location = new System.Drawing.Point(297, 192);
+            this.pictureBox57.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox57.Name = "pictureBox57";
-            this.pictureBox57.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox57.Size = new System.Drawing.Size(33, 33);
             this.pictureBox57.TabIndex = 16;
             this.pictureBox57.TabStop = false;
             // 
             // in8Atk4
             // 
-            this.in8Atk4.BackColor = System.Drawing.Color.Black;
+            this.in8Atk4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8Atk4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8Atk4.ForeColor = System.Drawing.Color.White;
-            this.in8Atk4.Location = new System.Drawing.Point(525, 127);
-            this.in8Atk4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8Atk4.Location = new System.Drawing.Point(525, 135);
+            this.in8Atk4.Margin = new System.Windows.Forms.Padding(4);
             this.in8Atk4.Name = "in8Atk4";
-            this.in8Atk4.Size = new System.Drawing.Size(79, 22);
+            this.in8Atk4.Size = new System.Drawing.Size(79, 21);
             this.in8Atk4.TabIndex = 11;
             this.in8Atk4.Tag = "8:Atk4";
+            this.in8Atk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox58
             // 
             this.pictureBox58.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox58.Image")));
             this.pictureBox58.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox58.InitialImage")));
-            this.pictureBox58.Location = new System.Drawing.Point(297, 151);
-            this.pictureBox58.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox58.Location = new System.Drawing.Point(297, 160);
+            this.pictureBox58.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox58.Name = "pictureBox58";
-            this.pictureBox58.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox58.Size = new System.Drawing.Size(33, 33);
             this.pictureBox58.TabIndex = 15;
             this.pictureBox58.TabStop = false;
             // 
             // in8Atk5
             // 
-            this.in8Atk5.BackColor = System.Drawing.Color.Black;
+            this.in8Atk5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8Atk5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8Atk5.ForeColor = System.Drawing.Color.White;
-            this.in8Atk5.Location = new System.Drawing.Point(525, 156);
-            this.in8Atk5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8Atk5.Location = new System.Drawing.Point(525, 166);
+            this.in8Atk5.Margin = new System.Windows.Forms.Padding(4);
             this.in8Atk5.Name = "in8Atk5";
-            this.in8Atk5.Size = new System.Drawing.Size(79, 22);
+            this.in8Atk5.Size = new System.Drawing.Size(79, 21);
             this.in8Atk5.TabIndex = 12;
             this.in8Atk5.Tag = "8:Atk5";
+            this.in8Atk5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox59
             // 
             this.pictureBox59.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox59.Image")));
             this.pictureBox59.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox59.InitialImage")));
-            this.pictureBox59.Location = new System.Drawing.Point(297, 92);
-            this.pictureBox59.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox59.Location = new System.Drawing.Point(297, 98);
+            this.pictureBox59.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox59.Name = "pictureBox59";
-            this.pictureBox59.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox59.Size = new System.Drawing.Size(33, 33);
             this.pictureBox59.TabIndex = 14;
             this.pictureBox59.TabStop = false;
             // 
@@ -2784,10 +2878,10 @@
             // 
             this.pictureBox60.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox60.Image")));
             this.pictureBox60.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox60.InitialImage")));
-            this.pictureBox60.Location = new System.Drawing.Point(297, 64);
-            this.pictureBox60.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox60.Location = new System.Drawing.Point(297, 68);
+            this.pictureBox60.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox60.Name = "pictureBox60";
-            this.pictureBox60.Size = new System.Drawing.Size(33, 30);
+            this.pictureBox60.Size = new System.Drawing.Size(33, 32);
             this.pictureBox60.TabIndex = 13;
             this.pictureBox60.TabStop = false;
             // 
@@ -2802,82 +2896,84 @@
             this.groupBox4.Controls.Add(this.label23);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(17, 12);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Location = new System.Drawing.Point(17, 13);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox4.Size = new System.Drawing.Size(255, 186);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Size = new System.Drawing.Size(255, 198);
             this.groupBox4.TabIndex = 33;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Configuration";
+            this.groupBox4.Text = "CONFIGURATION";
             // 
             // in8SpammerClick
             // 
             this.in8SpammerClick.AutoSize = true;
             this.in8SpammerClick.Checked = true;
             this.in8SpammerClick.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.in8SpammerClick.Location = new System.Drawing.Point(23, 148);
-            this.in8SpammerClick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8SpammerClick.Location = new System.Drawing.Point(23, 157);
+            this.in8SpammerClick.Margin = new System.Windows.Forms.Padding(4);
             this.in8SpammerClick.Name = "in8SpammerClick";
-            this.in8SpammerClick.Size = new System.Drawing.Size(129, 20);
+            this.in8SpammerClick.Size = new System.Drawing.Size(138, 18);
             this.in8SpammerClick.TabIndex = 29;
             this.in8SpammerClick.Tag = "8:inSpammerClick";
-            this.in8SpammerClick.Text = "With mouse click";
+            this.in8SpammerClick.Text = "WITH MOUSE CLICK";
             this.in8SpammerClick.UseVisualStyleBackColor = true;
             // 
             // in8SpammerKey
             // 
-            this.in8SpammerKey.BackColor = System.Drawing.Color.Black;
+            this.in8SpammerKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8SpammerKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8SpammerKey.ForeColor = System.Drawing.Color.White;
-            this.in8SpammerKey.Location = new System.Drawing.Point(135, 30);
-            this.in8SpammerKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8SpammerKey.Location = new System.Drawing.Point(135, 32);
+            this.in8SpammerKey.Margin = new System.Windows.Forms.Padding(4);
             this.in8SpammerKey.Name = "in8SpammerKey";
-            this.in8SpammerKey.Size = new System.Drawing.Size(79, 22);
+            this.in8SpammerKey.Size = new System.Drawing.Size(79, 21);
             this.in8SpammerKey.TabIndex = 23;
             this.in8SpammerKey.Tag = "8:spammerKey";
+            this.in8SpammerKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in8SwitchDelay
             // 
-            this.in8SwitchDelay.BackColor = System.Drawing.Color.Black;
+            this.in8SwitchDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8SwitchDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8SwitchDelay.ForeColor = System.Drawing.Color.White;
-            this.in8SwitchDelay.Location = new System.Drawing.Point(135, 108);
-            this.in8SwitchDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8SwitchDelay.Location = new System.Drawing.Point(135, 115);
+            this.in8SwitchDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in8SwitchDelay.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
             this.in8SwitchDelay.Name = "in8SwitchDelay";
-            this.in8SwitchDelay.Size = new System.Drawing.Size(80, 22);
+            this.in8SwitchDelay.Size = new System.Drawing.Size(80, 21);
             this.in8SwitchDelay.TabIndex = 27;
             this.in8SwitchDelay.Tag = "8:switchDelay";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(19, 34);
+            this.label22.Location = new System.Drawing.Point(20, 36);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(92, 16);
+            this.label22.Size = new System.Drawing.Size(84, 14);
             this.label22.TabIndex = 24;
-            this.label22.Text = "Spammer Key";
+            this.label22.Text = "SPAMMER KEY";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in8SpammerDelay
             // 
-            this.in8SpammerDelay.BackColor = System.Drawing.Color.Black;
+            this.in8SpammerDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in8SpammerDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in8SpammerDelay.ForeColor = System.Drawing.Color.White;
-            this.in8SpammerDelay.Location = new System.Drawing.Point(135, 69);
-            this.in8SpammerDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in8SpammerDelay.Location = new System.Drawing.Point(135, 73);
+            this.in8SpammerDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in8SpammerDelay.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.in8SpammerDelay.Name = "in8SpammerDelay";
-            this.in8SpammerDelay.Size = new System.Drawing.Size(80, 22);
+            this.in8SpammerDelay.Size = new System.Drawing.Size(80, 21);
             this.in8SpammerDelay.TabIndex = 25;
             this.in8SpammerDelay.Tag = "8:spammerDelay";
             // 
@@ -2885,18 +2981,18 @@
             // 
             this.equipGroup7.Controls.Add(this.panelSwitch7);
             this.equipGroup7.ForeColor = System.Drawing.Color.White;
-            this.equipGroup7.Location = new System.Drawing.Point(16, 1473);
-            this.equipGroup7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.equipGroup7.Location = new System.Drawing.Point(20, 1623);
+            this.equipGroup7.Margin = new System.Windows.Forms.Padding(4);
             this.equipGroup7.Name = "equipGroup7";
-            this.equipGroup7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.equipGroup7.Size = new System.Drawing.Size(689, 244);
+            this.equipGroup7.Padding = new System.Windows.Forms.Padding(4);
+            this.equipGroup7.Size = new System.Drawing.Size(750, 260);
             this.equipGroup7.TabIndex = 34;
             this.equipGroup7.TabStop = false;
             this.equipGroup7.Text = "ATK x DEF 7";
             // 
             // panelSwitch7
             // 
-            this.panelSwitch7.BackColor = System.Drawing.Color.Black;
+            this.panelSwitch7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.panelSwitch7.Controls.Add(this.pictureBox61);
             this.panelSwitch7.Controls.Add(this.pictureBox62);
             this.panelSwitch7.Controls.Add(this.in7Atk6);
@@ -2926,20 +3022,20 @@
             this.panelSwitch7.Controls.Add(this.pictureBox72);
             this.panelSwitch7.Controls.Add(this.groupBox7);
             this.panelSwitch7.ForeColor = System.Drawing.Color.White;
-            this.panelSwitch7.Location = new System.Drawing.Point(15, 16);
-            this.panelSwitch7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSwitch7.Location = new System.Drawing.Point(40, 15);
+            this.panelSwitch7.Margin = new System.Windows.Forms.Padding(4);
             this.panelSwitch7.Name = "panelSwitch7";
-            this.panelSwitch7.Size = new System.Drawing.Size(660, 222);
+            this.panelSwitch7.Size = new System.Drawing.Size(660, 236);
             this.panelSwitch7.TabIndex = 28;
             // 
             // pictureBox61
             // 
             this.pictureBox61.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox61.Image")));
             this.pictureBox61.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox61.InitialImage")));
-            this.pictureBox61.Location = new System.Drawing.Point(611, 34);
-            this.pictureBox61.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox61.Location = new System.Drawing.Point(611, 36);
+            this.pictureBox61.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox61.Name = "pictureBox61";
-            this.pictureBox61.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox61.Size = new System.Drawing.Size(33, 33);
             this.pictureBox61.TabIndex = 37;
             this.pictureBox61.TabStop = false;
             // 
@@ -2947,170 +3043,179 @@
             // 
             this.pictureBox62.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox62.Image")));
             this.pictureBox62.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox62.InitialImage")));
-            this.pictureBox62.Location = new System.Drawing.Point(297, 34);
-            this.pictureBox62.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox62.Location = new System.Drawing.Point(297, 36);
+            this.pictureBox62.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox62.Name = "pictureBox62";
-            this.pictureBox62.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox62.Size = new System.Drawing.Size(33, 33);
             this.pictureBox62.TabIndex = 36;
             this.pictureBox62.TabStop = false;
             // 
             // in7Atk6
             // 
-            this.in7Atk6.BackColor = System.Drawing.Color.Black;
+            this.in7Atk6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7Atk6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7Atk6.ForeColor = System.Drawing.Color.White;
-            this.in7Atk6.Location = new System.Drawing.Point(525, 186);
-            this.in7Atk6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7Atk6.Location = new System.Drawing.Point(525, 198);
+            this.in7Atk6.Margin = new System.Windows.Forms.Padding(4);
             this.in7Atk6.Name = "in7Atk6";
-            this.in7Atk6.Size = new System.Drawing.Size(79, 22);
+            this.in7Atk6.Size = new System.Drawing.Size(79, 21);
             this.in7Atk6.TabIndex = 35;
             this.in7Atk6.Tag = "7:Atk6";
+            this.in7Atk6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in7Def6
             // 
-            this.in7Def6.BackColor = System.Drawing.Color.Black;
+            this.in7Def6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7Def6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7Def6.ForeColor = System.Drawing.Color.White;
-            this.in7Def6.Location = new System.Drawing.Point(336, 185);
-            this.in7Def6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7Def6.Location = new System.Drawing.Point(336, 197);
+            this.in7Def6.Margin = new System.Windows.Forms.Padding(4);
             this.in7Def6.Name = "in7Def6";
-            this.in7Def6.Size = new System.Drawing.Size(79, 22);
+            this.in7Def6.Size = new System.Drawing.Size(79, 21);
             this.in7Def6.TabIndex = 34;
             this.in7Def6.Tag = "7:Def6";
+            this.in7Def6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in7Atk2
             // 
-            this.in7Atk2.BackColor = System.Drawing.Color.Black;
+            this.in7Atk2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7Atk2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7Atk2.ForeColor = System.Drawing.Color.White;
-            this.in7Atk2.Location = new System.Drawing.Point(525, 68);
-            this.in7Atk2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7Atk2.Location = new System.Drawing.Point(525, 72);
+            this.in7Atk2.Margin = new System.Windows.Forms.Padding(4);
             this.in7Atk2.Name = "in7Atk2";
-            this.in7Atk2.Size = new System.Drawing.Size(79, 22);
+            this.in7Atk2.Size = new System.Drawing.Size(79, 21);
             this.in7Atk2.TabIndex = 9;
             this.in7Atk2.Tag = "7:Atk2";
+            this.in7Atk2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(332, 12);
+            this.label24.Location = new System.Drawing.Point(332, 13);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(75, 16);
+            this.label24.Size = new System.Drawing.Size(77, 14);
             this.label24.TabIndex = 0;
-            this.label24.Text = "DEF Switch";
+            this.label24.Text = "DEF SWITCH";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in7Def1
             // 
-            this.in7Def1.BackColor = System.Drawing.Color.Black;
+            this.in7Def1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7Def1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7Def1.ForeColor = System.Drawing.Color.White;
-            this.in7Def1.Location = new System.Drawing.Point(336, 38);
-            this.in7Def1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7Def1.Location = new System.Drawing.Point(336, 40);
+            this.in7Def1.Margin = new System.Windows.Forms.Padding(4);
             this.in7Def1.Name = "in7Def1";
-            this.in7Def1.Size = new System.Drawing.Size(79, 22);
+            this.in7Def1.Size = new System.Drawing.Size(79, 21);
             this.in7Def1.TabIndex = 1;
             this.in7Def1.Tag = "7:Def1";
+            this.in7Def1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in7Def2
             // 
-            this.in7Def2.BackColor = System.Drawing.Color.Black;
+            this.in7Def2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7Def2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7Def2.ForeColor = System.Drawing.Color.White;
-            this.in7Def2.Location = new System.Drawing.Point(336, 66);
-            this.in7Def2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7Def2.Location = new System.Drawing.Point(336, 70);
+            this.in7Def2.Margin = new System.Windows.Forms.Padding(4);
             this.in7Def2.Name = "in7Def2";
-            this.in7Def2.Size = new System.Drawing.Size(79, 22);
+            this.in7Def2.Size = new System.Drawing.Size(79, 21);
             this.in7Def2.TabIndex = 2;
             this.in7Def2.Tag = "7:Def2";
+            this.in7Def2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in7Def3
             // 
-            this.in7Def3.BackColor = System.Drawing.Color.Black;
+            this.in7Def3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7Def3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7Def3.ForeColor = System.Drawing.Color.White;
-            this.in7Def3.Location = new System.Drawing.Point(336, 96);
-            this.in7Def3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7Def3.Location = new System.Drawing.Point(336, 102);
+            this.in7Def3.Margin = new System.Windows.Forms.Padding(4);
             this.in7Def3.Name = "in7Def3";
-            this.in7Def3.Size = new System.Drawing.Size(79, 22);
+            this.in7Def3.Size = new System.Drawing.Size(79, 21);
             this.in7Def3.TabIndex = 3;
             this.in7Def3.Tag = "7:Def3";
+            this.in7Def3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox63
             // 
             this.pictureBox63.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox63.Image")));
             this.pictureBox63.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox63.InitialImage")));
-            this.pictureBox63.Location = new System.Drawing.Point(611, 123);
-            this.pictureBox63.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox63.Location = new System.Drawing.Point(611, 131);
+            this.pictureBox63.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox63.Name = "pictureBox63";
-            this.pictureBox63.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox63.Size = new System.Drawing.Size(33, 33);
             this.pictureBox63.TabIndex = 22;
             this.pictureBox63.TabStop = false;
             // 
             // in7Def4
             // 
-            this.in7Def4.BackColor = System.Drawing.Color.Black;
+            this.in7Def4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7Def4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7Def4.ForeColor = System.Drawing.Color.White;
-            this.in7Def4.Location = new System.Drawing.Point(336, 126);
-            this.in7Def4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7Def4.Location = new System.Drawing.Point(336, 134);
+            this.in7Def4.Margin = new System.Windows.Forms.Padding(4);
             this.in7Def4.Name = "in7Def4";
-            this.in7Def4.Size = new System.Drawing.Size(79, 22);
+            this.in7Def4.Size = new System.Drawing.Size(79, 21);
             this.in7Def4.TabIndex = 4;
             this.in7Def4.Tag = "7:Def4";
+            this.in7Def4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox64
             // 
             this.pictureBox64.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox64.Image")));
             this.pictureBox64.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox64.InitialImage")));
-            this.pictureBox64.Location = new System.Drawing.Point(611, 182);
-            this.pictureBox64.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox64.Location = new System.Drawing.Point(611, 193);
+            this.pictureBox64.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox64.Name = "pictureBox64";
-            this.pictureBox64.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox64.Size = new System.Drawing.Size(33, 33);
             this.pictureBox64.TabIndex = 21;
             this.pictureBox64.TabStop = false;
             // 
             // in7Def5
             // 
-            this.in7Def5.BackColor = System.Drawing.Color.Black;
+            this.in7Def5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7Def5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7Def5.ForeColor = System.Drawing.Color.White;
-            this.in7Def5.Location = new System.Drawing.Point(336, 155);
-            this.in7Def5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7Def5.Location = new System.Drawing.Point(336, 165);
+            this.in7Def5.Margin = new System.Windows.Forms.Padding(4);
             this.in7Def5.Name = "in7Def5";
-            this.in7Def5.Size = new System.Drawing.Size(79, 22);
+            this.in7Def5.Size = new System.Drawing.Size(79, 21);
             this.in7Def5.TabIndex = 5;
             this.in7Def5.Tag = "7:Def5";
+            this.in7Def5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox65
             // 
             this.pictureBox65.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox65.Image")));
             this.pictureBox65.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox65.InitialImage")));
-            this.pictureBox65.Location = new System.Drawing.Point(611, 153);
-            this.pictureBox65.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox65.Location = new System.Drawing.Point(611, 163);
+            this.pictureBox65.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox65.Name = "pictureBox65";
-            this.pictureBox65.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox65.Size = new System.Drawing.Size(33, 33);
             this.pictureBox65.TabIndex = 20;
             this.pictureBox65.TabStop = false;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Silver;
-            this.panel9.Location = new System.Drawing.Point(475, 12);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Location = new System.Drawing.Point(475, 13);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1, 197);
+            this.panel9.Size = new System.Drawing.Size(1, 209);
             this.panel9.TabIndex = 6;
             // 
             // pictureBox66
             // 
             this.pictureBox66.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox66.Image")));
             this.pictureBox66.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox66.InitialImage")));
-            this.pictureBox66.Location = new System.Drawing.Point(611, 94);
-            this.pictureBox66.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox66.Location = new System.Drawing.Point(611, 100);
+            this.pictureBox66.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox66.Name = "pictureBox66";
-            this.pictureBox66.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox66.Size = new System.Drawing.Size(33, 33);
             this.pictureBox66.TabIndex = 19;
             this.pictureBox66.TabStop = false;
             // 
@@ -3118,113 +3223,118 @@
             // 
             this.label25.AutoSize = true;
             this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(521, 12);
+            this.label25.Location = new System.Drawing.Point(521, 13);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(74, 16);
+            this.label25.Size = new System.Drawing.Size(77, 14);
             this.label25.TabIndex = 7;
-            this.label25.Text = "ATK Switch";
+            this.label25.Text = "ATK SWITCH";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox67
             // 
             this.pictureBox67.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox67.Image")));
             this.pictureBox67.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox67.InitialImage")));
-            this.pictureBox67.Location = new System.Drawing.Point(611, 64);
-            this.pictureBox67.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox67.Location = new System.Drawing.Point(611, 68);
+            this.pictureBox67.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox67.Name = "pictureBox67";
-            this.pictureBox67.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox67.Size = new System.Drawing.Size(33, 33);
             this.pictureBox67.TabIndex = 18;
             this.pictureBox67.TabStop = false;
             // 
             // in7Atk1
             // 
-            this.in7Atk1.BackColor = System.Drawing.Color.Black;
+            this.in7Atk1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7Atk1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7Atk1.ForeColor = System.Drawing.Color.White;
-            this.in7Atk1.Location = new System.Drawing.Point(525, 38);
-            this.in7Atk1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7Atk1.Location = new System.Drawing.Point(525, 40);
+            this.in7Atk1.Margin = new System.Windows.Forms.Padding(4);
             this.in7Atk1.Name = "in7Atk1";
-            this.in7Atk1.Size = new System.Drawing.Size(79, 22);
+            this.in7Atk1.Size = new System.Drawing.Size(79, 21);
             this.in7Atk1.TabIndex = 8;
             this.in7Atk1.Tag = "7:Atk1";
+            this.in7Atk1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox68
             // 
             this.pictureBox68.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox68.Image")));
             this.pictureBox68.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox68.InitialImage")));
-            this.pictureBox68.Location = new System.Drawing.Point(297, 122);
-            this.pictureBox68.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox68.Location = new System.Drawing.Point(297, 130);
+            this.pictureBox68.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox68.Name = "pictureBox68";
-            this.pictureBox68.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox68.Size = new System.Drawing.Size(33, 33);
             this.pictureBox68.TabIndex = 17;
             this.pictureBox68.TabStop = false;
             // 
             // in7Atk3
             // 
-            this.in7Atk3.BackColor = System.Drawing.Color.Black;
+            this.in7Atk3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7Atk3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7Atk3.ForeColor = System.Drawing.Color.White;
-            this.in7Atk3.Location = new System.Drawing.Point(525, 97);
-            this.in7Atk3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7Atk3.Location = new System.Drawing.Point(525, 103);
+            this.in7Atk3.Margin = new System.Windows.Forms.Padding(4);
             this.in7Atk3.Name = "in7Atk3";
-            this.in7Atk3.Size = new System.Drawing.Size(79, 22);
+            this.in7Atk3.Size = new System.Drawing.Size(79, 21);
             this.in7Atk3.TabIndex = 10;
             this.in7Atk3.Tag = "7:Atk3";
+            this.in7Atk3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox69
             // 
             this.pictureBox69.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox69.Image")));
             this.pictureBox69.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox69.InitialImage")));
-            this.pictureBox69.Location = new System.Drawing.Point(297, 181);
-            this.pictureBox69.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox69.Location = new System.Drawing.Point(297, 192);
+            this.pictureBox69.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox69.Name = "pictureBox69";
-            this.pictureBox69.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox69.Size = new System.Drawing.Size(33, 33);
             this.pictureBox69.TabIndex = 16;
             this.pictureBox69.TabStop = false;
             // 
             // in7Atk4
             // 
-            this.in7Atk4.BackColor = System.Drawing.Color.Black;
+            this.in7Atk4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7Atk4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7Atk4.ForeColor = System.Drawing.Color.White;
-            this.in7Atk4.Location = new System.Drawing.Point(525, 127);
-            this.in7Atk4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7Atk4.Location = new System.Drawing.Point(525, 135);
+            this.in7Atk4.Margin = new System.Windows.Forms.Padding(4);
             this.in7Atk4.Name = "in7Atk4";
-            this.in7Atk4.Size = new System.Drawing.Size(79, 22);
+            this.in7Atk4.Size = new System.Drawing.Size(79, 21);
             this.in7Atk4.TabIndex = 11;
             this.in7Atk4.Tag = "7:Atk4";
+            this.in7Atk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox70
             // 
             this.pictureBox70.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox70.Image")));
             this.pictureBox70.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox70.InitialImage")));
-            this.pictureBox70.Location = new System.Drawing.Point(297, 151);
-            this.pictureBox70.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox70.Location = new System.Drawing.Point(297, 160);
+            this.pictureBox70.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox70.Name = "pictureBox70";
-            this.pictureBox70.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox70.Size = new System.Drawing.Size(33, 33);
             this.pictureBox70.TabIndex = 15;
             this.pictureBox70.TabStop = false;
             // 
             // in7Atk5
             // 
-            this.in7Atk5.BackColor = System.Drawing.Color.Black;
+            this.in7Atk5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7Atk5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7Atk5.ForeColor = System.Drawing.Color.White;
-            this.in7Atk5.Location = new System.Drawing.Point(525, 156);
-            this.in7Atk5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7Atk5.Location = new System.Drawing.Point(525, 166);
+            this.in7Atk5.Margin = new System.Windows.Forms.Padding(4);
             this.in7Atk5.Name = "in7Atk5";
-            this.in7Atk5.Size = new System.Drawing.Size(79, 22);
+            this.in7Atk5.Size = new System.Drawing.Size(79, 21);
             this.in7Atk5.TabIndex = 12;
             this.in7Atk5.Tag = "7:Atk5";
+            this.in7Atk5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox71
             // 
             this.pictureBox71.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox71.Image")));
             this.pictureBox71.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox71.InitialImage")));
-            this.pictureBox71.Location = new System.Drawing.Point(297, 92);
-            this.pictureBox71.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox71.Location = new System.Drawing.Point(297, 98);
+            this.pictureBox71.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox71.Name = "pictureBox71";
-            this.pictureBox71.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox71.Size = new System.Drawing.Size(33, 33);
             this.pictureBox71.TabIndex = 14;
             this.pictureBox71.TabStop = false;
             // 
@@ -3232,10 +3342,10 @@
             // 
             this.pictureBox72.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox72.Image")));
             this.pictureBox72.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox72.InitialImage")));
-            this.pictureBox72.Location = new System.Drawing.Point(297, 64);
-            this.pictureBox72.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox72.Location = new System.Drawing.Point(297, 68);
+            this.pictureBox72.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox72.Name = "pictureBox72";
-            this.pictureBox72.Size = new System.Drawing.Size(33, 30);
+            this.pictureBox72.Size = new System.Drawing.Size(33, 32);
             this.pictureBox72.TabIndex = 13;
             this.pictureBox72.TabStop = false;
             // 
@@ -3250,82 +3360,84 @@
             this.groupBox7.Controls.Add(this.label28);
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox7.ForeColor = System.Drawing.Color.White;
-            this.groupBox7.Location = new System.Drawing.Point(17, 12);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox7.Location = new System.Drawing.Point(17, 13);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox7.Size = new System.Drawing.Size(255, 186);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox7.Size = new System.Drawing.Size(255, 198);
             this.groupBox7.TabIndex = 33;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Configuration";
+            this.groupBox7.Text = "CONFIGURATION";
             // 
             // in7SpammerClick
             // 
             this.in7SpammerClick.AutoSize = true;
             this.in7SpammerClick.Checked = true;
             this.in7SpammerClick.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.in7SpammerClick.Location = new System.Drawing.Point(23, 148);
-            this.in7SpammerClick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7SpammerClick.Location = new System.Drawing.Point(23, 157);
+            this.in7SpammerClick.Margin = new System.Windows.Forms.Padding(4);
             this.in7SpammerClick.Name = "in7SpammerClick";
-            this.in7SpammerClick.Size = new System.Drawing.Size(129, 20);
+            this.in7SpammerClick.Size = new System.Drawing.Size(138, 18);
             this.in7SpammerClick.TabIndex = 29;
             this.in7SpammerClick.Tag = "7:inSpammerClick";
-            this.in7SpammerClick.Text = "With mouse click";
+            this.in7SpammerClick.Text = "WITH MOUSE CLICK";
             this.in7SpammerClick.UseVisualStyleBackColor = true;
             // 
             // in7SpammerKey
             // 
-            this.in7SpammerKey.BackColor = System.Drawing.Color.Black;
+            this.in7SpammerKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7SpammerKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7SpammerKey.ForeColor = System.Drawing.Color.White;
-            this.in7SpammerKey.Location = new System.Drawing.Point(135, 30);
-            this.in7SpammerKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7SpammerKey.Location = new System.Drawing.Point(135, 32);
+            this.in7SpammerKey.Margin = new System.Windows.Forms.Padding(4);
             this.in7SpammerKey.Name = "in7SpammerKey";
-            this.in7SpammerKey.Size = new System.Drawing.Size(79, 22);
+            this.in7SpammerKey.Size = new System.Drawing.Size(79, 21);
             this.in7SpammerKey.TabIndex = 23;
             this.in7SpammerKey.Tag = "7:spammerKey";
+            this.in7SpammerKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in7SwitchDelay
             // 
-            this.in7SwitchDelay.BackColor = System.Drawing.Color.Black;
+            this.in7SwitchDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7SwitchDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7SwitchDelay.ForeColor = System.Drawing.Color.White;
-            this.in7SwitchDelay.Location = new System.Drawing.Point(135, 108);
-            this.in7SwitchDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7SwitchDelay.Location = new System.Drawing.Point(135, 115);
+            this.in7SwitchDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in7SwitchDelay.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
             this.in7SwitchDelay.Name = "in7SwitchDelay";
-            this.in7SwitchDelay.Size = new System.Drawing.Size(80, 22);
+            this.in7SwitchDelay.Size = new System.Drawing.Size(80, 21);
             this.in7SwitchDelay.TabIndex = 27;
             this.in7SwitchDelay.Tag = "7:switchDelay";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(19, 34);
+            this.label27.Location = new System.Drawing.Point(20, 36);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(92, 16);
+            this.label27.Size = new System.Drawing.Size(84, 14);
             this.label27.TabIndex = 24;
-            this.label27.Text = "Spammer Key";
+            this.label27.Text = "SPAMMER KEY";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in7SpammerDelay
             // 
-            this.in7SpammerDelay.BackColor = System.Drawing.Color.Black;
+            this.in7SpammerDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in7SpammerDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in7SpammerDelay.ForeColor = System.Drawing.Color.White;
-            this.in7SpammerDelay.Location = new System.Drawing.Point(135, 69);
-            this.in7SpammerDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in7SpammerDelay.Location = new System.Drawing.Point(135, 73);
+            this.in7SpammerDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in7SpammerDelay.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.in7SpammerDelay.Name = "in7SpammerDelay";
-            this.in7SpammerDelay.Size = new System.Drawing.Size(80, 22);
+            this.in7SpammerDelay.Size = new System.Drawing.Size(80, 21);
             this.in7SpammerDelay.TabIndex = 25;
             this.in7SpammerDelay.Tag = "7:spammerDelay";
             // 
@@ -3333,18 +3445,18 @@
             // 
             this.equipGroup6.Controls.Add(this.panelSwitch6);
             this.equipGroup6.ForeColor = System.Drawing.Color.White;
-            this.equipGroup6.Location = new System.Drawing.Point(16, 1228);
-            this.equipGroup6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.equipGroup6.Location = new System.Drawing.Point(20, 1355);
+            this.equipGroup6.Margin = new System.Windows.Forms.Padding(4);
             this.equipGroup6.Name = "equipGroup6";
-            this.equipGroup6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.equipGroup6.Size = new System.Drawing.Size(689, 244);
+            this.equipGroup6.Padding = new System.Windows.Forms.Padding(4);
+            this.equipGroup6.Size = new System.Drawing.Size(750, 260);
             this.equipGroup6.TabIndex = 33;
             this.equipGroup6.TabStop = false;
             this.equipGroup6.Text = "ATK x DEF 6";
             // 
             // panelSwitch6
             // 
-            this.panelSwitch6.BackColor = System.Drawing.Color.Black;
+            this.panelSwitch6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.panelSwitch6.Controls.Add(this.pictureBox73);
             this.panelSwitch6.Controls.Add(this.pictureBox74);
             this.panelSwitch6.Controls.Add(this.in6Atk6);
@@ -3374,20 +3486,20 @@
             this.panelSwitch6.Controls.Add(this.pictureBox84);
             this.panelSwitch6.Controls.Add(this.groupBox9);
             this.panelSwitch6.ForeColor = System.Drawing.Color.White;
-            this.panelSwitch6.Location = new System.Drawing.Point(15, 16);
-            this.panelSwitch6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSwitch6.Location = new System.Drawing.Point(40, 15);
+            this.panelSwitch6.Margin = new System.Windows.Forms.Padding(4);
             this.panelSwitch6.Name = "panelSwitch6";
-            this.panelSwitch6.Size = new System.Drawing.Size(660, 222);
+            this.panelSwitch6.Size = new System.Drawing.Size(660, 236);
             this.panelSwitch6.TabIndex = 28;
             // 
             // pictureBox73
             // 
             this.pictureBox73.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox73.Image")));
             this.pictureBox73.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox73.InitialImage")));
-            this.pictureBox73.Location = new System.Drawing.Point(611, 34);
-            this.pictureBox73.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox73.Location = new System.Drawing.Point(611, 36);
+            this.pictureBox73.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox73.Name = "pictureBox73";
-            this.pictureBox73.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox73.Size = new System.Drawing.Size(33, 33);
             this.pictureBox73.TabIndex = 37;
             this.pictureBox73.TabStop = false;
             // 
@@ -3395,170 +3507,179 @@
             // 
             this.pictureBox74.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox74.Image")));
             this.pictureBox74.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox74.InitialImage")));
-            this.pictureBox74.Location = new System.Drawing.Point(297, 34);
-            this.pictureBox74.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox74.Location = new System.Drawing.Point(297, 36);
+            this.pictureBox74.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox74.Name = "pictureBox74";
-            this.pictureBox74.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox74.Size = new System.Drawing.Size(33, 33);
             this.pictureBox74.TabIndex = 36;
             this.pictureBox74.TabStop = false;
             // 
             // in6Atk6
             // 
-            this.in6Atk6.BackColor = System.Drawing.Color.Black;
+            this.in6Atk6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6Atk6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6Atk6.ForeColor = System.Drawing.Color.White;
-            this.in6Atk6.Location = new System.Drawing.Point(525, 186);
-            this.in6Atk6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6Atk6.Location = new System.Drawing.Point(525, 198);
+            this.in6Atk6.Margin = new System.Windows.Forms.Padding(4);
             this.in6Atk6.Name = "in6Atk6";
-            this.in6Atk6.Size = new System.Drawing.Size(79, 22);
+            this.in6Atk6.Size = new System.Drawing.Size(79, 21);
             this.in6Atk6.TabIndex = 35;
             this.in6Atk6.Tag = "6:Atk6";
+            this.in6Atk6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in6Def6
             // 
-            this.in6Def6.BackColor = System.Drawing.Color.Black;
+            this.in6Def6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6Def6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6Def6.ForeColor = System.Drawing.Color.White;
-            this.in6Def6.Location = new System.Drawing.Point(336, 185);
-            this.in6Def6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6Def6.Location = new System.Drawing.Point(336, 197);
+            this.in6Def6.Margin = new System.Windows.Forms.Padding(4);
             this.in6Def6.Name = "in6Def6";
-            this.in6Def6.Size = new System.Drawing.Size(79, 22);
+            this.in6Def6.Size = new System.Drawing.Size(79, 21);
             this.in6Def6.TabIndex = 34;
             this.in6Def6.Tag = "6:Def6";
+            this.in6Def6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in6Atk2
             // 
-            this.in6Atk2.BackColor = System.Drawing.Color.Black;
+            this.in6Atk2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6Atk2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6Atk2.ForeColor = System.Drawing.Color.White;
-            this.in6Atk2.Location = new System.Drawing.Point(525, 68);
-            this.in6Atk2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6Atk2.Location = new System.Drawing.Point(525, 72);
+            this.in6Atk2.Margin = new System.Windows.Forms.Padding(4);
             this.in6Atk2.Name = "in6Atk2";
-            this.in6Atk2.Size = new System.Drawing.Size(79, 22);
+            this.in6Atk2.Size = new System.Drawing.Size(79, 21);
             this.in6Atk2.TabIndex = 9;
             this.in6Atk2.Tag = "6:Atk2";
+            this.in6Atk2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(332, 12);
+            this.label29.Location = new System.Drawing.Point(332, 13);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(75, 16);
+            this.label29.Size = new System.Drawing.Size(77, 14);
             this.label29.TabIndex = 0;
-            this.label29.Text = "DEF Switch";
+            this.label29.Text = "DEF SWITCH";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in6Def1
             // 
-            this.in6Def1.BackColor = System.Drawing.Color.Black;
+            this.in6Def1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6Def1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6Def1.ForeColor = System.Drawing.Color.White;
-            this.in6Def1.Location = new System.Drawing.Point(336, 38);
-            this.in6Def1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6Def1.Location = new System.Drawing.Point(336, 40);
+            this.in6Def1.Margin = new System.Windows.Forms.Padding(4);
             this.in6Def1.Name = "in6Def1";
-            this.in6Def1.Size = new System.Drawing.Size(79, 22);
+            this.in6Def1.Size = new System.Drawing.Size(79, 21);
             this.in6Def1.TabIndex = 1;
             this.in6Def1.Tag = "6:Def1";
+            this.in6Def1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in6Def2
             // 
-            this.in6Def2.BackColor = System.Drawing.Color.Black;
+            this.in6Def2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6Def2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6Def2.ForeColor = System.Drawing.Color.White;
-            this.in6Def2.Location = new System.Drawing.Point(336, 66);
-            this.in6Def2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6Def2.Location = new System.Drawing.Point(336, 70);
+            this.in6Def2.Margin = new System.Windows.Forms.Padding(4);
             this.in6Def2.Name = "in6Def2";
-            this.in6Def2.Size = new System.Drawing.Size(79, 22);
+            this.in6Def2.Size = new System.Drawing.Size(79, 21);
             this.in6Def2.TabIndex = 2;
             this.in6Def2.Tag = "6:Def2";
+            this.in6Def2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in6Def3
             // 
-            this.in6Def3.BackColor = System.Drawing.Color.Black;
+            this.in6Def3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6Def3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6Def3.ForeColor = System.Drawing.Color.White;
-            this.in6Def3.Location = new System.Drawing.Point(336, 96);
-            this.in6Def3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6Def3.Location = new System.Drawing.Point(336, 102);
+            this.in6Def3.Margin = new System.Windows.Forms.Padding(4);
             this.in6Def3.Name = "in6Def3";
-            this.in6Def3.Size = new System.Drawing.Size(79, 22);
+            this.in6Def3.Size = new System.Drawing.Size(79, 21);
             this.in6Def3.TabIndex = 3;
             this.in6Def3.Tag = "6:Def3";
+            this.in6Def3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox75
             // 
             this.pictureBox75.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox75.Image")));
             this.pictureBox75.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox75.InitialImage")));
-            this.pictureBox75.Location = new System.Drawing.Point(611, 123);
-            this.pictureBox75.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox75.Location = new System.Drawing.Point(611, 131);
+            this.pictureBox75.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox75.Name = "pictureBox75";
-            this.pictureBox75.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox75.Size = new System.Drawing.Size(33, 33);
             this.pictureBox75.TabIndex = 22;
             this.pictureBox75.TabStop = false;
             // 
             // in6Def4
             // 
-            this.in6Def4.BackColor = System.Drawing.Color.Black;
+            this.in6Def4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6Def4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6Def4.ForeColor = System.Drawing.Color.White;
-            this.in6Def4.Location = new System.Drawing.Point(336, 126);
-            this.in6Def4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6Def4.Location = new System.Drawing.Point(336, 134);
+            this.in6Def4.Margin = new System.Windows.Forms.Padding(4);
             this.in6Def4.Name = "in6Def4";
-            this.in6Def4.Size = new System.Drawing.Size(79, 22);
+            this.in6Def4.Size = new System.Drawing.Size(79, 21);
             this.in6Def4.TabIndex = 4;
             this.in6Def4.Tag = "6:Def4";
+            this.in6Def4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox76
             // 
             this.pictureBox76.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox76.Image")));
             this.pictureBox76.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox76.InitialImage")));
-            this.pictureBox76.Location = new System.Drawing.Point(611, 182);
-            this.pictureBox76.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox76.Location = new System.Drawing.Point(611, 193);
+            this.pictureBox76.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox76.Name = "pictureBox76";
-            this.pictureBox76.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox76.Size = new System.Drawing.Size(33, 33);
             this.pictureBox76.TabIndex = 21;
             this.pictureBox76.TabStop = false;
             // 
             // in6Def5
             // 
-            this.in6Def5.BackColor = System.Drawing.Color.Black;
+            this.in6Def5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6Def5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6Def5.ForeColor = System.Drawing.Color.White;
-            this.in6Def5.Location = new System.Drawing.Point(336, 155);
-            this.in6Def5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6Def5.Location = new System.Drawing.Point(336, 165);
+            this.in6Def5.Margin = new System.Windows.Forms.Padding(4);
             this.in6Def5.Name = "in6Def5";
-            this.in6Def5.Size = new System.Drawing.Size(79, 22);
+            this.in6Def5.Size = new System.Drawing.Size(79, 21);
             this.in6Def5.TabIndex = 5;
             this.in6Def5.Tag = "6:Def5";
+            this.in6Def5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox77
             // 
             this.pictureBox77.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox77.Image")));
             this.pictureBox77.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox77.InitialImage")));
-            this.pictureBox77.Location = new System.Drawing.Point(611, 153);
-            this.pictureBox77.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox77.Location = new System.Drawing.Point(611, 163);
+            this.pictureBox77.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox77.Name = "pictureBox77";
-            this.pictureBox77.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox77.Size = new System.Drawing.Size(33, 33);
             this.pictureBox77.TabIndex = 20;
             this.pictureBox77.TabStop = false;
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Silver;
-            this.panel11.Location = new System.Drawing.Point(475, 12);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Location = new System.Drawing.Point(475, 13);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1, 197);
+            this.panel11.Size = new System.Drawing.Size(1, 209);
             this.panel11.TabIndex = 6;
             // 
             // pictureBox78
             // 
             this.pictureBox78.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox78.Image")));
             this.pictureBox78.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox78.InitialImage")));
-            this.pictureBox78.Location = new System.Drawing.Point(611, 94);
-            this.pictureBox78.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox78.Location = new System.Drawing.Point(611, 100);
+            this.pictureBox78.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox78.Name = "pictureBox78";
-            this.pictureBox78.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox78.Size = new System.Drawing.Size(33, 33);
             this.pictureBox78.TabIndex = 19;
             this.pictureBox78.TabStop = false;
             // 
@@ -3566,113 +3687,118 @@
             // 
             this.label30.AutoSize = true;
             this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(521, 12);
+            this.label30.Location = new System.Drawing.Point(521, 13);
             this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(74, 16);
+            this.label30.Size = new System.Drawing.Size(77, 14);
             this.label30.TabIndex = 7;
-            this.label30.Text = "ATK Switch";
+            this.label30.Text = "ATK SWITCH";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox79
             // 
             this.pictureBox79.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox79.Image")));
             this.pictureBox79.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox79.InitialImage")));
-            this.pictureBox79.Location = new System.Drawing.Point(611, 64);
-            this.pictureBox79.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox79.Location = new System.Drawing.Point(611, 68);
+            this.pictureBox79.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox79.Name = "pictureBox79";
-            this.pictureBox79.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox79.Size = new System.Drawing.Size(33, 33);
             this.pictureBox79.TabIndex = 18;
             this.pictureBox79.TabStop = false;
             // 
             // in6Atk1
             // 
-            this.in6Atk1.BackColor = System.Drawing.Color.Black;
+            this.in6Atk1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6Atk1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6Atk1.ForeColor = System.Drawing.Color.White;
-            this.in6Atk1.Location = new System.Drawing.Point(525, 38);
-            this.in6Atk1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6Atk1.Location = new System.Drawing.Point(525, 40);
+            this.in6Atk1.Margin = new System.Windows.Forms.Padding(4);
             this.in6Atk1.Name = "in6Atk1";
-            this.in6Atk1.Size = new System.Drawing.Size(79, 22);
+            this.in6Atk1.Size = new System.Drawing.Size(79, 21);
             this.in6Atk1.TabIndex = 8;
             this.in6Atk1.Tag = "6:Atk1";
+            this.in6Atk1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox80
             // 
             this.pictureBox80.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox80.Image")));
             this.pictureBox80.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox80.InitialImage")));
-            this.pictureBox80.Location = new System.Drawing.Point(297, 122);
-            this.pictureBox80.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox80.Location = new System.Drawing.Point(297, 130);
+            this.pictureBox80.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox80.Name = "pictureBox80";
-            this.pictureBox80.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox80.Size = new System.Drawing.Size(33, 33);
             this.pictureBox80.TabIndex = 17;
             this.pictureBox80.TabStop = false;
             // 
             // in6Atk3
             // 
-            this.in6Atk3.BackColor = System.Drawing.Color.Black;
+            this.in6Atk3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6Atk3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6Atk3.ForeColor = System.Drawing.Color.White;
-            this.in6Atk3.Location = new System.Drawing.Point(525, 97);
-            this.in6Atk3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6Atk3.Location = new System.Drawing.Point(525, 103);
+            this.in6Atk3.Margin = new System.Windows.Forms.Padding(4);
             this.in6Atk3.Name = "in6Atk3";
-            this.in6Atk3.Size = new System.Drawing.Size(79, 22);
+            this.in6Atk3.Size = new System.Drawing.Size(79, 21);
             this.in6Atk3.TabIndex = 10;
             this.in6Atk3.Tag = "6:Atk3";
+            this.in6Atk3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox81
             // 
             this.pictureBox81.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox81.Image")));
             this.pictureBox81.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox81.InitialImage")));
-            this.pictureBox81.Location = new System.Drawing.Point(297, 181);
-            this.pictureBox81.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox81.Location = new System.Drawing.Point(297, 192);
+            this.pictureBox81.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox81.Name = "pictureBox81";
-            this.pictureBox81.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox81.Size = new System.Drawing.Size(33, 33);
             this.pictureBox81.TabIndex = 16;
             this.pictureBox81.TabStop = false;
             // 
             // in6Atk4
             // 
-            this.in6Atk4.BackColor = System.Drawing.Color.Black;
+            this.in6Atk4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6Atk4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6Atk4.ForeColor = System.Drawing.Color.White;
-            this.in6Atk4.Location = new System.Drawing.Point(525, 127);
-            this.in6Atk4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6Atk4.Location = new System.Drawing.Point(525, 135);
+            this.in6Atk4.Margin = new System.Windows.Forms.Padding(4);
             this.in6Atk4.Name = "in6Atk4";
-            this.in6Atk4.Size = new System.Drawing.Size(79, 22);
+            this.in6Atk4.Size = new System.Drawing.Size(79, 21);
             this.in6Atk4.TabIndex = 11;
             this.in6Atk4.Tag = "6:Atk4";
+            this.in6Atk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox82
             // 
             this.pictureBox82.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox82.Image")));
             this.pictureBox82.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox82.InitialImage")));
-            this.pictureBox82.Location = new System.Drawing.Point(297, 151);
-            this.pictureBox82.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox82.Location = new System.Drawing.Point(297, 160);
+            this.pictureBox82.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox82.Name = "pictureBox82";
-            this.pictureBox82.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox82.Size = new System.Drawing.Size(33, 33);
             this.pictureBox82.TabIndex = 15;
             this.pictureBox82.TabStop = false;
             // 
             // in6Atk5
             // 
-            this.in6Atk5.BackColor = System.Drawing.Color.Black;
+            this.in6Atk5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6Atk5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6Atk5.ForeColor = System.Drawing.Color.White;
-            this.in6Atk5.Location = new System.Drawing.Point(525, 156);
-            this.in6Atk5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6Atk5.Location = new System.Drawing.Point(525, 166);
+            this.in6Atk5.Margin = new System.Windows.Forms.Padding(4);
             this.in6Atk5.Name = "in6Atk5";
-            this.in6Atk5.Size = new System.Drawing.Size(79, 22);
+            this.in6Atk5.Size = new System.Drawing.Size(79, 21);
             this.in6Atk5.TabIndex = 12;
             this.in6Atk5.Tag = "6:Atk5";
+            this.in6Atk5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox83
             // 
             this.pictureBox83.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox83.Image")));
             this.pictureBox83.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox83.InitialImage")));
-            this.pictureBox83.Location = new System.Drawing.Point(297, 92);
-            this.pictureBox83.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox83.Location = new System.Drawing.Point(297, 98);
+            this.pictureBox83.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox83.Name = "pictureBox83";
-            this.pictureBox83.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox83.Size = new System.Drawing.Size(33, 33);
             this.pictureBox83.TabIndex = 14;
             this.pictureBox83.TabStop = false;
             // 
@@ -3680,10 +3806,10 @@
             // 
             this.pictureBox84.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox84.Image")));
             this.pictureBox84.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox84.InitialImage")));
-            this.pictureBox84.Location = new System.Drawing.Point(297, 64);
-            this.pictureBox84.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox84.Location = new System.Drawing.Point(297, 68);
+            this.pictureBox84.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox84.Name = "pictureBox84";
-            this.pictureBox84.Size = new System.Drawing.Size(33, 30);
+            this.pictureBox84.Size = new System.Drawing.Size(33, 32);
             this.pictureBox84.TabIndex = 13;
             this.pictureBox84.TabStop = false;
             // 
@@ -3698,82 +3824,84 @@
             this.groupBox9.Controls.Add(this.label33);
             this.groupBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox9.ForeColor = System.Drawing.Color.White;
-            this.groupBox9.Location = new System.Drawing.Point(17, 12);
-            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox9.Location = new System.Drawing.Point(17, 13);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox9.Size = new System.Drawing.Size(255, 186);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox9.Size = new System.Drawing.Size(255, 198);
             this.groupBox9.TabIndex = 33;
             this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Configuration";
+            this.groupBox9.Text = "CONFIGURATION";
             // 
             // in6SpammerClick
             // 
             this.in6SpammerClick.AutoSize = true;
             this.in6SpammerClick.Checked = true;
             this.in6SpammerClick.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.in6SpammerClick.Location = new System.Drawing.Point(23, 148);
-            this.in6SpammerClick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6SpammerClick.Location = new System.Drawing.Point(23, 157);
+            this.in6SpammerClick.Margin = new System.Windows.Forms.Padding(4);
             this.in6SpammerClick.Name = "in6SpammerClick";
-            this.in6SpammerClick.Size = new System.Drawing.Size(129, 20);
+            this.in6SpammerClick.Size = new System.Drawing.Size(138, 18);
             this.in6SpammerClick.TabIndex = 29;
             this.in6SpammerClick.Tag = "6:inSpammerClick";
-            this.in6SpammerClick.Text = "With mouse click";
+            this.in6SpammerClick.Text = "WITH MOUSE CLICK";
             this.in6SpammerClick.UseVisualStyleBackColor = true;
             // 
             // in6SpammerKey
             // 
-            this.in6SpammerKey.BackColor = System.Drawing.Color.Black;
+            this.in6SpammerKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6SpammerKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6SpammerKey.ForeColor = System.Drawing.Color.White;
-            this.in6SpammerKey.Location = new System.Drawing.Point(135, 30);
-            this.in6SpammerKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6SpammerKey.Location = new System.Drawing.Point(135, 32);
+            this.in6SpammerKey.Margin = new System.Windows.Forms.Padding(4);
             this.in6SpammerKey.Name = "in6SpammerKey";
-            this.in6SpammerKey.Size = new System.Drawing.Size(79, 22);
+            this.in6SpammerKey.Size = new System.Drawing.Size(79, 21);
             this.in6SpammerKey.TabIndex = 23;
             this.in6SpammerKey.Tag = "6:spammerKey";
+            this.in6SpammerKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in6SwitchDelay
             // 
-            this.in6SwitchDelay.BackColor = System.Drawing.Color.Black;
+            this.in6SwitchDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6SwitchDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6SwitchDelay.ForeColor = System.Drawing.Color.White;
-            this.in6SwitchDelay.Location = new System.Drawing.Point(135, 108);
-            this.in6SwitchDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6SwitchDelay.Location = new System.Drawing.Point(135, 115);
+            this.in6SwitchDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in6SwitchDelay.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
             this.in6SwitchDelay.Name = "in6SwitchDelay";
-            this.in6SwitchDelay.Size = new System.Drawing.Size(80, 22);
+            this.in6SwitchDelay.Size = new System.Drawing.Size(80, 21);
             this.in6SwitchDelay.TabIndex = 27;
             this.in6SwitchDelay.Tag = "6:switchDelay";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(19, 34);
+            this.label32.Location = new System.Drawing.Point(20, 36);
             this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(92, 16);
+            this.label32.Size = new System.Drawing.Size(84, 14);
             this.label32.TabIndex = 24;
-            this.label32.Text = "Spammer Key";
+            this.label32.Text = "SPAMMER KEY";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in6SpammerDelay
             // 
-            this.in6SpammerDelay.BackColor = System.Drawing.Color.Black;
+            this.in6SpammerDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in6SpammerDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in6SpammerDelay.ForeColor = System.Drawing.Color.White;
-            this.in6SpammerDelay.Location = new System.Drawing.Point(135, 69);
-            this.in6SpammerDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in6SpammerDelay.Location = new System.Drawing.Point(135, 73);
+            this.in6SpammerDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in6SpammerDelay.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.in6SpammerDelay.Name = "in6SpammerDelay";
-            this.in6SpammerDelay.Size = new System.Drawing.Size(80, 22);
+            this.in6SpammerDelay.Size = new System.Drawing.Size(80, 21);
             this.in6SpammerDelay.TabIndex = 25;
             this.in6SpammerDelay.Tag = "6:spammerDelay";
             // 
@@ -3781,18 +3909,18 @@
             // 
             this.equipGroup5.Controls.Add(this.panelSwitch5);
             this.equipGroup5.ForeColor = System.Drawing.Color.White;
-            this.equipGroup5.Location = new System.Drawing.Point(16, 983);
-            this.equipGroup5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.equipGroup5.Location = new System.Drawing.Point(20, 1087);
+            this.equipGroup5.Margin = new System.Windows.Forms.Padding(4);
             this.equipGroup5.Name = "equipGroup5";
-            this.equipGroup5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.equipGroup5.Size = new System.Drawing.Size(689, 244);
+            this.equipGroup5.Padding = new System.Windows.Forms.Padding(4);
+            this.equipGroup5.Size = new System.Drawing.Size(750, 260);
             this.equipGroup5.TabIndex = 32;
             this.equipGroup5.TabStop = false;
             this.equipGroup5.Text = "ATK x DEF 5";
             // 
             // panelSwitch5
             // 
-            this.panelSwitch5.BackColor = System.Drawing.Color.Black;
+            this.panelSwitch5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.panelSwitch5.Controls.Add(this.pictureBox85);
             this.panelSwitch5.Controls.Add(this.pictureBox86);
             this.panelSwitch5.Controls.Add(this.in5Atk6);
@@ -3822,20 +3950,20 @@
             this.panelSwitch5.Controls.Add(this.pictureBox96);
             this.panelSwitch5.Controls.Add(this.groupBox11);
             this.panelSwitch5.ForeColor = System.Drawing.Color.White;
-            this.panelSwitch5.Location = new System.Drawing.Point(15, 16);
-            this.panelSwitch5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSwitch5.Location = new System.Drawing.Point(40, 15);
+            this.panelSwitch5.Margin = new System.Windows.Forms.Padding(4);
             this.panelSwitch5.Name = "panelSwitch5";
-            this.panelSwitch5.Size = new System.Drawing.Size(660, 222);
+            this.panelSwitch5.Size = new System.Drawing.Size(660, 236);
             this.panelSwitch5.TabIndex = 28;
             // 
             // pictureBox85
             // 
             this.pictureBox85.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox85.Image")));
             this.pictureBox85.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox85.InitialImage")));
-            this.pictureBox85.Location = new System.Drawing.Point(611, 34);
-            this.pictureBox85.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox85.Location = new System.Drawing.Point(611, 36);
+            this.pictureBox85.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox85.Name = "pictureBox85";
-            this.pictureBox85.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox85.Size = new System.Drawing.Size(33, 33);
             this.pictureBox85.TabIndex = 37;
             this.pictureBox85.TabStop = false;
             // 
@@ -3843,170 +3971,179 @@
             // 
             this.pictureBox86.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox86.Image")));
             this.pictureBox86.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox86.InitialImage")));
-            this.pictureBox86.Location = new System.Drawing.Point(297, 34);
-            this.pictureBox86.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox86.Location = new System.Drawing.Point(297, 36);
+            this.pictureBox86.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox86.Name = "pictureBox86";
-            this.pictureBox86.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox86.Size = new System.Drawing.Size(33, 33);
             this.pictureBox86.TabIndex = 36;
             this.pictureBox86.TabStop = false;
             // 
             // in5Atk6
             // 
-            this.in5Atk6.BackColor = System.Drawing.Color.Black;
+            this.in5Atk6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5Atk6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5Atk6.ForeColor = System.Drawing.Color.White;
-            this.in5Atk6.Location = new System.Drawing.Point(525, 186);
-            this.in5Atk6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5Atk6.Location = new System.Drawing.Point(525, 198);
+            this.in5Atk6.Margin = new System.Windows.Forms.Padding(4);
             this.in5Atk6.Name = "in5Atk6";
-            this.in5Atk6.Size = new System.Drawing.Size(79, 22);
+            this.in5Atk6.Size = new System.Drawing.Size(79, 21);
             this.in5Atk6.TabIndex = 35;
             this.in5Atk6.Tag = "5:Atk6";
+            this.in5Atk6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in5Def6
             // 
-            this.in5Def6.BackColor = System.Drawing.Color.Black;
+            this.in5Def6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5Def6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5Def6.ForeColor = System.Drawing.Color.White;
-            this.in5Def6.Location = new System.Drawing.Point(336, 185);
-            this.in5Def6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5Def6.Location = new System.Drawing.Point(336, 197);
+            this.in5Def6.Margin = new System.Windows.Forms.Padding(4);
             this.in5Def6.Name = "in5Def6";
-            this.in5Def6.Size = new System.Drawing.Size(79, 22);
+            this.in5Def6.Size = new System.Drawing.Size(79, 21);
             this.in5Def6.TabIndex = 34;
             this.in5Def6.Tag = "5:Def6";
+            this.in5Def6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in5Atk2
             // 
-            this.in5Atk2.BackColor = System.Drawing.Color.Black;
+            this.in5Atk2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5Atk2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5Atk2.ForeColor = System.Drawing.Color.White;
-            this.in5Atk2.Location = new System.Drawing.Point(525, 68);
-            this.in5Atk2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5Atk2.Location = new System.Drawing.Point(525, 72);
+            this.in5Atk2.Margin = new System.Windows.Forms.Padding(4);
             this.in5Atk2.Name = "in5Atk2";
-            this.in5Atk2.Size = new System.Drawing.Size(79, 22);
+            this.in5Atk2.Size = new System.Drawing.Size(79, 21);
             this.in5Atk2.TabIndex = 9;
             this.in5Atk2.Tag = "5:Atk2";
+            this.in5Atk2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.ForeColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(332, 12);
+            this.label34.Location = new System.Drawing.Point(332, 13);
             this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(75, 16);
+            this.label34.Size = new System.Drawing.Size(77, 14);
             this.label34.TabIndex = 0;
-            this.label34.Text = "DEF Switch";
+            this.label34.Text = "DEF SWITCH";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in5Def1
             // 
-            this.in5Def1.BackColor = System.Drawing.Color.Black;
+            this.in5Def1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5Def1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5Def1.ForeColor = System.Drawing.Color.White;
-            this.in5Def1.Location = new System.Drawing.Point(336, 38);
-            this.in5Def1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5Def1.Location = new System.Drawing.Point(336, 40);
+            this.in5Def1.Margin = new System.Windows.Forms.Padding(4);
             this.in5Def1.Name = "in5Def1";
-            this.in5Def1.Size = new System.Drawing.Size(79, 22);
+            this.in5Def1.Size = new System.Drawing.Size(79, 21);
             this.in5Def1.TabIndex = 1;
             this.in5Def1.Tag = "5:Def1";
+            this.in5Def1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in5Def2
             // 
-            this.in5Def2.BackColor = System.Drawing.Color.Black;
+            this.in5Def2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5Def2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5Def2.ForeColor = System.Drawing.Color.White;
-            this.in5Def2.Location = new System.Drawing.Point(336, 66);
-            this.in5Def2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5Def2.Location = new System.Drawing.Point(336, 70);
+            this.in5Def2.Margin = new System.Windows.Forms.Padding(4);
             this.in5Def2.Name = "in5Def2";
-            this.in5Def2.Size = new System.Drawing.Size(79, 22);
+            this.in5Def2.Size = new System.Drawing.Size(79, 21);
             this.in5Def2.TabIndex = 2;
             this.in5Def2.Tag = "5:Def2";
+            this.in5Def2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in5Def3
             // 
-            this.in5Def3.BackColor = System.Drawing.Color.Black;
+            this.in5Def3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5Def3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5Def3.ForeColor = System.Drawing.Color.White;
-            this.in5Def3.Location = new System.Drawing.Point(336, 96);
-            this.in5Def3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5Def3.Location = new System.Drawing.Point(336, 102);
+            this.in5Def3.Margin = new System.Windows.Forms.Padding(4);
             this.in5Def3.Name = "in5Def3";
-            this.in5Def3.Size = new System.Drawing.Size(79, 22);
+            this.in5Def3.Size = new System.Drawing.Size(79, 21);
             this.in5Def3.TabIndex = 3;
             this.in5Def3.Tag = "5:Def3";
+            this.in5Def3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox87
             // 
             this.pictureBox87.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox87.Image")));
             this.pictureBox87.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox87.InitialImage")));
-            this.pictureBox87.Location = new System.Drawing.Point(611, 123);
-            this.pictureBox87.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox87.Location = new System.Drawing.Point(611, 131);
+            this.pictureBox87.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox87.Name = "pictureBox87";
-            this.pictureBox87.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox87.Size = new System.Drawing.Size(33, 33);
             this.pictureBox87.TabIndex = 22;
             this.pictureBox87.TabStop = false;
             // 
             // in5Def4
             // 
-            this.in5Def4.BackColor = System.Drawing.Color.Black;
+            this.in5Def4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5Def4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5Def4.ForeColor = System.Drawing.Color.White;
-            this.in5Def4.Location = new System.Drawing.Point(336, 126);
-            this.in5Def4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5Def4.Location = new System.Drawing.Point(336, 134);
+            this.in5Def4.Margin = new System.Windows.Forms.Padding(4);
             this.in5Def4.Name = "in5Def4";
-            this.in5Def4.Size = new System.Drawing.Size(79, 22);
+            this.in5Def4.Size = new System.Drawing.Size(79, 21);
             this.in5Def4.TabIndex = 4;
             this.in5Def4.Tag = "5:Def4";
+            this.in5Def4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox88
             // 
             this.pictureBox88.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox88.Image")));
             this.pictureBox88.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox88.InitialImage")));
-            this.pictureBox88.Location = new System.Drawing.Point(611, 182);
-            this.pictureBox88.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox88.Location = new System.Drawing.Point(611, 193);
+            this.pictureBox88.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox88.Name = "pictureBox88";
-            this.pictureBox88.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox88.Size = new System.Drawing.Size(33, 33);
             this.pictureBox88.TabIndex = 21;
             this.pictureBox88.TabStop = false;
             // 
             // in5Def5
             // 
-            this.in5Def5.BackColor = System.Drawing.Color.Black;
+            this.in5Def5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5Def5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5Def5.ForeColor = System.Drawing.Color.White;
-            this.in5Def5.Location = new System.Drawing.Point(336, 155);
-            this.in5Def5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5Def5.Location = new System.Drawing.Point(336, 165);
+            this.in5Def5.Margin = new System.Windows.Forms.Padding(4);
             this.in5Def5.Name = "in5Def5";
-            this.in5Def5.Size = new System.Drawing.Size(79, 22);
+            this.in5Def5.Size = new System.Drawing.Size(79, 21);
             this.in5Def5.TabIndex = 5;
             this.in5Def5.Tag = "5:Def5";
+            this.in5Def5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox89
             // 
             this.pictureBox89.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox89.Image")));
             this.pictureBox89.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox89.InitialImage")));
-            this.pictureBox89.Location = new System.Drawing.Point(611, 153);
-            this.pictureBox89.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox89.Location = new System.Drawing.Point(611, 163);
+            this.pictureBox89.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox89.Name = "pictureBox89";
-            this.pictureBox89.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox89.Size = new System.Drawing.Size(33, 33);
             this.pictureBox89.TabIndex = 20;
             this.pictureBox89.TabStop = false;
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Silver;
-            this.panel13.Location = new System.Drawing.Point(475, 12);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel13.Location = new System.Drawing.Point(475, 13);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1, 197);
+            this.panel13.Size = new System.Drawing.Size(1, 209);
             this.panel13.TabIndex = 6;
             // 
             // pictureBox90
             // 
             this.pictureBox90.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox90.Image")));
             this.pictureBox90.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox90.InitialImage")));
-            this.pictureBox90.Location = new System.Drawing.Point(611, 94);
-            this.pictureBox90.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox90.Location = new System.Drawing.Point(611, 100);
+            this.pictureBox90.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox90.Name = "pictureBox90";
-            this.pictureBox90.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox90.Size = new System.Drawing.Size(33, 33);
             this.pictureBox90.TabIndex = 19;
             this.pictureBox90.TabStop = false;
             // 
@@ -4014,113 +4151,118 @@
             // 
             this.label35.AutoSize = true;
             this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(521, 12);
+            this.label35.Location = new System.Drawing.Point(521, 13);
             this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(74, 16);
+            this.label35.Size = new System.Drawing.Size(77, 14);
             this.label35.TabIndex = 7;
-            this.label35.Text = "ATK Switch";
+            this.label35.Text = "ATK SWITCH";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox91
             // 
             this.pictureBox91.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox91.Image")));
             this.pictureBox91.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox91.InitialImage")));
-            this.pictureBox91.Location = new System.Drawing.Point(611, 64);
-            this.pictureBox91.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox91.Location = new System.Drawing.Point(611, 68);
+            this.pictureBox91.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox91.Name = "pictureBox91";
-            this.pictureBox91.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox91.Size = new System.Drawing.Size(33, 33);
             this.pictureBox91.TabIndex = 18;
             this.pictureBox91.TabStop = false;
             // 
             // in5Atk1
             // 
-            this.in5Atk1.BackColor = System.Drawing.Color.Black;
+            this.in5Atk1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5Atk1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5Atk1.ForeColor = System.Drawing.Color.White;
-            this.in5Atk1.Location = new System.Drawing.Point(525, 38);
-            this.in5Atk1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5Atk1.Location = new System.Drawing.Point(525, 40);
+            this.in5Atk1.Margin = new System.Windows.Forms.Padding(4);
             this.in5Atk1.Name = "in5Atk1";
-            this.in5Atk1.Size = new System.Drawing.Size(79, 22);
+            this.in5Atk1.Size = new System.Drawing.Size(79, 21);
             this.in5Atk1.TabIndex = 8;
             this.in5Atk1.Tag = "5:Atk1";
+            this.in5Atk1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox92
             // 
             this.pictureBox92.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox92.Image")));
             this.pictureBox92.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox92.InitialImage")));
-            this.pictureBox92.Location = new System.Drawing.Point(297, 122);
-            this.pictureBox92.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox92.Location = new System.Drawing.Point(297, 130);
+            this.pictureBox92.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox92.Name = "pictureBox92";
-            this.pictureBox92.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox92.Size = new System.Drawing.Size(33, 33);
             this.pictureBox92.TabIndex = 17;
             this.pictureBox92.TabStop = false;
             // 
             // in5Atk3
             // 
-            this.in5Atk3.BackColor = System.Drawing.Color.Black;
+            this.in5Atk3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5Atk3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5Atk3.ForeColor = System.Drawing.Color.White;
-            this.in5Atk3.Location = new System.Drawing.Point(525, 97);
-            this.in5Atk3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5Atk3.Location = new System.Drawing.Point(525, 103);
+            this.in5Atk3.Margin = new System.Windows.Forms.Padding(4);
             this.in5Atk3.Name = "in5Atk3";
-            this.in5Atk3.Size = new System.Drawing.Size(79, 22);
+            this.in5Atk3.Size = new System.Drawing.Size(79, 21);
             this.in5Atk3.TabIndex = 10;
             this.in5Atk3.Tag = "5:Atk3";
+            this.in5Atk3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox93
             // 
             this.pictureBox93.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox93.Image")));
             this.pictureBox93.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox93.InitialImage")));
-            this.pictureBox93.Location = new System.Drawing.Point(297, 181);
-            this.pictureBox93.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox93.Location = new System.Drawing.Point(297, 192);
+            this.pictureBox93.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox93.Name = "pictureBox93";
-            this.pictureBox93.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox93.Size = new System.Drawing.Size(33, 33);
             this.pictureBox93.TabIndex = 16;
             this.pictureBox93.TabStop = false;
             // 
             // in5Atk4
             // 
-            this.in5Atk4.BackColor = System.Drawing.Color.Black;
+            this.in5Atk4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5Atk4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5Atk4.ForeColor = System.Drawing.Color.White;
-            this.in5Atk4.Location = new System.Drawing.Point(525, 127);
-            this.in5Atk4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5Atk4.Location = new System.Drawing.Point(525, 135);
+            this.in5Atk4.Margin = new System.Windows.Forms.Padding(4);
             this.in5Atk4.Name = "in5Atk4";
-            this.in5Atk4.Size = new System.Drawing.Size(79, 22);
+            this.in5Atk4.Size = new System.Drawing.Size(79, 21);
             this.in5Atk4.TabIndex = 11;
             this.in5Atk4.Tag = "5:Atk4";
+            this.in5Atk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox94
             // 
             this.pictureBox94.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox94.Image")));
             this.pictureBox94.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox94.InitialImage")));
-            this.pictureBox94.Location = new System.Drawing.Point(297, 151);
-            this.pictureBox94.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox94.Location = new System.Drawing.Point(297, 160);
+            this.pictureBox94.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox94.Name = "pictureBox94";
-            this.pictureBox94.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox94.Size = new System.Drawing.Size(33, 33);
             this.pictureBox94.TabIndex = 15;
             this.pictureBox94.TabStop = false;
             // 
             // in5Atk5
             // 
-            this.in5Atk5.BackColor = System.Drawing.Color.Black;
+            this.in5Atk5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5Atk5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5Atk5.ForeColor = System.Drawing.Color.White;
-            this.in5Atk5.Location = new System.Drawing.Point(525, 156);
-            this.in5Atk5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5Atk5.Location = new System.Drawing.Point(525, 166);
+            this.in5Atk5.Margin = new System.Windows.Forms.Padding(4);
             this.in5Atk5.Name = "in5Atk5";
-            this.in5Atk5.Size = new System.Drawing.Size(79, 22);
+            this.in5Atk5.Size = new System.Drawing.Size(79, 21);
             this.in5Atk5.TabIndex = 12;
             this.in5Atk5.Tag = "5:Atk5";
+            this.in5Atk5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox95
             // 
             this.pictureBox95.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox95.Image")));
             this.pictureBox95.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox95.InitialImage")));
-            this.pictureBox95.Location = new System.Drawing.Point(297, 92);
-            this.pictureBox95.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox95.Location = new System.Drawing.Point(297, 98);
+            this.pictureBox95.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox95.Name = "pictureBox95";
-            this.pictureBox95.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox95.Size = new System.Drawing.Size(33, 33);
             this.pictureBox95.TabIndex = 14;
             this.pictureBox95.TabStop = false;
             // 
@@ -4128,10 +4270,10 @@
             // 
             this.pictureBox96.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox96.Image")));
             this.pictureBox96.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox96.InitialImage")));
-            this.pictureBox96.Location = new System.Drawing.Point(297, 64);
-            this.pictureBox96.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox96.Location = new System.Drawing.Point(297, 68);
+            this.pictureBox96.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox96.Name = "pictureBox96";
-            this.pictureBox96.Size = new System.Drawing.Size(33, 30);
+            this.pictureBox96.Size = new System.Drawing.Size(33, 32);
             this.pictureBox96.TabIndex = 13;
             this.pictureBox96.TabStop = false;
             // 
@@ -4146,92 +4288,94 @@
             this.groupBox11.Controls.Add(this.label38);
             this.groupBox11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox11.ForeColor = System.Drawing.Color.White;
-            this.groupBox11.Location = new System.Drawing.Point(17, 12);
-            this.groupBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox11.Location = new System.Drawing.Point(17, 13);
+            this.groupBox11.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox11.Size = new System.Drawing.Size(255, 186);
+            this.groupBox11.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox11.Size = new System.Drawing.Size(255, 198);
             this.groupBox11.TabIndex = 33;
             this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Configuration";
+            this.groupBox11.Text = "CONFIGURATION";
             // 
             // in5SpammerClick
             // 
             this.in5SpammerClick.AutoSize = true;
             this.in5SpammerClick.Checked = true;
             this.in5SpammerClick.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.in5SpammerClick.Location = new System.Drawing.Point(23, 148);
-            this.in5SpammerClick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5SpammerClick.Location = new System.Drawing.Point(23, 157);
+            this.in5SpammerClick.Margin = new System.Windows.Forms.Padding(4);
             this.in5SpammerClick.Name = "in5SpammerClick";
-            this.in5SpammerClick.Size = new System.Drawing.Size(129, 20);
+            this.in5SpammerClick.Size = new System.Drawing.Size(138, 18);
             this.in5SpammerClick.TabIndex = 29;
             this.in5SpammerClick.Tag = "5:inSpammerClick";
-            this.in5SpammerClick.Text = "With mouse click";
+            this.in5SpammerClick.Text = "WITH MOUSE CLICK";
             this.in5SpammerClick.UseVisualStyleBackColor = true;
             // 
             // in5SpammerKey
             // 
-            this.in5SpammerKey.BackColor = System.Drawing.Color.Black;
+            this.in5SpammerKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5SpammerKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5SpammerKey.ForeColor = System.Drawing.Color.White;
-            this.in5SpammerKey.Location = new System.Drawing.Point(135, 30);
-            this.in5SpammerKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5SpammerKey.Location = new System.Drawing.Point(135, 32);
+            this.in5SpammerKey.Margin = new System.Windows.Forms.Padding(4);
             this.in5SpammerKey.Name = "in5SpammerKey";
-            this.in5SpammerKey.Size = new System.Drawing.Size(79, 22);
+            this.in5SpammerKey.Size = new System.Drawing.Size(79, 21);
             this.in5SpammerKey.TabIndex = 23;
             this.in5SpammerKey.Tag = "5:spammerKey";
+            this.in5SpammerKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // in5SwitchDelay
             // 
-            this.in5SwitchDelay.BackColor = System.Drawing.Color.Black;
+            this.in5SwitchDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5SwitchDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5SwitchDelay.ForeColor = System.Drawing.Color.White;
-            this.in5SwitchDelay.Location = new System.Drawing.Point(135, 108);
-            this.in5SwitchDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5SwitchDelay.Location = new System.Drawing.Point(135, 115);
+            this.in5SwitchDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in5SwitchDelay.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
             this.in5SwitchDelay.Name = "in5SwitchDelay";
-            this.in5SwitchDelay.Size = new System.Drawing.Size(80, 22);
+            this.in5SwitchDelay.Size = new System.Drawing.Size(80, 21);
             this.in5SwitchDelay.TabIndex = 27;
             this.in5SwitchDelay.Tag = "5:switchDelay";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(19, 34);
+            this.label37.Location = new System.Drawing.Point(20, 36);
             this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(92, 16);
+            this.label37.Size = new System.Drawing.Size(84, 14);
             this.label37.TabIndex = 24;
-            this.label37.Text = "Spammer Key";
+            this.label37.Text = "SPAMMER KEY";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // in5SpammerDelay
             // 
-            this.in5SpammerDelay.BackColor = System.Drawing.Color.Black;
+            this.in5SpammerDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.in5SpammerDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.in5SpammerDelay.ForeColor = System.Drawing.Color.White;
-            this.in5SpammerDelay.Location = new System.Drawing.Point(135, 69);
-            this.in5SpammerDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.in5SpammerDelay.Location = new System.Drawing.Point(135, 73);
+            this.in5SpammerDelay.Margin = new System.Windows.Forms.Padding(4);
             this.in5SpammerDelay.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.in5SpammerDelay.Name = "in5SpammerDelay";
-            this.in5SpammerDelay.Size = new System.Drawing.Size(80, 22);
+            this.in5SpammerDelay.Size = new System.Drawing.Size(80, 21);
             this.in5SpammerDelay.TabIndex = 25;
             this.in5SpammerDelay.Tag = "5:spammerDelay";
             // 
             // ATKDEFForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(729, 1993);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.ClientSize = new System.Drawing.Size(920, 2029);
             this.Controls.Add(this.equipGroup8);
             this.Controls.Add(this.equipGroup7);
             this.Controls.Add(this.equipGroup6);
@@ -4240,8 +4384,9 @@
             this.Controls.Add(this.equipGroup3);
             this.Controls.Add(this.equipGroup2);
             this.Controls.Add(this.equipGroup1);
+            this.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ATKDEFForm";
             this.Text = "ATKDEFForm";
             this.equipGroup1.ResumeLayout(false);

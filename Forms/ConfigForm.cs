@@ -6,18 +6,24 @@ using System.Drawing;
 using System.Linq;
 using System.Collections.Generic;
 using System.Windows.Input;
-using static _4RTools.Model.AutoSwitch;
 
 namespace _4RTools.Forms
 {
     public partial class ConfigForm : Form, IObserver
     {
+        private CustomButtonForm customButtonForm;
+
         public ConfigForm(Subject subject)
         {
             InitializeComponent();
             this.textReinKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
             this.textReinKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
             this.textReinKey.TextChanged += new EventHandler(this.textReinKey_TextChanged);
+
+            // Eventos para rédea automática
+            this.txtAutoReinKey.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
+            this.txtAutoReinKey.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
+            this.txtAutoReinKey.TextChanged += new EventHandler(this.txtAutoReinKey_TextChanged_1);
 
             this.ammo1textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(FormUtils.OnKeyDown);
             this.ammo1textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
@@ -26,23 +32,34 @@ namespace _4RTools.Forms
             this.ammo2textBox.KeyPress += new KeyPressEventHandler(FormUtils.OnKeyPress);
             this.ammo2textBox.TextChanged += new EventHandler(this.textAmmo2_TextChanged);
 
-
-            var newListBuff = ProfileSingleton.GetCurrent().UserPreferences.autoBuffOrder;
-            this.skillsListBox.MouseLeave += new System.EventHandler(this.skillsListBox_MouseLeave);
-            this.skillsListBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.skillsListBox_MouseDown);
-            this.skillsListBox.DragOver += new DragEventHandler(this.skillsListBox_DragOver);
-            this.skillsListBox.DragDrop += new DragEventHandler(this.skillsListBox_DragDrop);
-
-            this.switchListBox.MouseLeave += new System.EventHandler(this.switchListBox_MouseLeave);
-            this.switchListBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.switchListBox_MouseDown);
-            this.switchListBox.DragOver += new DragEventHandler(this.switchListBox_DragOver);
-            this.switchListBox.DragDrop += new DragEventHandler(this.switchListBox_DragDrop);
-
+            // ToolTips
             toolTip1.SetToolTip(switchAmmoCheckBox, "Intercala entre as munições");
-            toolTip2.SetToolTip(textReinKey, "atalho rédea");
-            toolTip3.SetToolTip(ammo1textBox, "atalho ammo 1");
-            toolTip4.SetToolTip(ammo2textBox, "atalho ammo 2");
+            toolTip2.SetToolTip(textReinKey, "Atalho para desmontar da rédea");
+            toolTip3.SetToolTip(ammo1textBox, "Atalho munição 1");
+            toolTip4.SetToolTip(ammo2textBox, "Atalho munição 2");
+            toolTip5.SetToolTip(txtAutoReinKey, "Tecla para usar rédea automática");
+            toolTip5.SetToolTip(chkAutoReinEnabled, "Usa rédea automaticamente após andar X células");
+            toolTip5.SetToolTip(numAutoReinCells, "Quantidade de células para usar rédea automática");
+
             subject.Attach(this);
+            InitializeCustomButtonForm(subject);
+
+        }
+
+        // Adicionar este método
+        private void InitializeCustomButtonForm(Subject subject)
+        {
+            // Criar uma instância do CustomButtonForm
+            customButtonForm = new CustomButtonForm(subject);
+
+            // Configurar o CustomButtonForm como um controle filho
+            customButtonForm.TopLevel = false;
+            customButtonForm.FormBorderStyle = FormBorderStyle.None;
+            customButtonForm.Dock = DockStyle.Fill;
+
+
+            groupBox2.Controls.Add(customButtonForm);
+            customButtonForm.Show();
         }
 
         public void Update(ISubject subject)
@@ -50,48 +67,8 @@ namespace _4RTools.Forms
             switch ((subject as Subject).Message.code)
             {
                 case MessageCode.PROFILE_CHANGED:
-                case MessageCode.ADDED_NEW_AUTOBUFF_SKILL:
-                case MessageCode.ADDED_NEW_AUTOSWITCH_PETS:
                     UpdateUI(subject);
                     break;
-            }
-        }
-
-        public void UpdateSwitch()
-        {
-            try
-            {
-                var buffsList = ProfileSingleton.GetCurrent().AutoSwitch.autoSwitchMapping.Where(x => x.itemKey != Key.None && x.skillId != EffectStatusIDs.THURISAZ).Select(x => x.skillId).ToList();
-                var newBuffList = ProfileSingleton.GetCurrent().AutoSwitch.autoSwitchOrder;
-                if (buffsList.Count > ProfileSingleton.GetCurrent().AutoSwitch.autoSwitchOrder.Count)
-                {
-
-                    var newBuffs = buffsList.FindAll(item => !newBuffList.Contains(item));
-                    foreach (var buff in newBuffs)
-                    {
-                        newBuffList.Add(buff);
-                    }
-                    ProfileSingleton.GetCurrent().AutoSwitch.SetAutoSwitchOrder(newBuffList);
-                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AutoSwitch);
-                }
-                
-                if (ProfileSingleton.GetCurrent().AutoSwitch.autoSwitchOrder.Count > 0)
-                {
-                    var tessste = ProfileSingleton.GetCurrent().AutoSwitch.autoSwitchOrder;
-                    ProfileSingleton.GetCurrent().AutoSwitch.autoSwitchOrder.RemoveAll(item => !buffsList.Contains(item));
-                    buffsList = ProfileSingleton.GetCurrent().AutoSwitch.autoSwitchOrder;
-                }
-
-                switchListBox.Items.Clear();
-
-                foreach (var tswitch in buffsList)
-                {
-                    switchListBox.Items.Add(tswitch.ToDescriptionString());
-                }
-            }
-            catch (Exception ex)
-            {
-                var teste = ex;
             }
         }
 
@@ -99,31 +76,63 @@ namespace _4RTools.Forms
         {
             try
             {
-                AutoBuffSkill currentBuffs = (AutoBuffSkill)(subject as Subject).Message.data;
+                // Desvincula temporariamente os eventos para evitar salvamentos durante o carregamento
+                this.textReinKey.TextChanged -= this.textReinKey_TextChanged;
+                this.ammo1textBox.TextChanged -= this.textAmmo1_TextChanged;
+                this.ammo2textBox.TextChanged -= this.textAmmo2_TextChanged;
+                this.txtAutoReinKey.TextChanged -= this.txtAutoReinKey_TextChanged_1;
+                this.numAutoReinCells.ValueChanged -= this.numAutoReinCells_ValueChanged;
 
-                if (currentBuffs == null)
-                {
-                    currentBuffs = ProfileSingleton.GetCurrent().AutobuffSkill;
-                }
+                // Desvincula os CheckBoxes
+                this.chkStopBuffsOnCity.CheckedChanged -= this.chkStopBuffsOnCity_CheckedChanged;
+                this.chkStopBuffsOnRein.CheckedChanged -= this.chkStopBuffsOnRein_CheckedChanged;
+                this.chkStopHealOnCity.CheckedChanged -= this.chkStopHealOnCity_CheckedChanged;
+                this.getOffReinCheckBox.CheckedChanged -= this.getOffReinCheckBox_CheckedChanged;
+                this.chkStopWithChat.CheckedChanged -= this.chkStopWithChat_CheckedChanged;
+                this.chkAutoReinEnabled.CheckedChanged -= this.chkAutoReinEnabled_CheckedChanged;
+                this.switchAmmoCheckBox.CheckedChanged -= this.switchAmmoCheckBox_CheckedChanged;
 
-                var buffsList = currentBuffs.buffMapping.Keys.ToList();
-                skillsListBox.Items.Clear();
-
-                foreach (var buff in buffsList)
-                {
-                    skillsListBox.Items.Add(buff.ToDescriptionString());
-                }
-                UpdateSwitch();
-
+                // Atualiza os valores
                 this.chkStopBuffsOnCity.Checked = ProfileSingleton.GetCurrent().UserPreferences.stopBuffsCity;
                 this.chkStopBuffsOnRein.Checked = ProfileSingleton.GetCurrent().UserPreferences.stopBuffsRein;
                 this.chkStopHealOnCity.Checked = ProfileSingleton.GetCurrent().UserPreferences.stopHealCity;
                 this.getOffReinCheckBox.Checked = ProfileSingleton.GetCurrent().UserPreferences.getOffRein;
-                this.textReinKey.Text = ProfileSingleton.GetCurrent().UserPreferences.getOffReinKey.ToString();
+
+                // Mostrar vazio se a tecla for Key.None
+                var getOffKey = ProfileSingleton.GetCurrent().UserPreferences.getOffReinKey;
+                this.textReinKey.Text = (getOffKey != Key.None) ? getOffKey.ToString() : "";
+
                 this.switchAmmoCheckBox.Checked = ProfileSingleton.GetCurrent().UserPreferences.switchAmmo;
-                this.ammo1textBox.Text = ProfileSingleton.GetCurrent().UserPreferences.ammo1Key.ToString();
-                this.ammo2textBox.Text = ProfileSingleton.GetCurrent().UserPreferences.ammo2Key.ToString();
+
+                var ammo1 = ProfileSingleton.GetCurrent().UserPreferences.ammo1Key;
+                this.ammo1textBox.Text = (ammo1 != Key.None) ? ammo1.ToString() : "";
+
+                var ammo2 = ProfileSingleton.GetCurrent().UserPreferences.ammo2Key;
+                this.ammo2textBox.Text = (ammo2 != Key.None) ? ammo2.ToString() : "";
+
                 this.chkStopWithChat.Checked = ProfileSingleton.GetCurrent().UserPreferences.stopWithChat;
+
+                // Configurações de rédea automática
+                this.chkAutoReinEnabled.Checked = ProfileSingleton.GetCurrent().UserPreferences.autoReinEnabled;
+                this.numAutoReinCells.Value = ProfileSingleton.GetCurrent().UserPreferences.autoReinCellCount;
+
+                var autoReinKey = ProfileSingleton.GetCurrent().UserPreferences.autoReinKey;
+                this.txtAutoReinKey.Text = (autoReinKey != Key.None) ? autoReinKey.ToString() : "";
+
+                // Reconecta os eventos
+                this.textReinKey.TextChanged += this.textReinKey_TextChanged;
+                this.ammo1textBox.TextChanged += this.textAmmo1_TextChanged;
+                this.ammo2textBox.TextChanged += this.textAmmo2_TextChanged;
+                this.txtAutoReinKey.TextChanged += this.txtAutoReinKey_TextChanged_1;
+                this.numAutoReinCells.ValueChanged += this.numAutoReinCells_ValueChanged;
+
+                this.chkStopBuffsOnCity.CheckedChanged += this.chkStopBuffsOnCity_CheckedChanged;
+                this.chkStopBuffsOnRein.CheckedChanged += this.chkStopBuffsOnRein_CheckedChanged;
+                this.chkStopHealOnCity.CheckedChanged += this.chkStopHealOnCity_CheckedChanged;
+                this.getOffReinCheckBox.CheckedChanged += this.getOffReinCheckBox_CheckedChanged;
+                this.chkStopWithChat.CheckedChanged += this.chkStopWithChat_CheckedChanged;
+                this.chkAutoReinEnabled.CheckedChanged += this.chkAutoReinEnabled_CheckedChanged;
+                this.switchAmmoCheckBox.CheckedChanged += this.switchAmmoCheckBox_CheckedChanged;
             }
             catch (Exception ex)
             {
@@ -131,106 +140,48 @@ namespace _4RTools.Forms
             }
         }
 
-        private void skillsListBox_MouseLeave(object sender, EventArgs e)
+        // Event Handlers para Rédea Automática
+        private void chkAutoReinEnabled_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox chk = sender as CheckBox;
+            ProfileSingleton.GetCurrent().UserPreferences.autoReinEnabled = chk.Checked;
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
+        }
+
+        private void numAutoReinCells_ValueChanged(object sender, EventArgs e)
+        {
+            NumericUpDown num = sender as NumericUpDown;
+            ProfileSingleton.GetCurrent().UserPreferences.autoReinCellCount = (int)num.Value;
+            ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
+        }
+
+        private void txtAutoReinKey_TextChanged(object sender, EventArgs e)
+        {
+            // manter compatibilidade caso outro handler chame este método
+            txtAutoReinKey_TextChanged_1(sender, e);
+        }
+
+        private void txtAutoReinKey_TextChanged_1(object sender, EventArgs e)
         {
             try
             {
-                var autoBuffSkill = ProfileSingleton.GetCurrent().AutobuffSkill;
-                var newOrderList = new List<EffectStatusIDs>();
-                var orderedBuffList = skillsListBox.Items;
-                Dictionary<EffectStatusIDs, Key> currentList = new Dictionary<EffectStatusIDs, Key>(autoBuffSkill.buffMapping);
-                Dictionary<EffectStatusIDs, Key> newOrderedBuffList = new Dictionary<EffectStatusIDs, Key>();
-                if (currentList.Count > 0)
+                TextBox txtBox = (TextBox)sender;
+                if (string.IsNullOrEmpty(txtBox.Text))
                 {
-
-                    foreach (var buff in orderedBuffList)
-                    {
-                        var buffId = buff.ToString().ToEffectStatusId();
-                        newOrderList.Add(buffId);
-                        var findBuff = currentList.FirstOrDefault(t => t.Key == buffId);
-                        newOrderedBuffList.Add(findBuff.Key, findBuff.Value);
-                    }
-                    ProfileSingleton.GetCurrent().UserPreferences.SetAutoBuffOrder(newOrderList);
+                    ProfileSingleton.GetCurrent().UserPreferences.autoReinKey = Key.None;
                     ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
-
-                    ProfileSingleton.GetCurrent().AutobuffSkill.ClearKeyMapping();
-                    ProfileSingleton.GetCurrent().AutobuffSkill.setBuffMapping(newOrderedBuffList);
-                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AutobuffSkill);
-
-                    newOrderedBuffList.Clear();
                 }
-            }
-            catch { }
-        }
-        private void skillsListBox_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
-        {
-            if (this.skillsListBox.SelectedItem == null) return;
-            this.skillsListBox.DoDragDrop(this.skillsListBox.SelectedItem, DragDropEffects.Move);
-        }
-
-        private void skillsListBox_DragOver(object sender, DragEventArgs e)
-        {
-            e.Effect = DragDropEffects.Move;
-        }
-
-        private void skillsListBox_DragDrop(object sender, DragEventArgs e)
-        {
-            Point point = skillsListBox.PointToClient(new Point(e.X, e.Y));
-            int index = this.skillsListBox.IndexFromPoint(point);
-            if (index < 0) index = this.skillsListBox.Items.Count - 1;
-            object data = skillsListBox.SelectedItem;
-            this.skillsListBox.Items.Remove(data);
-            this.skillsListBox.Items.Insert(index, data);
-        }
-
-        private void switchListBox_MouseLeave(object sender, EventArgs e)
-        {
-            try
-            {
-                var autoSwitchPets = ProfileSingleton.GetCurrent().AutoSwitch.autoSwitchOrder;
-                var newOrderList = new List<EffectStatusIDs>();
-                var orderedBuffList = switchListBox.Items;
-                List<EffectStatusIDs> currentList = ProfileSingleton.GetCurrent().AutoSwitch.autoSwitchMapping.Where(x => x.itemKey != Key.None && x.skillId != EffectStatusIDs.THURISAZ).Select(x => x.skillId).ToList();
-
-                List<EffectStatusIDs> newOrderedBuffList = new List<EffectStatusIDs>();
-                if (currentList.Count > 0)
+                else
                 {
-
-                    foreach (var buff in orderedBuffList)
-                    {
-                        var buffId = buff.ToString().ToEffectStatusId();
-                        newOrderList.Add(buffId);
-                        var findBuff = currentList.FirstOrDefault(t => t == buffId);
-                        newOrderedBuffList.Add(findBuff);
-                    }
-                    ProfileSingleton.GetCurrent().AutoSwitch.SetAutoSwitchOrder(newOrderList);
-                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().AutoSwitch);
-                    newOrderedBuffList.Clear();
+                    Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
+                    ProfileSingleton.GetCurrent().UserPreferences.autoReinKey = key;
+                    ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
                 }
             }
             catch { }
         }
-        private void switchListBox_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
-        {
-            if (this.switchListBox.SelectedItem == null) return;
-            this.switchListBox.DoDragDrop(this.switchListBox.SelectedItem, DragDropEffects.Move);
-        }
 
-        private void switchListBox_DragOver(object sender, DragEventArgs e)
-        {
-            e.Effect = DragDropEffects.Move;
-        }
-
-        private void switchListBox_DragDrop(object sender, DragEventArgs e)
-        {
-            Point point = switchListBox.PointToClient(new Point(e.X, e.Y));
-            int index = this.switchListBox.IndexFromPoint(point);
-            if (index < 0) index = this.switchListBox.Items.Count - 1;
-            object data = switchListBox.SelectedItem;
-            this.switchListBox.Items.Remove(data);
-            this.switchListBox.Items.Insert(index, data);
-        }
-
+        // Event Handlers existentes
         private void chkStopBuffsOnRein_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox chk = sender as CheckBox;
@@ -244,6 +195,7 @@ namespace _4RTools.Forms
             ProfileSingleton.GetCurrent().UserPreferences.stopBuffsCity = chk.Checked;
             ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
         }
+
         private void chkStopHealOnCity_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox chk = sender as CheckBox;
@@ -270,12 +222,16 @@ namespace _4RTools.Forms
             try
             {
                 TextBox txtBox = (TextBox)sender;
-                if (txtBox.Text.ToString() != String.Empty)
+                if (string.IsNullOrEmpty(txtBox.Text))
                 {
-                    Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
-                    ProfileSingleton.GetCurrent().UserPreferences.getOffReinKey = key;
+                    ProfileSingleton.GetCurrent().UserPreferences.getOffReinKey = Key.None;
                     ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
+                    return;
                 }
+
+                Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
+                ProfileSingleton.GetCurrent().UserPreferences.getOffReinKey = key;
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
             }
             catch { }
         }
@@ -292,12 +248,16 @@ namespace _4RTools.Forms
             try
             {
                 TextBox txtBox = (TextBox)sender;
-                if (txtBox.Text.ToString() != String.Empty)
+                if (string.IsNullOrEmpty(txtBox.Text))
                 {
-                    Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
-                    ProfileSingleton.GetCurrent().UserPreferences.ammo1Key = key;
+                    ProfileSingleton.GetCurrent().UserPreferences.ammo1Key = Key.None;
                     ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
+                    return;
                 }
+
+                Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
+                ProfileSingleton.GetCurrent().UserPreferences.ammo1Key = key;
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
             }
             catch { }
         }
@@ -307,15 +267,29 @@ namespace _4RTools.Forms
             try
             {
                 TextBox txtBox = (TextBox)sender;
-                if (txtBox.Text.ToString() != String.Empty)
+                if (string.IsNullOrEmpty(txtBox.Text))
                 {
-                    Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
-                    ProfileSingleton.GetCurrent().UserPreferences.ammo2Key = key;
+                    ProfileSingleton.GetCurrent().UserPreferences.ammo2Key = Key.None;
                     ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
+                    return;
                 }
+
+                Key key = (Key)Enum.Parse(typeof(Key), txtBox.Text.ToString());
+                ProfileSingleton.GetCurrent().UserPreferences.ammo2Key = key;
+                ProfileSingleton.SetConfiguration(ProfileSingleton.GetCurrent().UserPreferences);
             }
             catch { }
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textReinKey_TextChanged_1(object sender, EventArgs e)
+        {
+            // mantido compatível caso o Designer ou outro trecho chame este nome
+            textReinKey_TextChanged(sender, e);
+        }
     }
 }

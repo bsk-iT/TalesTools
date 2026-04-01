@@ -31,229 +31,131 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SkillAutoBuffForm));
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
-            this.ArcherSkillsGP = new System.Windows.Forms.GroupBox();
-            this.SwordmanSkillGP = new System.Windows.Forms.GroupBox();
-            this.MageSkillGP = new System.Windows.Forms.GroupBox();
-            this.MerchantSkillsGP = new System.Windows.Forms.GroupBox();
-            this.ThiefSkillsGP = new System.Windows.Forms.GroupBox();
-            this.AcolyteSkillsGP = new System.Windows.Forms.GroupBox();
-            this.TKSkillGroupBox = new System.Windows.Forms.GroupBox();
-            this.NinjaSkillsGP = new System.Windows.Forms.GroupBox();
-            this.GunsSkillsGP = new System.Windows.Forms.GroupBox();
-            this.btnResetAutobuff = new System.Windows.Forms.Button();
-            this.numericDelay = new System.Windows.Forms.NumericUpDown();
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
-            this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
+            this.btnResetAutobuff = new System.Windows.Forms.Button();
+            this.panelSkillsContainer = new System.Windows.Forms.Panel();
+            this.comboBoxSkills = new System.Windows.Forms.ComboBox();
+            this.labelSelectSkill = new System.Windows.Forms.Label();
+            this.numericDelay = new System.Windows.Forms.NumericUpDown();
+            this.panelControls1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericDelay)).BeginInit();
+            this.panelControls1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox38
-            // 
-            this.pictureBox38.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox38.BackgroundImage")));
-            this.pictureBox38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox38.Location = new System.Drawing.Point(274, 290);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox38.TabIndex = 145;
-            this.pictureBox38.TabStop = false;
-            // 
-            // ArcherSkillsGP
-            // 
-            this.ArcherSkillsGP.AutoSize = true;
-            this.ArcherSkillsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ArcherSkillsGP.ForeColor = System.Drawing.Color.White;
-            this.ArcherSkillsGP.Location = new System.Drawing.Point(16, 15);
-            this.ArcherSkillsGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ArcherSkillsGP.Name = "ArcherSkillsGP";
-            this.ArcherSkillsGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ArcherSkillsGP.Size = new System.Drawing.Size(693, 37);
-            this.ArcherSkillsGP.TabIndex = 200;
-            this.ArcherSkillsGP.TabStop = false;
-            this.ArcherSkillsGP.Text = "Archer Skills";
-            // 
-            // SwordmanSkillGP
-            // 
-            this.SwordmanSkillGP.AutoSize = true;
-            this.SwordmanSkillGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SwordmanSkillGP.ForeColor = System.Drawing.Color.White;
-            this.SwordmanSkillGP.Location = new System.Drawing.Point(16, 59);
-            this.SwordmanSkillGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.SwordmanSkillGP.Name = "SwordmanSkillGP";
-            this.SwordmanSkillGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.SwordmanSkillGP.Size = new System.Drawing.Size(693, 37);
-            this.SwordmanSkillGP.TabIndex = 201;
-            this.SwordmanSkillGP.TabStop = false;
-            this.SwordmanSkillGP.Text = "Swordsman Skills";
-            // 
-            // MageSkillGP
-            // 
-            this.MageSkillGP.AutoSize = true;
-            this.MageSkillGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MageSkillGP.ForeColor = System.Drawing.Color.White;
-            this.MageSkillGP.Location = new System.Drawing.Point(16, 106);
-            this.MageSkillGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MageSkillGP.Name = "MageSkillGP";
-            this.MageSkillGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MageSkillGP.Size = new System.Drawing.Size(693, 37);
-            this.MageSkillGP.TabIndex = 202;
-            this.MageSkillGP.TabStop = false;
-            this.MageSkillGP.Text = "Mage Skills";
-            // 
-            // MerchantSkillsGP
-            // 
-            this.MerchantSkillsGP.AutoSize = true;
-            this.MerchantSkillsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MerchantSkillsGP.ForeColor = System.Drawing.Color.White;
-            this.MerchantSkillsGP.Location = new System.Drawing.Point(16, 156);
-            this.MerchantSkillsGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MerchantSkillsGP.Name = "MerchantSkillsGP";
-            this.MerchantSkillsGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MerchantSkillsGP.Size = new System.Drawing.Size(693, 37);
-            this.MerchantSkillsGP.TabIndex = 203;
-            this.MerchantSkillsGP.TabStop = false;
-            this.MerchantSkillsGP.Text = "Merchant Skills";
-            // 
-            // ThiefSkillsGP
-            // 
-            this.ThiefSkillsGP.AutoSize = true;
-            this.ThiefSkillsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ThiefSkillsGP.ForeColor = System.Drawing.Color.White;
-            this.ThiefSkillsGP.Location = new System.Drawing.Point(16, 207);
-            this.ThiefSkillsGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ThiefSkillsGP.Name = "ThiefSkillsGP";
-            this.ThiefSkillsGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ThiefSkillsGP.Size = new System.Drawing.Size(693, 37);
-            this.ThiefSkillsGP.TabIndex = 204;
-            this.ThiefSkillsGP.TabStop = false;
-            this.ThiefSkillsGP.Text = "Thief Skills";
-            // 
-            // AcolyteSkillsGP
-            // 
-            this.AcolyteSkillsGP.AutoSize = true;
-            this.AcolyteSkillsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AcolyteSkillsGP.ForeColor = System.Drawing.Color.White;
-            this.AcolyteSkillsGP.Location = new System.Drawing.Point(16, 262);
-            this.AcolyteSkillsGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.AcolyteSkillsGP.Name = "AcolyteSkillsGP";
-            this.AcolyteSkillsGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.AcolyteSkillsGP.Size = new System.Drawing.Size(693, 37);
-            this.AcolyteSkillsGP.TabIndex = 205;
-            this.AcolyteSkillsGP.TabStop = false;
-            this.AcolyteSkillsGP.Text = "Acolyte Skills";
-            // 
-            // TKSkillGroupBox
-            // 
-            this.TKSkillGroupBox.AutoSize = true;
-            this.TKSkillGroupBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TKSkillGroupBox.ForeColor = System.Drawing.Color.White;
-            this.TKSkillGroupBox.Location = new System.Drawing.Point(16, 313);
-            this.TKSkillGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TKSkillGroupBox.Name = "TKSkillGroupBox";
-            this.TKSkillGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TKSkillGroupBox.Size = new System.Drawing.Size(693, 37);
-            this.TKSkillGroupBox.TabIndex = 206;
-            this.TKSkillGroupBox.TabStop = false;
-            this.TKSkillGroupBox.Text = "Taekwon Skills";
-            // 
-            // NinjaSkillsGP
-            // 
-            this.NinjaSkillsGP.AutoSize = true;
-            this.NinjaSkillsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NinjaSkillsGP.ForeColor = System.Drawing.Color.White;
-            this.NinjaSkillsGP.Location = new System.Drawing.Point(16, 363);
-            this.NinjaSkillsGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.NinjaSkillsGP.Name = "NinjaSkillsGP";
-            this.NinjaSkillsGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.NinjaSkillsGP.Size = new System.Drawing.Size(693, 37);
-            this.NinjaSkillsGP.TabIndex = 207;
-            this.NinjaSkillsGP.TabStop = false;
-            this.NinjaSkillsGP.Text = "Ninja Skills";
-            // 
-            // GunsSkillsGP
-            // 
-            this.GunsSkillsGP.AutoSize = true;
-            this.GunsSkillsGP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GunsSkillsGP.ForeColor = System.Drawing.Color.White;
-            this.GunsSkillsGP.Location = new System.Drawing.Point(16, 414);
-            this.GunsSkillsGP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GunsSkillsGP.Name = "GunsSkillsGP";
-            this.GunsSkillsGP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GunsSkillsGP.Size = new System.Drawing.Size(693, 37);
-            this.GunsSkillsGP.TabIndex = 208;
-            this.GunsSkillsGP.TabStop = false;
-            this.GunsSkillsGP.Text = "Gunslinger Skills";
             // 
             // btnResetAutobuff
             // 
-            this.btnResetAutobuff.BackColor = System.Drawing.Color.Black;
+            this.btnResetAutobuff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnResetAutobuff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResetAutobuff.Font = new System.Drawing.Font("JetBrains Mono", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnResetAutobuff.ForeColor = System.Drawing.Color.White;
-            this.btnResetAutobuff.Location = new System.Drawing.Point(717, 78);
-            this.btnResetAutobuff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnResetAutobuff.Location = new System.Drawing.Point(130, 9);
+            this.btnResetAutobuff.Margin = new System.Windows.Forms.Padding(4);
             this.btnResetAutobuff.Name = "btnResetAutobuff";
-            this.btnResetAutobuff.Size = new System.Drawing.Size(80, 28);
+            this.btnResetAutobuff.Size = new System.Drawing.Size(80, 30);
             this.btnResetAutobuff.TabIndex = 299;
-            this.btnResetAutobuff.Text = "Reset\r\n";
+            this.btnResetAutobuff.Text = "RESET";
             this.toolTip2.SetToolTip(this.btnResetAutobuff, "Remove todos os atalhos");
             this.btnResetAutobuff.UseVisualStyleBackColor = false;
             this.btnResetAutobuff.Click += new System.EventHandler(this.btnResetAutobuff_Click);
             // 
+            // panelSkillsContainer
+            // 
+            this.panelSkillsContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelSkillsContainer.AutoScroll = true;
+            this.panelSkillsContainer.Location = new System.Drawing.Point(15, 60);
+            this.panelSkillsContainer.Name = "panelSkillsContainer";
+            this.panelSkillsContainer.Size = new System.Drawing.Size(945, 288);
+            this.panelSkillsContainer.TabIndex = 2;
+            // 
+            // comboBoxSkills
+            // 
+            this.comboBoxSkills.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.comboBoxSkills.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSkills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSkills.Font = new System.Drawing.Font("JetBrains Mono", 9F);
+            this.comboBoxSkills.ForeColor = System.Drawing.Color.White;
+            this.comboBoxSkills.FormattingEnabled = true;
+            this.comboBoxSkills.Location = new System.Drawing.Point(15, 25);
+            this.comboBoxSkills.Name = "comboBoxSkills";
+            this.comboBoxSkills.Size = new System.Drawing.Size(400, 24);
+            this.comboBoxSkills.TabIndex = 1;
+            this.comboBoxSkills.SelectedIndexChanged += new System.EventHandler(this.comboBoxSkills_SelectedIndexChanged);
+            // 
+            // labelSelectSkill
+            // 
+            this.labelSelectSkill.AutoSize = true;
+            this.labelSelectSkill.Font = new System.Drawing.Font("JetBrains Mono", 8.25F, System.Drawing.FontStyle.Bold);
+            this.labelSelectSkill.ForeColor = System.Drawing.Color.White;
+            this.labelSelectSkill.Location = new System.Drawing.Point(15, 8);
+            this.labelSelectSkill.Name = "labelSelectSkill";
+            this.labelSelectSkill.Size = new System.Drawing.Size(182, 14);
+            this.labelSelectSkill.TabIndex = 0;
+            this.labelSelectSkill.Text = "SELECIONAR SKILL / CLASSE";
+            this.labelSelectSkill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // numericDelay
             // 
-            this.numericDelay.BackColor = System.Drawing.Color.Black;
+            this.numericDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.numericDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericDelay.Font = new System.Drawing.Font("JetBrains Mono", 11.25F);
             this.numericDelay.ForeColor = System.Drawing.Color.White;
-            this.numericDelay.Location = new System.Drawing.Point(717, 42);
-            this.numericDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericDelay.Location = new System.Drawing.Point(42, 11);
+            this.numericDelay.Margin = new System.Windows.Forms.Padding(4);
             this.numericDelay.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.numericDelay.Name = "numericDelay";
-            this.numericDelay.Size = new System.Drawing.Size(80, 22);
+            this.numericDelay.Size = new System.Drawing.Size(80, 27);
             this.numericDelay.TabIndex = 302;
             this.numericDelay.ValueChanged += new System.EventHandler(this.numericDelay_TextChanged);
             // 
-            // label5
+            // panelControls1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(724, 22);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 16);
-            this.label5.TabIndex = 303;
-            this.label5.Text = "Delay ms";
+            this.panelControls1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelControls1.Controls.Add(this.pictureBox1);
+            this.panelControls1.Controls.Add(this.numericDelay);
+            this.panelControls1.Controls.Add(this.btnResetAutobuff);
+            this.panelControls1.Location = new System.Drawing.Point(15, 363);
+            this.panelControls1.Name = "panelControls1";
+            this.panelControls1.Size = new System.Drawing.Size(945, 50);
+            this.panelControls1.TabIndex = 401;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 303;
+            this.pictureBox1.TabStop = false;
             // 
             // SkillAutoBuffForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(808, 478);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.numericDelay);
-            this.Controls.Add(this.btnResetAutobuff);
-            this.Controls.Add(this.GunsSkillsGP);
-            this.Controls.Add(this.NinjaSkillsGP);
-            this.Controls.Add(this.TKSkillGroupBox);
-            this.Controls.Add(this.AcolyteSkillsGP);
-            this.Controls.Add(this.ThiefSkillsGP);
-            this.Controls.Add(this.MerchantSkillsGP);
-            this.Controls.Add(this.MageSkillGP);
-            this.Controls.Add(this.ArcherSkillsGP);
-            this.Controls.Add(this.SwordmanSkillGP);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.ClientSize = new System.Drawing.Size(972, 424);
+            this.Controls.Add(this.panelControls1);
+            this.Controls.Add(this.panelSkillsContainer);
+            this.Controls.Add(this.comboBoxSkills);
+            this.Controls.Add(this.labelSelectSkill);
+            this.Font = new System.Drawing.Font("JetBrains Mono", 7.8F);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SkillAutoBuffForm";
-            this.Text = "SkilAutoBuffForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
+            this.Text = "SkillAutoBuffForm";
             ((System.ComponentModel.ISupportInitialize)(this.numericDelay)).EndInit();
+            this.panelControls1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,19 +163,13 @@
 
         #endregion
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.PictureBox pictureBox38;
-        private System.Windows.Forms.GroupBox ArcherSkillsGP;
-        private System.Windows.Forms.GroupBox SwordmanSkillGP;
-        private System.Windows.Forms.GroupBox MageSkillGP;
-        private System.Windows.Forms.GroupBox MerchantSkillsGP;
-        private System.Windows.Forms.GroupBox ThiefSkillsGP;
-        private System.Windows.Forms.GroupBox AcolyteSkillsGP;
-        private System.Windows.Forms.GroupBox TKSkillGroupBox;
-        private System.Windows.Forms.GroupBox NinjaSkillsGP;
-        private System.Windows.Forms.GroupBox GunsSkillsGP;
+        private System.Windows.Forms.ToolTip toolTip2;
+        private System.Windows.Forms.ComboBox comboBoxSkills;
+        private System.Windows.Forms.Label labelSelectSkill;
+        private System.Windows.Forms.Panel panelSkillsContainer;
         private System.Windows.Forms.Button btnResetAutobuff;
         private System.Windows.Forms.NumericUpDown numericDelay;
-        private System.Windows.Forms.ToolTip toolTip2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panelControls1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

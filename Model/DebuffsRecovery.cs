@@ -94,6 +94,15 @@ namespace _4RTools.Model
             }
         }
 
+        // Novo: remove mapeamento de tecla para o debuff
+        public void RemoveKeyFromBuff(EffectStatusIDs status)
+        {
+            if (buffMapping.ContainsKey(status))
+            {
+                buffMapping.Remove(status);
+            }
+        }
+
         public void Stop()
         {
             if (this.thread != null)
