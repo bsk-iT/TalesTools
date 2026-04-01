@@ -407,8 +407,8 @@ OldVersions/
 # BSKTools — arquivos gerados em runtime
 Profile/
 lastprofile.txt
+AGENTS.md
 
 # Releases e assets de distribuição
 *.zip
 *.rar
-*.gif
