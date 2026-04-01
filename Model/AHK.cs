@@ -62,45 +62,90 @@ namespace _4RTools.Model
 
         private int AHKThreadExecution(Client roClient)
         {
-            if (ahkMode.Equals(COMPATIBILITY))
+            try
             {
-                foreach (KeyConfig config in AhkEntries.Values)
-                {
-                    Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
-                    if (!Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
-                    {
-                        if (config.ClickActive && Keyboard.IsKeyDown(config.key))
-                        {
-                            if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY, 0);
-                            _AHKCompatibility(roClient, config, thisk);
-                            if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY | Constants.KEYEVENTF_KEYUP, 0);
+                // ===== INTEGRAÇÃO DA RÉDEA AUTOMÁTICA =====
+                // Processar rédea automática com o sistema de validação integrado
+                roClient.ProcessAutoRein();
 
-                        }
-                        else
+                if (ahkMode.Equals(COMPATIBILITY))
+                {
+                    foreach (KeyConfig config in AhkEntries.Values)
+                    {
+                        Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
+                        if (!Keyboard.IsKeyDown(Key.LeftAlt) && !Keyboard.IsKeyDown(Key.RightAlt))
                         {
-                            this._AHKNoClick(roClient, config, thisk);
+                            if (config.ClickActive && Keyboard.IsKeyDown(config.key))
+                            {
+                                // Suspender temporariamente a rédea automática ao usar skill spammer
+                                if (roClient.HasMountStatus())
+                                {
+                                    roClient.SuspendAutoReinTemporarily(); // Marcar como ação automática
+                                    roClient.RemoveMountStatus();
+                                    Thread.Sleep(50); // Aguardar desmonte
+                                }
+
+                                if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY, 0);
+                                _AHKCompatibility(roClient, config, thisk);
+                                if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY | Constants.KEYEVENTF_KEYUP, 0);
+                            }
+                            else
+                            {
+                                this._AHKNoClick(roClient, config, thisk);
+                            }
                         }
                     }
                 }
-            }
-            else if (ahkMode.Equals(SYNCHRONOUS))
-            {
-                foreach (KeyConfig config in AhkEntries.Values)
+                else if (ahkMode.Equals(SYNCHRONOUS))
                 {
-                    Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
-                    _AHKSynchronous(roClient, config, thisk);
+                    foreach (KeyConfig config in AhkEntries.Values)
+                    {
+                        Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
+
+                        if (Keyboard.IsKeyDown(config.key))
+                        {
+                            // Suspender temporariamente a rédea automática ao usar skill spammer
+                            if (roClient.HasMountStatus())
+                            {
+                                roClient.SuspendAutoReinTemporarily(); // Marcar como ação automática
+                                roClient.RemoveMountStatus();
+                                Thread.Sleep(50); // Aguardar desmonte
+                            }
+                        }
+
+                        _AHKSynchronous(roClient, config, thisk);
+                    }
+                }
+                else
+                {
+                    foreach (KeyConfig config in AhkEntries.Values)
+                    {
+                        Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
+
+                        if (Keyboard.IsKeyDown(config.key))
+                        {
+                            // Suspender temporariamente a rédea automática ao usar skill spammer
+                            if (roClient.HasMountStatus())
+                            {
+                                roClient.SuspendAutoReinTemporarily(); // Marcar como ação automática
+                                roClient.RemoveMountStatus();
+                                Thread.Sleep(50); // Aguardar desmonte
+                            }
+                        }
+
+                        this._AHKSpeedBoost(roClient, config, thisk);
+                    }
                 }
             }
-            else
+            catch (Exception ex)
             {
-                foreach (KeyConfig config in AhkEntries.Values)
-                {
-                    Keys thisk = (Keys)Enum.Parse(typeof(Keys), config.key.ToString());
-                    this._AHKSpeedBoost(roClient, config, thisk);
-                }
+                System.Diagnostics.Debug.WriteLine($"Erro na execução do AHK: {ex.Message}");
             }
-            return 0;
+
+            return 10; // Reduzir o delay para melhor responsividade
         }
+
+        // ===== MÉTODOS AHK =====
 
         private void _AHKCompatibility(Client roClient, KeyConfig config, Keys thisk)
         {
@@ -150,7 +195,6 @@ namespace _4RTools.Model
 
         private void _AHKSynchronous(Client roClient, KeyConfig config, Keys thisk)
         {
-
             Func<int, int> send_click;
             bool ammo = false;
             send_click = (evt) =>
@@ -188,7 +232,6 @@ namespace _4RTools.Model
                 }
                 if (noShift) keybd_event(Constants.VK_SHIFT, 0x45, Constants.KEYEVENTF_EXTENDEDKEY | Constants.KEYEVENTF_KEYUP, 0);
             }
-
         }
 
         private void _AHKSpeedBoost(Client roClient, KeyConfig config, Keys thisk)
@@ -214,6 +257,23 @@ namespace _4RTools.Model
             }
         }
 
+        private void _AHKNoClick(Client roClient, KeyConfig config, Keys thisk)
+        {
+            bool ammo = false;
+            while (Keyboard.IsKeyDown(config.key))
+            {
+                if (!hasBuff(roClient, EffectStatusIDs.ANTI_BOT) && validateOpenChat(roClient))
+                {
+                    getOffRein(roClient);
+                    autoSwitchAmmo(roClient, ref ammo);
+                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                }
+                Thread.Sleep(this.AhkDelay);
+            }
+        }
+
+        // ===== MÉTODOS AUXILIARES =====
+
         private void autoSwitchAmmo(Client roClient, ref bool ammo)
         {
             if (ProfileSingleton.GetCurrent().UserPreferences.switchAmmo)
@@ -233,7 +293,6 @@ namespace _4RTools.Model
                         Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, toKeys(key), 0);
                         ammo = false;
                     }
-
                 }
             }
         }
@@ -244,6 +303,9 @@ namespace _4RTools.Model
             {
                 if (ProfileSingleton.GetCurrent().UserPreferences.getOffReinKey.ToString() != String.Empty)
                 {
+                    // Marcar como ação automática para não detectar como desmonte manual
+                    c.SuspendAutoReinTemporarily();
+
                     Key key = ProfileSingleton.GetCurrent().UserPreferences.getOffReinKey;
                     Interop.PostMessage(c.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, toKeys(key), 0);
                 }
@@ -270,20 +332,7 @@ namespace _4RTools.Model
             return (Keys)Enum.Parse(typeof(Keys), k.ToString());
         }
 
-        private void _AHKNoClick(Client roClient, KeyConfig config, Keys thisk)
-        {
-            bool ammo = false;
-            while (Keyboard.IsKeyDown(config.key))
-            {
-                if (!hasBuff(roClient, EffectStatusIDs.ANTI_BOT) && validateOpenChat(roClient))
-                {
-                    getOffRein(roClient);
-                    autoSwitchAmmo(roClient, ref ammo);
-                    Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-                }
-                Thread.Sleep(this.AhkDelay);
-            }
-        }
+        // ===== MÉTODOS PÚBLICOS =====
 
         public void AddAHKEntry(string chkboxName, KeyConfig value)
         {
@@ -293,7 +342,6 @@ namespace _4RTools.Model
             }
 
             this.AhkEntries.Add(chkboxName, value);
-
         }
 
         public void RemoveAHKEntry(string chkboxName)
