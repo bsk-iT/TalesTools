@@ -29,14 +29,15 @@ namespace _4RTools.Forms
             GlobalVariablesHelper.CityList = LocalServerManager.GetListCities();
             //Container Configuration
             this.IsMdiContainer = true;
-            SetBackGroundColorOfMDIForm();
+
+            // Aplicar APENAS barra de título escura
+            ApplyDarkTitleBar();
 
             //Paint Children Forms 
             frmToggleApplication = SetToggleApplicationStateWindow();
             SetAutopotWindow();
             SetAutopotYggWindow();
             SetSkillTimerWindow();
-            SetCustomButtonsWindow();
             SetAHKWindow();
             SetAutoBuffStatusWindow();
             SetProfileWindow();
@@ -48,19 +49,45 @@ namespace _4RTools.Forms
             SetAutoSwitchWindow();
             SetAutoSwitchHealWindow();
             SetConfigWindow();
+            SetDebugWindow();
 
-            // Aplicar cores após carregar todos os controles
+            // Aplicar barra de título após carregar todos os controles
             this.Load += (sender, e) => {
-                SetBackGroundColorOfMDIForm();
-                SetTabControlColors(this);
+                ApplyDarkTitleBar();
+            };
+
+            // Aplicar barra de título quando a janela for mostrada pela primeira vez
+            this.Shown += (sender, e) => {
+                ThemeManager.ApplyDarkTitleBar(this);
+                ThemeManager.ApplyDarkMdiClientBackground(this);
             };
 
             //TrackerSingleton.Instance().SendEvent("desktop_login", "page_view", "desktop_container_load");
         }
 
+        protected override void SetVisibleCore(bool value)
+        {
+            base.SetVisibleCore(value);
+            if (value && this.Handle != IntPtr.Zero)
+            {
+                ThemeManager.ApplyDarkTitleBar(this);
+            }
+        }
+
+        /// <summary>
+        /// Aplica APENAS a barra de título escura - configure cores no Designer
+        /// </summary>
+        private void ApplyDarkTitleBar()
+        {
+            // Aplicar barra de título escura
+            ThemeManager.ApplyDarkTitleBar(this);
+
+            // Aplicar fundo escuro ao MdiClient
+            ThemeManager.ApplyDarkMdiClientBackground(this);
+        }
+
         public void addform(TabPage tp, Form f)
         {
-
             if (!tp.Controls.Contains(f))
             {
                 tp.Controls.Add(f);
@@ -71,46 +98,11 @@ namespace _4RTools.Forms
             Refresh();
         }
 
-        private void SetBackGroundColorOfMDIForm()
-        {
-            foreach (Control ctl in this.Controls)
-            {
-                if ((ctl) is MdiClient)
-                {
-                    ctl.BackColor = System.Drawing.Color.Black;
-                }
-            }
-        }
-
-        private void SetTabControlColors(Control control)
-        {
-            // Implementação da função SetTabControlColors que estava sendo chamada mas não definida
-            foreach (Control c in control.Controls)
-            {
-                if (c is TabControl)
-                {
-                    TabControl tab = (TabControl)c;
-                    tab.BackColor = System.Drawing.Color.Black;
-                }
-
-                // Recursivamente verificar controles filhos
-                if (c.HasChildren)
-                {
-                    SetTabControlColors(c);
-                }
-            }
-        }
-
-        // Override do método OnPaint para garantir que as cores sejam mantidas
+        // Override do método OnPaint - removido aplicação automática de tema
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-
-            // Aplicar cores após cada repaint se necessário
-            if (this.Created && !this.IsDisposed)
-            {
-                SetTabControlColors(this);
-            }
+            // Configure cores manualmente no Designer
         }
 
         private void processCB_SelectedIndexChanged(object sender, EventArgs e)
@@ -126,35 +118,37 @@ namespace _4RTools.Forms
             ProfileSingleton.Create("Default");
             this.refreshProcessList();
             this.refreshProfileList();
-            this.profileCB.SelectedItem = "Default";
+
+            // Carregar o último perfil usado
+            LoadLastUsedProfile();
+
+            // Notificar que o perfil foi carregado
+            subject.Notify(new Utils.Message(MessageCode.PROFILE_CHANGED, null));
 
             // Conexão automática com ragnatales.bin
             AutoConnectToRagnaTales();
 
-            // Aplicar cores após o carregamento completo
-            SetBackGroundColorOfMDIForm();
-            SetTabControlColors(this);
+            // Aplicar barra de título após o carregamento completo
+            ApplyDarkTitleBar();
+
+            ThemeManager.ApplyDarkMdiClientBackground(this);
         }
 
         private void AutoConnectToRagnaTales()
         {
             try
             {
-                // Procura pelo processo rtales.bin na lista de processos
                 foreach (Process p in Process.GetProcesses())
                 {
                     if (p.MainWindowTitle != "" && (p.ProcessName.ToLower() == "rtales" || p.ProcessName.ToLower() == "rtales.bin"))
                     {
-                        // Verifica se o cliente está na lista de clientes suportados
                         if (!ClientListSingleton.ExistsByProcessName(p.ProcessName))
                         {
-                            continue; // Pula se não estiver na lista de clientes suportados
+                            continue;
                         }
 
-                        // Encontrou o processo rtales.bin, conecta automaticamente
                         string processString = string.Format("{0}.exe - {1}", p.ProcessName, p.Id);
 
-                        // Verifica se o processo existe na lista da ComboBox
                         bool processExists = false;
                         foreach (var item in this.processCB.Items)
                         {
@@ -167,33 +161,19 @@ namespace _4RTools.Forms
 
                         if (processExists)
                         {
-                            // Seleciona automaticamente o processo
                             this.processCB.SelectedItem = processString;
-
-                            // Conecta ao cliente
                             Client client = new Client(processString);
                             ClientSingleton.Instance(client);
-
-                            // Lê o nome do personagem e atualiza a interface
                             string charName = client.ReadCharacterName();
                             characterName.Text = charName;
-
-                            // Notifica sobre a mudança de processo
                             subject.Notify(new Utils.Message(Utils.MessageCode.PROCESS_CHANGED, null));
-
-                            // Opcional: Mostrar mensagem de sucesso (comentado para não ser intrusivo)
-                            // MessageBox.Show($"Conectado automaticamente ao RagnaTales!\nPersonagem: {charName}", 
-                            //                "TalesTools - Conexão Automática", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                            break; // Para após encontrar e conectar o primeiro processo
+                            break;
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                // Em caso de erro, falha silenciosamente para não interromper o carregamento do aplicativo
-                // Opcional: Log do erro para debug
                 System.Diagnostics.Debug.WriteLine($"Erro na conexão automática: {ex.Message}");
             }
         }
@@ -224,13 +204,11 @@ namespace _4RTools.Forms
                     string processString = string.Format("{0}.exe - {1}", p.ProcessName, p.Id);
                     this.processCB.Items.Add(processString);
 
-                    // Verifica se é o RagnaTales e se ainda não está conectado
                     if ((p.ProcessName.ToLower() == "rtales" || p.ProcessName.ToLower() == "rtales.bin") &&
                         (ClientSingleton.GetClient() == null || this.processCB.SelectedItem == null))
                     {
                         try
                         {
-                            // Conecta automaticamente
                             this.processCB.SelectedItem = processString;
                             Client client = new Client(processString);
                             ClientSingleton.Instance(client);
@@ -281,7 +259,12 @@ namespace _4RTools.Forms
 
         private void livepixLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(AppConfig.Livepix);
+            System.Diagnostics.Process.Start("https://livepix.gg/hannamori");
+        }
+
+        private void livepixLinkLabelBsk_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://livepix.gg/theberserk");
         }
 
         private void profileCB_SelectedIndexChanged(object sender, EventArgs e)
@@ -295,9 +278,10 @@ namespace _4RTools.Forms
                         this.frmToggleApplication.TurnOFF();
                     }
                     ProfileSingleton.ClearProfile(this.profileCB.Text);
-                    ProfileSingleton.Load(this.profileCB.Text); //LOAD PROFILE
+                    ProfileSingleton.Load(this.profileCB.Text);
                     subject.Notify(new Utils.Message(MessageCode.PROFILE_CHANGED, null));
                     currentProfile = this.profileCB.Text.ToString();
+                    SaveLastUsedProfile(currentProfile);
                 }
                 catch (Exception ex)
                 {
@@ -306,9 +290,60 @@ namespace _4RTools.Forms
             }
         }
 
+        private void SaveLastUsedProfile(string profileName)
+        {
+            try
+            {
+                File.WriteAllText(AppConfig.LastProfileFile, profileName);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Erro ao salvar último perfil: {ex.Message}");
+            }
+        }
+
+        private void LoadLastUsedProfile()
+        {
+            try
+            {
+                if (File.Exists(AppConfig.LastProfileFile))
+                {
+                    string lastProfile = File.ReadAllText(AppConfig.LastProfileFile).Trim();
+
+                    bool profileExists = false;
+                    foreach (var item in this.profileCB.Items)
+                    {
+                        if (item.ToString() == lastProfile)
+                        {
+                            profileExists = true;
+                            break;
+                        }
+                    }
+
+                    if (profileExists)
+                    {
+                        this.profileCB.SelectedItem = lastProfile;
+                    }
+                    else
+                    {
+                        this.profileCB.SelectedItem = "Default";
+                    }
+                }
+                else
+                {
+                    this.profileCB.SelectedItem = "Default";
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Erro ao carregar último perfil: {ex.Message}");
+                this.profileCB.SelectedItem = "Default";
+            }
+        }
+
         private void tabPageAutopot_Click(object sender, EventArgs e)
         {
-            // Implementação vazia - o evento foi vinculado no designer mas não precisa de lógica específica
+            // Implementação vazia
         }
 
         public void Update(ISubject subject)
@@ -336,10 +371,7 @@ namespace _4RTools.Forms
             }
         }
 
-        private void containerResize(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Minimized) { this.Hide(); }
-        }
+        
 
         private void LoadServers(List<ClientDTO> clients)
         {
@@ -350,19 +382,43 @@ namespace _4RTools.Forms
                     ClientListSingleton.AddClient(new Client(clientDTO));
                 }
                 catch { }
-
             }
         }
 
         #region Frames
 
+        // Método auxiliar para adicionar form em GroupBox - SEM aplicação automática de tema
+        public void addFormToGroupBox(GroupBox groupBox, Form form)
+        {
+            if (!groupBox.Controls.Contains(form))
+            {
+                groupBox.Controls.Add(form);
+                form.Dock = DockStyle.Fill;
+                form.Show();
+                Refresh();
+            }
+            Refresh();
+        }
+
+        public void addFormToPanel(Panel panel, Form form)
+        {
+            if (!panel.Controls.Contains(form))
+            {
+                panel.Controls.Add(form);
+                form.Dock = DockStyle.Fill;
+                form.Show();
+                Refresh();
+            }
+            Refresh();
+        }
+
         public ToggleApplicationStateForm SetToggleApplicationStateWindow()
         {
             ToggleApplicationStateForm frm = new ToggleApplicationStateForm(subject);
             frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Location = new Point(360, 80);
             frm.MdiParent = this;
             frm.Show();
+            addFormToPanel(this.panelStatus, frm);
             return frm;
         }
 
@@ -372,7 +428,7 @@ namespace _4RTools.Forms
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.MdiParent = this;
             frm.Show();
-            addform(this.tabPageAutopot, frm);
+            addFormToPanel(this.panelAutopot, frm);
         }
 
         public void SetAutoSwitchHealWindow()
@@ -381,7 +437,7 @@ namespace _4RTools.Forms
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.MdiParent = this;
             frm.Show();
-            addform(this.tabPageAutoSwitchHeal, frm);
+            addFormToPanel(this.panelAutoSwitchHeal, frm);
         }
 
         private void SetAutoBuffStatusWindow()
@@ -400,7 +456,7 @@ namespace _4RTools.Forms
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.MdiParent = this;
             frm.Show();
-            addform(this.tabPageYggAutopot, frm);
+            addFormToPanel(this.panelYgg, frm);
         }
 
         public void SetSkillTimerWindow()
@@ -409,17 +465,7 @@ namespace _4RTools.Forms
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.MdiParent = this;
             frm.Show();
-            addform(this.tabPageSkillTimer, frm);
-
-        }
-
-        public void SetCustomButtonsWindow()
-        {
-            CustomButtonForm form = new CustomButtonForm(subject);
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Location = new Point(360, 210);
-            form.MdiParent = this;
-            form.Show();
+            addFormToGroupBox(this.groupBoxSkillTimer, frm);
         }
 
         public void SetAHKWindow()
@@ -434,7 +480,7 @@ namespace _4RTools.Forms
 
         public void SetProfileWindow()
         {
-            ProfileForm frm = new ProfileForm(this);
+            ProfileForm frm = new ProfileForm(this, subject);
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Location = new Point(0, 65);
             frm.MdiParent = this;
@@ -499,7 +545,6 @@ namespace _4RTools.Forms
             frm.MdiParent = this;
             frm.Show();
             addform(this.tabPageAutoSwitch, frm);
-
         }
 
         public void SetConfigWindow()
@@ -512,6 +557,35 @@ namespace _4RTools.Forms
             frm.Show();
         }
 
+        public void SetDebugWindow()
+        {
+            DebugForm frm = new DebugForm(subject);
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.MdiParent = this;
+            frm.Show();
+            addform(this.tabPageDebug, frm);
+        }
+
         #endregion
+
+        private void characterName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPageAutobuffStuff_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxAutoSwitchHeal_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPageHome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
