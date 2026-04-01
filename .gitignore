@@ -403,3 +403,12 @@ OldVersions/
 .idea/4RTools-RagTools.iml
 .idea/misc.xml
 .idea/.gitignore
+
+# BSKTools — arquivos gerados em runtime
+Profile/
+lastprofile.txt
+
+# Releases e assets de distribuição
+*.zip
+*.rar
+*.gif
